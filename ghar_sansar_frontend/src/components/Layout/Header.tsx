@@ -307,9 +307,6 @@ const Header: React.FC = () => {
               <Link to="/login" className="hidden sm:inline bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-3 rounded-xl hover:from-primary-700 hover:to-primary-800 shadow-professional hover:shadow-professional-lg transition-all duration-300 font-semibold hover:scale-105 active:scale-95" aria-label="Login">
                 Login
               </Link>
-              <Link to="/login" className="hidden sm:inline bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-6 py-3 rounded-xl hover:from-emerald-700 hover:to-emerald-800 shadow-professional hover:shadow-professional-lg transition-all duration-300 font-semibold hover:scale-105 active:scale-95" aria-label="Register">
-                Register
-              </Link>
             </div>
           ) }
 

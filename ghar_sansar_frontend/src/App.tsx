@@ -34,6 +34,7 @@ import ProductsAdmin from "./pages/admin/ProductsAdmin";
 import ProductAdminBulk from "./pages/admin/ProductAdminBulk";
 import InteriorWorksAdmin from "./pages/admin/InteriorWorksAdmin";
 import OrdersAdmin from "./pages/admin/OrdersAdmin";
+import ChatsAdmin from "./pages/admin/ChatsAdmin";
 
 import ChatBot from "./components/ChatBot/ChatBot";
 
@@ -105,6 +106,7 @@ export default function App() {
                           <Route path="products-bulk" element={<ProductAdminBulk />} />
                           <Route path="interior-works" element={<InteriorWorksAdmin />} />
                           <Route path="orders" element={<OrdersAdmin />} />
+                          <Route path="chats" element={<ChatsAdmin />} />
                         </Route>
                       </Routes>
                     </main>

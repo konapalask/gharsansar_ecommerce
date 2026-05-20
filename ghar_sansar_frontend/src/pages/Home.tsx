@@ -1,7 +1,7 @@
 // src/pages/Home.tsx
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, Truck, Shield, Headphones, XCircle, Eye, Palette, HandHeart, CheckCircle, Home as HomeIcon, ShoppingCart, Zap } from "lucide-react";
+import { ArrowRight, Truck, Shield, Headphones, XCircle, Eye, Palette, HandHeart, CheckCircle, Home as HomeIcon, ShoppingCart, Zap, Star, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProducts } from "../context/ProductContext"; // ✅ using context
 import { useCart } from "../context/CartContext";
@@ -399,89 +399,123 @@ const Home: React.FC = () => {
 
           {recentProducts.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-              {recentProducts.map((product, index) => (
-                <motion.div
-                  key={product.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer hover:-translate-y-2"
-                >
-                  {/* Product Image */}
-                  <div className="relative overflow-hidden bg-gray-100">
-                    <img
-                      src={product.image}
-                      alt={product.title}
-                      className="w-full h-48 sm:h-56 md:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
-                      loading="lazy"
-                    />
-                    <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 shadow-lg">
-                      New
-                    </div>
-                    {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
-                      <Link
-                        to={`/products/${product.id}`}
-                        className="bg-white text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
-                      >
-                        View Details
-                      </Link>
-                    </div>
-                  </div>
+              {recentProducts.map((product, index) => {
+                const discount = product.actualPrice && product.price ? Math.round(((product.actualPrice - product.price) / product.actualPrice) * 100) : 0;
+                const rating = (Math.random() * (5 - 4) + 4).toFixed(1);
+                const reviewsCount = Math.floor(Math.random() * 200) + 15;
 
-                  {/* Product Info */}
-                  <div className="p-4 sm:p-6">
-                    <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
-                      {product.title}
-                    </h3>
-                    {product.price && (
-                      <div className="mt-2 flex items-center gap-2">
-                        <span className="text-lg font-bold text-blue-600">₹{product.price}</span>
-                        {product.actualPrice && product.actualPrice > product.price && (
-                          <span className="text-sm text-gray-500 line-through">₹{product.actualPrice}</span>
-                        )}
-                      </div>
-                    )}
-                    <div className="flex gap-2 mt-3">
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          if (product.price) {
-                            addToCart({
-                              id: product.id,
-                              name: product.title,
-                              price: product.price,
-                              image: product.image
-                            });
-                          }
-                        }}
-                        className="flex-1 flex items-center justify-center gap-1 px-3 py-2 bg-blue-600 text-white rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors"
-                      >
-                        <ShoppingCart className="w-4 h-4" />
-                        Cart
+                return (
+                  <motion.div
+                    key={product.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                    className="bg-white rounded-[24px] shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-500 p-4 cursor-pointer group flex flex-col relative"
+                    onClick={() => navigate(`/products/${encodeURIComponent(product.id)}`)}
+                  >
+                    {/* Floating Action Icons */}
+                    <div className="absolute top-6 right-6 z-20 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-2 group-hover:translate-x-0">
+                      <button className="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-red-500 hover:bg-white transition-colors">
+                        <Heart size={16} />
                       </button>
-                      <button
-                        onClick={(e) => {
-                          e.preventDefault();
-                          if (product.price) {
-                            addToCart({
-                              id: product.id,
-                              name: product.title,
-                              price: product.price,
-                              image: product.image
-                            });
-                            navigate('/checkout');
-                          }
-                        }}
-                        className="flex-1 flex items-center justify-center gap-1 px-3 py-2 bg-green-600 text-white rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
-                      >
-                        <Zap className="w-4 h-4" />
-                        Buy
+                      <button className="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-blue-600 hover:bg-white transition-colors">
+                        <Eye size={16} />
                       </button>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
+
+                    {/* Image Container - Strictly Uncropped, Centered */}
+                    <div className="relative w-full aspect-[4/5] bg-[#fdfdfc] rounded-2xl overflow-hidden flex items-center justify-center p-6 mb-5 border border-gray-50">
+                      {discount > 0 && (
+                        <span className="absolute top-3 left-3 bg-red-500 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm z-10">
+                          {discount}% Off
+                        </span>
+                      )}
+                      
+                      {product.image ? (
+                        <img
+                          src={product.image}
+                          alt={product.title}
+                          className="w-full h-full object-contain mix-blend-multiply transition-transform duration-700 ease-out group-hover:scale-110"
+                          loading="lazy"
+                        />
+                      ) : (
+                        <div className="text-gray-300 font-medium">No Image</div>
+                      )}
+                    </div>
+
+                    {/* Product Info */}
+                    <div className="flex flex-col flex-grow px-1">
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-blue-600 mb-1">
+                        {product.category ? product.category.replace(/_/g, " ") : "Home Decor"}
+                      </span>
+                      
+                      <h2 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 leading-tight group-hover:text-blue-600 transition-colors">
+                        {product.title?.replace(/_/g, " ")}
+                      </h2>
+                      
+                      <div className="flex items-center gap-1.5 mb-3">
+                        <div className="flex text-yellow-400">
+                          <Star size={12} className="fill-current" />
+                        </div>
+                        <span className="text-xs font-bold text-gray-700">{rating}</span>
+                        <span className="text-xs text-gray-400">({reviewsCount})</span>
+                      </div>
+
+                      <div className="mt-auto pt-2">
+                        {product.price ? (
+                          <div className="flex items-baseline gap-2 mb-4">
+                            <span className="text-xl font-black text-gray-900">₹{product.price}</span>
+                            {product.actualPrice && product.actualPrice > product.price && (
+                              <span className="text-xs font-semibold text-gray-400 line-through">₹{product.actualPrice}</span>
+                            )}
+                          </div>
+                        ) : (
+                          <p className="text-sm font-semibold text-gray-500 mb-4">Price on Request</p>
+                        )}
+
+                        {/* Luxury Action Buttons */}
+                        <div className="flex gap-2">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (product.price) {
+                                addToCart({
+                                  id: product.id,
+                                  name: product.title,
+                                  price: product.price,
+                                  image: product.image
+                                });
+                              }
+                            }}
+                            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 bg-white border border-gray-200 hover:border-blue-600 hover:text-blue-600 text-gray-700 rounded-xl text-xs font-bold transition-all"
+                          >
+                            <ShoppingCart size={14} />
+                            Add
+                          </button>
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (product.price) {
+                                addToCart({
+                                  id: product.id,
+                                  name: product.title,
+                                  price: product.price,
+                                  image: product.image
+                                });
+                                navigate('/checkout');
+                              }
+                            }}
+                            className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 bg-gray-900 hover:bg-blue-600 text-white rounded-xl text-xs font-bold shadow-md transition-all transform active:scale-95"
+                          >
+                            <Zap size={14} />
+                            Buy
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           ) : (
             <p className="text-center text-gray-500 text-lg">

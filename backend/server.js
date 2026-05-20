@@ -5,7 +5,7 @@ const fs = require("fs");
 const multer = require("multer");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.use(cors());
 app.use(express.json());
@@ -878,6 +878,51 @@ app.get("/api/customers", (req, res) => {
   } catch (error) {
     console.error("Fetch customers error:", error);
     res.status(500).json({ error: "Failed to load customers" });
+  }
+});
+
+// Chats: Get all chat sessions
+const CHATS_FILE = path.join(__dirname, "chats.json");
+
+app.get("/api/chats", (req, res) => {
+  try {
+    const chats = readJsonFile(CHATS_FILE, []);
+    res.json(chats);
+  } catch (error) {
+    console.error("Fetch chats error:", error);
+    res.status(500).json({ error: "Failed to load chats" });
+  }
+});
+
+app.post("/api/chats", (req, res) => {
+  try {
+    const chats = readJsonFile(CHATS_FILE, []);
+    const { sessionId, userName, userEmail, messages } = req.body;
+
+    if (!sessionId) {
+      return res.status(400).json({ error: "Session ID is required" });
+    }
+
+    const existingIdx = chats.findIndex(c => c.sessionId === sessionId);
+    const sessionRecord = {
+      sessionId,
+      userName: userName || "Guest",
+      userEmail: userEmail || "guest@example.com",
+      messages: messages || [],
+      updatedAt: new Date().toISOString()
+    };
+
+    if (existingIdx >= 0) {
+      chats[existingIdx] = sessionRecord;
+    } else {
+      chats.unshift(sessionRecord);
+    }
+
+    fs.writeFileSync(CHATS_FILE, JSON.stringify(chats, null, 2));
+    res.json({ success: true, chat: sessionRecord });
+  } catch (error) {
+    console.error("Save chat error:", error);
+    res.status(500).json({ error: "Failed to save chat" });
   }
 });
 

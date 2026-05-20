@@ -363,7 +363,7 @@ const Login: React.FC = () => {
                 className="text-blue-600 hover:text-blue-500 font-medium"
               >
                 {isLogin
-                  ? ""
+                  ? "Don't have an account? Register"
                   : "Already have an account? Sign in"}
               </button>
             </div>
