@@ -1,0 +1,57 @@
+[
+    {
+        "id": "23-evening-sample-1",
+        "name": "Traditional Brass Puja Diya Set",
+        "image": "https://your-s3-bucket-or-domain.com/products/23 evening/IMG_20250823_151938128.jpg",
+        "filename": "IMG_20250823_151938128.jpg",
+        "description": "A pair of beautifully crafted traditional brass diyas (oil lamps) with intricate detailing on the base and stem. Perfect for pooja rooms, festive decor, and illuminating your home with a warm, auspicious glow.",
+        "price": 450,
+        "actualPrice": 600,
+        "category": "showcase_items",
+        "subCategory": "brass_decor"
+    },
+    {
+        "id": "23-evening-sample-2",
+        "name": "Antique Style Brass Oil Lamps",
+        "image": "https://your-s3-bucket-or-domain.com/products/23 evening/IMG_20250823_151941366.jpg",
+        "filename": "IMG_20250823_151941366.jpg",
+        "description": "Elegant antique-style brass lamps featuring a sturdy decorative base and a classic oil bowl. Ideal for spiritual ceremonies and enhancing traditional home aesthetics with a timeless metallic finish.",
+        "price": 450,
+        "actualPrice": 600,
+        "category": "showcase_items",
+        "subCategory": "brass_decor"
+    },
+    {
+        "id": "23-evening-sample-3",
+        "name": "Vibrant Red Contoured Vacuum Flask",
+        "image": "https://your-s3-bucket-or-domain.com/products/23 evening/IMG_20250823_152244307.jpg",
+        "filename": "IMG_20250823_152244307.jpg",
+        "description": "A vibrant red vacuum flask with a unique, ergonomic contoured shape. Designed for premium insulation to keep your beverages hot or cold for extended periods. This stylish bottle is both highly functional and visually appealing.",
+        "price": 300,
+        "actualPrice": 450,
+        "category": "kitchenware",
+        "subCategory": "thermos_flasks"
+    },
+    {
+        "id": "23-evening-sample-4",
+        "name": "Asian Tuff Alfa Plus Copper-Coated Bottle",
+        "image": "https://your-s3-bucket-or-domain.com/products/23 evening/IMG_20250823_152343358.jpg",
+        "filename": "IMG_20250823_152343358.jpg",
+        "description": "Asian Tuff Alfa Plus 500ml stainless steel vacuum bottle in a sleek matte black finish. It features an advanced copper coating for superior temperature retention, keeping drinks hot for up to 18 hours or cold for up to 24 hours.",
+        "price": 550,
+        "actualPrice": 750,
+        "category": "kitchenware",
+        "subCategory": "insulated_bottles"
+    },
+    {
+        "id": "23-evening-sample-5",
+        "name": "Minimalist Matte Black Stainless Bottle",
+        "image": "https://your-s3-bucket-or-domain.com/products/23 evening/IMG_20250823_152404257.jpg",
+        "filename": "IMG_20250823_152404257.jpg",
+        "description": "A minimalistic matte black stainless steel water bottle. Its double-walled insulated design and airtight metallic cap ensure your drinks stay at the perfect temperature throughout the day while offering a modern, sleek look.",
+        "price": 500,
+        "actualPrice": 700,
+        "category": "kitchenware",
+        "subCategory": "insulated_bottles"
+    }
+]

@@ -1,0 +1,7 @@
+﻿git.exe : Everything up-to-date
+At line:1 char:11
++ $output = & "C:\Program Files\Git\cmd\git.exe" push origin HEAD:refs/ ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Everything up-to-date:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

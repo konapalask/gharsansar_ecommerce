@@ -1,0 +1,17 @@
+﻿On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   git_init.txt
+	new file:   git_status.txt
+	modified:   src/context/InteriorContext.tsx
+	modified:   src/context/ProductContext.tsx
+	modified:   src/pages/Home.tsx
+	modified:   src/pages/InteriorDesignPage.tsx
+	modified:   src/pages/InteriorWorks.tsx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	gitout.txt
+

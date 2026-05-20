@@ -1,0 +1,5 @@
+﻿commit 9c4a11750c088cce14887c4cd0e964d07765b358
+Author: konapalask <saikirankonapala26@gmail.com>
+Date:   Sat Feb 28 13:16:27 2026 +0530
+
+    fix(frontend): restore mock data to replace expired AWS endpoints

@@ -1,0 +1,21 @@
+﻿On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   public/products.json
+	modified:   public/products/23_evening_products.json
+	modified:   src/context/BlogContext.tsx
+	new file:   src/data/blog.json
+	modified:   src/data/services.json
+	modified:   src/pages/Blog.tsx
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   git_status.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status_v2.txt
+

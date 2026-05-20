@@ -1,0 +1,932 @@
+[
+  {
+    "name": "Cello",
+    "subcategories": [
+      {
+        "name": "Cello Collection",
+        "images": [
+          {
+            "name": "Cello 12 Pcs Soup Set",
+            "image": "/products/cello_prod/cello 12 pcs soup set.jpg",
+            "description": "Elegant 12-piece Cello soup set — perfect for family dining. Includes 6 soup bowls with saucers. Made from high-quality porcelain with a glossy, food-safe finish. Microwave and dishwasher safe.",
+            "price": 1299
+          },
+          {
+            "name": "Cello 6Pcs Dinner Plate",
+            "image": "/products/cello_prod/cello 6pcs dinner plate.jpg",
+            "description": "Premium Cello 6-piece dinner plate set crafted from durable opalware glass. Scratch-resistant, chip-resistant and features an elegant solid finish. Perfect for everyday use and special occasions.",
+            "price": 899
+          },
+          {
+            "name": "Cello Breakfast Set 4 Pcs",
+            "image": "/products/cello_prod/cello breakfast set 4 pcs.webp",
+            "description": "Start your mornings in style with the Cello 4-piece breakfast set. Includes plates, bowl and mug. BPA-free, microwave safe, and easy to clean. Ideal for individuals and compact families.",
+            "price": 749
+          },
+          {
+            "name": "Cello Creeper Storage Container 130M 2Pieces Set",
+            "image": "/products/cello_prod/cello creeper storage container 130m 2pieces set .jpg",
+            "description": "Compact Cello Creeper airtight storage containers with 130ml capacity each. Set of 2. Transparent body lets you see contents at a glance. Ideal for spices, seeds, and small food items. Leak-proof lids.",
+            "price": 349
+          },
+          {
+            "name": "Cello Cup & Saucer Regular 12 Pcs",
+            "image": "/products/cello_prod/cello cup & saucer regular 12 pcs.jpg",
+            "description": "Complete 12-piece Cello cup and saucer set for formal and casual tea service. Crafted from durable opalware with a smooth pearlescent finish. Microwave and dishwasher safe.",
+            "price": 1199
+          },
+          {
+            "name": "Cello Dazzle Fruit 9 Pcs Set",
+            "image": "/products/cello_prod/cello dazzle fruit 9 pcs set.jpg",
+            "description": "Vibrant 9-piece Cello Dazzle fruit serving set with eye-catching design. Includes large and small serving bowls in assorted colours. Lightweight, shatter-resistant, and BPA-free.",
+            "price": 999
+          },
+          {
+            "name": "Cello Dazzle Pudding Set 7 Pcs",
+            "image": "/products/cello_prod/cello dazzle pudding set 7 pcs.jpg",
+            "description": "Stunning 7-piece Cello Dazzle pudding set for a premium dessert presentation. Includes individual pudding cups with a large serving bowl. Microwave safe and dishwasher friendly.",
+            "price": 849
+          },
+          {
+            "name": "Cello Dazzle Tea Set 15Pcs",
+            "image": "/products/cello_prod/cello dazzle tea set 15pcs.webp",
+            "description": "Luxurious 15-piece Cello Dazzle tea set for hosting guests in style. Includes teacups, saucers, a teapot, and a sugar bowl. Dazzling floral design on a pure-white opalware base.",
+            "price": 1599
+          },
+          {
+            "name": "Cello Designer Crockery Set 10Pcs Set",
+            "image": "/products/cello_prod/cello designer crockery set 10pcs set.jpeg",
+            "description": "Elegant 10-piece Cello designer crockery set featuring premium opalware. Comes with dinner plates, side plates, and bowls. Graceful floral patterns make every meal feel special.",
+            "price": 1099
+          },
+          {
+            "name": "Cello Designer Crockery Set 31Pcs Set",
+            "image": "/products/cello_prod/cello designer crockery set 31pcs set.webp",
+            "description": "Comprehensive 31-piece Cello designer crockery set for full table settings. Includes dinner plates, side plates, bowls, cups, and saucers. Premium opalware with an elegant embossed design.",
+            "price": 2999
+          },
+          {
+            "name": "Cello Designer Crockery Set 65Pcs Set",
+            "image": "/products/cello_prod/cello designer crockery set 65pcs set.webp",
+            "description": "Royal 65-piece Cello designer crockery set — everything you need for entertaining large gatherings. Complete table service for 8 with dinner plates, dessert plates, bowls, cups and saucers.",
+            "price": 5499
+          },
+          {
+            "name": "Cello Designer Crockery Set 6Pcs",
+            "image": "/products/cello_prod/cello designer crockery set 6pcs.webp",
+            "description": "Stylish 6-piece Cello opalware dinner plate set with a refined designer pattern. Microwave and dishwasher safe. Perfect as a starter set or a thoughtful housewarming gift.",
+            "price": 799
+          },
+          {
+            "name": "Cello Designer Crockery Set 78Pcs Set",
+            "image": "/products/cello_prod/cello designer crockery set 78pcs set.avif",
+            "description": "Grand 78-piece Cello designer crockery set — the ultimate in-home dining experience. Complete banquet-style service featuring plates, bowls, mugs, cups, and saucers with a matching designer motif.",
+            "price": 6499
+          },
+          {
+            "name": "Cello Imperial Dessert Set 7 Pcs",
+            "image": "/products/cello_prod/cello imperial dessert set 7 pcs.jpg",
+            "description": "Refined 7-piece Cello Imperial dessert set with gold-trim accents. Includes 6 dessert bowls and one large serving bowl. Perfect for puddings, ice cream, and sweet delicacies.",
+            "price": 899
+          },
+          {
+            "name": "Cello Imperial Quick Bite Set 8 Pcs",
+            "image": "/products/cello_prod/cello imperial quick bite set 8 pcs.avif",
+            "description": "Functional 8-piece Cello Imperial quick-bite set for snacks, starters, and side dishes. Compact size, easy to stack. Great for parties, school tiffins, and quick meal serving.",
+            "price": 749
+          },
+          {
+            "name": "Cello Imperial Storage Set With Lid 6Pcs",
+            "image": "/products/cello_prod/cello imperial storage set with lid 6pcs.webp",
+            "description": "Practical 6-piece Cello Imperial airtight storage container set with secure lids. Keeps food fresh for longer. Stackable design saves kitchen space. Microwave safe and BPA-free.",
+            "price": 999
+          },
+          {
+            "name": "Cello Istorage Container Small 4Pcs",
+            "image": "/products/cello_prod/cello istorage container small 4pcs.webp",
+            "description": "Space-saving 4-piece Cello iStorage small container set. Transparent body for easy identification. Air-tight lids prevent moisture and pests. Perfect for pulses, spices and grains.",
+            "price": 649
+          },
+          {
+            "name": "Cello Large Mug Set 2Pcs",
+            "image": "/products/cello_prod/cello large mug set 2pcs.avif",
+            "description": "Enjoy your morning beverages in the Cello large mug set. Set of 2 generously-sized mugs crafted from durable opalware. Suitable for tea, coffee, and hot chocolate. Dishwasher safe.",
+            "price": 449
+          },
+          {
+            "name": "Cello Mixing Bowl Large With Premium Lid",
+            "image": "/products/cello_prod/cello mixing bowl large with premium lid.jpg",
+            "description": "Heavy-duty Cello large mixing bowl with a premium snap-fit lid. Ideal for baking, marinating, and food prep. Shatterproof and scratch-resistant. Wide base for stable mixing.",
+            "price": 699
+          },
+          {
+            "name": "Cello Mixing Bowl Medium 2Pieces",
+            "image": "/products/cello_prod/cello mixing bowl medium 2pieces.webp",
+            "description": "Versatile 2-piece Cello medium mixing bowl set for everyday kitchen tasks. Lightweight yet durable. Suitable for salads, dough preparation, and marinating. Microwave safe.",
+            "price": 549
+          },
+          {
+            "name": "Cello Mixing Bowl Small 2Pc Set",
+            "image": "/products/cello_prod/cello mixing bowl small 2pc set.webp",
+            "description": "Compact 2-piece Cello small mixing bowl set for sauces, dips, and portion servings. Stackable design for easy storage. BPA-free, microwave safe, and easy to clean.",
+            "price": 449
+          },
+          {
+            "name": "Cello Multi Purpose Bowl Set 2 Pcs",
+            "image": "/products/cello_prod/cello multi purpose bowl set 2 pcs.jpg",
+            "description": "Adaptable 2-piece Cello multi-purpose bowl set suitable for soups, cereals, fruits, and desserts. Deep design with comfortable grip. Non-toxic, food-grade material. Microwave and dishwasher safe.",
+            "price": 399
+          },
+          {
+            "name": "Cello Recca Mug 4 Pcs",
+            "image": "/products/cello_prod/cello recca mug 4 pcs.avif",
+            "description": "Sophisticated 4-piece Cello Recca mug set with a sleek contemporary design. Generous capacity for a satisfying hot or cold beverage. Durable opalware construction. Microwave and dishwasher safe.",
+            "price": 799
+          },
+          {
+            "name": "Cello Ricca Sisley Vogue Mug 6Pcs",
+            "image": "/products/cello_prod/cello ricca sisley vogue mug 6pcs.jpeg",
+            "description": "Fashionable 6-piece Cello Ricca Sisley Vogue mug collection — each mug features a distinct trendy pattern. Perfect for gifting or to elevate your kitchen shelf. Microwave and dishwasher safe.",
+            "price": 1099
+          },
+          {
+            "name": "Cello Stella Mug Regular 2 Pcs Set",
+            "image": "/products/cello_prod/cello stella mug regular 2 pcs set.jpg",
+            "description": "Timeless 2-piece Cello Stella mug set in a clean, white opalware finish. Ideal for everyday use. Sturdy handle, smooth rim, and optimal capacity for tea or coffee. Dishwasher safe.",
+            "price": 449
+          },
+          {
+            "name": "Cello Veg Bowl Set 6Pcs",
+            "image": "/products/cello_prod/cello veg bowl set 6PCS.webp",
+            "description": "Premium 6-piece Cello vegetable serving bowl set. Perfect for side dishes, salads, and curries. Matching design for a unified table look. Microwave safe, dishwasher friendly, and BPA-free.",
+            "price": 899
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "23_evening",
+    "subcategories": [
+      {
+        "name": "evening_collection",
+        "images": [
+          {
+            "name": "Elegant Decor Item 8128",
+            "image": "/products/23 evening/IMG_20250823_151938128.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_151938128.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1366",
+            "image": "/products/23 evening/IMG_20250823_151941366.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_151941366.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4307",
+            "image": "/products/23 evening/IMG_20250823_152244307.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152244307.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3358",
+            "image": "/products/23 evening/IMG_20250823_152343358.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152343358.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4257",
+            "image": "/products/23 evening/IMG_20250823_152404257.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152404257.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8083",
+            "image": "/products/23 evening/IMG_20250823_152458083.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152458083.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4982",
+            "image": "/products/23 evening/IMG_20250823_152524982.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152524982.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1324",
+            "image": "/products/23 evening/IMG_20250823_152531324.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152531324.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9104",
+            "image": "/products/23 evening/IMG_20250823_152549104.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152549104.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0123",
+            "image": "/products/23 evening/IMG_20250823_152600123.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152600123.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5554",
+            "image": "/products/23 evening/IMG_20250823_152625554.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152625554.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7289",
+            "image": "/products/23 evening/IMG_20250823_152637289.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152637289.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9306",
+            "image": "/products/23 evening/IMG_20250823_152659306.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152659306.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5891",
+            "image": "/products/23 evening/IMG_20250823_152705891.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152705891.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9845",
+            "image": "/products/23 evening/IMG_20250823_152749845.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152749845.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2950",
+            "image": "/products/23 evening/IMG_20250823_152752950.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152752950.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7786",
+            "image": "/products/23 evening/IMG_20250823_152757786.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152757786.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4051",
+            "image": "/products/23 evening/IMG_20250823_152854051.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152854051.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1977",
+            "image": "/products/23 evening/IMG_20250823_152901977.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152901977.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3343",
+            "image": "/products/23 evening/IMG_20250823_152913343.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152913343.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7294",
+            "image": "/products/23 evening/IMG_20250823_152937294.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_152937294.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3288",
+            "image": "/products/23 evening/IMG_20250823_153003288.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153003288.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4050",
+            "image": "/products/23 evening/IMG_20250823_153024050.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153024050.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5211",
+            "image": "/products/23 evening/IMG_20250823_153105211.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153105211.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0644",
+            "image": "/products/23 evening/IMG_20250823_153120644.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153120644.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5104",
+            "image": "/products/23 evening/IMG_20250823_153145104.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153145104.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4816",
+            "image": "/products/23 evening/IMG_20250823_153154816.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153154816.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0134",
+            "image": "/products/23 evening/IMG_20250823_153210134.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153210134.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 6950",
+            "image": "/products/23 evening/IMG_20250823_153216950.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153216950.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9898",
+            "image": "/products/23 evening/IMG_20250823_153239898.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153239898.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7961",
+            "image": "/products/23 evening/IMG_20250823_153247961.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153247961.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9598",
+            "image": "/products/23 evening/IMG_20250823_153329598.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153329598.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0074",
+            "image": "/products/23 evening/IMG_20250823_153350074.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153350074.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5717",
+            "image": "/products/23 evening/IMG_20250823_153405717.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153405717.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4992",
+            "image": "/products/23 evening/IMG_20250823_153524992.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153524992.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7815",
+            "image": "/products/23 evening/IMG_20250823_153527815.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153527815.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1877",
+            "image": "/products/23 evening/IMG_20250823_153701877.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153701877.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8812",
+            "image": "/products/23 evening/IMG_20250823_153858812.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153858812.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5781",
+            "image": "/products/23 evening/IMG_20250823_153905781.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_153905781.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7326",
+            "image": "/products/23 evening/IMG_20250823_154147326.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154147326.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4116",
+            "image": "/products/23 evening/IMG_20250823_154204116.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154204116.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 6674",
+            "image": "/products/23 evening/IMG_20250823_154216674.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154216674.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7048",
+            "image": "/products/23 evening/IMG_20250823_154227048.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154227048.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4229",
+            "image": "/products/23 evening/IMG_20250823_154304229.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154304229.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4592",
+            "image": "/products/23 evening/IMG_20250823_154314592.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154314592.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8571",
+            "image": "/products/23 evening/IMG_20250823_154358571.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154358571.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9502",
+            "image": "/products/23 evening/IMG_20250823_154419502.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154419502.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4021",
+            "image": "/products/23 evening/IMG_20250823_154424021.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154424021.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2610",
+            "image": "/products/23 evening/IMG_20250823_154452610.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_154452610.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0799",
+            "image": "/products/23 evening/IMG_20250823_155000799.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155000799.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4163",
+            "image": "/products/23 evening/IMG_20250823_155004163.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155004163.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4087",
+            "image": "/products/23 evening/IMG_20250823_155024087.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155024087.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7512",
+            "image": "/products/23 evening/IMG_20250823_155027512.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155027512.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2166",
+            "image": "/products/23 evening/IMG_20250823_155132166.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155132166.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8845",
+            "image": "/products/23 evening/IMG_20250823_155228845.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155228845.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9100",
+            "image": "/products/23 evening/IMG_20250823_155259100.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155259100.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1695",
+            "image": "/products/23 evening/IMG_20250823_155311695.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155311695.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8352",
+            "image": "/products/23 evening/IMG_20250823_155338352.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155338352.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9630",
+            "image": "/products/23 evening/IMG_20250823_155409630.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155409630.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1197",
+            "image": "/products/23 evening/IMG_20250823_155411197.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155411197.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 6947",
+            "image": "/products/23 evening/IMG_20250823_155536947.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155536947.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0211",
+            "image": "/products/23 evening/IMG_20250823_155610211.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155610211.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7984",
+            "image": "/products/23 evening/IMG_20250823_155627984.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155627984.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2231",
+            "image": "/products/23 evening/IMG_20250823_155632231.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155632231.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0090",
+            "image": "/products/23 evening/IMG_20250823_155730090.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155730090.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3325",
+            "image": "/products/23 evening/IMG_20250823_155733325.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155733325.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9279",
+            "image": "/products/23 evening/IMG_20250823_155819279.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155819279.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1685",
+            "image": "/products/23 evening/IMG_20250823_155821685.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155821685.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3389",
+            "image": "/products/23 evening/IMG_20250823_155923389.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155923389.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7864",
+            "image": "/products/23 evening/IMG_20250823_155927864.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_155927864.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4187",
+            "image": "/products/23 evening/IMG_20250823_160024187.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_160024187.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8601",
+            "image": "/products/23 evening/IMG_20250823_160038601.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_160038601.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8865",
+            "image": "/products/23 evening/IMG_20250823_161438865.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161438865.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1660",
+            "image": "/products/23 evening/IMG_20250823_161551660.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161551660.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3152",
+            "image": "/products/23 evening/IMG_20250823_161553152.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161553152.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2564",
+            "image": "/products/23 evening/IMG_20250823_161702564.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161702564.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8686",
+            "image": "/products/23 evening/IMG_20250823_161808686.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161808686.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3394",
+            "image": "/products/23 evening/IMG_20250823_161843394.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161843394.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4355",
+            "image": "/products/23 evening/IMG_20250823_161924355.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161924355.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5576",
+            "image": "/products/23 evening/IMG_20250823_161925576.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_161925576.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3129",
+            "image": "/products/23 evening/IMG_20250823_162533129.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_162533129.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9151",
+            "image": "/products/23 evening/IMG_20250823_162709151.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_162709151.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1081",
+            "image": "/products/23 evening/IMG_20250823_162711081.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_162711081.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0696",
+            "image": "/products/23 evening/IMG_20250823_163140696.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_163140696.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1948",
+            "image": "/products/23 evening/IMG_20250823_163151948.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_163151948.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1890",
+            "image": "/products/23 evening/IMG_20250823_164051890.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164051890.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3899",
+            "image": "/products/23 evening/IMG_20250823_164053899.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164053899.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3338",
+            "image": "/products/23 evening/IMG_20250823_164213338.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164213338.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 6692",
+            "image": "/products/23 evening/IMG_20250823_164216692.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164216692.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5065",
+            "image": "/products/23 evening/IMG_20250823_164525065.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164525065.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0423",
+            "image": "/products/23 evening/IMG_20250823_164530423.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164530423.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7440",
+            "image": "/products/23 evening/IMG_20250823_164647440.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164647440.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0186",
+            "image": "/products/23 evening/IMG_20250823_164650186.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164650186.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5259",
+            "image": "/products/23 evening/IMG_20250823_164725259.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164725259.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5174",
+            "image": "/products/23 evening/IMG_20250823_164815174.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164815174.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8107",
+            "image": "/products/23 evening/IMG_20250823_164828107.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164828107.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3476",
+            "image": "/products/23 evening/IMG_20250823_164923476.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164923476.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8052",
+            "image": "/products/23 evening/IMG_20250823_164928052.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_164928052.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5456",
+            "image": "/products/23 evening/IMG_20250823_165015456.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165015456.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0472",
+            "image": "/products/23 evening/IMG_20250823_165020472.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165020472.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9270",
+            "image": "/products/23 evening/IMG_20250823_165139270.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165139270.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2417",
+            "image": "/products/23 evening/IMG_20250823_165142417.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165142417.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 6693",
+            "image": "/products/23 evening/IMG_20250823_165206693.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165206693.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0792",
+            "image": "/products/23 evening/IMG_20250823_165210792.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165210792.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 3352",
+            "image": "/products/23 evening/IMG_20250823_165313352.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165313352.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 7891",
+            "image": "/products/23 evening/IMG_20250823_165317891.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165317891.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1572",
+            "image": "/products/23 evening/IMG_20250823_165411572.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165411572.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0473",
+            "image": "/products/23 evening/IMG_20250823_165430473.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165430473.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 1249",
+            "image": "/products/23 evening/IMG_20250823_165641249.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165641249.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4515",
+            "image": "/products/23 evening/IMG_20250823_165644515.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165644515.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8787",
+            "image": "/products/23 evening/IMG_20250823_165648787.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165648787.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0231",
+            "image": "/products/23 evening/IMG_20250823_165730231.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165730231.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2551",
+            "image": "/products/23 evening/IMG_20250823_165732551.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165732551.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 0849",
+            "image": "/products/23 evening/IMG_20250823_165750849.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_165750849.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8846",
+            "image": "/products/23 evening/IMG_20250823_170058846.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170058846.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8418",
+            "image": "/products/23 evening/IMG_20250823_170208418.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170208418.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 2170",
+            "image": "/products/23 evening/IMG_20250823_170242170.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170242170.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4844",
+            "image": "/products/23 evening/IMG_20250823_170314844.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170314844.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 5055",
+            "image": "/products/23 evening/IMG_20250823_170325055.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170325055.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 9384",
+            "image": "/products/23 evening/IMG_20250823_170359384.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170359384.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 4476",
+            "image": "/products/23 evening/IMG_20250823_170414476.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170414476.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8922",
+            "image": "/products/23 evening/IMG_20250823_170438922.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170438922.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8189",
+            "image": "/products/23 evening/IMG_20250823_170518189.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170518189.jpg)",
+            "price": 0
+          },
+          {
+            "name": "Elegant Decor Item 8860",
+            "image": "/products/23 evening/IMG_20250823_170538860.jpg",
+            "description": "A beautifully crafted item perfect for enhancing your home's aesthetic. High quality materials and elegant design. (Placeholder description for IMG_20250823_170538860.jpg)",
+            "price": 0
+          },
+          {
+            "prod_id": "prod_1779252902367",
+            "id": "prod_1779252902367",
+            "name": "Luxury Ceramic Flower Vase",
+            "title": "Luxury Ceramic Flower Vase",
+            "price": 4500,
+            "act-price": 0,
+            "description": "A beautiful hand-crafted premium luxury ceramic flower vase for home decoration.",
+            "image": "/products/admin_upload_1779252902349.jpg"
+          }
+        ]
+      }
+    ]
+  }
+]

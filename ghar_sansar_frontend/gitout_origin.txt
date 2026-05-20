@@ -1,0 +1,29 @@
+﻿commit 9c4a11750c088cce14887c4cd0e964d07765b358
+Author: konapalask <saikirankonapala26@gmail.com>
+Date:   Sat Feb 28 13:16:27 2026 +0530
+
+    fix(frontend): restore mock data to replace expired AWS endpoints
+
+commit 2bd675f7e4024e7856415ae60c95d7a8dcc63ba4
+Author: Your Name <saikirankonapala26@gmail.com>
+Date:   Fri Oct 31 21:39:13 2025 +0530
+
+    Complete e-commerce setup: Add pricing display, Buy Now buttons, cart icon, Razorpay payment integration, and OrderContext
+
+commit f5683aa60a9ac624bd48b70651b7633249b07274
+Author: Your Name <saikirankonapala26@gmail.com>
+Date:   Fri Oct 31 18:30:33 2025 +0530
+
+    Update all documentation to use live website URL: https://www.gharsansar.store
+
+commit 0f395951f5d215711ff33556718f05a78fb4e26c
+Author: Your Name <saikirankonapala26@gmail.com>
+Date:   Fri Oct 31 18:27:59 2025 +0530
+
+    Add step-by-step APK download guide
+
+commit 9f7212252690c53d20e5b96f716cd12a5c033e14
+Author: Your Name <saikirankonapala26@gmail.com>
+Date:   Fri Oct 31 18:23:30 2025 +0530
+
+    Add project summary and finalize documentation

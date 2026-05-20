@@ -1,0 +1,11 @@
+﻿git.exe : warning: branch.main.remote has multiple values
+At line:1 char:11
++ $output = & "C:\Program Files\Git\cmd\git.exe" push -u origin main 2> ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: branch...multiple values:String) [], Rem 
+   oteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+warning: branch.main.merge has multiple values
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.

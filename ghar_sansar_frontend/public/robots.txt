@@ -1,0 +1,23 @@
+# Ghar Sansar - Best Interior Designers in Vijayawada, Guntur, Eluru, Andhra Pradesh & Telangana
+# Premium Interior Design Services, Home Decor Products, and Furniture
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl the entire site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /interior/
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://gharsansar.store/sitemap.xml
+
+# Disallow admin pages from being indexed
+Disallow: /admin/
+Disallow: /login/

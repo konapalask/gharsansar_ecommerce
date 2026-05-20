@@ -1,0 +1,42 @@
+[
+    {
+        "id": "blog-yt-1",
+        "title": "Modern Living Room Transformation",
+        "description": "Watch how we transformed this living space with elegant wallpapers and smart lighting.",
+        "video": "https://youtube.com/shorts/qHNsgrzLSU4?si=qa-gCkr_1W0sT6Hk",
+        "features": [
+            "Living Room",
+            "Transformation"
+        ]
+    },
+    {
+        "id": "blog-yt-2",
+        "title": "Kitchen Design Ideas",
+        "description": "Functional and stylish modular kitchen solutions for modern homes.",
+        "video": "https://youtube.com/shorts/Lh7347ApCus?si=oKIT_jiy_98XFqNM",
+        "features": [
+            "Kitchen",
+            "Design"
+        ]
+    },
+    {
+        "id": "blog-yt-3",
+        "title": "Bedroom Decor Inspiration",
+        "description": "Creating a cozy sanctuary with curated colors and textures.",
+        "video": "https://youtube.com/shorts/5HbmKAH_RN4?si=IlpMnlQ6R34FsHnO",
+        "features": [
+            "Bedroom",
+            "Decor"
+        ]
+    },
+    {
+        "id": "blog-yt-4",
+        "title": "Innovative Storage Solutions",
+        "description": "Clever ways to maximize space in compact apartments.",
+        "video": "https://youtube.com/shorts/PTmIYbDXucw?si=OnN0ZE2ukURz7kh0",
+        "features": [
+            "Storage",
+            "Innovation"
+        ]
+    }
+]

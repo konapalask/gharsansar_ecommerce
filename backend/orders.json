@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ord_1779252483074",
+    "orderNumber": "GS-682169",
+    "userId": "admin_01",
+    "items": [
+      {
+        "id": "Luxury Home Decor-Bespoke Artisanal Collection-3",
+        "name": "Royal Tuscan Jeweled Box",
+        "price": 29999,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/23 evening/IMG_20250823_152343358.jpg"
+      }
+    ],
+    "subtotal": 29999,
+    "shipping": 0,
+    "tax": 5399.82,
+    "total": 35398.82,
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "gharsansarshop@gmail.com",
+      "phone": "9876543210",
+      "address": "123 Main St",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India",
+      "notes": ""
+    },
+    "status": "processing",
+    "paymentStatus": "paid",
+    "createdAt": "2026-05-20T04:48:03.074Z"
+  },
+  {
+    "id": "ord_1779259570714",
+    "orderNumber": "GS-285356",
+    "userId": "admin_01",
+    "items": [
+      {
+        "id": "Luxury Home Decor-Bespoke Artisanal Collection-0",
+        "name": "Glacier Copper-Coated Rose Gold Insulated Lunchbox",
+        "price": 1049,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/23 evening/IMG_20250823_151938128.jpg"
+      }
+    ],
+    "subtotal": 1049,
+    "shipping": 0,
+    "tax": 188.82,
+    "total": 1237.82,
+    "customer": {
+      "firstName": "Test",
+      "lastName": "Customer",
+      "email": "gharsansarshop@gmail.com",
+      "phone": "9876543210",
+      "address": "123 Luxury Avenue",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India",
+      "notes": ""
+    },
+    "status": "processing",
+    "paymentStatus": "paid",
+    "createdAt": "2026-05-20T06:46:10.714Z"
+  },
+  {
+    "id": "ord_1779264932046",
+    "orderNumber": "GS-764677",
+    "userId": "admin_01",
+    "items": [
+      {
+        "id": "cello_prod-cello_collection-9",
+        "name": "Artisan Marble Candelabra",
+        "price": 2999,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/cello_prod/cello designer crockery set 31pcs set.webp"
+      }
+    ],
+    "subtotal": 2999,
+    "shipping": 0,
+    "tax": 539.8199999999999,
+    "total": 3538.8199999999997,
+    "customer": {
+      "firstName": "Test",
+      "lastName": "Customer",
+      "email": "admin@example.com",
+      "phone": "9876543210",
+      "address": "123 Main St",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India",
+      "notes": ""
+    },
+    "status": "processing",
+    "paymentStatus": "paid",
+    "createdAt": "2026-05-20T08:15:32.046Z"
+  },
+  {
+    "id": "ord_1779270106536",
+    "orderNumber": "GS-600824",
+    "userId": "admin_01",
+    "items": [
+      {
+        "id": "Cello-Cello Collection-1",
+        "name": "Cello 6Pcs Dinner Plate",
+        "price": 899,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/cello_prod/cello 6pcs dinner plate.jpg"
+      }
+    ],
+    "subtotal": 899,
+    "shipping": 0,
+    "tax": 161.82,
+    "total": 1060.82,
+    "customer": {
+      "firstName": "saikiran",
+      "lastName": "konapala",
+      "email": "konapalasaikiran200200@gmail.com",
+      "phone": "09492664870",
+      "address": "5-162,siva sai sadan",
+      "city": "string:Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "521108",
+      "country": "India",
+      "notes": ""
+    },
+    "status": "processing",
+    "paymentStatus": "paid",
+    "createdAt": "2026-05-20T09:41:46.536Z"
+  }
+]

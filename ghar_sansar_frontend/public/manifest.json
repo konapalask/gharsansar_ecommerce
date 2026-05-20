@@ -1,0 +1,26 @@
+{
+  "name": "Ghar Sansar - Best Interior Designers in Vijayawada, Guntur, Andhra Pradesh & Telangana",
+  "short_name": "Ghar Sansar",
+  "description": "Premium Interior Design Services, Home Decor Products, and Furniture in Vijayawada, Guntur, Eluru, Andhra Pradesh & Telangana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/ghar sansar logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "lifestyle", "shopping"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}

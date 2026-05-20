@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Interior Design Services",
+        "subcategories": [
+            {
+                "name": "Full Home Makeover",
+                "services": [
+                    {
+                        "id": "srv-1",
+                        "title": "Complete Home Transformation",
+                        "description": "End-to-end interior solution for new homes or full renovations. Includes 3D designs, civil works, furniture, and styling.",
+                        "price": 150000,
+                        "actual_price": 200000,
+                        "image": "/interior/wallpaper/1.jpeg",
+                        "features": [
+                            "Custom Furniture",
+                            "Lighting",
+                            "Painting"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Kitchen & Living",
+                "services": [
+                    {
+                        "id": "srv-2",
+                        "title": "Modular Kitchen Design",
+                        "description": "Modern, ergonomic, and stylish kitchen designs with high-quality hardware and space-saving solutions.",
+                        "price": 65000,
+                        "actual_price": 85000,
+                        "image": "/interior/wallpaper_rolls/2.jpg",
+                        "features": [
+                            "Waterproof Materials",
+                            "Efficient Layout",
+                            "Modern Finish"
+                        ]
+                    },
+                    {
+                        "id": "srv-3",
+                        "title": "Living Room Styling",
+                        "description": "Give your living room a luxury look with custom TV units, wall treatments, and statement furniture pieces.",
+                        "price": 45000,
+                        "actual_price": 60000,
+                        "image": "/interior/3dbokka/2.jpeg",
+                        "features": [
+                            "Wall Panel",
+                            "TV Unit",
+                            "Decor"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Wall & Flooring",
+        "subcategories": [
+            {
+                "name": "Wallpapers & Paneling",
+                "services": [
+                    {
+                        "id": "srv-4",
+                        "title": "Premium Wallpaper Installation",
+                        "description": "Professional installation of high-end wallpapers with precise alignment and durable finish.",
+                        "price": 1500,
+                        "actual_price": 2500,
+                        "image": "/interior/wallpaper/4.jpeg",
+                        "features": [
+                            "Smooth Finish",
+                            "Quick Install"
+                        ]
+                    },
+                    {
+                        "id": "srv-5",
+                        "title": "Custom Wall Art & Murals",
+                        "description": "Hand-painted or custom-printed murals to add a unique personality to your feature walls.",
+                        "price": 8000,
+                        "actual_price": 12000,
+                        "image": "/interior/wallart/8.webp",
+                        "features": [
+                            "Exclusive Designs",
+                            "Fade Resistant"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Flooring Solutions",
+                "services": [
+                    {
+                        "id": "srv-f1",
+                        "title": "Luxury Vinyl Flooring",
+                        "description": "Durable and stylish vinyl flooring solutions for residential and commercial spaces.",
+                        "price": 120,
+                        "actual_price": 180,
+                        "image": "/interior/vinyl_flooring/1.jpg",
+                        "features": [
+                            "Waterproof",
+                            "Easy Maintenance"
+                        ]
+                    },
+                    {
+                        "id": "srv-f2",
+                        "title": "Professional Gym Flooring",
+                        "description": "Shock-absorbent rubber flooring designed for safety and durability in gym environments.",
+                        "price": 250,
+                        "actual_price": 350,
+                        "image": "/interior/gym flooring/1.jpg",
+                        "features": [
+                            "Anti-slip",
+                            "Heavy Duty"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Garden & Window",
+        "subcategories": [
+            {
+                "name": "Vertical Gardens",
+                "services": [
+                    {
+                        "id": "srv-g1",
+                        "title": "Vertical Garden Setup",
+                        "description": "Create a lush green wall with our indoor and outdoor vertical garden solutions.",
+                        "price": 12000,
+                        "actual_price": 18000,
+                        "image": "/interior/maddalo_garden/1.jpg",
+                        "features": [
+                            "Drip Irrigation",
+                            "Native Plants"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Window Blinds",
+                "services": [
+                    {
+                        "id": "srv-b1",
+                        "title": "Motorised Smart Blinds",
+                        "description": "Smart window blinds that can be controlled via remote or mobile app.",
+                        "price": 15000,
+                        "actual_price": 25000,
+                        "image": "/interior/automised_blind/1.jpg",
+                        "features": [
+                            "Remote Control",
+                            "Schedule Support"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
