@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { Plus, Edit3, Trash2, Save, X, Search, Hammer } from "lucide-react";
+import { Plus, Edit3, Trash2, Save, X, Search, Hammer, ChevronDown, ChevronRight } from "lucide-react";
 import axios from "axios";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -27,6 +27,22 @@ const InteriorWorksAdmin: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
+
+  const [expandedCategories, setExpandedCategories] = useState<{ [categoryName: string]: boolean }>({});
+  const [currentPages, setCurrentPages] = useState<{ [categoryName: string]: number }>({});
+  const ITEMS_PER_PAGE = 6;
+
+  const toggleCategory = (catName: string) => {
+    setExpandedCategories(prev => ({ ...prev, [catName]: !prev[catName] }));
+  };
+
+  const getPageForCategory = (catName: string) => {
+    return currentPages[catName] || 1;
+  };
+
+  const setPageForCategory = (catName: string, page: number) => {
+    setCurrentPages(prev => ({ ...prev, [catName]: page }));
+  };
 
   const fetchWorks = async () => {
     try {
@@ -159,6 +175,28 @@ const InteriorWorksAdmin: React.FC = () => {
     () => ["All", ...Array.from(new Set(works.map((w) => w.category)))],
     [works]
   );
+
+  const groupedWorks = useMemo(() => {
+    const groups: { [category: string]: InteriorWork[] } = {};
+    filteredWorks.forEach((work) => {
+      if (!groups[work.category]) {
+        groups[work.category] = [];
+      }
+      groups[work.category].push(work);
+    });
+    return groups;
+  }, [filteredWorks]);
+
+  // Auto-expand categories on search
+  useEffect(() => {
+    if (searchTerm) {
+      const newExpCats: { [catName: string]: boolean } = {};
+      filteredWorks.forEach(w => {
+        newExpCats[w.category] = true;
+      });
+      setExpandedCategories(newExpCats);
+    }
+  }, [searchTerm, filteredWorks]);
 
   return (
     <div className="space-y-6">
@@ -345,54 +383,125 @@ const InteriorWorksAdmin: React.FC = () => {
         )}
       </AnimatePresence>
 
-      {/* List */}
+      {/* List Grouped by Category */}
       <div>
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
-          Interior Works ({filteredWorks.length})
+          Interior Works Catalog ({filteredWorks.length})
         </h2>
         {filteredWorks.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredWorks.map((work, index) => (
-              <motion.div
-                key={work.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
-              >
-                {work.image && (
-                  <div className="relative overflow-hidden bg-gray-100">
-                    <img
-                      src={work.image}
-                      alt={work.title}
-                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
-                )}
-                <div className="p-4">
-                  <h2 className="text-lg font-bold mb-2 line-clamp-1">{work.title}</h2>
-                  <p className="text-sm text-gray-500 mb-2">
-                    {work.category} → {work.subCategory}
-                  </p>
-                  <p className="text-gray-700 text-sm line-clamp-2 mb-4">{work.description}</p>
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => handleEdit(work)}
-                      className="flex-1 bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors font-semibold inline-flex items-center justify-center gap-2"
-                    >
-                      <Edit3 className="w-4 h-4" /> Edit
-                    </button>
-                    <button
-                      onClick={() => handleDelete(work.id)}
-                      className="flex-1 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors font-semibold inline-flex items-center justify-center gap-2"
-                    >
-                      <Trash2 className="w-4 h-4" /> Delete
-                    </button>
-                  </div>
+          <div className="space-y-4">
+            {Object.keys(groupedWorks).map((catName) => {
+              const isCatExpanded = !!expandedCategories[catName];
+              const categoryWorks = groupedWorks[catName];
+              const page = getPageForCategory(catName);
+              const totalPages = Math.ceil(categoryWorks.length / ITEMS_PER_PAGE);
+              const startIndex = (page - 1) * ITEMS_PER_PAGE;
+              const paginatedWorks = categoryWorks.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+              return (
+                <div key={catName} className="bg-white/85 backdrop-blur-md rounded-2xl border border-gray-100 shadow-md overflow-hidden transition-all duration-300">
+                  {/* Category Header (Accordion) */}
+                  <button
+                    onClick={() => toggleCategory(catName)}
+                    className="w-full flex items-center justify-between p-5 text-left bg-gray-50/50 hover:bg-gray-50/80 transition-colors border-b border-gray-100"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-yellow-50 text-yellow-600 rounded-lg">
+                        <Hammer className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg text-gray-900">{catName}</h3>
+                        <p className="text-xs text-gray-500 font-medium">{categoryWorks.length} interior works designs</p>
+                      </div>
+                    </div>
+                    {isCatExpanded ? (
+                      <ChevronDown className="w-5 h-5 text-gray-500" />
+                    ) : (
+                      <ChevronRight className="w-5 h-5 text-gray-500" />
+                    )}
+                  </button>
+
+                  {/* Category Content */}
+                  <AnimatePresence initial={false}>
+                    {isCatExpanded && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden p-5 bg-white space-y-6"
+                      >
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                          {paginatedWorks.map((work, index) => (
+                            <motion.div
+                              key={work.id}
+                              initial={{ opacity: 0, scale: 0.95 }}
+                              animate={{ opacity: 1, scale: 1 }}
+                              transition={{ duration: 0.2, delay: index * 0.03 }}
+                              whileHover={{ scale: 1.01, y: -3 }}
+                              className="bg-white rounded-xl border border-gray-100 shadow overflow-hidden hover:shadow-md transition-all duration-300 group"
+                            >
+                              {work.image && (
+                                <div className="relative overflow-hidden bg-gray-100 aspect-[4/3] flex items-center justify-center">
+                                  <img
+                                    src={work.image}
+                                    alt={work.title}
+                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                  />
+                                </div>
+                              )}
+                              <div className="p-4">
+                                <h4 className="text-base font-bold mb-1 text-gray-800 line-clamp-1">{work.title}</h4>
+                                <p className="text-xs text-gray-500 mb-2">
+                                  {work.category} → {work.subCategory}
+                                </p>
+                                <p className="text-gray-600 text-xs line-clamp-2 mb-4">{work.description}</p>
+                                <div className="flex gap-2">
+                                  <button
+                                    onClick={() => handleEdit(work)}
+                                    className="flex-1 bg-yellow-500 text-white px-3 py-1.5 rounded-lg hover:bg-yellow-600 transition-colors text-xs font-semibold inline-flex items-center justify-center gap-1"
+                                  >
+                                    <Edit3 className="w-3.5 h-3.5" /> Edit
+                                  </button>
+                                  <button
+                                    onClick={() => handleDelete(work.id)}
+                                    className="flex-1 bg-red-600 text-white px-3 py-1.5 rounded-lg hover:bg-red-700 transition-colors text-xs font-semibold inline-flex items-center justify-center gap-1"
+                                  >
+                                    <Trash2 className="w-3.5 h-3.5" /> Delete
+                                  </button>
+                                </div>
+                              </div>
+                            </motion.div>
+                          ))}
+                        </div>
+
+                        {/* Pagination Controls */}
+                        {totalPages > 1 && (
+                          <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+                            <button
+                              onClick={() => setPageForCategory(catName, page - 1)}
+                              disabled={page === 1}
+                              className="px-4 py-2 border border-gray-300 rounded-lg text-sm font-semibold hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-gray-50 text-gray-700"
+                            >
+                              Previous
+                            </button>
+                            <span className="text-sm font-medium text-gray-600">
+                              Page {page} of {totalPages}
+                            </span>
+                            <button
+                              onClick={() => setPageForCategory(catName, page + 1)}
+                              disabled={page === totalPages}
+                              className="px-4 py-2 border border-gray-300 rounded-lg text-sm font-semibold hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-gray-50 text-gray-700"
+                            >
+                              Next
+                            </button>
+                          </div>
+                        )}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-              </motion.div>
-            ))}
+              );
+            })}
           </div>
         ) : (
           <motion.div

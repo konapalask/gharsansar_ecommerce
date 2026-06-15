@@ -23,6 +23,7 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import InteriorDesignPage from "./pages/InteriorDesignPage";
 import InteriorWorks from "./pages/InteriorWorks";
+import Profile from "./pages/Profile";
 
 // ✅ Admin pages
 import AdminDashboard from "./pages/AdminDashboard";
@@ -85,6 +86,14 @@ export default function App() {
                           element={
                             <ProtectedRoute>
                               <InteriorWorks />
+                            </ProtectedRoute>
+                          }
+                        />
+                        <Route
+                          path="/profile"
+                          element={
+                            <ProtectedRoute>
+                              <Profile />
                             </ProtectedRoute>
                           }
                         />

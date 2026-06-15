@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { Save, Edit3, Trash2, ImagePlus, Search, X, Filter, Plus, TrendingUp, Package } from "lucide-react";
+import { Save, Edit3, Trash2, ImagePlus, Search, X, Filter, Plus, TrendingUp, Package, ChevronDown, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // Product type
@@ -44,6 +44,28 @@ const ProductsAdmin: React.FC = () => {
   const [showForm, setShowForm] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("All");
+
+  const [expandedCategories, setExpandedCategories] = useState<{ [categoryName: string]: boolean }>({});
+  const [expandedSubcategories, setExpandedSubcategories] = useState<{ [key: string]: boolean }>({});
+  const [currentPages, setCurrentPages] = useState<{ [key: string]: number }>({});
+  const ITEMS_PER_PAGE = 6;
+
+  const toggleCategory = (catName: string) => {
+    setExpandedCategories(prev => ({ ...prev, [catName]: !prev[catName] }));
+  };
+
+  const toggleSubcategory = (catName: string, subName: string) => {
+    const key = `${catName}-${subName}`;
+    setExpandedSubcategories(prev => ({ ...prev, [key]: !prev[key] }));
+  };
+
+  const getPageForSubcategory = (catName: string, subName: string) => {
+    return currentPages[`${catName}-${subName}`] || 1;
+  };
+
+  const setPageForSubcategory = (catName: string, subName: string, page: number) => {
+    setCurrentPages(prev => ({ ...prev, [`${catName}-${subName}`]: page }));
+  };
 
   const [form, setForm] = useState({
     title: "",
@@ -292,6 +314,42 @@ const ProductsAdmin: React.FC = () => {
     [products]
   );
 
+  const groupedProducts = useMemo(() => {
+    const groups: {
+      [category: string]: {
+        [subcategory: string]: Product[]
+      }
+    } = {};
+
+    filteredProducts.forEach(p => {
+      if (!groups[p.category]) {
+        groups[p.category] = {};
+      }
+      if (!groups[p.category][p.subCategory]) {
+        groups[p.category][p.subCategory] = [];
+      }
+      groups[p.category][p.subCategory].push(p);
+    });
+
+    return groups;
+  }, [filteredProducts]);
+
+  // Auto-expand categories/subcategories on search
+  useEffect(() => {
+    if (searchTerm) {
+      const newExpCats: { [catName: string]: boolean } = {};
+      const newExpSubs: { [key: string]: boolean } = {};
+      
+      filteredProducts.forEach(p => {
+        newExpCats[p.category] = true;
+        newExpSubs[`${p.category}-${p.subCategory}`] = true;
+      });
+      
+      setExpandedCategories(newExpCats);
+      setExpandedSubcategories(newExpSubs);
+    }
+  }, [searchTerm, filteredProducts]);
+
   return (
     <div className="space-y-6">
       {/* Header */}
@@ -507,11 +565,11 @@ const ProductsAdmin: React.FC = () => {
         )}
       </AnimatePresence>
 
-      {/* Product Grid */}
-      <div>
+      {/* Product List Grouped by Category & Subcategory */}
+      <div className="space-y-6">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
-            Products ({filteredProducts.length})
+            Products Catalog ({filteredProducts.length})
           </h2>
         </div>
 
@@ -520,52 +578,163 @@ const ProductsAdmin: React.FC = () => {
             <div className="spinner"></div>
           </div>
         ) : filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProducts.map((p, index) => (
-              <motion.div
-                key={p.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-                whileHover={{ scale: 1.02, y: -5 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group"
-              >
-                <div className="relative overflow-hidden bg-gray-100 aspect-square flex items-center justify-center">
-                  <img
-                    src={fixImageUrl(p.image)}
-                    alt={p.title}
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute top-2 right-2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    {p.category}
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg text-gray-800 mb-1 line-clamp-2">{p.title}</h3>
-                  <p className="text-sm text-gray-600 line-clamp-2 mb-3">{p.description}</p>
-                  <div className="flex items-center gap-2 mb-4">
-                    <span className="text-2xl font-bold text-blue-600">₹{p.price}</span>
-                    {p.actual_price && (
-                      <span className="text-gray-400 line-through">₹{p.actual_price}</span>
+          <div className="space-y-4">
+            {Object.keys(groupedProducts).map((catName) => {
+              const isCatExpanded = !!expandedCategories[catName];
+              const subcats = groupedProducts[catName];
+              const totalItemsInCat = Object.values(subcats).reduce((acc, curr) => acc + curr.length, 0);
+
+              return (
+                <div key={catName} className="bg-white/85 backdrop-blur-md rounded-2xl border border-gray-100 shadow-md overflow-hidden transition-all duration-300">
+                  {/* Category Accordion Header */}
+                  <button
+                    onClick={() => toggleCategory(catName)}
+                    className="w-full flex items-center justify-between p-5 text-left bg-gray-50/50 hover:bg-gray-50/80 transition-colors border-b border-gray-100"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                        <Package className="w-5 h-5" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg text-gray-900">{catName}</h3>
+                        <p className="text-xs text-gray-500 font-medium">{totalItemsInCat} products across {Object.keys(subcats).length} subcategories</p>
+                      </div>
+                    </div>
+                    {isCatExpanded ? (
+                      <ChevronDown className="w-5 h-5 text-gray-500" />
+                    ) : (
+                      <ChevronRight className="w-5 h-5 text-gray-500" />
                     )}
-                  </div>
-                  <div className="flex gap-2">
-                    <button
-                      onClick={() => handleEdit(p.id)}
-                      className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-lg transition-colors font-semibold inline-flex items-center justify-center gap-2"
-                    >
-                      <Edit3 className="w-4 h-4" /> Edit
-                    </button>
-                    <button
-                      onClick={() => handleDelete(p.id)}
-                      className="flex-1 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition-colors font-semibold inline-flex items-center justify-center gap-2"
-                    >
-                      <Trash2 className="w-4 h-4" /> Delete
-                    </button>
-                  </div>
+                  </button>
+
+                  {/* Category Content */}
+                  <AnimatePresence initial={false}>
+                    {isCatExpanded && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="overflow-hidden p-4 space-y-4 bg-white"
+                      >
+                        {Object.keys(subcats).map((subName) => {
+                          const subcatKey = `${catName}-${subName}`;
+                          const isSubExpanded = !!expandedSubcategories[subcatKey];
+                          const allSubProducts = subcats[subName];
+                          const page = getPageForSubcategory(catName, subName);
+                          const totalPages = Math.ceil(allSubProducts.length / ITEMS_PER_PAGE);
+                          const startIndex = (page - 1) * ITEMS_PER_PAGE;
+                          const paginatedProducts = allSubProducts.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+                          return (
+                            <div key={subName} className="border border-gray-100 rounded-xl overflow-hidden bg-gray-50/20">
+                              {/* Subcategory Accordion Header */}
+                              <button
+                                onClick={() => toggleSubcategory(catName, subName)}
+                                className="w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition-colors border-b border-gray-100"
+                              >
+                                <div className="flex items-center gap-2">
+                                  <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+                                  <h4 className="font-semibold text-base text-gray-800">{subName}</h4>
+                                  <span className="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full font-bold">
+                                    {allSubProducts.length}
+                                  </span>
+                                </div>
+                                {isSubExpanded ? (
+                                  <ChevronDown className="w-4 h-4 text-gray-500" />
+                                ) : (
+                                  <ChevronRight className="w-4 h-4 text-gray-500" />
+                                )}
+                              </button>
+
+                              {/* Subcategory Content */}
+                              <AnimatePresence initial={false}>
+                                {isSubExpanded && (
+                                  <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    className="overflow-hidden p-4"
+                                  >
+                                    {/* Products Grid */}
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                                      {paginatedProducts.map((p, index) => (
+                                        <motion.div
+                                          key={p.id}
+                                          initial={{ opacity: 0, scale: 0.95 }}
+                                          animate={{ opacity: 1, scale: 1 }}
+                                          transition={{ duration: 0.2, delay: index * 0.03 }}
+                                          whileHover={{ scale: 1.01, y: -3 }}
+                                          className="bg-white rounded-xl shadow border border-gray-100 overflow-hidden hover:shadow-md transition-all duration-300 group"
+                                        >
+                                          <div className="relative overflow-hidden bg-gray-100 aspect-square flex items-center justify-center">
+                                            <img
+                                              src={fixImageUrl(p.image)}
+                                              alt={p.title}
+                                              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                                            />
+                                          </div>
+                                          <div className="p-4">
+                                            <h5 className="font-bold text-sm text-gray-800 mb-1 line-clamp-1">{p.title}</h5>
+                                            <p className="text-xs text-gray-500 line-clamp-2 mb-3">{p.description}</p>
+                                            <div className="flex items-center gap-2 mb-4">
+                                              <span className="text-lg font-bold text-blue-600">₹{p.price}</span>
+                                              {p.actual_price && (
+                                                <span className="text-xs text-gray-400 line-through">₹{p.actual_price}</span>
+                                              )}
+                                            </div>
+                                            <div className="flex gap-2">
+                                              <button
+                                                onClick={() => handleEdit(p.id)}
+                                                className="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-1.5 rounded-lg text-xs transition-colors font-semibold inline-flex items-center justify-center gap-1"
+                                              >
+                                                <Edit3 className="w-3.5 h-3.5" /> Edit
+                                              </button>
+                                              <button
+                                                onClick={() => handleDelete(p.id)}
+                                                className="flex-1 bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-lg text-xs transition-colors font-semibold inline-flex items-center justify-center gap-1"
+                                              >
+                                                <Trash2 className="w-3.5 h-3.5" /> Delete
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </motion.div>
+                                      ))}
+                                    </div>
+
+                                    {/* Pagination Controls */}
+                                    {totalPages > 1 && (
+                                      <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-100">
+                                        <button
+                                          onClick={() => setPageForSubcategory(catName, subName, page - 1)}
+                                          disabled={page === 1}
+                                          className="px-4 py-2 border border-gray-300 rounded-lg text-sm font-semibold hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-gray-50 text-gray-700"
+                                        >
+                                          Previous
+                                        </button>
+                                        <span className="text-sm font-medium text-gray-600">
+                                          Page {page} of {totalPages}
+                                        </span>
+                                        <button
+                                          onClick={() => setPageForSubcategory(catName, subName, page + 1)}
+                                          disabled={page === totalPages}
+                                          className="px-4 py-2 border border-gray-300 rounded-lg text-sm font-semibold hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed bg-gray-50 text-gray-700"
+                                        >
+                                          Next
+                                        </button>
+                                      </div>
+                                    )}
+                                  </motion.div>
+                                )}
+                              </AnimatePresence>
+                            </div>
+                          );
+                        })}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-              </motion.div>
-            ))}
+              );
+            })}
           </div>
         ) : (
           <motion.div

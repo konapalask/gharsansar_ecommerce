@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { useOrders } from '../../context/OrderContext';
+import { useOrders, Order, OrderItem } from '../context/OrderContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Search, X, Truck, Check, Clock } from 'lucide-react';
 
@@ -24,10 +24,10 @@ const MyOrders: React.FC = () => {
 
   const filtered = useMemo(() => {
     if (!searchTerm) return userOrders;
-    return userOrders.filter((o) =>
+    return userOrders.filter((o: Order) =>
       o.id.toLowerCase().includes(searchTerm.toLowerCase()) ||
       o.orderNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      o.items.some((it) => it.name.toLowerCase().includes(searchTerm.toLowerCase()))
+      o.items.some((it: OrderItem) => it.name.toLowerCase().includes(searchTerm.toLowerCase()))
     );
   }, [userOrders, searchTerm]);
 
@@ -65,7 +65,7 @@ const MyOrders: React.FC = () => {
         <p className="text-gray-500">No orders found.</p>
       ) : (
         <div className="space-y-4">
-          {filtered.map((order) => (
+          {filtered.map((order: Order) => (
             <motion.div
               key={order.id}
               className="border rounded-xl p-4 shadow-sm hover:shadow-md transition"
@@ -79,14 +79,14 @@ const MyOrders: React.FC = () => {
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className={`px-2 py-1 rounded text-xs font-medium ${
-                    order.status === 'Delivered'
+                    order.status === 'delivered'
                       ? 'bg-green-100 text-green-800'
-                      : order.status === 'Shipped'
+                      : order.status === 'shipped'
                       ? 'bg-blue-100 text-blue-800'
                       : 'bg-yellow-100 text-yellow-800'
-                  }`}>${order.status}</span>
-                  {order.shipped && (
-                    <Truck className="text-gray-600" size={18} title="Shipped" />
+                  }`}>{order.status}</span>
+                  {order.status === 'shipped' && (
+                    <Truck className="text-gray-600" size={18} />
                   )}
                 </div>
                 <button
@@ -106,7 +106,7 @@ const MyOrders: React.FC = () => {
                     className="mt-4 border-t pt-4"
                   >
                     <ul className="space-y-2">
-                      {order.items.map((it) => (
+                      {order.items.map((it: OrderItem) => (
                         <li key={it.id} className="flex justify-between text-sm">
                           <span>{it.name} (x{it.quantity})</span>
                           <span>{formatCurrency(it.price * it.quantity)}</span>

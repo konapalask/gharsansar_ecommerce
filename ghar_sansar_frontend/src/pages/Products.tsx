@@ -1,6 +1,6 @@
-import React, { useMemo, useEffect, useState } from "react";
+import React, { useMemo, useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Search, ShoppingCart, Zap, ShieldCheck, Truck, RefreshCw, CreditCard, Headphones, MessageCircle, Star, Heart, Eye } from "lucide-react";
+import { Search, ShoppingCart, Zap, ShieldCheck, Truck, RefreshCw, Headphones, MessageCircle, Star, Heart, Eye, X, ChevronDown, SlidersHorizontal } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useProducts } from "../context/ProductContext";
 import { useCart } from "../context/CartContext";
@@ -20,6 +20,96 @@ function formatName(name: string) {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+interface CustomSelectProps {
+  value: string;
+  options: string[];
+  onChange: (val: string) => void;
+  placeholder: string;
+  disabled?: boolean;
+  formatValue?: (val: string) => string;
+}
+
+const CustomSelect: React.FC<CustomSelectProps> = ({
+  value,
+  options,
+  onChange,
+  placeholder,
+  disabled = false,
+  formatValue = (v) => v
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
+
+  const handleSelect = (val: string) => {
+    onChange(val);
+    setIsOpen(false);
+  };
+
+  return (
+    <div ref={containerRef} className="relative w-full">
+      <button
+        type="button"
+        disabled={disabled}
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between bg-white border border-gray-200 hover:border-luxury-gold rounded-full py-3 px-5 text-xs font-semibold uppercase tracking-wider text-luxury-charcoal focus:outline-none focus:ring-2 focus:ring-luxury-gold/20 transition-all cursor-pointer shadow-sm disabled:opacity-40 disabled:cursor-not-allowed text-left"
+      >
+        <span className="truncate">
+          {value === "All" ? placeholder : formatValue(value)}
+        </span>
+        <ChevronDown
+          className={`w-4 h-4 text-gray-400 transition-transform duration-250 shrink-0 ml-2 ${
+            isOpen ? "transform rotate-180 text-luxury-charcoal" : ""
+          }`}
+        />
+      </button>
+
+      <AnimatePresence>
+        {isOpen && !disabled && (
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 8 }}
+            transition={{ duration: 0.15 }}
+            className="absolute z-40 left-0 right-0 mt-2 max-h-60 overflow-y-auto bg-white border border-gray-100 rounded-2xl shadow-xl py-1.5 focus:outline-none"
+          >
+            {options.map((opt) => (
+              <button
+                key={opt}
+                type="button"
+                onClick={() => handleSelect(opt)}
+                className={`w-full text-left px-5 py-2.5 text-xs transition-all hover:bg-luxury-warmGray/50 flex items-center justify-between uppercase tracking-wider ${
+                  opt === value ? "font-bold text-luxury-gold bg-luxury-cream" : "font-semibold text-gray-650 hover:text-luxury-charcoal"
+                }`}
+              >
+                <span className="truncate">{opt === "All" ? placeholder : formatValue(opt)}</span>
+                {opt === value && (
+                  <svg className="w-4 h-4 text-luxury-gold shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+                  </svg>
+                )}
+              </button>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
 const ProductsPage = () => {
   const { products, loading, error } = useProducts();
   const { addToCart } = useCart();
@@ -35,8 +125,7 @@ const ProductsPage = () => {
   const search = query.get("search") || "";
   const sortOrder = query.get("sort") || "featured";
 
-  // State for image zoom / quick interactions
-  const [hoveredProduct, setHoveredProduct] = useState<string | null>(null);
+
 
   // Scroll to top when page or filters change
   useEffect(() => {
@@ -156,17 +245,17 @@ const ProductsPage = () => {
       
       {/* Luxury Hero Header */}
       <div className="relative overflow-hidden bg-white border-b border-gray-100">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-50/80 to-transparent"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10 text-center">
+        <div className="absolute inset-0 bg-gradient-to-b from-luxury-cream/60 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-serif text-luxury-charcoal mb-4">
               Curated Premium Collections
             </h1>
-            <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto font-medium">
+            <p className="text-sm md:text-base text-gray-500 max-w-2xl mx-auto font-medium leading-relaxed">
               Luxury crockery & interior essentials crafted for modern homes. Discover pieces that elevate your everyday living.
             </p>
           </motion.div>
@@ -192,90 +281,96 @@ const ProductsPage = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-2xl p-4 md:p-5 shadow-lg shadow-gray-200/20 mb-10 flex flex-col lg:flex-row items-center gap-4 sticky top-24 z-30"
+          className="bg-white/65 backdrop-blur-md border border-gray-200/50 rounded-[24px] p-4 md:p-5 shadow-sm mb-6 flex flex-col lg:flex-row items-center gap-4 relative z-30"
         >
           {/* Search */}
           <div className="flex-grow w-full lg:w-auto relative group">
-            <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-blue-600 transition-colors">
+            <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none text-gray-400 group-focus-within:text-luxury-charcoal transition-colors">
               <Search size={18} />
             </div>
             <input
               type="search"
               placeholder="Search premium collections..."
-              className="w-full bg-gray-50/50 border border-gray-200 rounded-xl py-3 pl-12 pr-4 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all font-medium placeholder:text-gray-400"
+              className="w-full bg-white border border-gray-200 focus:border-luxury-gold focus:ring-4 focus:ring-luxury-gold/10 rounded-full py-3.5 pl-12 pr-10 text-sm focus:outline-none transition-all font-medium placeholder:text-gray-400 text-gray-800 shadow-sm"
               value={search}
               onChange={(e) => updateQuery({ search: e.target.value, page: 1 })}
             />
+            {search && (
+              <button
+                type="button"
+                onClick={() => updateQuery({ search: "", page: 1 })}
+                className="absolute inset-y-0 right-4 flex items-center text-gray-400 hover:text-luxury-charcoal transition-colors"
+              >
+                <X size={16} />
+              </button>
+            )}
           </div>
 
-          <div className="flex flex-wrap md:flex-nowrap w-full lg:w-auto gap-3">
+          <div className="flex flex-wrap sm:flex-nowrap w-full lg:w-auto gap-3 shrink-0">
             {/* Category Dropdown */}
-            <div className="flex-1 md:w-48 relative">
-              <select
-                className="w-full appearance-none bg-gray-50/50 border border-gray-200 rounded-xl py-3 px-4 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer"
+            <div className="flex-1 sm:w-48 relative">
+              <CustomSelect
                 value={categoryFilter}
-                onChange={(e) => updateQuery({ category: e.target.value, subCategory: "All", page: 1 })}
-              >
-                <option value="All">All Categories</option>
-                {categories.filter(c => c !== "All").map((cat) => (
-                  <option key={cat} value={cat}>{formatName(cat)}</option>
-                ))}
-              </select>
-              <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-400">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-              </div>
+                options={categories}
+                onChange={(val) => updateQuery({ category: val, subCategory: "All", page: 1 })}
+                placeholder="All Categories"
+                formatValue={formatName}
+              />
             </div>
 
             {/* Subcategory Dropdown */}
-            <div className="flex-1 md:w-48 relative">
-              <select
-                className="w-full appearance-none bg-gray-50/50 border border-gray-200 rounded-xl py-3 px-4 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer disabled:opacity-50"
+            <div className="flex-1 sm:w-48 relative">
+              <CustomSelect
                 value={subCategoryFilter}
-                onChange={(e) => updateQuery({ subCategory: e.target.value, page: 1 })}
+                options={subCategories}
+                onChange={(val) => updateQuery({ subCategory: val, page: 1 })}
+                placeholder="All Subcategories"
                 disabled={categoryFilter === "All"}
-              >
-                <option value="All">All Subcategories</option>
-                {subCategories.filter(s => s !== "All").map((sub) => (
-                  <option key={sub} value={sub}>{formatName(sub)}</option>
-                ))}
-              </select>
-              <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-400">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-              </div>
+                formatValue={formatName}
+              />
             </div>
 
             {/* Sort Dropdown */}
-            <div className="w-full md:w-40 relative">
-              <select
-                className="w-full appearance-none bg-gray-50/50 border border-gray-200 rounded-xl py-3 px-4 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all cursor-pointer"
+            <div className="w-full sm:w-44 relative">
+              <CustomSelect
                 value={sortOrder}
-                onChange={(e) => updateQuery({ sort: e.target.value, page: 1 })}
-              >
-                <option value="featured">Featured</option>
-                <option value="price-low">Price: Low to High</option>
-                <option value="price-high">Price: High to Low</option>
-              </select>
-              <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-400">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-              </div>
+                options={["featured", "price-low", "price-high"]}
+                onChange={(val) => updateQuery({ sort: val, page: 1 })}
+                placeholder="Featured"
+                formatValue={(val) => {
+                  if (val === "featured") return "Featured";
+                  if (val === "price-low") return "Price: Low to High";
+                  if (val === "price-high") return "Price: High to Low";
+                  return val;
+                }}
+              />
             </div>
           </div>
         </motion.div>
 
         {/* Category Chips (Quick Filters) */}
-        {categoryFilter === "All" && (
-          <div className="flex flex-wrap gap-2 mb-8">
-            {categories.filter(c => c !== "All").slice(0, 6).map((cat) => (
+        <div className="flex flex-wrap items-center gap-2 mb-8">
+          <span className="flex items-center gap-1.5 text-[10px] font-bold text-luxury-gold uppercase tracking-widest mr-2">
+            <SlidersHorizontal size={11} className="text-luxury-gold" />
+            Quick Filters:
+          </span>
+          {categories.map((cat) => {
+            const isActive = categoryFilter === cat;
+            return (
               <button
                 key={cat}
-                onClick={() => updateQuery({ category: cat, page: 1 })}
-                className="px-4 py-2 bg-white border border-gray-200 rounded-full text-xs font-bold text-gray-600 hover:border-blue-500 hover:text-blue-600 shadow-sm transition-all"
+                onClick={() => updateQuery({ category: cat, subCategory: "All", page: 1 })}
+                className={`px-4 py-2 rounded-full text-xs font-bold transition-all duration-300 border ${
+                  isActive 
+                    ? "bg-luxury-charcoal text-white border-luxury-charcoal hover:bg-luxury-gold hover:border-luxury-gold shadow-md" 
+                    : "bg-white text-gray-500 border-gray-200 hover:border-luxury-gold hover:text-luxury-gold hover:bg-white"
+                }`}
               >
-                {formatName(cat)}
+                {cat === "All" ? "All Collections" : formatName(cat)}
               </button>
-            ))}
-          </div>
-        )}
+            );
+          })}
+        </div>
 
         {/* Products Grid */}
         {loading ? (
@@ -302,9 +397,6 @@ const ProductsPage = () => {
           >
             {currentProducts.map((p, index) => {
               const discount = p.actualPrice && p.price ? Math.round(((p.actualPrice - p.price) / p.actualPrice) * 100) : 0;
-              const isHovered = hoveredProduct === p.id;
-              
-              // Random rating for premium feel if not available
               const rating = (Math.random() * (5 - 4) + 4).toFixed(1);
               const reviewsCount = Math.floor(Math.random() * 200) + 15;
 
@@ -314,9 +406,7 @@ const ProductsPage = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
-                  onHoverStart={() => setHoveredProduct(p.id)}
-                  onHoverEnd={() => setHoveredProduct(null)}
-                  className="bg-white rounded-[24px] shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-500 p-4 cursor-pointer group flex flex-col relative"
+                  className="bg-white rounded-[20px] shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-500 p-4 cursor-pointer group flex flex-col relative"
                   onClick={() => navigate(`/product/${encodeURIComponent(p.id)}?${location.search}`, { state: p })}
                 >
                   {/* Floating Action Icons */}
@@ -324,15 +414,12 @@ const ProductsPage = () => {
                     <button className="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-red-500 hover:bg-white transition-colors">
                       <Heart size={16} />
                     </button>
-                    <button className="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-blue-600 hover:bg-white transition-colors">
-                      <Eye size={16} />
-                    </button>
                   </div>
 
                   {/* Image Container - Strictly Uncropped, Centered */}
                   <div className="relative w-full aspect-[4/5] bg-[#fdfdfc] rounded-2xl overflow-hidden flex items-center justify-center p-6 mb-5 border border-gray-50">
                     {discount > 0 && (
-                      <span className="absolute top-3 left-3 bg-red-500 text-white px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider shadow-sm z-10">
+                      <span className="absolute top-3 left-3 bg-luxury-gold text-white px-2.5 py-1 rounded text-[9px] font-bold uppercase tracking-wider shadow-sm z-10">
                         {discount}% Off
                       </span>
                     )}
@@ -351,51 +438,46 @@ const ProductsPage = () => {
 
                   {/* Product Info */}
                   <div className="flex flex-col flex-grow px-1">
-                    <span className="text-[10px] uppercase font-bold tracking-widest text-blue-600 mb-1">
+                    <span className="text-[9px] uppercase font-bold tracking-widest text-luxury-gold mb-1">
                       {formatName(p.category)}
                     </span>
                     
-                    <h2 className="text-base font-bold text-gray-900 mb-2 line-clamp-2 leading-tight group-hover:text-blue-600 transition-colors">
+                    <h2 className="text-sm font-bold text-luxury-charcoal mb-2 line-clamp-2 leading-tight group-hover:text-luxury-gold transition-colors">
                       {formatName(p.title || "Untitled Collection")}
                     </h2>
                     
-                    <div className="flex items-center gap-1.5 mb-3">
-                      <div className="flex text-yellow-400">
-                        <Star size={12} className="fill-current" />
+                    <div className="flex items-center gap-1.5 mb-4">
+                      <div className="flex text-amber-500">
+                        <Star size={11} className="fill-current" />
                       </div>
-                      <span className="text-xs font-bold text-gray-700">{rating}</span>
-                      <span className="text-xs text-gray-400">({reviewsCount})</span>
+                      <span className="text-[11px] font-bold text-gray-700">{rating}</span>
+                      <span className="text-[11px] text-gray-400">({reviewsCount})</span>
                     </div>
 
-                    <div className="mt-auto pt-2">
-                      {p.price ? (
-                        <div className="flex items-baseline gap-2 mb-4">
-                          <span className="text-xl font-black text-gray-900">₹{p.price}</span>
-                          {p.actualPrice && p.actualPrice > p.price && (
-                            <span className="text-xs font-semibold text-gray-400 line-through">₹{p.actualPrice}</span>
-                          )}
-                        </div>
-                      ) : (
-                        <p className="text-sm font-semibold text-gray-500 mb-4">Price on Request</p>
-                      )}
-
-                      {/* Luxury Action Buttons */}
-                      <div className="flex gap-2">
+                    {/* Luxury Action Row */}
+                    <div className="mt-auto pt-3 border-t border-gray-50 flex items-center justify-between">
+                      <div>
+                        {p.price ? (
+                          <div className="flex items-baseline gap-1.5">
+                            <span className="text-md font-extrabold text-luxury-charcoal">₹{p.price}</span>
+                            {p.actualPrice && p.actualPrice > p.price && (
+                              <span className="text-[11px] font-medium text-gray-400 line-through">₹{p.actualPrice}</span>
+                            )}
+                          </div>
+                        ) : (
+                          <p className="text-xs font-bold text-gray-500">Price on Request</p>
+                        )}
+                      </div>
+                      
+                      {p.price && (
                         <button
                           onClick={(e) => handleAddToCart(e, p)}
-                          className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 bg-white border border-gray-200 hover:border-blue-600 hover:text-blue-600 text-gray-700 rounded-xl text-xs font-bold transition-all"
+                          className="w-8 h-8 rounded-full bg-luxury-charcoal hover:bg-luxury-gold text-white flex items-center justify-center transition-colors shadow-sm"
+                          aria-label="Add to cart"
                         >
-                          <ShoppingCart size={14} />
-                          Add
+                          <ShoppingCart size={13} />
                         </button>
-                        <button
-                          onClick={(e) => handleBuyNow(e, p)}
-                          className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 bg-gray-900 hover:bg-blue-600 text-white rounded-xl text-xs font-bold shadow-md transition-all transform active:scale-95"
-                        >
-                          <Zap size={14} />
-                          Buy
-                        </button>
-                      </div>
+                      )}
                     </div>
                   </div>
                 </motion.div>
@@ -409,7 +491,7 @@ const ProductsPage = () => {
             <p className="text-gray-500">Try adjusting your search or filters to find what you're looking for.</p>
             <button 
               onClick={() => { updateQuery({ search: "All", category: "All", subCategory: "All" }); navigate('/products'); }}
-              className="mt-6 px-6 py-2.5 bg-gray-900 text-white rounded-full text-sm font-bold hover:bg-gray-800 transition"
+              className="mt-6 px-6 py-2.5 bg-luxury-charcoal text-white rounded-full text-sm font-bold hover:bg-luxury-gold transition"
             >
               Clear Filters
             </button>
@@ -439,8 +521,8 @@ const ProductsPage = () => {
                     onClick={() => updateQuery({ page: p })}
                     className={`w-10 h-10 flex items-center justify-center rounded-full text-sm font-bold transition-all ${
                       page === p 
-                        ? "bg-gray-900 text-white shadow-md" 
-                        : "text-gray-600 hover:bg-gray-100"
+                        ? "bg-luxury-charcoal text-white shadow-md" 
+                        : "text-gray-600 hover:bg-luxury-warmGray"
                     }`}
                   >
                     {p}
@@ -464,28 +546,28 @@ const ProductsPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           <div className="bg-white p-6 rounded-[20px] border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
-            <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-luxury-warmGray text-luxury-gold rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <ShieldCheck size={24} />
             </div>
             <h4 className="font-bold text-gray-900 text-sm mb-1">Secure Payments</h4>
             <p className="text-xs text-gray-500">100% encrypted transactions</p>
           </div>
           <div className="bg-white p-6 rounded-[20px] border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
-            <div className="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-luxury-warmGray text-luxury-gold rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Truck size={24} />
             </div>
             <h4 className="font-bold text-gray-900 text-sm mb-1">Fast Delivery</h4>
             <p className="text-xs text-gray-500">Safe & secure logistics</p>
           </div>
           <div className="bg-white p-6 rounded-[20px] border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
-            <div className="w-12 h-12 bg-yellow-50 text-yellow-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-luxury-warmGray text-luxury-gold rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <RefreshCw size={24} />
             </div>
             <h4 className="font-bold text-gray-900 text-sm mb-1">Easy Returns</h4>
             <p className="text-xs text-gray-500">10-day return window</p>
           </div>
           <div className="bg-white p-6 rounded-[20px] border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
-            <div className="w-12 h-12 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-luxury-warmGray text-luxury-gold rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Headphones size={24} />
             </div>
             <h4 className="font-bold text-gray-900 text-sm mb-1">Expert Support</h4>

@@ -350,7 +350,7 @@ const Login: React.FC = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                className="w-full flex justify-center py-3.5 px-4 border border-transparent rounded-full shadow-sm text-xs font-bold uppercase tracking-widest text-white bg-luxury-charcoal hover:bg-luxury-gold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-luxury-gold/50 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
               >
                 {loading ? "Please wait..." : isLogin ? "Sign In" : "Create Account"}
               </button>
@@ -360,7 +360,7 @@ const Login: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setIsLogin(!isLogin)}
-                className="text-blue-600 hover:text-blue-500 font-medium"
+                className="text-xs uppercase tracking-wider text-luxury-gold hover:text-luxury-charcoal font-bold"
               >
                 {isLogin
                   ? "Don't have an account? Register"

@@ -11,6 +11,26 @@ const Cart: React.FC = () => {
   const { isAuthenticated } = useAuth();
   const navigate = useNavigate();
 
+  const handleRemove = (itemId: string, itemName: string) => {
+    const confirmed = window.confirm(`Are you sure you want to remove "${itemName}" from your cart?`);
+    if (confirmed) {
+      removeFromCart(itemId);
+      toast.success(`"${itemName}" removed from cart`);
+    }
+  };
+
+  const handleDecreaseQuantity = (itemId: string, currentQty: number, itemName: string) => {
+    if (currentQty === 1) {
+      const confirmed = window.confirm(`Are you sure you want to remove "${itemName}" from your cart?`);
+      if (confirmed) {
+        removeFromCart(itemId);
+        toast.success(`"${itemName}" removed from cart`);
+      }
+    } else {
+      updateQuantity(itemId, currentQty - 1);
+    }
+  };
+
   const handleCheckoutClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (!isAuthenticated) {
@@ -37,7 +57,7 @@ const Cart: React.FC = () => {
             </p>
             <Link
               to="/products"
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold inline-flex items-center"
+              className="bg-luxury-charcoal hover:bg-luxury-gold text-white px-8 py-3.5 rounded-full font-bold uppercase tracking-widest text-xs transition duration-300 inline-flex items-center"
             >
               Continue Shopping
             </Link>
@@ -79,13 +99,13 @@ const Cart: React.FC = () => {
                   
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.name}</h3>
-                    <p className="text-2xl font-bold text-blue-600">₹{item.price}</p>
+                    <p className="text-2xl font-bold text-luxury-charcoal">₹{item.price}</p>
                   </div>
                   
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                        onClick={() => handleDecreaseQuantity(item.id, item.quantity, item.name)}
                         className="p-1 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                       >
                         <Minus className="w-4 h-4" />
@@ -100,7 +120,7 @@ const Cart: React.FC = () => {
                     </div>
                     
                     <button
-                      onClick={() => removeFromCart(item.id)}
+                      onClick={() => handleRemove(item.id, item.name)}
                       className="p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
                     >
                       <X className="w-5 h-5" />
@@ -136,37 +156,37 @@ const Cart: React.FC = () => {
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Shipping:</span>
-                <span className="font-semibold text-green-600">Free</span>
+                <span className="font-semibold text-gray-500 text-xs mt-1">Calculated at checkout</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">Tax (8% GST):</span>
-                <span className="font-semibold">₹{(totalPrice * 0.08).toFixed(2)}</span>
+                <span className="text-gray-600">Tax (18% GST):</span>
+                <span className="font-semibold">₹{(totalPrice * 0.18).toFixed(2)}</span>
               </div>
               <hr className="border-gray-200" />
               <div className="flex justify-between text-xl font-bold">
                 <span>Total:</span>
-                <span className="text-blue-600">₹{(totalPrice * 1.08).toFixed(2)}</span>
+                <span className="text-luxury-charcoal font-black">₹{(totalPrice * 1.18).toFixed(2)}</span>
               </div>
             </div>
 
             <div className="space-y-4">
               <button
                 onClick={handleCheckoutClick}
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-center block"
+                className="w-full bg-luxury-charcoal hover:bg-luxury-gold text-white py-3.5 px-6 rounded-full font-bold uppercase tracking-widest text-xs transition duration-300 text-center block"
               >
                 Proceed to Checkout
               </button>
               <Link
                 to="/products"
-                className="w-full border-2 border-gray-300 text-gray-700 py-3 px-6 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-center block"
+                className="w-full border-2 border-gray-300 text-gray-700 py-3.5 px-6 rounded-full hover:bg-luxury-warmGray transition-colors font-bold uppercase tracking-widest text-xs text-center block"
               >
                 Continue Shopping
               </Link>
             </div>
 
-            <div className="mt-6 p-4 bg-green-50 rounded-lg">
-              <p className="text-sm text-green-800">
-                <span className="font-semibold">Free shipping</span> on orders over ₹5,000
+            <div className="mt-6 p-4 bg-luxury-warmGray/50 rounded-lg border border-luxury-gold/20">
+              <p className="text-xs text-gray-500 leading-relaxed font-semibold">
+                Delivery charges are calculated at checkout: ₹99 flat for serviceable regions, ₹149 elsewhere.
               </p>
             </div>
           </motion.div>

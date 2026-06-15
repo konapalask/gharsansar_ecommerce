@@ -43,10 +43,19 @@ export default {
           900: '#111827',
           950: '#030712',
         },
+        luxury: {
+          cream: '#FAF9F6',
+          gold: '#B78A39',
+          goldLight: '#D4AF37',
+          bronze: '#8C6239',
+          charcoal: '#1C1917',
+          warmGray: '#F4F3EF',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         display: ['Poppins', 'system-ui', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       fontSize: {

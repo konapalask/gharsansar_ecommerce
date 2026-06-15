@@ -1,5 +1,109 @@
 [
   {
+    "sessionId": "sess_1780653504926_4hrxhvi",
+    "userName": "New Explorer",
+    "userEmail": "guest@example.com",
+    "messages": [
+      {
+        "id": "1",
+        "text": "Hi! I'm your Gharsansar assistant. How can I help you today?",
+        "sender": "bot",
+        "timestamp": "2026-06-05T12:28:10.525Z"
+      },
+      {
+        "id": "2",
+        "text": "Feel free to ask me about our products, services, or any home decor tips!",
+        "sender": "bot",
+        "timestamp": "2026-06-05T12:28:10.525Z"
+      },
+      {
+        "id": "3",
+        "text": "You can also type 'help' to see what I can assist you with.",
+        "sender": "bot",
+        "timestamp": "2026-06-05T12:28:10.525Z"
+      },
+      {
+        "id": "4",
+        "text": "If you need further assistance, contact our support team.",
+        "sender": "bot",
+        "timestamp": "2026-06-05T12:28:10.525Z"
+      },
+      {
+        "id": "1780667993691",
+        "text": "hi",
+        "sender": "user",
+        "timestamp": "2026-06-05T13:59:53.691Z"
+      },
+      {
+        "id": "1780667994962",
+        "text": "Hello! Welcome to Ghar Sansar. I'm here to help you find the perfect home decor items and interior design services. What are you looking for today?",
+        "sender": "bot",
+        "timestamp": "2026-06-05T13:59:54.961Z"
+      },
+      {
+        "id": "1780668008995",
+        "text": "are these products available?",
+        "sender": "user",
+        "timestamp": "2026-06-05T14:00:08.995Z"
+      },
+      {
+        "id": "1780668010552",
+        "text": "We have a wide range of products including sofas, dining tables, kitchen cookware (such as Sonu Steel cookware products), lighting, and decorative items. You can browse our products page or tell me what specific item you're looking for!",
+        "sender": "bot",
+        "timestamp": "2026-06-05T14:00:10.551Z"
+      },
+      {
+        "id": "1780668020957",
+        "text": "sonu company?",
+        "sender": "user",
+        "timestamp": "2026-06-05T14:00:20.957Z"
+      },
+      {
+        "id": "1780668021983",
+        "text": "\nFor details, feel free to reach out to us anytime!\n📞 Contact Us\n\n📱 +91-8121135980\n✉ gharsansarshop@gmail.com\n",
+        "sender": "bot",
+        "timestamp": "2026-06-05T14:00:21.982Z"
+      },
+      {
+        "id": "1780668028351",
+        "text": "msg me",
+        "sender": "user",
+        "timestamp": "2026-06-05T14:00:28.351Z"
+      },
+      {
+        "id": "1780668029463",
+        "text": "\nFor details, feel free to reach out to us anytime!\n📞 Contact Us\n\n📱 +91-8121135980\n✉ gharsansarshop@gmail.com\n",
+        "sender": "bot",
+        "timestamp": "2026-06-05T14:00:29.462Z"
+      },
+      {
+        "id": "1780668042655",
+        "text": "what?",
+        "sender": "user",
+        "timestamp": "2026-06-05T14:00:42.655Z"
+      },
+      {
+        "id": "1780668044158",
+        "text": "I am connecting you to our human support team. An agent will reply to you shortly.",
+        "sender": "bot",
+        "timestamp": "2026-06-05T14:00:44.157Z"
+      },
+      {
+        "id": "admin_1780668057192",
+        "text": "hi sir",
+        "sender": "admin",
+        "timestamp": "2026-06-05T14:00:57.192Z"
+      },
+      {
+        "id": "admin_1780668073377",
+        "text": "my self kiran",
+        "sender": "admin",
+        "timestamp": "2026-06-05T14:01:13.377Z"
+      }
+    ],
+    "updatedAt": "2026-06-05T14:01:13.491Z"
+  },
+  {
     "sessionId": "sess_1779300987429_1tozxr5",
     "userName": "gharsansarshop",
     "userEmail": "gharsansarshop@gmail.com",

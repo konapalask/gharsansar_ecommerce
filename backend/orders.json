@@ -1,5 +1,56 @@
 [
   {
+    "id": "ord_1781074957255",
+    "orderNumber": "GS-VIDVAT-946498",
+    "userId": "admin_01",
+    "items": [
+      {
+        "id": "Cello-Dinnerware & Crockery Sets-1",
+        "name": "Cello 6Pcs Dinner Plate",
+        "price": 899,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/cello_prod/cello 6pcs dinner plate.jpg"
+      },
+      {
+        "id": "Cello-Dinnerware & Crockery Sets-13",
+        "name": "Cello Veg Bowl Set 6Pcs",
+        "price": 899,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/cello_prod/cello veg bowl set 6PCS.webp"
+      },
+      {
+        "id": "Cello-Dinnerware & Crockery Sets-0",
+        "name": "Cello 12 Pcs Soup Set",
+        "price": 1299,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/cello_prod/cello 12 pcs soup set.jpg"
+      }
+    ],
+    "subtotal": 3097,
+    "shipping": 0,
+    "tax": 557.46,
+    "total": 3654.46,
+    "customer": {
+      "firstName": "VIDVAT",
+      "lastName": "SOLUTIONS",
+      "email": "pvidvat@gmail.com",
+      "phone": "9000997404",
+      "address": "PLOT NO 236, BLOCK NO 4, B N REDDY NAGAR, CHERLAPALLY, Medchel Malkajgiri Distrct, SECUNDERABAD",
+      "city": "HYDERABAD",
+      "state": "Telangana",
+      "zipCode": "500051",
+      "country": "India",
+      "notes": "GST: 36AAVFV8151C1ZR, Alternate Ph: 7901005402"
+    },
+    "status": "shipped",
+    "paymentStatus": "paid",
+    "createdAt": "2026-06-10T07:02:37.255Z",
+    "shipped": true,
+    "trackingNumber": "40080310000103",
+    "shippedAt": "2026-06-10T07:02:37.256Z",
+    "updatedAt": "2026-06-10T07:02:37.256Z"
+  },
+  {
     "id": "ord_1779252483074",
     "orderNumber": "GS-682169",
     "userId": "admin_01",
@@ -28,9 +79,13 @@
       "country": "India",
       "notes": ""
     },
-    "status": "processing",
+    "status": "shipped",
     "paymentStatus": "paid",
-    "createdAt": "2026-05-20T04:48:03.074Z"
+    "createdAt": "2026-05-20T04:48:03.074Z",
+    "shipped": true,
+    "trackingNumber": "40080310000092",
+    "shippedAt": "2026-06-05T11:58:29.355Z",
+    "updatedAt": "2026-06-05T11:58:29.355Z"
   },
   {
     "id": "ord_1779259570714",
@@ -163,5 +218,42 @@
     "status": "processing",
     "paymentStatus": "paid",
     "createdAt": "2026-05-20T18:23:16.674Z"
+  },
+  {
+    "id": "ord_1780659841486",
+    "orderNumber": "GS-942691",
+    "userId": "usr-s70o5u7m8",
+    "items": [
+      {
+        "id": "Cello-Dinnerware & Crockery Sets-4",
+        "name": "Cello Dazzle Pudding Set 7 Pcs",
+        "price": 849,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/cello_prod/cello dazzle pudding set 7 pcs.jpg"
+      }
+    ],
+    "subtotal": 849,
+    "shipping": 0,
+    "tax": 152.82,
+    "total": 1001.8199999999999,
+    "customer": {
+      "firstName": "saikiran",
+      "lastName": "konapala",
+      "email": "konapalasaikiran200200@gmail.com",
+      "phone": "09492664870",
+      "address": "5-162,siva sai sadan",
+      "city": "string:Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "521108",
+      "country": "India",
+      "notes": ""
+    },
+    "status": "Shipped",
+    "paymentStatus": "paid",
+    "createdAt": "2026-06-05T11:44:01.486Z",
+    "shipped": true,
+    "trackingNumber": "473288323516",
+    "shippedAt": "2026-06-05T11:44:12.773Z",
+    "updatedAt": "2026-06-05T11:44:12.773Z"
   }
 ]

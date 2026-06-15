@@ -1,25 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 import { useOrders } from '../context/OrderContext';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { CreditCard, Lock, ShoppingBag, CheckCircle, Loader, ShieldCheck, Truck, Headphones, Award, Star, RefreshCw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import toast from 'react-hot-toast';
+import { useAuth } from '../context/AuthContext';
 
 const Checkout: React.FC = () => {
   const { items, totalPrice, clearCart } = useCart();
   const { createOrder } = useOrders();
   const navigate = useNavigate();
+  const { user } = useAuth();
   const [step, setStep] = useState(1);
   const [orderComplete, setOrderComplete] = useState(false);
   const [processingPayment, setProcessingPayment] = useState(false);
+
+  const API_BASE =
+    import.meta.env.VITE_AWS_API_URL ||
+    "http://localhost:5001/api";
   
   // Dummy Gateway States
   const [showDummyGateway, setShowDummyGateway] = useState(false);
   const [dummyStatus, setDummyStatus] = useState<'idle' | 'processing' | 'success' | 'failed'>('idle');
-  const [dummyCard, setDummyCard] = useState('4111 2222 3333 4444');
-  const [dummyExpiry, setDummyExpiry] = useState('12/28');
-  const [dummyCvv, setDummyCvv] = useState('123');
+  const [dummyCard] = useState('4111 2222 3333 4444');
+  const [dummyExpiry] = useState('12/28');
+  const [dummyCvv] = useState('123');
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -33,6 +39,103 @@ const Checkout: React.FC = () => {
     country: 'India',
     notes: ''
   });
+
+  const [serviceability, setServiceability] = useState<{
+    checked: boolean;
+    serviceable: boolean;
+    loading: boolean;
+    cod: boolean;
+    prepaid: boolean;
+    city?: string;
+    state?: string;
+    provider?: string;
+  }>({
+    checked: false,
+    serviceable: false,
+    loading: false,
+    cod: false,
+    prepaid: false
+  });
+
+  const checkServiceability = async (pincode: string) => {
+    if (!pincode || !/^[1-9][0-9]{5}$/.test(pincode)) {
+      setServiceability({
+        checked: false,
+        serviceable: false,
+        loading: false,
+        cod: false,
+        prepaid: false
+      });
+      return;
+    }
+
+    setServiceability(prev => ({ ...prev, loading: true, checked: false }));
+
+    try {
+      const response = await fetch(`${API_BASE}/shipping/serviceability?pincode=${pincode}`);
+      if (!response.ok) throw new Error("Serviceability check failed");
+      const data = await response.json();
+      
+      setServiceability({
+        checked: true,
+        serviceable: data.serviceable,
+        loading: false,
+        cod: data.cod || false,
+        prepaid: data.prepaid || false,
+        city: data.city,
+        state: data.state,
+        provider: data.provider
+      });
+    } catch (err) {
+      console.error(err);
+      setServiceability({
+        checked: true,
+        serviceable: true,
+        loading: false,
+        cod: true,
+        prepaid: true,
+        city: "Hyderabad (Mock)",
+        state: "TS",
+        provider: "Delhivery (Mock Fallback)"
+      });
+    }
+  };
+
+  const handleZipCodeBlur = async (e: React.FocusEvent<HTMLInputElement>) => {
+    checkServiceability(e.target.value.trim());
+  };
+
+  // Auto-prefill billing/shipping address from profile
+  useEffect(() => {
+    if (user) {
+      const defaultAddr = user.addresses?.find((a: any) => a.isDefault) || user.addresses?.[0];
+      if (defaultAddr) {
+        setFormData(prev => ({
+          ...prev,
+          firstName: defaultAddr.firstName || '',
+          lastName: defaultAddr.lastName || '',
+          phone: defaultAddr.phone || user.phone || '',
+          email: user.email || '',
+          address: defaultAddr.address || '',
+          city: defaultAddr.city || '',
+          state: defaultAddr.state || '',
+          zipCode: defaultAddr.zipCode || '',
+          country: defaultAddr.country || 'India'
+        }));
+        if (defaultAddr.zipCode) {
+          checkServiceability(defaultAddr.zipCode);
+        }
+      } else {
+        setFormData(prev => ({
+          ...prev,
+          firstName: user.name?.split(' ')[0] || '',
+          lastName: user.name?.split(' ').slice(1).join(' ') || '',
+          email: user.email || '',
+          phone: user.phone || ''
+        }));
+      }
+    }
+  }, [user]);
 
   if (items.length === 0 && !orderComplete) {
     return <Navigate to="/cart" replace />;
@@ -64,9 +167,6 @@ const Checkout: React.FC = () => {
     setDummyStatus('processing');
     setProcessingPayment(true);
     
-    const tax = totalPrice * 0.18; // 18% GST
-    const grandTotal = totalPrice + tax;
-    
     // Simulate API delay
     await new Promise(resolve => setTimeout(resolve, 1800));
     
@@ -85,6 +185,7 @@ const Checkout: React.FC = () => {
           image: item.image
         })),
         subtotal: totalPrice,
+        shipping: calculatedShippingFee,
         tax: tax,
         total: grandTotal,
         paymentStatus: 'paid',
@@ -129,21 +230,21 @@ const Checkout: React.FC = () => {
         >
           <motion.div 
             initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8"
+            className="w-24 h-24 bg-luxury-cream rounded-full flex items-center justify-center mx-auto mb-8 border border-luxury-gold/10"
           >
-            <CheckCircle className="w-12 h-12 text-green-500" />
+            <CheckCircle className="w-12 h-12 text-luxury-gold" />
           </motion.div>
-          <h1 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">Order Complete</h1>
+          <h1 className="text-4xl font-serif font-normal text-luxury-charcoal mb-4 tracking-wide">Order Complete</h1>
           <p className="text-gray-500 mb-8 text-lg leading-relaxed">
             Thank you for your premium purchase. Your beautifully crafted items will be processed and shipped within 2-3 business days.
           </p>
-          <div className="bg-gray-50 py-4 px-6 rounded-2xl mb-10 border border-gray-100 inline-block">
+          <div className="bg-luxury-warmGray py-4 px-6 rounded-2xl mb-10 border border-gray-200 inline-block">
             <span className="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-1">Order Number</span>
-            <span className="text-lg font-mono font-bold text-gray-900">#GS{Date.now().toString().slice(-8)}</span>
+            <span className="text-lg font-mono font-bold text-luxury-charcoal">#GS{Date.now().toString().slice(-8)}</span>
           </div>
           <button
             onClick={() => navigate('/')}
-            className="w-full bg-gray-900 text-white px-8 py-4 rounded-full hover:bg-blue-600 transition-all duration-300 font-bold text-lg shadow-lg shadow-gray-200"
+            className="w-full bg-luxury-charcoal hover:bg-luxury-gold text-white px-8 py-4 rounded-full transition-all duration-300 font-bold uppercase tracking-widest text-base shadow-lg shadow-gray-250/30"
           >
             Continue Shopping
           </button>
@@ -152,8 +253,18 @@ const Checkout: React.FC = () => {
     );
   }
 
+  const calculatedShippingFee = useMemo(() => {
+    if (!serviceability.checked) {
+      return 99;
+    }
+    if (serviceability.serviceable) {
+      return 99;
+    }
+    return 149;
+  }, [serviceability]);
+
   const tax = totalPrice * 0.18; // 18% GST
-  const grandTotal = totalPrice + tax;
+  const grandTotal = totalPrice + calculatedShippingFee + tax;
 
   return (
     <div className="min-h-screen bg-[#f8f8f7] font-sans pb-20">
@@ -165,7 +276,7 @@ const Checkout: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-3 tracking-tight">Checkout</h1>
+          <h1 className="text-3xl md:text-5xl font-serif font-normal text-luxury-charcoal mb-3 tracking-wide">Checkout</h1>
           <p className="text-gray-500 font-medium text-sm md:text-base">Complete your secure luxury purchase</p>
         </motion.div>
       </div>
@@ -173,24 +284,24 @@ const Checkout: React.FC = () => {
       {/* Modern Stepper */}
       <div className="max-w-3xl mx-auto mb-16 px-4">
         <div className="flex items-center justify-center space-x-4 md:space-x-8">
-          <div className={`flex items-center space-x-3 transition-colors duration-500 ${step >= 1 ? 'text-gray-900' : 'text-gray-400'}`}>
+          <div className={`flex items-center space-x-3 transition-colors duration-500 ${step >= 1 ? 'text-luxury-charcoal font-medium' : 'text-gray-400'}`}>
             <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all duration-500 ${
-              step >= 1 ? 'bg-gray-900 text-white shadow-md' : 'bg-gray-200 text-gray-500'
+              step >= 1 ? 'bg-luxury-charcoal text-white shadow-md' : 'bg-gray-200 text-gray-500'
             }`}>
               1
             </div>
-            <span className="font-bold text-sm md:text-base tracking-wide">Shipping</span>
+            <span className="font-bold text-sm md:text-base tracking-widest uppercase font-serif">Shipping</span>
           </div>
           <div className="w-12 md:w-24 h-[2px] bg-gray-200 rounded-full relative overflow-hidden">
-            <div className={`absolute top-0 left-0 h-full bg-gray-900 transition-all duration-700 ease-out ${step >= 2 ? 'w-full' : 'w-0'}`}></div>
+            <div className={`absolute top-0 left-0 h-full bg-luxury-gold transition-all duration-700 ease-out ${step >= 2 ? 'w-full' : 'w-0'}`}></div>
           </div>
-          <div className={`flex items-center space-x-3 transition-colors duration-500 ${step >= 2 ? 'text-gray-900' : 'text-gray-400'}`}>
+          <div className={`flex items-center space-x-3 transition-colors duration-500 ${step >= 2 ? 'text-luxury-charcoal font-medium' : 'text-gray-400'}`}>
             <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold transition-all duration-500 ${
-              step >= 2 ? 'bg-gray-900 text-white shadow-md' : 'bg-gray-200 text-gray-500'
+              step >= 2 ? 'bg-luxury-charcoal text-white shadow-md' : 'bg-gray-200 text-gray-500'
             }`}>
               2
             </div>
-            <span className="font-bold text-sm md:text-base tracking-wide">Payment</span>
+            <span className="font-bold text-sm md:text-base tracking-widest uppercase font-serif">Payment</span>
           </div>
         </div>
       </div>
@@ -211,7 +322,55 @@ const Checkout: React.FC = () => {
                 
                 {step === 1 && (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                    <h2 className="text-2xl font-extrabold text-gray-900 mb-8 tracking-tight">Shipping Details</h2>
+                    <h2 className="text-2xl font-serif font-normal text-luxury-charcoal mb-8 tracking-wide">Shipping Details</h2>
+                    
+                    {/* Saved Addresses Picker */}
+                    {user && user.addresses && user.addresses.length > 0 && (
+                      <div className="mb-8 p-6 bg-gray-50 rounded-2xl border border-gray-200">
+                        <span className="block text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Ship to a Saved Address</span>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          {user.addresses.map((addr: any) => {
+                            const isSelected = formData.address === addr.address && formData.zipCode === addr.zipCode;
+                            return (
+                              <button
+                                key={addr.id}
+                                type="button"
+                                onClick={() => {
+                                  setFormData(prev => ({
+                                    ...prev,
+                                    firstName: addr.firstName,
+                                    lastName: addr.lastName,
+                                    phone: addr.phone,
+                                    address: addr.address,
+                                    city: addr.city,
+                                    state: addr.state,
+                                    zipCode: addr.zipCode,
+                                    country: addr.country
+                                  }));
+                                  checkServiceability(addr.zipCode);
+                                }}
+                                className={`text-left p-4 rounded-xl border transition-all duration-200 bg-white ${
+                                  isSelected 
+                                    ? 'border-gray-900 ring-2 ring-gray-950/5 shadow-sm' 
+                                    : 'border-gray-200 hover:border-gray-450 hover:shadow-xs'
+                                }`}
+                              >
+                                <div className="font-bold text-gray-900 text-xs mb-1.5 flex items-center justify-between">
+                                  <span>{addr.firstName} {addr.lastName}</span>
+                                  {addr.isDefault && (
+                                    <span className="text-[9px] bg-gray-100 border border-gray-300 px-1.5 py-0.5 rounded text-gray-700 font-bold uppercase tracking-tight">
+                                      Default
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="text-gray-650 text-xs leading-relaxed truncate">{addr.address}</p>
+                                <p className="text-gray-500 text-[11px] font-medium mt-0.5">{addr.city}, {addr.state} - {addr.zipCode}</p>
+                              </button>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
@@ -222,7 +381,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.firstName}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="Enter your first name"
                         />
                       </div>
@@ -235,7 +394,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.lastName}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="Enter your last name"
                         />
                       </div>
@@ -248,7 +407,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.email}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="Enter your email address"
                         />
                       </div>
@@ -261,7 +420,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.phone}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="Enter your phone number"
                         />
                       </div>
@@ -274,7 +433,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.address}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="Enter your street address"
                         />
                       </div>
@@ -287,7 +446,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.city}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="City"
                         />
                       </div>
@@ -300,7 +459,7 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.state}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="State"
                         />
                       </div>
@@ -313,9 +472,30 @@ const Checkout: React.FC = () => {
                           required
                           value={formData.zipCode}
                           onChange={handleInputChange}
-                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
+                          onBlur={handleZipCodeBlur}
+                          className="w-full px-5 py-4 bg-gray-50/50 border border-gray-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-luxury-gold/20 focus:border-luxury-gold transition-all duration-300 text-gray-900 font-medium outline-none shadow-sm"
                           placeholder="ZIP/Postal Code"
                         />
+                        {serviceability.loading && (
+                          <div className="text-[11px] text-luxury-gold flex items-center gap-1.5 mt-1.5 font-medium">
+                            <span className="w-1.5 h-1.5 bg-luxury-gold rounded-full animate-ping"></span>
+                            Checking Delhivery serviceability...
+                          </div>
+                        )}
+                        {serviceability.checked && (
+                          <div className={`text-[11px] mt-1.5 font-semibold flex items-center gap-1.5 p-2 rounded-lg border ${
+                            serviceability.serviceable
+                              ? "text-green-700 bg-green-50 border-green-200"
+                              : "text-amber-700 bg-amber-50 border-amber-200"
+                          }`}>
+                            <Truck className="w-3.5 h-3.5" />
+                            <span>
+                              {serviceability.serviceable
+                                ? `Express delivery available via ${serviceability.provider || "Delhivery"}${serviceability.city ? ` (${serviceability.city})` : ""}`
+                                : "Standard shipping available"}
+                            </span>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </motion.div>
@@ -323,36 +503,36 @@ const Checkout: React.FC = () => {
 
                 {step === 2 && (
                   <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                    <h2 className="text-2xl font-extrabold text-gray-900 mb-8 flex items-center tracking-tight">
-                      <CreditCard className="w-7 h-7 mr-3 text-gray-900" />
+                    <h2 className="text-2xl font-serif font-normal text-luxury-charcoal mb-8 flex items-center tracking-wide">
+                      <CreditCard className="w-6 h-6 mr-3 text-luxury-gold" />
                       Payment Method
                     </h2>
                     
-                    <div className="p-8 bg-gray-50 rounded-2xl mb-8 border border-gray-100">
+                    <div className="p-8 bg-luxury-warmGray/50 rounded-2xl mb-8 border border-gray-200/50">
                       <div className="flex items-center justify-between mb-6">
-                        <p className="text-gray-900 font-bold text-lg">
+                        <p className="text-luxury-charcoal font-bold text-lg font-serif">
                           Secure Payment
                         </p>
-                        <img src="https://razorpay.com/assets/razorpay-logo.svg" alt="Razorpay" className="h-6 opacity-70" />
+                        <img src="https://razorpay.com/assets/razorpay-logo.svg" alt="Razorpay" className="h-5 opacity-70 filter grayscale contrast-200" />
                       </div>
                       <p className="text-gray-500 text-sm mb-6 leading-relaxed">
                         All transactions are secure and encrypted. You will be redirected to the Razorpay secure gateway to complete your purchase.
                       </p>
                       <div className="flex flex-wrap gap-3">
-                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100">Credit Card</span>
-                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100">UPI</span>
-                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100">Netbanking</span>
-                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100">Wallets</span>
+                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100 uppercase tracking-wider">Credit Card</span>
+                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100 uppercase tracking-wider">UPI</span>
+                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100 uppercase tracking-wider">Netbanking</span>
+                        <span className="bg-white px-4 py-2 rounded-lg text-xs font-bold text-gray-700 shadow-sm border border-gray-100 uppercase tracking-wider">Wallets</span>
                       </div>
                     </div>
 
-                    <div className="p-5 bg-green-50/50 border border-green-100 rounded-2xl flex items-start space-x-4">
-                      <div className="bg-green-100 p-2 rounded-full">
-                        <Lock className="w-5 h-5 text-green-700" />
+                    <div className="p-5 bg-luxury-warmGray border border-gray-200/50 rounded-2xl flex items-start space-x-4">
+                      <div className="bg-white p-2 rounded-full shadow-sm text-luxury-gold">
+                        <Lock className="w-5 h-5" />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-green-900 mb-1">256-Bit Encryption</h4>
-                        <span className="text-xs text-green-800 leading-relaxed block">Your payment information is handled with bank-level security. We never store your card details.</span>
+                        <h4 className="text-sm font-bold text-luxury-charcoal mb-1">256-Bit Encryption</h4>
+                        <span className="text-xs text-gray-500 leading-relaxed block">Your payment information is handled with bank-level security. We never store your card details.</span>
                       </div>
                     </div>
                   </motion.div>
@@ -373,7 +553,7 @@ const Checkout: React.FC = () => {
                   <button
                     type="submit"
                     disabled={processingPayment}
-                    className={`flex-1 bg-gradient-to-r from-gray-900 to-gray-800 text-white py-4 px-6 rounded-full hover:from-blue-600 hover:to-blue-700 transition-all duration-300 font-bold text-sm md:text-base disabled:opacity-50 flex items-center justify-center shadow-xl shadow-gray-200/50 hover:-translate-y-0.5 ${step === 1 ? 'w-full' : ''}`}
+                    className={`flex-1 bg-luxury-charcoal hover:bg-luxury-gold text-white py-4 px-6 rounded-full transition-all duration-300 font-bold uppercase tracking-widest text-sm md:text-base disabled:opacity-50 flex items-center justify-center shadow-xl shadow-gray-200/50 hover:-translate-y-0.5 ${step === 1 ? 'w-full' : ''}`}
                   >
                     {processingPayment ? (
                       <span className="flex items-center gap-2">
@@ -405,7 +585,7 @@ const Checkout: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-white rounded-[24px] shadow-lg shadow-gray-200/50 border border-gray-100 p-8 sticky top-24"
             >
-              <h2 className="text-xl font-extrabold text-gray-900 mb-8 flex items-center tracking-tight">
+              <h2 className="text-xl font-serif font-normal text-luxury-charcoal mb-8 flex items-center tracking-wide">
                 <ShoppingBag className="w-5 h-5 mr-3 text-gray-400" />
                 Order Summary
               </h2>
@@ -439,7 +619,9 @@ const Checkout: React.FC = () => {
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500 font-medium">Shipping Delivery</span>
-                  <span className="font-bold text-green-600 bg-green-50 px-2 py-0.5 rounded-md">Complimentary</span>
+                  <span className="font-bold text-gray-900 px-2 py-0.5 rounded-md">
+                    ₹{calculatedShippingFee}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center text-sm">
                   <span className="text-gray-500 font-medium">Tax (18% GST)</span>
@@ -459,50 +641,50 @@ const Checkout: React.FC = () => {
       <div className="border-t border-gray-200 mt-12 bg-white relative overflow-hidden py-24">
         {/* Subtle blur backdrop */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
-          <div className="absolute top-[-20%] left-[-10%] w-[40%] h-[40%] bg-blue-50/50 blur-[100px] rounded-full"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[40%] bg-gray-50/80 blur-[100px] rounded-full"></div>
+          <div className="absolute top-[-20%] left-[-10%] w-[40%] h-[40%] bg-luxury-gold/5 blur-[100px] rounded-full"></div>
+          <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[40%] bg-luxury-cream/30 blur-[100px] rounded-full"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight mb-4">Why Shop With Ghar Sansar</h2>
-            <p className="text-gray-500 font-medium text-lg max-w-2xl mx-auto">Experience a new standard of luxury shopping. We are committed to delivering excellence straight to your home.</p>
+            <h2 className="text-3xl md:text-4xl font-serif font-normal text-luxury-charcoal tracking-wide mb-4">Why Shop With Ghar Sansar</h2>
+            <p className="text-gray-500 font-medium text-lg max-w-2xl mx-auto font-serif italic">Experience a new standard of luxury shopping. We are committed to delivering excellence straight to your home.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {/* Trust Card 1 */}
-            <div className="bg-white/80 backdrop-blur-lg border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="bg-[#FAF9F6] border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-white text-luxury-gold rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-luxury-gold/10">
                 <Star className="w-6 h-6 fill-current" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Premium Quality</h3>
+              <h3 className="text-lg font-bold text-luxury-charcoal mb-2 font-serif">Premium Quality</h3>
               <p className="text-sm text-gray-500 leading-relaxed">Curated collections of the highest grade materials crafted for sophisticated modern interiors.</p>
             </div>
 
             {/* Trust Card 2 */}
-            <div className="bg-white/80 backdrop-blur-lg border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="bg-[#FAF9F6] border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-white text-luxury-gold rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-luxury-gold/10">
                 <Truck className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Fast & Secure Delivery</h3>
+              <h3 className="text-lg font-bold text-luxury-charcoal mb-2 font-serif">Fast & Secure Delivery</h3>
               <p className="text-sm text-gray-500 leading-relaxed">Complimentary insured shipping in specialized packaging to ensure pristine condition upon arrival.</p>
             </div>
 
             {/* Trust Card 3 */}
-            <div className="bg-white/80 backdrop-blur-lg border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="bg-[#FAF9F6] border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-white text-luxury-gold rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-luxury-gold/10">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Trusted Interior Experts</h3>
+              <h3 className="text-lg font-bold text-luxury-charcoal mb-2 font-serif">Trusted Interior Experts</h3>
               <p className="text-sm text-gray-500 leading-relaxed">Over a decade of experience styling and outfitting premium homes across Andhra Pradesh & Telangana.</p>
             </div>
 
             {/* Trust Card 4 */}
-            <div className="bg-white/80 backdrop-blur-lg border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
-              <div className="w-14 h-14 bg-gray-900 text-white rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <div className="bg-[#FAF9F6] border border-gray-100 rounded-[24px] p-8 shadow-sm hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-white text-luxury-gold rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-luxury-gold/10">
                 <Headphones className="w-6 h-6" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">24/7 Assistance</h3>
+              <h3 className="text-lg font-bold text-luxury-charcoal mb-2 font-serif">24/7 Assistance</h3>
               <p className="text-sm text-gray-500 leading-relaxed">Dedicated concierge support team ready to assist you with tracking, replacements, and styling advice.</p>
             </div>
           </div>
@@ -526,11 +708,11 @@ const Checkout: React.FC = () => {
               className="bg-white rounded-[24px] shadow-2xl overflow-hidden w-full max-w-md border border-gray-100"
             >
               {/* Header */}
-              <div className="bg-gray-900 px-6 py-5 text-white flex items-center justify-between">
+              <div className="bg-luxury-charcoal px-6 py-5 text-white flex items-center justify-between border-b border-luxury-gold/20">
                 <div className="flex items-center space-x-2">
-                  <Lock className="w-4 h-4 text-gray-400" />
-                  <span className="font-bold tracking-wide">Secure Checkout</span>
-                  <span className="text-[9px] bg-white/20 px-2 py-0.5 rounded font-mono uppercase tracking-widest ml-2">Test Mode</span>
+                  <Lock className="w-4 h-4 text-luxury-gold" />
+                  <span className="font-bold tracking-widest uppercase text-xs">Secure Checkout</span>
+                  <span className="text-[9px] bg-white/10 text-luxury-gold px-2 py-0.5 rounded font-mono uppercase tracking-widest ml-2">Test Mode</span>
                 </div>
                 <button
                   type="button"
@@ -543,14 +725,14 @@ const Checkout: React.FC = () => {
               </div>
 
               {/* Merchant Brand Bar */}
-              <div className="bg-gray-50 px-6 py-5 border-b border-gray-100 flex justify-between items-center">
+              <div className="bg-[#FAF9F6] px-6 py-5 border-b border-gray-100 flex justify-between items-center">
                 <div>
-                  <h3 className="font-extrabold text-gray-900">Ghar Sansar</h3>
-                  <p className="text-xs font-medium text-gray-500 mt-0.5">Order #{Date.now().toString().slice(-6)}</p>
+                  <h3 className="font-bold font-serif text-luxury-charcoal text-lg">Ghar Sansar</h3>
+                  <p className="text-xs font-medium text-gray-550 mt-0.5">Order #{Date.now().toString().slice(-6)}</p>
                 </div>
                 <div className="text-right">
                   <span className="text-[10px] uppercase tracking-wider text-gray-400 block font-bold mb-0.5">Total Amount</span>
-                  <span className="text-xl font-black text-gray-900">₹{grandTotal.toFixed(2)}</span>
+                  <span className="text-xl font-bold font-serif text-luxury-charcoal">₹{grandTotal.toFixed(2)}</span>
                 </div>
               </div>
 
@@ -578,14 +760,14 @@ const Checkout: React.FC = () => {
                       <button
                         type="button"
                         onClick={simulateSuccess}
-                        className="w-full bg-gray-900 hover:bg-black text-white py-4 rounded-xl font-bold transition-all shadow-lg flex items-center justify-center text-sm tracking-wide"
+                        className="w-full bg-luxury-charcoal hover:bg-luxury-gold text-white py-4 rounded-xl font-bold tracking-widest uppercase transition-all shadow-lg flex items-center justify-center text-sm"
                       >
                         Simulate Successful Payment
                       </button>
                       <button
                         type="button"
                         onClick={simulateFailure}
-                        className="w-full bg-white border border-gray-200 hover:bg-gray-50 text-red-600 py-3 rounded-xl font-bold transition-all flex items-center justify-center text-sm"
+                        className="w-full bg-white border border-gray-200 hover:bg-gray-50 text-red-500 py-3 rounded-xl font-bold tracking-widest uppercase transition-all flex items-center justify-center text-xs"
                       >
                         Simulate Failure
                       </button>
@@ -626,7 +808,7 @@ const Checkout: React.FC = () => {
                       <button
                         type="button"
                         onClick={() => setDummyStatus('idle')}
-                        className="bg-gray-900 hover:bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold transition"
+                        className="bg-luxury-charcoal hover:bg-luxury-gold text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest transition"
                       >
                         Try Again
                       </button>

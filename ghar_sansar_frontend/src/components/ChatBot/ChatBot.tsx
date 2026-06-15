@@ -150,7 +150,7 @@ const ChatBot: React.FC = () => {
     }
 
     if (lowerMessage.includes("shipping") || lowerMessage.includes("delivery")) {
-      return "We offer free shipping on orders over ₹1,000. Standard delivery takes 2-3 business days, and we also have express delivery options available.";
+      return "We charge a standard shipping fee of ₹99 for serviceable pincodes and ₹149 for other regions. Standard delivery takes 2-3 business days via Delhivery.";
     }
 
     if (lowerMessage.includes("return") || lowerMessage.includes("refund")) {
