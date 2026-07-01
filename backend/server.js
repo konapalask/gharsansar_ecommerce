@@ -8,7 +8,17 @@ const multer = require("multer");
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://gharsansar-ecommerce.vercel.app",
+    "https://www.gharsansar.store",
+    "https://gharsansar.store"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
