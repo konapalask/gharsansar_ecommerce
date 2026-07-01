@@ -1,5 +1,6 @@
 // src/pages/Home.tsx
 import React, { useState, useEffect, useMemo } from "react";
+import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Truck, Shield, Headphones, XCircle, Eye, Palette, HandHeart, CheckCircle, Home as HomeIcon, ShoppingCart, Zap, Star, Heart } from "lucide-react";
 import { motion } from "framer-motion";
@@ -20,16 +21,29 @@ const Home: React.FC = () => {
   useEffect(() => {
     const fetchInteriorCategories = async () => {
       try {
-        // AWS Endpoint Expired, using local data
-        const data = categoriesData;
+        let data = categoriesData;
+        const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
+        try {
+          const res = await axios.get(`${API_BASE}/storage/upload/interior`);
+          if (res.data && res.data.success && res.data.data) {
+            data = res.data.data;
+          }
+        } catch (e) {
+          console.warn("Backend categories fetch failed, using fallback static data:", e);
+        }
+
+        const BACKEND_STATIC_URL = API_BASE.replace(/\/api$/, "");
+        const sanitizeImageUrl = (path?: string) => {
+          if (!path) return undefined;
+          if (path.startsWith("http")) return path;
+          return `${BACKEND_STATIC_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+        };
 
         // Handle new JSON structure with data array
         const dataArr = Array.isArray(data) ? data : (data as any).data || [];
         const categories = dataArr.map((cat: any) => ({
           name: cat.name,
-          image: cat.subcategories?.[0]?.image
-            ? (cat.subcategories[0].image.startsWith('/') ? cat.subcategories[0].image : `/${cat.subcategories[0].image}`)
-            : undefined,
+          image: sanitizeImageUrl(cat.subcategories?.[0]?.image),
           features: cat.features || [],
           subcategories: cat.subcategories || []
         }));

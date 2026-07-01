@@ -8,6 +8,13 @@ import categoriesData from "../data/categories.json";
 const itemsPerPage = 12;
 const placeholderImage = "/images/placeholder.jpg";
 const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
+const BACKEND_STATIC_URL = API_BASE.replace(/\/api$/, "");
+
+const sanitizeImageUrl = (path?: string) => {
+  if (!path) return undefined;
+  if (path.startsWith("http")) return path;
+  return `${BACKEND_STATIC_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+};
 
 interface Subcategory {
   name: string;
@@ -155,14 +162,13 @@ const InteriorDesignPage = () => {
         const apiCategories: Category[] = dataArr.map((cat: any) => {
           const subcategories: Subcategory[] = (cat.subcategories || []).map((sub: any) => ({
             name: sub.name,
-            image: sub.image ? (sub.image.startsWith('/') ? sub.image : `/${sub.image}`) : undefined,
-            video: sub.video ? (sub.video.startsWith('/') ? sub.video : `/${sub.video}`) : undefined
+            image: sanitizeImageUrl(sub.image),
+            video: sanitizeImageUrl(sub.video)
           }));
 
           // Get category image (prioritize cat.image, fallback to first subcategory image)
-          const categoryImage = cat.image
-            ? (cat.image.startsWith('/') ? cat.image : `/${cat.image}`)
-            : (subcategories.length > 0 ? subcategories[0].image || "" : "");
+          const categoryImageRaw = cat.image || (subcategories.length > 0 ? subcategories[0].image : undefined);
+          const categoryImage = sanitizeImageUrl(categoryImageRaw) || "";
 
           return {
             name: cat.name,

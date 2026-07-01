@@ -63,15 +63,20 @@ const InteriorWorksAdmin: React.FC = () => {
           : []
       );
 
+      const BACKEND_STATIC_URL = API_UPLOAD.replace('/api/storage/upload', '');
       const flatWorks: InteriorWork[] = categories.flatMap((cat: any) =>
-        cat.subcategories.map((sub: any, idx: number) => ({
-          id: sub.id || `${cat.name}-${sub.name}-${idx}`,
-          title: sub.name,
-          category: cat.name,
-          subCategory: sub.name,
-          description: sub.description || cat.name,
-          image: sub.image,
-        }))
+        cat.subcategories.map((sub: any, idx: number) => {
+          const imagePath = sub.image;
+          const sanitizedImage = imagePath ? (imagePath.startsWith("http") ? imagePath : `${BACKEND_STATIC_URL}${imagePath.startsWith("/") ? "" : "/"}${imagePath}`) : undefined;
+          return {
+            id: sub.id || `${cat.name}-${sub.name}-${idx}`,
+            title: sub.name,
+            category: cat.name,
+            subCategory: sub.name,
+            description: sub.description || cat.name,
+            image: sanitizedImage,
+          };
+        })
       );
       setWorks(flatWorks);
     } catch (err) {

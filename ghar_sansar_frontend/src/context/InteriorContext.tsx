@@ -30,18 +30,23 @@ export const useInterior = () => {
 
 const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
 
+const BACKEND_STATIC_URL = API_BASE.replace('/api', '');
+
 // Sanitize URLs
 const sanitizeUrl = (url?: string) => {
   if (!url) return "";
   url = url.trim();
-  url = url.replace(/^https?:\/\/https?:\/\//, "https://");
-  const httpsIndex = url.indexOf("://");
-  if (httpsIndex !== -1) {
-    let [prefix, path] = [url.slice(0, httpsIndex + 3), url.slice(httpsIndex + 3)];
-    path = path.replace(/\/{2,}/g, "/");
-    url = prefix + path;
+  if (url.startsWith("http")) {
+    url = url.replace(/^https?:\/\/https?:\/\//, "https://");
+    const httpsIndex = url.indexOf("://");
+    if (httpsIndex !== -1) {
+      let [prefix, path] = [url.slice(0, httpsIndex + 3), url.slice(httpsIndex + 3)];
+      path = path.replace(/\/{2,}/g, "/");
+      url = prefix + path;
+    }
+    return url;
   }
-  return url;
+  return `${BACKEND_STATIC_URL}${url.startsWith("/") ? "" : "/"}${url}`;
 };
 
 interface InteriorProviderProps {
