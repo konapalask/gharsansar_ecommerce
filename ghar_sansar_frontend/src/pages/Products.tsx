@@ -190,6 +190,15 @@ const ProductsPage = () => {
       result.sort((a, b) => (a.price || 0) - (b.price || 0));
     } else if (sortOrder === "price-high") {
       result.sort((a, b) => (b.price || 0) - (a.price || 0));
+    } else {
+      // Default "featured" sort: push "Cello" (category or title containing Cello) to the back
+      result.sort((a, b) => {
+        const aIsCello = (a.category?.toLowerCase().includes("cello") || a.title?.toLowerCase().includes("cello"));
+        const bIsCello = (b.category?.toLowerCase().includes("cello") || b.title?.toLowerCase().includes("cello"));
+        if (aIsCello && !bIsCello) return 1;
+        if (!aIsCello && bIsCello) return -1;
+        return 0;
+      });
     }
 
     return result;
