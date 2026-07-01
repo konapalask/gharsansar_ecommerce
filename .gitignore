@@ -46,3 +46,5 @@ captures/
 .externalNativeBuild/
 .cxx/
 *.iml
+backend/public/products.zip
+backend_update.zip
