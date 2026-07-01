@@ -477,14 +477,14 @@ function CatalogCard({ product, onAdd, navigate }: any) {
       </div>
 
       <div className="flex flex-col flex-grow px-1">
-        <div className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">
+        <div className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">
           {product.category?.replace('_', ' ') || 'Return Gift'}
         </div>
-        <h3 className="font-serif text-gray-900 text-lg mb-1 leading-snug group-hover:text-[#6B21A8] transition-colors line-clamp-1">
+        <h3 className="font-serif text-gray-900 text-xs sm:text-lg mb-1 leading-snug group-hover:text-[#6B21A8] transition-colors line-clamp-2 sm:line-clamp-1">
           {product.title || product.name}
         </h3>
-        <div className="flex items-center justify-between mt-auto">
-          <span className="text-gray-900 font-medium">₹{product.price}</span>
+        <div className="flex items-center justify-between mt-auto pt-2">
+          <span className="text-gray-900 font-bold text-sm sm:text-base">₹{product.price}</span>
         </div>
       </div>
     </div>

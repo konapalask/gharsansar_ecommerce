@@ -510,20 +510,20 @@ const ProductsPage = () => {
                     ease: [0.22, 1, 0.36, 1], // easeOutQuint for ultra smooth deceleration
                     delay: (index % 12) * 0.08 
                   }}
-                  className="bg-white rounded-[20px] shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-500 p-4 cursor-pointer group flex flex-col relative"
+                  className="bg-white rounded-xl sm:rounded-[20px] shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-500 p-2.5 sm:p-4 cursor-pointer group flex flex-col relative"
                   onClick={() => navigate(`/product/${encodeURIComponent(p.id)}?${location.search}`, { state: p })}
                 >
                   {/* Floating Action Icons */}
-                  <div className="absolute top-6 right-6 z-20 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-2 group-hover:translate-x-0">
-                    <button className="w-8 h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-red-500 hover:bg-white transition-colors">
-                      <Heart size={16} />
+                  <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 flex flex-col gap-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-0 sm:translate-x-2 sm:group-hover:translate-x-0">
+                    <button className="w-7 h-7 sm:w-8 sm:h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-red-500 hover:bg-white transition-colors">
+                      <Heart size={14} className="sm:w-4 sm:h-4" />
                     </button>
                   </div>
 
                   {/* Image Container - Strictly Uncropped, Centered */}
-                  <div className="relative w-full aspect-[4/5] bg-[#fdfdfc] rounded-2xl overflow-hidden flex items-center justify-center p-6 mb-5 border border-gray-50">
+                  <div className="relative w-full aspect-[4/5] bg-[#fdfdfc] rounded-lg sm:rounded-2xl overflow-hidden flex items-center justify-center p-2 sm:p-6 mb-3 sm:mb-5 border border-gray-50">
                     {discount > 0 && (
-                      <span className="absolute top-3 left-3 bg-luxury-gold text-white px-2.5 py-1 rounded text-[9px] font-bold uppercase tracking-wider shadow-sm z-10">
+                      <span className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-luxury-gold text-white px-1.5 py-0.5 sm:px-2.5 sm:py-1 rounded text-[8px] sm:text-[9px] font-bold uppercase tracking-wider shadow-sm z-10">
                         {discount}% Off
                       </span>
                     )}
@@ -544,11 +544,11 @@ const ProductsPage = () => {
 
                   {/* Product Info */}
                   <div className="flex flex-col flex-grow px-1">
-                    <span className="text-[9px] uppercase font-bold tracking-widest text-luxury-gold mb-1">
+                    <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-widest text-luxury-gold mb-1">
                       {formatName(p.category)}
                     </span>
                     
-                    <h2 className="text-sm font-bold text-luxury-charcoal mb-2 line-clamp-2 leading-tight group-hover:text-luxury-gold transition-colors">
+                    <h2 className="text-xs sm:text-sm font-bold text-luxury-charcoal mb-1.5 sm:mb-2 line-clamp-2 leading-tight group-hover:text-luxury-gold transition-colors">
                       {formatName(p.title || "Untitled Collection")}
                     </h2>
                     
@@ -561,27 +561,27 @@ const ProductsPage = () => {
                     </div>
 
                     {/* Luxury Action Row */}
-                    <div className="mt-auto pt-3 border-t border-gray-50 flex items-center justify-between">
+                    <div className="mt-auto pt-2 sm:pt-3 border-t border-gray-50 flex items-center justify-between">
                       <div>
                         {p.price ? (
-                          <div className="flex items-baseline gap-1.5">
-                            <span className="text-md font-extrabold text-luxury-charcoal">₹{p.price}</span>
+                          <div className="flex flex-wrap items-baseline gap-1 sm:gap-1.5">
+                            <span className="text-sm sm:text-md font-extrabold text-luxury-charcoal">₹{p.price}</span>
                             {p.actualPrice && p.actualPrice > p.price && (
-                              <span className="text-[11px] font-medium text-gray-400 line-through">₹{p.actualPrice}</span>
+                              <span className="text-[9px] sm:text-[11px] font-medium text-gray-400 line-through">₹{p.actualPrice}</span>
                             )}
                           </div>
                         ) : (
-                          <p className="text-xs font-bold text-gray-500">Price on Request</p>
+                          <p className="text-[10px] sm:text-xs font-bold text-gray-500">Price on Request</p>
                         )}
                       </div>
                       
                       {p.price && (
                         <button
                           onClick={(e) => handleAddToCart(e, p)}
-                          className="w-8 h-8 rounded-full bg-luxury-charcoal hover:bg-luxury-gold text-white flex items-center justify-center transition-colors shadow-sm"
+                          className="w-7 h-7 sm:w-8 sm:h-8 shrink-0 rounded-full bg-luxury-charcoal hover:bg-luxury-gold text-white flex items-center justify-center transition-colors shadow-sm"
                           aria-label="Add to cart"
                         >
-                          <ShoppingCart size={13} />
+                          <ShoppingCart size={12} className="sm:w-[13px] sm:h-[13px]" />
                         </button>
                       )}
                     </div>
