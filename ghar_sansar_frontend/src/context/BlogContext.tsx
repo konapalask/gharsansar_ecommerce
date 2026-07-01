@@ -58,42 +58,72 @@ export const BlogProvider: React.FC<BlogProviderProps> = ({ children }) => {
       setLoading(true);
       setError(null);
 
-      console.log("Loading blogs from local JSON mock data");
-      const data = (mockBlogs as any).default || mockBlogs || [];
-
-      // Check if data is flat array or nested structure
       let allBlogs: Blog[] = [];
+      
+      const BACKEND_STATIC_URL = (import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api").replace(/\/api$/, "");
+      const sanitizeImageUrl = (path?: string) => {
+        if (!path) return undefined;
+        // Fix hardcoded localhost or local IPs from backend if present
+        if (path.includes("localhost:") || path.includes("192.168.")) {
+          const urlParts = path.split("/blogs/");
+          if (urlParts.length > 1) {
+            return `${BACKEND_STATIC_URL}/blogs/${urlParts[1]}`;
+          }
+        }
+        if (path.startsWith("http")) return path;
+        return `${BACKEND_STATIC_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+      };
 
-      if (Array.isArray(data)) {
-        if (data.length > 0 && data[0].subcategories) {
-          // Handle nested structure: categories -> subcategories -> images/blogs
-          allBlogs = data.flatMap((cat: any) =>
-            cat.subcategories?.flatMap((sub: any) => {
-              const items = sub.images || sub.blogs || sub.posts || [];
-              return items.map((img: any) => ({
-                id: img.id || img.name,
-                title: img.title || img.name,
-                description: img.description,
-                image: img.image,
-                video: img.video || undefined,
-                videoType: detectVideoType(img.video),
-                price: img.price,
-                features: img.features || [],
-              }));
-            }) || []
-          ) || [];
-        } else {
-          // Handle flat structure: direct array of blog items
-          allBlogs = data.map((item: any) => ({
+      try {
+        const res = await axios.get(API_FETCH);
+        if (res.data && res.data.success && res.data.data) {
+          allBlogs = res.data.data.map((item: any) => ({
             id: item.id || item.name,
             title: item.title || item.name,
             description: item.description,
-            image: item.image,
+            image: sanitizeImageUrl(item.image),
             video: item.video || undefined,
-            videoType: detectVideoType(item.video),
+            videoType: detectVideoType(item.video) || item.videoType,
             price: item.price,
             features: item.features || [],
           }));
+        }
+      } catch (err) {
+        console.warn("Loading blogs from API failed, falling back to local JSON mock data", err);
+        const data = (mockBlogs as any).default || mockBlogs || [];
+
+        // Check if data is flat array or nested structure
+        if (Array.isArray(data)) {
+          if (data.length > 0 && data[0].subcategories) {
+            // Handle nested structure: categories -> subcategories -> images/blogs
+            allBlogs = data.flatMap((cat: any) =>
+              cat.subcategories?.flatMap((sub: any) => {
+                const items = sub.images || sub.blogs || sub.posts || [];
+                return items.map((img: any) => ({
+                  id: img.id || img.name,
+                  title: img.title || img.name,
+                  description: img.description,
+                  image: sanitizeImageUrl(img.image),
+                  video: img.video || undefined,
+                  videoType: detectVideoType(img.video),
+                  price: img.price,
+                  features: img.features || [],
+                }));
+              }) || []
+            ) || [];
+          } else {
+            // Handle flat structure: direct array of blog items
+            allBlogs = data.map((item: any) => ({
+              id: item.id || item.name,
+              title: item.title || item.name,
+              description: item.description,
+              image: sanitizeImageUrl(item.image),
+              video: item.video || undefined,
+              videoType: detectVideoType(item.video),
+              price: item.price,
+              features: item.features || [],
+            }));
+          }
         }
       }
 
