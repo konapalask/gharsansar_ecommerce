@@ -33,7 +33,7 @@ export const useBlogs = () => {
 
 const API_FETCH = import.meta.env.VITE_AWS_API_URL
   ? `${import.meta.env.VITE_AWS_API_URL}/storage/upload/blog`
-  : "https://lx70r6zsef.execute-api.ap-south-1.amazonaws.com/prod/api/storage/upload/blog";
+  : "https://backend.gharsansar.store/api/storage/upload/blog";
 
 interface BlogProviderProps {
   children: ReactNode;
