@@ -1,0 +1,46 @@
+[
+  {
+    "id": "banner-1",
+    "title": "Furniture Offers",
+    "subtitle": "Up to 50% Off on Modern Living Room sets",
+    "gradient": [
+      "#FF9F43",
+      "#FF5252"
+    ],
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=600",
+    "tag": "50% OFF"
+  },
+  {
+    "id": "banner-2",
+    "title": "Kitchen Essentials",
+    "subtitle": "Flat 30% Off on Premium Crockery & Dinnerware",
+    "gradient": [
+      "#48DBFB",
+      "#1DD1A1"
+    ],
+    "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=600",
+    "tag": "Premium"
+  },
+  {
+    "id": "banner-3",
+    "title": "Home Decor",
+    "subtitle": "Transform your space with Handcrafted Rajasthan Idols",
+    "gradient": [
+      "#A55EEA",
+      "#4B7BEC"
+    ],
+    "image": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=600",
+    "tag": "Traditional"
+  },
+  {
+    "id": "banner-4",
+    "title": "Premium Collections",
+    "subtitle": "Curated Bedroom Collections for ultimate comfort",
+    "gradient": [
+      "#FF6B6B",
+      "#EE5253"
+    ],
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=600",
+    "tag": "Trending"
+  }
+]

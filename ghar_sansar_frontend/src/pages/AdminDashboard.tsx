@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { Package, PenBox, Hammer, Mail, Settings, TrendingUp, Users, Clock, BarChart3, Activity, Globe, Server, Database, Zap, AlertCircle, CheckCircle2, TrendingDown, DollarSign, Eye, Share2 } from "lucide-react";
+import { Package, PenBox, Hammer, Mail, Settings, TrendingUp, Users, Clock, BarChart3, Activity, Globe, Server, Database, Zap, AlertCircle, CheckCircle2, TrendingDown, DollarSign, Eye, Share2, Gift } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useProducts } from "../context/ProductContext";
@@ -13,6 +13,7 @@ const stats = [
   { name: "Services", icon: Settings, link: "/admin/services-admin", color: "bg-purple-500", gradient: "from-purple-500 to-purple-600" },
   { name: "Interior Works", icon: Hammer, link: "/admin/interior-works", color: "bg-yellow-500", gradient: "from-yellow-500 to-yellow-600" },
   { name: "Enquiries", icon: Mail, link: "/admin/enquiries", color: "bg-red-500", gradient: "from-red-500 to-red-600" },
+  { name: "Return Gifts", icon: Gift, link: "/admin/return-gifts", color: "bg-pink-500", gradient: "from-pink-500 to-pink-600" },
 ];
 
 const AdminDashboard: React.FC = () => {

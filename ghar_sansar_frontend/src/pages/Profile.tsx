@@ -73,7 +73,7 @@ const Profile: React.FC = () => {
   const [loadingAvatar, setLoadingAvatar] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const API_BASE = import.meta.env.VITE_AWS_API_URL || "http://localhost:5001/api";
+  const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
 
   // Fetch orders on mount
   useEffect(() => {

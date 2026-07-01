@@ -459,7 +459,9 @@ const Home: React.FC = () => {
                           src={product.image}
                           alt={product.title}
                           className="w-full h-full object-contain mix-blend-multiply transition-transform duration-700 ease-out group-hover:scale-110"
-                          loading="lazy"
+                          loading={index < 3 ? "eager" : "lazy"}
+                          // @ts-ignore
+                          fetchPriority={index < 3 ? "high" : "low"}
                         />
                       ) : (
                         <div className="text-gray-300 font-medium">No Image</div>

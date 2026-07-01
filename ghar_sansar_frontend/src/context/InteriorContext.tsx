@@ -28,7 +28,7 @@ export const useInterior = () => {
   return context;
 };
 
-const API_URL = "https://lx70r6zsef.execute-api.ap-south-1.amazonaws.com/prod/api/storage/upload/interior";
+const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
 
 // Sanitize URLs
 const sanitizeUrl = (url?: string) => {
@@ -59,7 +59,7 @@ export const InteriorProvider: React.FC<InteriorProviderProps> = ({ children }) 
     try {
       let responseData = categoriesData;
       try {
-        const res = await axios.get("http://localhost:5001/api/storage/upload/interior");
+        const res = await axios.get(`${API_BASE}/storage/upload/interior`);
         if (res.data && res.data.success && res.data.data) {
           responseData = res.data.data;
         }

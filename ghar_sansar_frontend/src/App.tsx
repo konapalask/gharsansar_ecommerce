@@ -36,12 +36,14 @@ import ProductAdminBulk from "./pages/admin/ProductAdminBulk";
 import InteriorWorksAdmin from "./pages/admin/InteriorWorksAdmin";
 import OrdersAdmin from "./pages/admin/OrdersAdmin";
 import ChatsAdmin from "./pages/admin/ChatsAdmin";
+import ReturnGiftsAdmin from "./pages/admin/ReturnGiftsAdmin";
 
 import ChatBot from "./components/ChatBot/ChatBot";
 
 // ✅ Updated product pages
 import ProductsPage from "./pages/Products";
 import ProductDetail from "./pages/ProductDetail";
+import ReturnGifts from "./pages/ReturnGifts";
 
 export default function App() {
   return (
@@ -63,6 +65,7 @@ export default function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/products" element={<ProductsPage />} />
                         <Route path="/product/:id" element={<ProductDetail />} />
+                        <Route path="/return-gifts" element={<ReturnGifts />} />
                         <Route path="/services" element={<Services />} />
                         <Route path="/blog" element={<Blog />} />
                         <Route path="/blog/:id" element={<BlogPost />} />
@@ -116,6 +119,7 @@ export default function App() {
                           <Route path="interior-works" element={<InteriorWorksAdmin />} />
                           <Route path="orders" element={<OrdersAdmin />} />
                           <Route path="chats" element={<ChatsAdmin />} />
+                          <Route path="return-gifts" element={<ReturnGiftsAdmin />} />
                         </Route>
                       </Routes>
                     </main>

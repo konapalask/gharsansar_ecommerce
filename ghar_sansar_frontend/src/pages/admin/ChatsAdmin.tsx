@@ -19,6 +19,7 @@ interface ChatSession {
 }
 
 const ChatsAdmin: React.FC = () => {
+  const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
   const [sessions, setSessions] = useState<ChatSession[]>([]);
   const [selectedSessionId, setSelectedSessionId] = useState<string | null>(null);
   const [replyText, setReplyText] = useState("");
@@ -29,7 +30,7 @@ const ChatsAdmin: React.FC = () => {
   const fetchChats = async (isSilent = false) => {
     if (!isSilent) setLoading(true);
     try {
-      const res = await axios.get("http://localhost:5001/api/chats");
+      const res = await axios.get(`${API_BASE}/chats`);
       
       // Filter sessions that have >= 5 user messages
       const filtered = res.data.filter((session: ChatSession) => {
@@ -89,7 +90,7 @@ const ChatsAdmin: React.FC = () => {
     setReplyText("");
 
     try {
-      await axios.post("http://localhost:5001/api/chats", {
+      await axios.post(`${API_BASE}/chats`, {
         sessionId: activeSession.sessionId,
         userName: activeSession.userName,
         userEmail: activeSession.userEmail,

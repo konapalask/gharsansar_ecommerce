@@ -1,0 +1,35 @@
+[
+  {
+    "firstName": "Admin",
+    "lastName": "konapala",
+    "email": "gharsansarshop@gmail.com",
+    "phone": "09492664870",
+    "address": "5-162,siva sai sadan",
+    "city": "string:Vijayawada",
+    "state": "Andhra Pradesh",
+    "zipCode": "521108",
+    "country": "India",
+    "notes": "",
+    "lastOrderId": "GS-ORD-176146",
+    "lastOrderDate": "2026-07-01T07:16:16.148Z",
+    "totalOrders": 1,
+    "totalSpent": 687.8199999999999,
+    "savedAt": "2026-07-01T07:16:16.148Z"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "+918888888888",
+    "address": "123 Test Street",
+    "city": "Vijayawada",
+    "state": "Andhra Pradesh",
+    "zipCode": "520001",
+    "country": "India",
+    "lastOrderId": "GS-ORD-817001",
+    "lastOrderDate": "2026-06-18T07:13:37.002Z",
+    "totalOrders": 10,
+    "totalSpent": 29500,
+    "savedAt": "2026-06-18T07:13:37.002Z"
+  }
+]

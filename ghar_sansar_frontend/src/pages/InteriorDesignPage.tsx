@@ -2,11 +2,12 @@ import React, { useState, useMemo, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Search } from "lucide-react";
 import axios from "axios";
+import { motion, AnimatePresence } from "framer-motion";
 import categoriesData from "../data/categories.json";
 
 const itemsPerPage = 12;
 const placeholderImage = "/images/placeholder.jpg";
-const API_URL = "https://lx70r6zsef.execute-api.ap-south-1.amazonaws.com/prod/api/storage/upload/interior";
+const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
 
 interface Subcategory {
   name: string;
@@ -47,6 +48,61 @@ const InteriorDesignPage = () => {
   const [formPropertyName, setFormPropertyName] = useState("");
   const [formWhatsAppUpdates, setFormWhatsAppUpdates] = useState(false);
 
+  const [showMain, setShowMain] = useState(false);
+  const [typedTitle, setTypedTitle] = useState("");
+  const [typedSubtitle, setTypedSubtitle] = useState("");
+  const [typedSub2, setTypedSub2] = useState("");
+  const [showHeader, setShowHeader] = useState(true);
+
+  useEffect(() => {
+    const fullTitle = "Interior Design Solutions";
+    const fullSubtitle = "Browse our industry's finest collections for all your interior design needs.";
+    const fullSub2 = "WE PROVIDE SERVICES IN ANDHRAPRADESH AND TELANGANA";
+    let titleIndex = 0;
+    let subtitleIndex = 0;
+    let sub2Index = 0;
+    
+    const titleInterval = setInterval(() => {
+      if (titleIndex <= fullTitle.length) {
+        setTypedTitle(fullTitle.slice(0, titleIndex));
+        titleIndex++;
+      } else {
+        clearInterval(titleInterval);
+        
+        setTimeout(() => {
+          const subInterval = setInterval(() => {
+            if (subtitleIndex <= fullSubtitle.length) {
+              setTypedSubtitle(fullSubtitle.slice(0, subtitleIndex));
+              subtitleIndex++;
+            } else {
+              clearInterval(subInterval);
+              
+              setTimeout(() => {
+                const sub2Interval = setInterval(() => {
+                  if (sub2Index <= fullSub2.length) {
+                    setTypedSub2(fullSub2.slice(0, sub2Index));
+                    sub2Index++;
+                  } else {
+                    clearInterval(sub2Interval);
+
+                    setTimeout(() => {
+                      setShowHeader(false);
+                      setTimeout(() => {
+                        setShowMain(true);
+                      }, 600);
+                    }, 1500);
+                  }
+                }, 15);
+              }, 200);
+            }
+          }, 15);
+        }, 300);
+      }
+    }, 40);
+
+    return () => clearInterval(titleInterval);
+  }, []);
+
   // Fetch categories from backend on mount
   // useEffect(() => {
   //   const fetchCategories = async () => {
@@ -86,7 +142,7 @@ const InteriorDesignPage = () => {
 
         let data = categoriesData;
         try {
-          const res = await axios.get("http://localhost:5001/api/storage/upload/interior");
+          const res = await axios.get(`${API_BASE}/storage/upload/interior`);
           if (res.data && res.data.success && res.data.data) {
             data = res.data.data;
           }
@@ -285,17 +341,48 @@ Please contact me.`;
   if (!categories.length) return <div className="p-6 text-gray-500">No categories found.</div>;
 
   return (
-    <main className="min-h-screen bg-gray-50 py-10 px-6">
-      {/* HEADER + SEARCH */}
-      <header className="max-w-7xl mx-auto mb-8 text-center">
-        <h1 className="text-3xl font-semibold mb-4">Interior Design Solutions</h1>
-        <p className="text-gray-700 max-w-2xl mx-auto">
-          Browse our industry's finest collections for all your interior design needs.
-        </p>
-        <p className="text-red-600 max-w-6xl mx-auto">
-          WE PROVIDE SERVICES IN ANDHRAPRADESH AND TELANGANA
-        </p>
-        <div className="flex justify-center mt-6 space-x-4 max-w-3xl mx-auto">
+    <main className="bg-[#f8f8f7] min-h-screen font-sans flex flex-col pb-20">
+      
+      <AnimatePresence>
+        {showHeader && (
+          <motion.div
+            initial={{ opacity: 1, minHeight: "100vh" }}
+            exit={{ opacity: 0, minHeight: 0, height: 0, overflow: "hidden" }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="flex items-center justify-center bg-white border-b border-gray-100 relative z-50 w-full"
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-luxury-cream/60 to-transparent"></div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 text-center w-full flex flex-col justify-center items-center">
+              <h1 className="text-4xl md:text-6xl font-serif font-light tracking-wide text-gray-900 mb-6 min-h-[72px] flex justify-center items-center">
+                {typedTitle}
+                <motion.span
+                  animate={{ opacity: [0, 1, 0] }}
+                  transition={{ repeat: Infinity, duration: 0.8 }}
+                  className="inline-block w-[2px] h-10 md:h-14 bg-[#6B21A8] ml-2"
+                />
+              </h1>
+              <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto font-light leading-relaxed tracking-wide min-h-[56px] mb-6">
+                {typedSubtitle}
+              </p>
+              <p className="text-xs md:text-sm font-medium tracking-[0.25em] text-[#6B21A8] uppercase min-h-[24px]">
+                {typedSub2}
+              </p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {showMain && (
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="w-full flex-grow py-10 px-6"
+          >
+            {/* SEARCH */}
+            <header className="max-w-7xl mx-auto mb-8 text-center">
+              <div className="flex justify-center mt-6 space-x-4 max-w-3xl mx-auto">
           <div className="relative flex-grow max-w-md">
             <input
               type="text"
@@ -332,11 +419,20 @@ Please contact me.`;
       {!activeCategory ? (
         <>
           <section className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {paginatedCategories.map((cat) => (
-              <article
+            {paginatedCategories.map((cat, index) => {
+              return (
+              <motion.article
                 key={cat.name}
+                initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ 
+                  duration: 0.8,
+                  ease: [0.22, 1, 0.36, 1],
+                  delay: (index % 12) * 0.08 
+                }}
                 onClick={() => onSelectCategory(cat.name)}
-                className="cursor-pointer rounded-lg shadow-md bg-white overflow-hidden hover:shadow-lg transition"
+                className="cursor-pointer rounded-lg shadow-md bg-white overflow-hidden hover:shadow-xl transition-all duration-500"
               >
                 <img
                   src={cat.image || placeholderImage}
@@ -348,8 +444,9 @@ Please contact me.`;
                   <p className="mt-2 text-sm text-gray-600">{cat.features?.join(", ")}</p>
                   <p className="mt-1 text-gray-600">{cat.subcategories.length} Designs</p>
                 </div>
-              </article>
-            ))}
+              </motion.article>
+              );
+            })}
           </section>
 
           {/* Pagination */}
@@ -408,10 +505,19 @@ Please contact me.`;
             {/* Subcategories Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
               {paginatedSubCategories.length > 0 ? (
-                paginatedSubCategories.map((sub, idx) => (
-                  <div
+                paginatedSubCategories.map((sub, idx) => {
+                  return (
+                  <motion.div
                     key={sub.name + idx}
-                    className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+                    initial={{ opacity: 0, y: 40, filter: "blur(8px)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                    viewport={{ once: true, margin: "-50px" }}
+                    transition={{ 
+                      duration: 0.8,
+                      ease: [0.22, 1, 0.36, 1],
+                      delay: (idx % 12) * 0.08 
+                    }}
+                    className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-500 overflow-hidden flex flex-col"
                   >
                     {sub.video ? (
                       <video
@@ -439,8 +545,9 @@ Please contact me.`;
                     >
                       Book an Enquiry
                     </button>
-                  </div>
-                ))
+                  </motion.div>
+                  );
+                })
               ) : (
                 <p className="text-center w-full py-14 text-gray-500">
                   {search ? `No designs found matching "${search}"` : "No designs available."}
@@ -609,6 +716,9 @@ Please contact me.`;
           </div>
         </div>
       )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 };

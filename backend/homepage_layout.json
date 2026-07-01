@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {"id": "hero", "name": "Hero Section", "visible": true, "order": 1},
+    {"id": "categories", "name": "Shop By Collection", "visible": true, "order": 2},
+    {"id": "featured", "name": "Featured Products", "visible": true, "order": 3},
+    {"id": "bestsellers", "name": "Best Sellers", "visible": true, "order": 4},
+    {"id": "newarrivals", "name": "New Arrivals", "visible": true, "order": 5},
+    {"id": "rooms", "name": "Shop By Room", "visible": true, "order": 6},
+    {"id": "premium", "name": "Premium Collections", "visible": true, "order": 7},
+    {"id": "design", "name": "Interior Design", "visible": true, "order": 8},
+    {"id": "stats", "name": "Why Ghar Sansar", "visible": true, "order": 9}
+  ]
+}

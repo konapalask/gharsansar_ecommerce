@@ -271,7 +271,7 @@ const ProductDetail: React.FC = () => {
         <h2 className="text-2xl font-bold text-gray-900 mb-2">Product Not Found</h2>
         <p className="text-gray-500 max-w-sm mb-6">The product you are looking for does not exist or has been removed.</p>
         <button
-          onClick={() => navigate("/products")}
+          onClick={() => navigate(state?.isReturnGift ? "/return-gifts" : "/products")}
           className="flex items-center gap-2 px-6 py-3 bg-luxury-charcoal text-white font-bold uppercase tracking-widest text-xs rounded-full hover:bg-luxury-gold transition shadow-md"
         >
           <ArrowLeft size={18} /> Back to Catalog
@@ -292,7 +292,7 @@ const ProductDetail: React.FC = () => {
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-gray-100 p-4 z-40 flex items-center justify-between shadow-2xl">
         <div>
           <span className="text-xs text-gray-400 block font-medium">Total Price</span>
-          <span className="text-xl font-extrabold text-gray-900">₹{product.price * quantity}</span>
+          <span className="text-xl font-extrabold text-gray-900">₹{(product.price * quantity) + 99}</span>
         </div>
         <div className="flex gap-2">
           <button 
@@ -316,9 +316,13 @@ const ProductDetail: React.FC = () => {
         <nav className="flex items-center space-x-2 text-xs text-gray-400 mb-8 font-medium">
           <span className="cursor-pointer hover:text-gray-900 transition" onClick={() => navigate("/")}>Home</span>
           <span>/</span>
-          <span className="cursor-pointer hover:text-gray-900 transition" onClick={() => navigate("/products")}>Shop</span>
+          <span className="cursor-pointer hover:text-gray-900 transition" onClick={() => navigate(state?.isReturnGift ? "/return-gifts" : "/products")}>
+            {state?.isReturnGift ? "Return Gifts" : "Shop"}
+          </span>
           <span>/</span>
-          <span className="cursor-pointer hover:text-gray-900 transition" onClick={() => navigate(`/products?category=${product.category}`)}>{product.category}</span>
+          <span className="cursor-pointer hover:text-gray-900 transition" onClick={() => navigate(state?.isReturnGift ? `/return-gifts?category=${product.category}` : `/products?category=${product.category}`)}>
+            {product.category}
+          </span>
           <span>/</span>
           <span className="text-gray-900 font-semibold truncate max-w-[200px]">{product.title}</span>
         </nav>
@@ -339,6 +343,9 @@ const ProductDetail: React.FC = () => {
               <img
                 src={productImages[activeImageIndex]?.url || product.image}
                 alt={product.title}
+                loading="eager"
+                // @ts-ignore
+                fetchPriority="high"
                 className={`max-w-full max-h-full transition-transform duration-200 ${productImages[activeImageIndex]?.transformClass || "object-contain"}`}
                 style={isZooming ? {
                   transformOrigin: `${zoomPos.x}% ${zoomPos.y}%`,
@@ -412,17 +419,30 @@ const ProductDetail: React.FC = () => {
               </div>
 
               {/* Pricing Section */}
-              <div className="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm space-y-4">
-                <div className="flex items-baseline gap-3">
-                  <span className="text-4xl font-black text-gray-900">₹{product.price}</span>
-                  {product.actualPrice && product.actualPrice > product.price && (
-                    <>
-                      <span className="text-lg text-gray-400 line-through">₹{product.actualPrice}</span>
-                      <span className="text-xs font-bold text-luxury-gold bg-luxury-cream px-2 py-0.5 rounded-lg border border-luxury-gold/20">
-                        -{discountPercentage}% Off
-                      </span>
-                    </>
-                  )}
+              <div className="p-6 bg-white rounded-3xl border border-gray-100 shadow-sm space-y-3">
+                {product.actualPrice && product.actualPrice > product.price && (
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">MRP</span>
+                    <span className="text-sm text-gray-400 line-through">₹{product.actualPrice}</span>
+                    <span className="text-[10px] font-bold text-luxury-gold bg-luxury-cream px-2 py-0.5 rounded-lg border border-luxury-gold/20 ml-1">
+                      SAVE {discountPercentage}%
+                    </span>
+                  </div>
+                )}
+                
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-widest w-16">Price</span>
+                  <span className="text-xl font-bold text-gray-800">₹{product.price}</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-widest w-16">Delivery</span>
+                  <span className="text-sm font-bold text-green-600">+ ₹99 <span className="text-xs font-medium text-gray-400 ml-1">(Standard)</span></span>
+                </div>
+
+                <div className="pt-3 border-t border-gray-100 flex items-center gap-3">
+                  <span className="text-sm font-black text-gray-900 uppercase tracking-widest w-16">Total</span>
+                  <span className="text-4xl font-black text-luxury-charcoal">₹{product.price + 99}</span>
                 </div>
 
                 {/* Delivery details card */}
@@ -889,7 +909,7 @@ const ProductDetail: React.FC = () => {
         href="https://wa.me/918121135980"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-24 right-6 bg-green-600 hover:bg-green-700 text-white p-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center group"
+        className="fixed bottom-40 md:bottom-24 right-6 bg-green-600 hover:bg-green-700 text-white p-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 z-50 flex items-center justify-center group"
       >
         <MessageCircle className="w-6 h-6" />
         <span className="absolute right-full mr-2 bg-white text-gray-800 text-xs font-bold px-3 py-1.5 rounded-xl opacity-0 group-hover:opacity-100 transition whitespace-nowrap shadow-lg border border-gray-100">

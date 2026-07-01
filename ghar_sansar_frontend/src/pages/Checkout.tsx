@@ -18,7 +18,7 @@ const Checkout: React.FC = () => {
 
   const API_BASE =
     import.meta.env.VITE_AWS_API_URL ||
-    "http://localhost:5001/api";
+    "https://backend.gharsansar.store/api";
   
   // Dummy Gateway States
   const [showDummyGateway, setShowDummyGateway] = useState(false);
@@ -137,6 +137,19 @@ const Checkout: React.FC = () => {
     }
   }, [user]);
 
+  const calculatedShippingFee = useMemo(() => {
+    if (!serviceability.checked) {
+      return 99;
+    }
+    if (serviceability.serviceable) {
+      return 99;
+    }
+    return 149;
+  }, [serviceability]);
+
+  const tax = totalPrice * 0.18; // 18% GST
+  const grandTotal = totalPrice + calculatedShippingFee + tax;
+
   if (items.length === 0 && !orderComplete) {
     return <Navigate to="/cart" replace />;
   }
@@ -253,18 +266,6 @@ const Checkout: React.FC = () => {
     );
   }
 
-  const calculatedShippingFee = useMemo(() => {
-    if (!serviceability.checked) {
-      return 99;
-    }
-    if (serviceability.serviceable) {
-      return 99;
-    }
-    return 149;
-  }, [serviceability]);
-
-  const tax = totalPrice * 0.18; // 18% GST
-  const grandTotal = totalPrice + calculatedShippingFee + tax;
 
   return (
     <div className="min-h-screen bg-[#f8f8f7] font-sans pb-20">

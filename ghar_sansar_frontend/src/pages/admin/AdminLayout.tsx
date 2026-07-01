@@ -1,5 +1,5 @@
 import { Outlet, Link, useNavigate, useLocation } from "react-router-dom";
-import { LayoutDashboard, Package, Settings, PenBox, Hammer, Mail, LogOut, User, Home, MessageSquare } from "lucide-react";
+import { LayoutDashboard, Package, Settings, PenBox, Hammer, Mail, LogOut, User, Home, MessageSquare, Gift } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
 
 export default function AdminLayout() {
@@ -106,6 +106,16 @@ export default function AdminLayout() {
               }`}
             >
               <MessageSquare size={20} /> <span className="font-semibold">Customer Chats</span>
+            </Link>
+            <Link
+              to="/admin/return-gifts"
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
+                isActive("/admin/return-gifts")
+                  ? "bg-blue-600 text-white shadow-lg"
+                  : "hover:bg-gray-700 text-gray-300"
+              }`}
+            >
+              <Gift size={20} /> <span className="font-semibold">Return Gifts</span>
             </Link>
           </nav>
         </div>

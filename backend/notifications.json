@@ -1,0 +1,16 @@
+[
+  {
+    "id": "GS-NOTIF-176150",
+    "type": "new_order",
+    "title": "New Order Placed",
+    "message": "Order GS90176146 for ₹687.82 placed by Admin konapala",
+    "timestamp": "2026-07-01T07:16:16.150Z",
+    "read": false,
+    "metadata": {
+      "orderId": "GS-ORD-176146",
+      "orderNumber": "GS90176146",
+      "customerName": "Admin konapala",
+      "total": 687.8199999999999
+    }
+  }
+]

@@ -33,7 +33,7 @@ const fixImageUrl = (url: string | File) => {
 const ProductsAdmin: React.FC = () => {
   const API_BASE =
     import.meta.env.VITE_AWS_API_URL ||
-    "http://localhost:5001/api";
+    "https://backend.gharsansar.store/api";
 
   const [products, setProducts] = useState<Product[]>([]);
   const [categoriesData, setCategoriesData] = useState<Category[]>([]);

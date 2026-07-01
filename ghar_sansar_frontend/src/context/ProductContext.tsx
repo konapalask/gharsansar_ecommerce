@@ -49,7 +49,7 @@ export const ProductProvider: React.FC<{ children: ReactNode }> = ({ children })
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const BACKEND_URL = "http://localhost:5001/api";
+  const BACKEND_URL = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
   const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://lx70r6zsef.execute-api.ap-south-1.amazonaws.com/prod/api";
 
   // Fetch all products from backend

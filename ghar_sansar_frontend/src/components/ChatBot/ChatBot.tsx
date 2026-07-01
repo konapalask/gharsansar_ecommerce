@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 
 interface Message {
@@ -15,6 +15,9 @@ interface Message {
 const ChatBot: React.FC = () => {
   const { user, isAuthenticated } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const isProductDetailPage = location.pathname.startsWith("/product/");
+  const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -61,7 +64,7 @@ const ChatBot: React.FC = () => {
     const userMsgsCount = currentMessages.filter((m) => m.sender === "user").length;
     if (userMsgsCount >= 5) {
       try {
-        await axios.post("http://localhost:5001/api/chats", {
+        await axios.post(`${API_BASE}/chats`, {
           sessionId,
           userName: user?.name || (isAuthenticated ? user?.email.split("@")[0] : "Guest"),
           userEmail: user?.email || "guest@example.com",
@@ -85,7 +88,7 @@ const ChatBot: React.FC = () => {
 
     const interval = setInterval(async () => {
       try {
-        const res = await axios.get("http://localhost:5001/api/chats");
+        const res = await axios.get(`${API_BASE}/chats`);
         const activeChat = res.data.find((c: any) => c.sessionId === sessionId);
         if (activeChat && activeChat.messages) {
           const fetchedMessages = activeChat.messages.map((m: any) => ({
@@ -239,7 +242,9 @@ For details, feel free to reach out to us anytime!
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors flex items-center justify-center ${
+        className={`fixed right-6 z-50 w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors flex items-center justify-center ${
+          isProductDetailPage ? "bottom-24" : "bottom-6"
+        } ${
           isOpen ? "hidden" : "flex"
         }`}
       >

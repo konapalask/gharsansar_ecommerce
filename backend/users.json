@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "id": "admin_01",
+    "name": "Admin",
+    "email": "gharsansarshop@gmail.com",
+    "role": "admin",
+    "createdAt": "2026-06-17T12:40:15.983Z",
+    "profilePicture": "http://localhost:5001/profile_pictures/profile_1781700015949.png"
+  }
+]

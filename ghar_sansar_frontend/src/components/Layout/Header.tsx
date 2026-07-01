@@ -217,6 +217,10 @@ const Header: React.FC = () => {
               Products
               <span className={`absolute bottom-0 left-0 h-[1.5px] bg-luxury-gold transition-all duration-300 ${isActive('/products') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
             </Link>
+            <Link to="/return-gifts" className={`relative py-2 transition-all duration-300 group ${isActive('/return-gifts') ? 'text-luxury-charcoal font-black' : 'hover:text-luxury-charcoal'}`}>
+              Return Gifts
+              <span className={`absolute bottom-0 left-0 h-[1.5px] bg-luxury-gold transition-all duration-300 ${isActive('/return-gifts') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+            </Link>
             <Link to="/services" className={`relative py-2 transition-all duration-300 group ${isActive('/services') ? 'text-luxury-charcoal font-black' : 'hover:text-luxury-charcoal'}`}>
               Services
               <span className={`absolute bottom-0 left-0 h-[1.5px] bg-luxury-gold transition-all duration-300 ${isActive('/services') ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
@@ -416,6 +420,7 @@ const Header: React.FC = () => {
                     { path: "/", label: "Home" },
                     { path: "/interior-design", label: "Interior Design" },
                     { path: "/products", label: "Products" },
+                    { path: "/return-gifts", label: "Return Gifts" },
                     { path: "/services", label: "Services" },
                     { path: "/blog", label: "Blog" }
                   ].map((link, idx) => (

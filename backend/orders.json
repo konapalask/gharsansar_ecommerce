@@ -1,5 +1,404 @@
 [
   {
+    "id": "GS-ORD-176146",
+    "orderNumber": "GS90176146",
+    "userId": "admin_01",
+    "timestamp": "2026-07-01T07:16:16.146Z",
+    "customer": {
+      "firstName": "Admin",
+      "lastName": "konapala",
+      "email": "gharsansarshop@gmail.com",
+      "phone": "09492664870",
+      "address": "5-162,siva sai sadan",
+      "city": "string:Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "521108",
+      "country": "India",
+      "notes": ""
+    },
+    "items": [
+      {
+        "id": "garden_1782900000000_4",
+        "name": "Falcon Premium Heavy Duty Agricultural Carbon Steel Bill Hook Machete",
+        "price": 499,
+        "quantity": 1,
+        "image": "http://localhost:5001/products/Garden tools and compost/Falcon Premium Heavy Duty Agricultural Carbon Steel Bill Hook Machete.png"
+      }
+    ],
+    "subtotal": 499,
+    "shipping": 99,
+    "tax": 89.82,
+    "total": 687.8199999999999,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_176137",
+    "paymentMethod": "razorpay_dummy",
+    "createdAt": "2026-07-01T07:16:16.146Z",
+    "updatedAt": "2026-07-01T07:16:16.146Z"
+  },
+  {
+    "id": "GS-ORD-817001",
+    "orderNumber": "GS66817001",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T07:13:37.001Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "shipped",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_817001",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T07:13:37.001Z",
+    "updatedAt": "2026-06-18T07:45:06.754Z",
+    "shipped": true,
+    "shippedAt": "2026-06-18T07:45:06.754Z"
+  },
+  {
+    "id": "GS-ORD-677852",
+    "orderNumber": "GS66677852",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T07:11:17.852Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_677852",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T07:11:17.852Z",
+    "updatedAt": "2026-06-18T07:11:17.852Z"
+  },
+  {
+    "id": "GS-ORD-297744",
+    "orderNumber": "GS66297744",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T07:04:57.744Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_297744",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T07:04:57.744Z",
+    "updatedAt": "2026-06-18T07:04:57.744Z"
+  },
+  {
+    "id": "GS-ORD-172814",
+    "orderNumber": "GS66172814",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T07:02:52.814Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_172814",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T07:02:52.814Z",
+    "updatedAt": "2026-06-18T07:02:52.814Z"
+  },
+  {
+    "id": "GS-ORD-093008",
+    "orderNumber": "GS66093008",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T07:01:33.008Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_093008",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T07:01:33.008Z",
+    "updatedAt": "2026-06-18T07:01:33.008Z"
+  },
+  {
+    "id": "GS-ORD-577945",
+    "orderNumber": "GS65577945",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T06:52:57.945Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_577945",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T06:52:57.945Z",
+    "updatedAt": "2026-06-18T06:52:57.945Z"
+  },
+  {
+    "id": "GS-ORD-488538",
+    "orderNumber": "GS65488538",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T06:51:28.538Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_488538",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T06:51:28.538Z",
+    "updatedAt": "2026-06-18T06:51:28.538Z"
+  },
+  {
+    "id": "GS-ORD-351349",
+    "orderNumber": "GS65351349",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T06:49:11.349Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_351349",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T06:49:11.349Z",
+    "updatedAt": "2026-06-18T06:49:11.349Z"
+  },
+  {
+    "id": "GS-ORD-078463",
+    "orderNumber": "GS62078463",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T05:54:38.463Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_078463",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T05:54:38.463Z",
+    "updatedAt": "2026-06-18T05:54:38.463Z"
+  },
+  {
+    "id": "GS-ORD-957716",
+    "orderNumber": "GS61957716",
+    "userId": "test_user_123",
+    "timestamp": "2026-06-18T05:52:37.716Z",
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "status": "processing",
+    "paymentStatus": "paid",
+    "paymentId": "pay_sim_957747",
+    "paymentMethod": "razorpay",
+    "createdAt": "2026-06-18T05:52:37.747Z",
+    "updatedAt": "2026-06-18T05:52:37.747Z"
+  },
+  {
     "id": "ord_1781074957255",
     "orderNumber": "GS-VIDVAT-946498",
     "userId": "admin_01",
@@ -255,5 +654,37 @@
     "trackingNumber": "473288323516",
     "shippedAt": "2026-06-05T11:44:12.773Z",
     "updatedAt": "2026-06-05T11:44:12.773Z"
+  },
+  {
+    "id": "ord_1781761850460",
+    "orderNumber": "GS-384573",
+    "userId": "test_user_123",
+    "items": [
+      {
+        "id": "test_product_1",
+        "name": "Premium Aquascape Aquarium",
+        "price": 2500,
+        "quantity": 1,
+        "image": "/products/aquarium/aquascape.jpg"
+      }
+    ],
+    "subtotal": 2500,
+    "shipping": 0,
+    "tax": 450,
+    "total": 2950,
+    "customer": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phone": "+918888888888",
+      "address": "123 Test Street",
+      "city": "Vijayawada",
+      "state": "Andhra Pradesh",
+      "zipCode": "520001",
+      "country": "India"
+    },
+    "status": "processing",
+    "paymentStatus": "paid",
+    "createdAt": "2026-06-18T05:50:50.460Z"
   }
 ]
