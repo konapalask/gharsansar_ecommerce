@@ -473,7 +473,7 @@ const ProductsPage = () => {
 
         {/* Products Grid */}
         {loading ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
             {[...Array(9)].map((_, i) => (
               <div key={i} className="animate-pulse bg-white rounded-[20px] p-4 h-[400px]">
                 <div className="bg-gray-100 rounded-2xl h-[240px] mb-4"></div>
@@ -492,7 +492,7 @@ const ProductsPage = () => {
           <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8"
+            className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8"
           >
             {currentProducts.map((p, index) => {
               const discount = p.actualPrice && p.price ? Math.round(((p.actualPrice - p.price) / p.actualPrice) * 100) : 0;

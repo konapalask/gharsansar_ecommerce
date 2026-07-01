@@ -277,7 +277,7 @@ export default function ReturnGifts() {
                         transition={{ duration: 0.2 }}
                         className="absolute inset-0 z-10 bg-[#f8f8f7]"
                       >
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                           {[1, 2, 3, 4, 5, 6, 7, 8].map(i => (
                             <div key={i} className="aspect-[4/5] relative rounded-[20px] overflow-hidden bg-white border border-gray-100">
                               <div className="absolute inset-0 bg-gradient-to-r from-gray-100 via-gray-50 to-gray-100 skeleton-shimmer" />
@@ -309,7 +309,7 @@ export default function ReturnGifts() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.4 }}
-                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10"
+                        className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-6 sm:gap-x-6 sm:gap-y-10"
                       >
                         {products.map((product: any, idx: number) => (
                           <motion.div 

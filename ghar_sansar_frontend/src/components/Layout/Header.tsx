@@ -384,135 +384,135 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Drawer Menu */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <>
-              {/* Backdrop */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                onClick={() => setMenuOpen(false)}
-                className="fixed inset-0 bg-black/20 backdrop-blur-xs z-40 md:hidden"
-              />
-              
-              {/* Drawer */}
-              <motion.div
-                initial={{ x: "100%" }}
-                animate={{ x: 0 }}
-                exit={{ x: "100%" }}
-                transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                className="fixed right-0 top-0 bottom-0 w-72 bg-white/95 backdrop-blur-md shadow-2xl border-l border-gray-100 z-50 p-6 flex flex-col md:hidden"
-              >
-                <div className="flex items-center justify-between mb-8">
-                  <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Navigation</span>
-                  <button
-                    onClick={() => setMenuOpen(false)}
-                    className="p-1.5 hover:bg-gray-100 rounded-full text-gray-500 hover:text-gray-900 transition-colors"
-                  >
-                    <X size={18} />
-                  </button>
-                </div>
+      </header>
+      {/* Mobile Drawer Menu */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setMenuOpen(false)}
+              className="fixed inset-0 bg-black/20 backdrop-blur-xs z-50 md:hidden"
+            />
+            
+            {/* Drawer */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed right-0 top-0 bottom-0 w-72 bg-white backdrop-blur-md shadow-2xl border-l border-gray-100 z-50 p-6 flex flex-col md:hidden"
+            >
+              <div className="flex items-center justify-between mb-8">
+                <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Navigation</span>
+                <button
+                  onClick={() => setMenuOpen(false)}
+                  className="p-1.5 hover:bg-gray-100 rounded-full text-gray-500 hover:text-gray-900 transition-colors"
+                >
+                  <X size={18} />
+                </button>
+              </div>
 
-                <nav className="flex flex-col space-y-4">
-                  {[
-                    { path: "/", label: "Home" },
-                    { path: "/interior-design", label: "Interior Design" },
-                    { path: "/products", label: "Products" },
-                    { path: "/return-gifts", label: "Return Gifts" },
-                    { path: "/services", label: "Services" },
-                    { path: "/blog", label: "Blog" }
-                  ].map((link, idx) => (
-                    <motion.div
-                      key={link.path}
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: idx * 0.05 }}
+              <nav className="flex flex-col space-y-4">
+                {[
+                  { path: "/", label: "Home" },
+                  { path: "/interior-design", label: "Interior Design" },
+                  { path: "/products", label: "Products" },
+                  { path: "/return-gifts", label: "Return Gifts" },
+                  { path: "/services", label: "Services" },
+                  { path: "/blog", label: "Blog" }
+                ].map((link, idx) => (
+                  <motion.div
+                    key={link.path}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: idx * 0.05 }}
+                  >
+                    <Link
+                      to={link.path}
+                      onClick={() => setMenuOpen(false)}
+                      className={`block py-2 text-base font-bold transition-colors ${
+                        isActive(link.path) ? "text-gray-950" : "text-gray-500 hover:text-gray-950"
+                      }`}
                     >
-                      <Link
-                        to={link.path}
-                        onClick={() => setMenuOpen(false)}
-                        className={`block py-2 text-base font-bold transition-colors ${
-                          isActive(link.path) ? "text-gray-950" : "text-gray-500 hover:text-gray-950"
-                        }`}
-                      >
-                        {link.label}
-                      </Link>
-                    </motion.div>
-                  ))}
-                  
-                  <hr className="my-2 border-gray-100" />
-                  
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
+                
+                <hr className="my-2 border-gray-100" />
+                
+                <motion.div
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <Link
+                    to="/cart"
+                    onClick={() => setMenuOpen(false)}
+                    className="flex items-center justify-between py-2 text-base font-bold text-gray-500 hover:text-gray-950"
+                  >
+                    <span className="flex items-center gap-2">
+                      <ShoppingCart size={18} />
+                      Cart
+                    </span>
+                    {totalItems > 0 && (
+                      <span className="bg-gray-900 text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                        {totalItems}
+                      </span>
+                    )}
+                  </Link>
+                </motion.div>
+
+                {user ? (
                   <motion.div
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 }}
+                    transition={{ delay: 0.35 }}
+                    className="pt-2"
                   >
                     <Link
-                      to="/cart"
+                      to="/profile"
                       onClick={() => setMenuOpen(false)}
-                      className="flex items-center justify-between py-2 text-base font-bold text-gray-500 hover:text-gray-950"
+                      className="block py-2 text-base font-bold text-gray-500 hover:text-gray-900 mb-4"
                     >
-                      <span className="flex items-center gap-2">
-                        <ShoppingCart size={18} />
-                        Cart
-                      </span>
-                      {totalItems > 0 && (
-                        <span className="bg-gray-900 text-white text-xs font-bold px-2 py-0.5 rounded-full">
-                          {totalItems}
-                        </span>
-                      )}
+                      Profile
+                    </Link>
+                    <button
+                      onClick={() => {
+                        handleLogout();
+                        setMenuOpen(false);
+                      }}
+                      className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-red-50 hover:bg-red-100 text-red-650 rounded-xl text-sm font-bold transition-colors"
+                    >
+                      <LogOut size={16} />
+                      Logout
+                    </button>
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.35 }}
+                    className="pt-4"
+                  >
+                    <Link
+                      to="/login"
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center justify-center py-2.5 px-4 bg-gray-950 hover:bg-gray-800 text-white rounded-full text-sm font-bold transition-all shadow-sm"
+                    >
+                      Login
                     </Link>
                   </motion.div>
-
-                  {user ? (
-                    <motion.div
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.35 }}
-                      className="pt-2"
-                    >
-                      <Link
-                        to="/profile"
-                        onClick={() => setMenuOpen(false)}
-                        className="block py-2 text-base font-bold text-gray-500 hover:text-gray-900 mb-4"
-                      >
-                        Profile
-                      </Link>
-                      <button
-                        onClick={() => {
-                          handleLogout();
-                          setMenuOpen(false);
-                        }}
-                        className="w-full flex items-center justify-center gap-2 py-2.5 px-4 bg-red-50 hover:bg-red-100 text-red-650 rounded-xl text-sm font-bold transition-colors"
-                      >
-                        <LogOut size={16} />
-                        Logout
-                      </button>
-                    </motion.div>
-                  ) : (
-                    <motion.div
-                      initial={{ opacity: 0, x: 20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: 0.35 }}
-                      className="pt-4"
-                    >
-                      <Link
-                        to="/login"
-                        onClick={() => setMenuOpen(false)}
-                        className="flex items-center justify-center py-2.5 px-4 bg-gray-950 hover:bg-gray-800 text-white rounded-full text-sm font-bold transition-all shadow-sm"
-                      >
-                        Login
-                      </Link>
-                    </motion.div>
-                  )}
-                </nav>
-              </motion.div>
-            </>
-          )}
-        </AnimatePresence>
-      </header>
+                )}
+              </nav>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
 };
