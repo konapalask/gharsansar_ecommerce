@@ -6,7 +6,7 @@ export default function HomepageBuilderAdmin() {
   const [sections, setSections] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const API_BASE = import.meta.env.VITE_AWS_API_URL || "http://localhost:5001/api";
+  const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
 
   useEffect(() => {
     fetch(`${API_BASE}/cms/homepage_layout`)

@@ -45,7 +45,7 @@ export default function ReturnGifts() {
 
   // React Query Fetcher
   const fetchProducts = async () => {
-    const API_BASE = import.meta.env.VITE_AWS_API_URL || "http://localhost:5001/api";
+    const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://backend.gharsansar.store/api";
     // Build query string
     const params = new URLSearchParams();
     if (q) params.append('q', q);
