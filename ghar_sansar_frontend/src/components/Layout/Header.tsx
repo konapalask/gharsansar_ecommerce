@@ -395,7 +395,7 @@ const Header: React.FC = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setMenuOpen(false)}
-              className="fixed inset-0 bg-black/20 backdrop-blur-xs z-50 md:hidden"
+              className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[998] md:hidden"
             />
             
             {/* Drawer */}
@@ -404,7 +404,7 @@ const Header: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed right-0 top-0 bottom-0 w-72 bg-white backdrop-blur-md shadow-2xl border-l border-gray-100 z-50 p-6 flex flex-col md:hidden"
+              className="fixed right-0 top-0 bottom-0 w-[80%] max-w-sm bg-white shadow-2xl border-l border-gray-100 z-[999] p-6 flex flex-col md:hidden"
             >
               <div className="flex items-center justify-between mb-8">
                 <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Navigation</span>
