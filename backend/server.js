@@ -284,7 +284,7 @@ const enrichProductData = (item, idx) => {
       title: item.name,
       description: item.description || `Premium ${item.name} by Cello — available at Ghar Sansar showroom.`,
       price: item.price || 499,
-      actualPrice: item["act-price"] || item.price || 499
+      actualPrice: (item.price && !item["act-price"]) ? getRealisticActualPrice(item.price, item.name) : (item["act-price"] || item.price || 499)
     };
   }
 
@@ -296,8 +296,8 @@ const enrichProductData = (item, idx) => {
       name: bottle.title,
       title: bottle.title,
       description: bottle.description,
-      price: bottle.price,
-      actualPrice: bottle.actualPrice
+      price: item.price || bottle.price,
+      actualPrice: (item.price && !item["act-price"]) ? getRealisticActualPrice(item.price, bottle.title) : (item["act-price"] || bottle.actualPrice)
     };
   }
 
