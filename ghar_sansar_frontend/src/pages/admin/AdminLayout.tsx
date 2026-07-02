@@ -1,11 +1,13 @@
+import React, { useState } from "react";
 import { Outlet, Link, useNavigate, useLocation } from "react-router-dom";
-import { LayoutDashboard, Package, Settings, PenBox, Hammer, Mail, LogOut, User, Home, MessageSquare, Gift } from "lucide-react";
+import { LayoutDashboard, Package, Settings, PenBox, Hammer, Mail, LogOut, User, Home, MessageSquare, Gift, Menu, X } from "lucide-react";
 import { useAuth } from "../../context/AuthContext";
 
 export default function AdminLayout() {
   const { logout, user } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -15,11 +17,26 @@ export default function AdminLayout() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <div className="flex min-h-screen flex-col sm:flex-row bg-gray-50">
+    <div className="flex min-h-screen flex-col sm:flex-row bg-gray-50 relative">
+      {/* Mobile Top Bar */}
+      <div className="sm:hidden flex items-center justify-between bg-gray-900 text-white p-4 sticky top-0 z-40 shadow-md">
+        <div className="flex items-center gap-2">
+          <LayoutDashboard className="w-5 h-5 text-blue-500" />
+          <h2 className="text-lg font-bold">Admin Panel</h2>
+        </div>
+        <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 bg-gray-800 rounded hover:bg-gray-700 transition">
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
       {/* Sidebar */}
-      <aside className="w-full sm:w-64 bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col shadow-2xl">
-        {/* Logo/Brand */}
-        <div className="p-6 border-b border-gray-700">
+      <aside 
+        className={`${
+          isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        } sm:translate-x-0 fixed sm:sticky top-[68px] sm:top-0 left-0 w-full sm:w-64 h-[calc(100vh-68px)] sm:h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white flex flex-col shadow-2xl z-30 transition-transform duration-300`}
+      >
+        {/* Logo/Brand (Desktop only) */}
+        <div className="hidden sm:block p-6 border-b border-gray-700">
           <div className="flex items-center gap-3 mb-4">
             <div className="p-2 bg-blue-600 rounded-lg">
               <LayoutDashboard className="w-6 h-6" />
@@ -35,8 +52,8 @@ export default function AdminLayout() {
         </div>
 
         {/* Navigation */}
-        <div className="flex-1 p-4 overflow-y-auto">
-          <nav className="space-y-2">
+        <div className="flex-1 p-4 overflow-y-auto custom-scrollbar">
+          <nav className="space-y-2" onClick={() => setIsMobileMenuOpen(false)}>
             <Link
               to="/admin"
               className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
