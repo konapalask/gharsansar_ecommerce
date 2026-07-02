@@ -121,6 +121,29 @@ const getPricesForProduct = (title) => {
   return { price, actualPrice };
 };
 
+// Generate realistic actual price markup if none is specified
+const getRealisticActualPrice = (price, title) => {
+  if (!price) return 0;
+  let hash = 0;
+  const str = title || "default";
+  for (let i = 0; i < str.length; i++) {
+    hash = str.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  hash = Math.abs(hash);
+
+  let markup = 0;
+  if (price > 5000) {
+    markup = 1000 + (hash % 1001); // 1000 to 2000 markup
+  } else if (price >= 1000 && price <= 5000) {
+    markup = 500; // Flat 500 markup
+  } else if (price >= 100 && price < 1000) {
+    markup = 200 + (hash % 301); // 200 to 500 markup
+  } else {
+    markup = 50 + (hash % 51); // 50 to 100 markup
+  }
+  return price + markup;
+};
+
 // Luxury product name and description generator
 const generateLuxuryProduct = (filename, index) => {
   let hash = 0;
@@ -290,7 +313,7 @@ const enrichProductData = (item, idx) => {
     title: finalTitle,
     description: item.description && !item.description.includes("Placeholder description") ? item.description : luxury.description,
     price: item.price || pricing.price,
-    actualPrice: (item.price && !item["act-price"]) ? 0 : (item["act-price"] || pricing.actualPrice)
+    actualPrice: (item.price && !item["act-price"]) ? getRealisticActualPrice(item.price, finalTitle) : (item["act-price"] || pricing.actualPrice)
   };
 };
 
