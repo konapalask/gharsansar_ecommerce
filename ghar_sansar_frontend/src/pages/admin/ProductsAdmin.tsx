@@ -27,7 +27,11 @@ interface Category {
 const fixImageUrl = (url: string | File) => {
   if (!url) return "";
   if (url instanceof File) return URL.createObjectURL(url);
-  return url.replace(/^https?:\/\/https?:\/\//, "https://").replace(/([^:]\/)\/+/g, "$1");
+  let fixed = url.replace(/^https?:\/\/https?:\/\//, "https://").replace(/([^:]\/)\/+/g, "$1");
+  if (fixed.startsWith("http://backend.gharsansar.store") || fixed.startsWith("http://lx70r6zsef")) {
+    fixed = fixed.replace(/^http:/, "https:");
+  }
+  return fixed;
 };
 
 const ProductsAdmin: React.FC = () => {

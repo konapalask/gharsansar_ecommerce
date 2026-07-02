@@ -6,10 +6,14 @@ import { useNavigate } from 'react-router-dom';
 
 const fixImageUrl = (url: string | undefined) => {
   if (!url) return "";
-  return url
+  let fixed = url
     .replace(/^https?:\/\/https?:\/\//, "https://")
     .replace(/\s/g, "%20")
     .replace(/([^:]\/)\/+/g, "$1");
+  if (fixed.startsWith("http://backend.gharsansar.store") || fixed.startsWith("http://lx70r6zsef")) {
+    fixed = fixed.replace(/^http:/, "https:");
+  }
+  return fixed;
 };
 
 // Helper to generate premium metadata for a service

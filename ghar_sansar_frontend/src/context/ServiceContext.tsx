@@ -30,10 +30,14 @@ const API_BASE = import.meta.env.VITE_AWS_API_URL || "https://lx70r6zsef.execute
 // ✅ Normalize image URL
 const fixImageUrl = (url: string | undefined) => {
   if (!url) return "";
-  return url
+  let fixed = url
     .replace(/^https(?!:\/\/)/, "https://")
     .replace(/\s/g, "%20")
     .replace(/([^:]\/)\/+/g, "$1");
+  if (fixed.startsWith("http://backend.gharsansar.store") || fixed.startsWith("http://lx70r6zsef")) {
+    fixed = fixed.replace(/^http:/, "https:");
+  }
+  return fixed;
 };
 
 export const useServices = () => {
