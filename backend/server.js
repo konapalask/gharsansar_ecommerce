@@ -2511,6 +2511,11 @@ app.post("/api/reviews/:productId", (req, res) => {
   }
 });
 
+// Test auto pull endpoint
+app.get("/api/test-pull", (req, res) => {
+  res.json({ status: "success", message: "Auto-pull is working perfectly!", timestamp: new Date().toISOString() });
+});
+
 // Health check endpoint
 app.get("/api/health", (req, res) => {
   res.json({ status: "healthy", port: PORT });
