@@ -13,7 +13,10 @@ const BACKEND_STATIC_URL = API_BASE.replace(/\/api$/, "");
 const sanitizeImageUrl = (path?: string) => {
   if (!path) return undefined;
   if (path.startsWith("http")) return path;
-  return `${BACKEND_STATIC_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+  if (path.startsWith("/products") || path.startsWith("/blogs") || path.startsWith("/uploads")) {
+    return `${BACKEND_STATIC_URL}${path}`;
+  }
+  return path;
 };
 
 interface Subcategory {

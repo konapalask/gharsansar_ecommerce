@@ -46,7 +46,10 @@ const sanitizeUrl = (url?: string) => {
     }
     return url;
   }
-  return `${BACKEND_STATIC_URL}${url.startsWith("/") ? "" : "/"}${url}`;
+  if (url.startsWith("/products") || url.startsWith("/blogs") || url.startsWith("/uploads")) {
+    return `${BACKEND_STATIC_URL}${url}`;
+  }
+  return url;
 };
 
 interface InteriorProviderProps {

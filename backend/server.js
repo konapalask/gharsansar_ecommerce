@@ -624,7 +624,7 @@ app.post("/api/storage/upload", productUpload.single("image"), (req, res) => {
 
     if (category_type === "interior") {
       const { category_name, subcategory_name, title, description } = req.body;
-      const imagePath = req.file ? `/interior/${req.file.filename}` : null;
+      const imagePath = req.file ? `/products/${req.file.filename}` : null;
 
       const categoriesPath = path.join(__dirname, "public", "categories.json");
       const rawData = readJsonFile(categoriesPath, []);

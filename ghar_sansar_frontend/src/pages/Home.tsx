@@ -36,7 +36,10 @@ const Home: React.FC = () => {
         const sanitizeImageUrl = (path?: string) => {
           if (!path) return undefined;
           if (path.startsWith("http")) return path;
-          return `${BACKEND_STATIC_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+          if (path.startsWith("/products") || path.startsWith("/blogs") || path.startsWith("/uploads")) {
+            return `${BACKEND_STATIC_URL}${path}`;
+          }
+          return path;
         };
 
         // Handle new JSON structure with data array
