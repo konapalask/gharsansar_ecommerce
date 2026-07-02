@@ -4050,5 +4050,460 @@
       }
     ],
     "stock": 50
+  },
+  {
+    "name": "Ceramic Pots",
+    "images": [
+      {
+        "prod_id": "ceramic_1782994471251",
+        "id": "ceramic_1782994471251",
+        "name": "White Ceramic Footed Urn Planter",
+        "title": "White Ceramic Footed Urn Planter",
+        "image": "/products/ceramic_pots/white_ceramic_footed_urn_planter.png",
+        "description": "Elegant white ceramic urn planter with lattice and cutout details, perfect for a classic look.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471252",
+        "id": "ceramic_1782994471252",
+        "name": "White Ceramic Two-Handled Classic Urn",
+        "title": "White Ceramic Two-Handled Classic Urn",
+        "image": "/products/ceramic_pots/white_ceramic_two_handled_classic_urn.png",
+        "description": "Small white ceramic urn planter featuring two handles and decorative cutouts.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471253",
+        "id": "ceramic_1782994471253",
+        "name": "Grey Ribbed Footed Ceramic Planter",
+        "title": "Grey Ribbed Footed Ceramic Planter",
+        "image": "/products/ceramic_pots/grey_ribbed_footed_ceramic_planter.png",
+        "description": "Tall grey ceramic pot featuring a ribbed body and an ornate lattice upper rim.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471254",
+        "id": "ceramic_1782994471254",
+        "name": "White Fluted Ceramic Cup Planter",
+        "title": "White Fluted Ceramic Cup Planter",
+        "image": "/products/ceramic_pots/white_fluted_ceramic_cup_planter.png",
+        "description": "A simple and elegant white fluted ceramic pot shaped like a cup.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471255",
+        "id": "ceramic_1782994471255",
+        "name": "Orange Wavy Textured Ceramic Pot",
+        "title": "Orange Wavy Textured Ceramic Pot",
+        "image": "/products/ceramic_pots/orange_wavy_textured_ceramic_pot.png",
+        "description": "Vibrant orange ceramic pot with a unique wavy, wrinkled texture.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471256",
+        "id": "ceramic_1782994471256",
+        "name": "Shiny Gold Ceramic Rounded Planter",
+        "title": "Shiny Gold Ceramic Rounded Planter",
+        "image": "/products/ceramic_pots/shiny_gold_ceramic_rounded_planter.png",
+        "description": "A luxurious shiny gold/brass finished rounded ceramic planter.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471257",
+        "id": "ceramic_1782994471257",
+        "name": "Cream Delft Blue Floral Ceramic Pot",
+        "title": "Cream Delft Blue Floral Ceramic Pot",
+        "image": "/products/ceramic_pots/cream_delft_blue_floral_ceramic_pot.png",
+        "description": "Classic cream ceramic pot adorned with dark blue floral and butterfly patterns in a Delft style.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471259",
+        "id": "ceramic_1782994471259",
+        "name": "White Ceramic Planter with Painted Pink Flowers",
+        "title": "White Ceramic Planter with Painted Pink Flowers",
+        "image": "/products/ceramic_pots/white_ceramic_planter_with_painted_pink_flowers.png",
+        "description": "Beautiful white ceramic planter hand-painted with pink flowers, green leaves, and black horizontal lines.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471260",
+        "id": "ceramic_1782994471260",
+        "name": "White Ceramic Pot with Black Floral Vine Design",
+        "title": "White Ceramic Pot with Black Floral Vine Design",
+        "image": "/products/ceramic_pots/white_ceramic_pot_with_black_floral_vine_design.png",
+        "description": "Striking white ceramic pot heavily decorated with intricate black floral and vine patterns.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471261",
+        "id": "ceramic_1782994471261",
+        "name": "Black Ceramic Well-Shaped Novelty Planter",
+        "title": "Black Ceramic Well-Shaped Novelty Planter",
+        "image": "/products/ceramic_pots/black_ceramic_well_shaped_novelty_planter.png",
+        "description": "A unique dark black novelty planter shaped like a brick well.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471262",
+        "id": "ceramic_1782994471262",
+        "name": "Royal Blue Textured Ceramic Pot",
+        "title": "Royal Blue Textured Ceramic Pot",
+        "image": "/products/ceramic_pots/royal_blue_textured_ceramic_pot.png",
+        "description": "Deep royal blue ceramic pot featuring a rich textured finish.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471263",
+        "id": "ceramic_1782994471263",
+        "name": "Two-Toned Light Brown Dripping Glaze Pot",
+        "title": "Two-Toned Light Brown Dripping Glaze Pot",
+        "image": "/products/ceramic_pots/two_toned_light_brown_dripping_glaze_pot.png",
+        "description": "Beautiful ceramic pot with a two-toned light brown dripping glaze over a cream base.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471264",
+        "id": "ceramic_1782994471264",
+        "name": "Yellow Sculptured Face Planter Open Mouth",
+        "title": "Yellow Sculptured Face Planter Open Mouth",
+        "image": "/products/ceramic_pots/yellow_sculptured_face_planter_open_mouth.png",
+        "description": "An artistic yellow ceramic sculptured face planter featuring a quirky open mouth design.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471265",
+        "id": "ceramic_1782994471265",
+        "name": "White Geometric Honeycomb Ceramic Pot",
+        "title": "White Geometric Honeycomb Ceramic Pot",
+        "image": "/products/ceramic_pots/white_geometric_honeycomb_ceramic_pot.png",
+        "description": "Modern white ceramic pot with a textured geometric honeycomb pattern.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471266",
+        "id": "ceramic_1782994471266",
+        "name": "White Ornate Lattice Rectangular Planter",
+        "title": "White Ornate Lattice Rectangular Planter",
+        "image": "/products/ceramic_pots/white_ornate_lattice_rectangular_planter.png",
+        "description": "Elegant rectangular white ceramic planter on small feet, detailed with ornate lattice cutouts.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471267",
+        "id": "ceramic_1782994471267",
+        "name": "Yellow Sculptured Face Planter Wide Base",
+        "title": "Yellow Sculptured Face Planter Wide Base",
+        "image": "/products/ceramic_pots/yellow_sculptured_face_planter_wide_base.png",
+        "description": "A creative yellow ceramic sculptured face planter with a wide stable base.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471268",
+        "id": "ceramic_1782994471268",
+        "name": "Woman Figurine Planter holding Pink Bowl",
+        "title": "Woman Figurine Planter holding Pink Bowl",
+        "image": "/products/ceramic_pots/woman_figurine_planter_holding_pink_bowl.png",
+        "description": "Charming figurine planter of a woman holding a large pink blossom bowl.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471269",
+        "id": "ceramic_1782994471269",
+        "name": "Orange Pig Figurine Planter Garden",
+        "title": "Orange Pig Figurine Planter Garden",
+        "image": "/products/ceramic_pots/orange_pig_figurine_planter_garden.png",
+        "description": "Adorable orange pig figurine planter holding a blue bowl that reads 'Garden'.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471270",
+        "id": "ceramic_1782994471270",
+        "name": "Rabbit Figurine Planter holding Blue Bowl",
+        "title": "Rabbit Figurine Planter holding Blue Bowl",
+        "image": "/products/ceramic_pots/rabbit_figurine_planter_holding_blue_bowl.png",
+        "description": "Cute rabbit figurine in green overalls holding a blue bowl decorated with Asian characters.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471272",
+        "id": "ceramic_1782994471272",
+        "name": "Dark Brown Ceramic Pot with Yellow Ornate Rim",
+        "title": "Dark Brown Ceramic Pot with Yellow Ornate Rim",
+        "image": "/products/ceramic_pots/dark_brown_ceramic_pot_with_yellow_ornate_rim.png",
+        "description": "Rich dark brown ceramic pot accented by a wide yellow/gold ornate patterned rim.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471273",
+        "id": "ceramic_1782994471273",
+        "name": "Grey Footed Planter with Scroll Cutouts",
+        "title": "Grey Footed Planter with Scroll Cutouts",
+        "image": "/products/ceramic_pots/grey_footed_planter_with_scroll_cutouts.png",
+        "description": "Classic grey and white footed planter featuring beautiful leaf and scroll cutouts at the top rim.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471274",
+        "id": "ceramic_1782994471274",
+        "name": "Small White Ceramic Urn Planter with Cutouts",
+        "title": "Small White Ceramic Urn Planter with Cutouts",
+        "image": "/products/ceramic_pots/small_white_ceramic_urn_planter_with_cutouts.png",
+        "description": "A petite white ceramic urn-like footed planter with intricate cutouts around the top rim.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471275",
+        "id": "ceramic_1782994471275",
+        "name": "Grey Ribbed Planter with Lattice Top",
+        "title": "Grey Ribbed Planter with Lattice Top",
+        "image": "/products/ceramic_pots/grey_ribbed_planter_with_lattice_top.png",
+        "description": "Tall grey ceramic pot with vertical ribbed lines and a decorative lattice top rim.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471276",
+        "id": "ceramic_1782994471276",
+        "name": "Simple White Ceramic Fluted Pot",
+        "title": "Simple White Ceramic Fluted Pot",
+        "image": "/products/ceramic_pots/simple_white_ceramic_fluted_pot.png",
+        "description": "Minimalist white ceramic pot with vertical fluting for a clean, modern aesthetic.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471277",
+        "id": "ceramic_1782994471277",
+        "name": "Vibrant Orange Wrinkled Ceramic Pot",
+        "title": "Vibrant Orange Wrinkled Ceramic Pot",
+        "image": "/products/ceramic_pots/vibrant_orange_wrinkled_ceramic_pot.png",
+        "description": "Eye-catching vibrant orange ceramic pot featuring a heavily textured wrinkled surface.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471278",
+        "id": "ceramic_1782994471278",
+        "name": "Shiny Brass Finish Rounded Ceramic Pot",
+        "title": "Shiny Brass Finish Rounded Ceramic Pot",
+        "image": "/products/ceramic_pots/shiny_brass_finish_rounded_ceramic_pot.png",
+        "description": "A stunning rounded ceramic pot with a highly reflective shiny brass finish.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471279",
+        "id": "ceramic_1782994471279",
+        "name": "Cream Delft Blue Butterfly Ceramic Pot",
+        "title": "Cream Delft Blue Butterfly Ceramic Pot",
+        "image": "/products/ceramic_pots/cream_delft_blue_butterfly_ceramic_pot.png",
+        "description": "Cream-colored ceramic pot featuring classic Delft blue floral and butterfly designs.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471280",
+        "id": "ceramic_1782994471280",
+        "name": "White Ceramic Planter Painted Pink Flowers with Saucer",
+        "title": "White Ceramic Planter Painted Pink Flowers with Saucer",
+        "image": "/products/ceramic_pots/white_ceramic_planter_painted_pink_flowers_with_saucer.png",
+        "description": "White ceramic pot with a built-in saucer, decorated with hand-painted pink flowers and black lines.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471281",
+        "id": "ceramic_1782994471281",
+        "name": "White Ceramic Pot Intricate Black Florals",
+        "title": "White Ceramic Pot Intricate Black Florals",
+        "image": "/products/ceramic_pots/white_ceramic_pot_intricate_black_florals.png",
+        "description": "Elegant white ceramic pot covered in intricate, dense black floral and vine patterns.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471282",
+        "id": "ceramic_1782994471282",
+        "name": "Black Ceramic Well Novelty Planter",
+        "title": "Black Ceramic Well Novelty Planter",
+        "image": "/products/ceramic_pots/black_ceramic_well_novelty_planter.png",
+        "description": "A distinctive black ceramic novelty planter designed to look like a brick well or small structure.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471283",
+        "id": "ceramic_1782994471283",
+        "name": "Large Orange Cup Shaped Planter",
+        "title": "Large Orange Cup Shaped Planter",
+        "image": "/products/ceramic_pots/large_orange_cup_shaped_planter.png",
+        "description": "A fun and quirky large orange ceramic planter shaped like an oversized mug or cup.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471285",
+        "id": "ceramic_1782994471285",
+        "name": "Grey Aztec Pattern Ceramic Pot",
+        "title": "Grey Aztec Pattern Ceramic Pot",
+        "image": "/products/ceramic_pots/grey_aztec_pattern_ceramic_pot.png",
+        "description": "Grey ceramic pot featuring geometric tribal/aztec patterns with a contrasting tan base.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471286",
+        "id": "ceramic_1782994471286",
+        "name": "Light Blue Speckled Pot with Grain Stalks",
+        "title": "Light Blue Speckled Pot with Grain Stalks",
+        "image": "/products/ceramic_pots/light_blue_speckled_pot_with_grain_stalks.png",
+        "description": "Serene light blue speckled ceramic pot painted with white grain stalks.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471287",
+        "id": "ceramic_1782994471287",
+        "name": "Black Dimpled Ceramic Pot with Twine Bow",
+        "title": "Black Dimpled Ceramic Pot with Twine Bow",
+        "image": "/products/ceramic_pots/black_dimpled_ceramic_pot_with_twine_bow.png",
+        "description": "Textured black dimpled ceramic pot beautifully tied with a simple tan twine bow.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471288",
+        "id": "ceramic_1782994471288",
+        "name": "Shallow Brown Pot with Webbed Pattern",
+        "title": "Shallow Brown Pot with Webbed Pattern",
+        "image": "/products/ceramic_pots/shallow_brown_pot_with_webbed_pattern.png",
+        "description": "Wide and shallow brown ceramic pot featuring an intricate crackle or webbed light tan pattern.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471289",
+        "id": "ceramic_1782994471289",
+        "name": "Bright Red Ceramic Pot with Gold Rim and Saucer",
+        "title": "Bright Red Ceramic Pot with Gold Rim and Saucer",
+        "image": "/products/ceramic_pots/bright_red_ceramic_pot_with_gold_rim_and_saucer.png",
+        "description": "A stunning bright red ceramic pot featuring a wide metallic gold rim and a matching red and gold saucer.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471290",
+        "id": "ceramic_1782994471290",
+        "name": "Bright Red Ceramic Pot with Gold Rim",
+        "title": "Bright Red Ceramic Pot with Gold Rim",
+        "image": "/products/ceramic_pots/bright_red_ceramic_pot_with_gold_rim.png",
+        "description": "A vibrant bright red ceramic pot accented by a wide metallic gold rim and matching saucer.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471291",
+        "id": "ceramic_1782994471291",
+        "name": "Shallow Blue Floral Ceramic Bowl Planter",
+        "title": "Shallow Blue Floral Ceramic Bowl Planter",
+        "image": "/products/ceramic_pots/shallow_blue_floral_ceramic_bowl_planter.png",
+        "description": "A wide, shallow flat ceramic bowl planter with intricate blue floral and lotus patterns on the exterior.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471292",
+        "id": "ceramic_1782994471292",
+        "name": "Olive Green Dimpled Polka Dot Pot",
+        "title": "Olive Green Dimpled Polka Dot Pot",
+        "image": "/products/ceramic_pots/olive_green_dimpled_polka_dot_pot.png",
+        "description": "Earthy olive green ceramic pot featuring a dimpled, polka-dot-like texture.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471293",
+        "id": "ceramic_1782994471293",
+        "name": "White Ceramic Pot with Geometric Diamonds and Fluting",
+        "title": "White Ceramic Pot with Geometric Diamonds and Fluting",
+        "image": "/products/ceramic_pots/white_ceramic_pot_with_geometric_diamonds_and_fluting.png",
+        "description": "Sophisticated white ceramic pot with a geometric black diamond pattern on the top and vertical fluting on the bottom.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471294",
+        "id": "ceramic_1782994471294",
+        "name": "Dark Blue Fluted Ceramic Pot with Gold Interior",
+        "title": "Dark Blue Fluted Ceramic Pot with Gold Interior",
+        "image": "/products/ceramic_pots/dark_blue_fluted_ceramic_pot_with_gold_interior.png",
+        "description": "Elegant dark blue fluted and ribbed ceramic pot with a striking metallic gold interior.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471295",
+        "id": "ceramic_1782994471295",
+        "name": "Colorful Hindu Temple Shrine Ceramic Planter",
+        "title": "Colorful Hindu Temple Shrine Ceramic Planter",
+        "image": "/products/ceramic_pots/colorful_hindu_temple_shrine_ceramic_planter.png",
+        "description": "A small, colorful orange and blue square ceramic piece shaped like a traditional Hindu temple, featuring Swastika and Om symbols.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471296",
+        "id": "ceramic_1782994471296",
+        "name": "Light Brown Ceramic Pot with Dark Brown Dripping Glaze",
+        "title": "Light Brown Ceramic Pot with Dark Brown Dripping Glaze",
+        "image": "/products/ceramic_pots/light_brown_ceramic_pot_with_dark_brown_dripping_glaze.png",
+        "description": "Rounded ceramic pot with a light brown ribbed lower half and a glossy dark brown dripping glaze on top.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471298",
+        "id": "ceramic_1782994471298",
+        "name": "Tall Orange Fluted Pot with Brown Dripping Glaze",
+        "title": "Tall Orange Fluted Pot with Brown Dripping Glaze",
+        "image": "/products/ceramic_pots/tall_orange_fluted_pot_with_brown_dripping_glaze.png",
+        "description": "A tall cylindrical ceramic pot in bright orange with deep vertical flutes and a dark brown dripping glaze near the top edge.",
+        "price": 299,
+        "act-price": 0
+      },
+      {
+        "prod_id": "ceramic_1782994471299",
+        "id": "ceramic_1782994471299",
+        "name": "Tall Olive Green Ceramic Pot with Carved Texture",
+        "title": "Tall Olive Green Ceramic Pot with Carved Texture",
+        "image": "/products/ceramic_pots/tall_olive_green_ceramic_pot_with_carved_texture.png",
+        "description": "A tall cylindrical dark olive-green ceramic pot featuring an intricate overlapping wavy carved texture.",
+        "price": 299,
+        "act-price": 0
+      }
+    ]
   }
 ]
