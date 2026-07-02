@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Save, Edit3, X, Trash2, Plus, Check } from "lucide-react";
+import { Save, Edit3, X, Trash2, Plus } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ReturnGiftsAdmin: React.FC = () => {
@@ -18,8 +18,6 @@ const ReturnGiftsAdmin: React.FC = () => {
     image: "",
   });
   const [isCreating, setIsCreating] = useState(false);
-  const [editingPriceId, setEditingPriceId] = useState<string | null>(null);
-  const [quickPrice, setQuickPrice] = useState<string>("");
 
   const fetchReturnGifts = async () => {
     setLoading(true);
@@ -144,36 +142,6 @@ const ReturnGiftsAdmin: React.FC = () => {
     gift.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const handleQuickPriceUpdate = async (gift: any) => {
-    if (!quickPrice || isNaN(Number(quickPrice))) {
-      alert("Please enter a valid price");
-      return;
-    }
-    
-    try {
-      const res = await fetch(`${API_BASE.replace('/api', '')}/api/return_gifts`, {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          id: gift.id,
-          title: gift.title,
-          price: quickPrice,
-          description: gift.description,
-          stock: gift.stock,
-          image: gift.image || "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&q=80",
-        })
-      });
-
-      if (!res.ok) throw new Error("Failed to quick update price");
-
-      setEditingPriceId(null);
-      await fetchReturnGifts();
-    } catch (err) {
-      console.error("Error updating price:", err);
-      alert("Failed to update price quickly.");
-    }
-  };
-
   const itemsPerPage = 10;
   const totalPages = Math.ceil(filteredGifts.length / itemsPerPage);
   const currentGifts = filteredGifts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -243,37 +211,7 @@ const ReturnGiftsAdmin: React.FC = () => {
                       </td>
                       <td className="px-6 py-4">
                         <div className="font-bold text-sm text-gray-900">{gift.title}</div>
-                        
-                        <div className="mt-1 h-8">
-                          {editingPriceId === gift.id ? (
-                            <div className="flex items-center gap-1 w-32 bg-blue-50 border border-blue-200 rounded px-2 py-1">
-                              <span className="text-blue-600 font-bold">₹</span>
-                              <input 
-                                autoFocus
-                                type="number" 
-                                className="w-full bg-transparent outline-none text-blue-700 font-bold text-sm"
-                                value={quickPrice}
-                                onChange={(e) => setQuickPrice(e.target.value)}
-                                onKeyDown={(e) => {
-                                  if (e.key === 'Enter') handleQuickPriceUpdate(gift);
-                                  if (e.key === 'Escape') setEditingPriceId(null);
-                                }}
-                              />
-                              <button onClick={() => handleQuickPriceUpdate(gift)} className="p-1 hover:bg-blue-200 rounded text-blue-600">
-                                <Check size={14} />
-                              </button>
-                              <button onClick={() => setEditingPriceId(null)} className="p-1 hover:bg-blue-200 rounded text-red-500">
-                                <X size={14} />
-                              </button>
-                            </div>
-                          ) : (
-                            <div className="flex items-center gap-2 group/price cursor-pointer w-max" onClick={() => { setEditingPriceId(gift.id); setQuickPrice(gift.price?.toString()); }}>
-                              <span className="text-sm font-semibold text-gray-600 border-b border-transparent group-hover/price:border-blue-400 border-dashed">₹{gift.price}</span>
-                              <Edit3 className="w-3.5 h-3.5 text-gray-400 opacity-0 group-hover/price:opacity-100 transition-opacity" />
-                            </div>
-                          )}
-                        </div>
-
+                        <div className="text-sm font-semibold text-gray-600 mt-1">₹{gift.price}</div>
                         <div className="text-xs text-gray-500 mt-1 truncate max-w-md">{gift.description}</div>
                       </td>
                       <td className="px-6 py-4">
