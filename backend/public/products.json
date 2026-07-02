@@ -9,31 +9,36 @@
             "name": "Cello 12 Pcs Soup Set",
             "image": "/products/cello_prod/cello_12_pcs_soup_set.jpg",
             "description": "Elegant 12-piece Cello soup set — perfect for family dining. Includes 6 soup bowls with saucers. Made from high-quality porcelain with a glossy, food-safe finish. Microwave and dishwasher safe.",
-            "price": 1299
+            "price": 749,
+            "act-price": 0
           },
           {
             "name": "Cello 6Pcs Dinner Plate",
             "image": "/products/cello_prod/cello_6pcs_dinner_plate.jpg",
             "description": "Premium Cello 6-piece dinner plate set crafted from durable opalware glass. Scratch-resistant, chip-resistant and features an elegant solid finish. Perfect for everyday use and special occasions.",
-            "price": 899
+            "price": 1050,
+            "act-price": 0
           },
           {
             "name": "Cello Breakfast Set 4 Pcs",
             "image": "/products/cello_prod/cello_breakfast_set_4_pcs.webp",
             "description": "Start your mornings in style with the Cello 4-piece breakfast set. Includes plates, bowl and mug. BPA-free, microwave safe, and easy to clean. Ideal for individuals and compact families.",
-            "price": 749
+            "price": 499,
+            "act-price": 0
           },
           {
             "name": "Cello Dazzle Fruit 9 Pcs Set",
             "image": "/products/cello_prod/cello_dazzle_fruit_9_pcs_set.jpg",
             "description": "Vibrant 9-piece Cello Dazzle fruit serving set with eye-catching design. Includes large and small serving bowls in assorted colours. Lightweight, shatter-resistant, and BPA-free.",
-            "price": 999
+            "price": 759,
+            "act-price": 0
           },
           {
             "name": "Cello Dazzle Pudding Set 7 Pcs",
             "image": "/products/cello_prod/cello_dazzle_pudding_set_7_pcs.jpg",
             "description": "Stunning 7-piece Cello Dazzle pudding set for a premium dessert presentation. Includes individual pudding cups with a large serving bowl. Microwave safe and dishwasher friendly.",
-            "price": 849
+            "price": 595,
+            "act-price": 0
           },
           {
             "name": "Cello Designer Crockery Set 10Pcs Set",
@@ -204,8 +209,8 @@
             "title": "Sonu Bellino Pressure Cooker 5.4 Lts",
             "image": "/products/sonu_steel_products/sonu_bellino_pressure_cooker_5.4_lts.webp",
             "description": "Robust 5.4-liter stainless steel pressure cooker with an outer lid design. Engineered with a heavy sandwich base for quick, even heat distribution, comfortable handles, and advanced safety features for everyday culinary perfection.",
-            "price": 2499,
-            "act-price": 3299
+            "price": 3899,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_2",
@@ -214,8 +219,8 @@
             "title": "Sonu Chefmate Multi Cooker 5.4 Lts",
             "image": "/products/sonu_steel_products/sonu_chefmate_multi_cooker_5.4_lts.webp",
             "description": "Highly versatile 5.4-liter multi-cooker crafted from premium food-grade stainless steel. Perfect for steaming, boiling, and deep cooking. Features strong riveted side handles and a sturdy design.",
-            "price": 2299,
-            "act-price": 2999
+            "price": 5296,
+            "act-price": 0
           }
         ]
       },
@@ -229,8 +234,8 @@
             "title": "Sonu Crysta Pot 14cm 1000 Ml",
             "image": "/products/sonu_steel_products/sonu_crysta_pot_14cm_1000_ml.webp",
             "description": "Elegant 1000 ml stainless steel Crysta pot with a 14 cm diameter. Beautiful mirror finish, heat-resistant handles, and superior heat retention, making it perfect for cooking and direct serving.",
-            "price": 799,
-            "act-price": 1099
+            "price": 599,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_4",
@@ -239,8 +244,8 @@
             "title": "Sonu Crysta Pot 16cm 1500 Ml",
             "image": "/products/sonu_steel_products/sonu_crysta_pot_16cm_1500_ml.webp",
             "description": "Superior 1500 ml stainless steel Crysta pot with a 16 cm diameter. Designed with an encapsulation base for uniform heating, dual side grips, and a premium polish that elevates your kitchen aesthetic.",
-            "price": 999,
-            "act-price": 1399
+            "price": 799,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_5",
@@ -249,8 +254,8 @@
             "title": "Sonu Crysta Pot 18cm ",
             "image": "/products/sonu_steel_products/sonu_crysta_pot_18cm_.webp",
             "description": "Spacious 18 cm stainless steel Crysta pot designed for preparing and serving larger portions. Extremely durable, easy to clean, and features an elegant sleek design ideal for modern kitchens.",
-            "price": 1199,
-            "act-price": 1699
+            "price": 899,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_8",
@@ -269,8 +274,8 @@
             "title": "Sonu Eliza Pot 16cm 1500 Ml",
             "image": "/products/sonu_steel_products/sonu_eliza_pot_16cm_1500_ml.png",
             "description": "Beautifully designed 1500 ml Sonu Eliza pot with a 16 cm diameter. Crafted from premium mirror-polished stainless steel, featuring safe-grip side handles and outstanding thermal efficiency.",
-            "price": 1199,
-            "act-price": 1599
+            "price": 600,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_10",
@@ -279,8 +284,8 @@
             "title": "Sonu Gravy Pot 16cm 1800ml",
             "image": "/products/sonu_steel_products/sonu_gravy_pot_16cm_1800ml.jpg",
             "description": "Spacious 1800 ml Sonu Gravy Pot with a 16 cm diameter. Excellent for slow-cooking gravies, boiling milk, or preparing soups. Rust-resistant food-safe construction.",
-            "price": 999,
-            "act-price": 1399
+            "price": 2999,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_11",
@@ -289,8 +294,8 @@
             "title": "Sonu Italian Floral Gold 16cm 1500 Ml",
             "image": "/products/sonu_steel_products/sonu_italian_floral_gold_16cm_1500_ml.webp",
             "description": "Luxurious 1500 ml pot boasting a breathtaking Italian Floral Gold motif on high-quality stainless steel. Seamlessly merges artistic styling with durable cooking capability, perfect for fine dining.",
-            "price": 1599,
-            "act-price": 2199
+            "price": 600,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_14",
@@ -309,8 +314,8 @@
             "title": "Sonu Quantum Stockpot 14cm 1.1 Ltr",
             "image": "/products/sonu_steel_products/sonu_quantum_stockpot_14cm_1.1_ltr.jpg",
             "description": "Compact 1.1-liter Quantum stockpot with a 14 cm diameter. Perfect for cooking smaller portions, boiling liquids, or heating side dishes. Heavy sandwich base for uniform heat distribution.",
-            "price": 899,
-            "act-price": 1199
+            "price": 799,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_16",
@@ -319,8 +324,8 @@
             "title": "Sonu Eliza Pot 14cm 1000ml",
             "image": "/products/sonu_steel_products/sonu_eliza_pot_14cm_1000ml.png",
             "description": "Charming 1000 ml Sonu Eliza Pot featuring a 14 cm diameter. Crafted from pristine rust-proof stainless steel. Highly efficient heat distribution and induction compatible.",
-            "price": 899,
-            "act-price": 1199
+            "price": 450,
+            "act-price": 0
           }
         ]
       },
@@ -334,8 +339,8 @@
             "title": "Sonu Elite Square Tawa",
             "image": "/products/sonu_steel_products/sonu_elite_square_tawa.jpg",
             "description": "Exquisite square tawa crafted for making perfect crispy dosas, fluffy parathas, and crepes. Features a durable construction and ergonomic stay-cool handle for excellent control.",
-            "price": 1099,
-            "act-price": 1499
+            "price": 1596,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_12",
@@ -344,8 +349,8 @@
             "title": "Sonu Multi Kadai 8 Pcs",
             "image": "/products/sonu_steel_products/sonu_multi_kadai_8_pcs.webp",
             "description": "The complete 8-piece Sonu Multi Kadai cooker set. Includes specialized plates for preparing idlis, dhoklas, momos, and steam-based dishes. Highly durable stainless steel with induction base.",
-            "price": 2999,
-            "act-price": 3999
+            "price": 2499,
+            "act-price": 0
           },
           {
             "prod_id": "sonu_1779295730883_13",
@@ -369,8 +374,8 @@
             "title": "Sonu Dezire Cook & Serve Set 2 With Glass Lid",
             "image": "/products/sonu_steel_products/sonu_dezire_cook_serve_set_2_with_glass_lid.jpeg",
             "description": "Premium 2-piece Sonu Dezire Cook & Serve cookware set complete with elegant glass lids. Perfect for seamless cooking and elegant dining presentation. Features an induction-compatible heavy base.",
-            "price": 1899,
-            "act-price": 2599
+            "price": 900,
+            "act-price": 0
           }
         ]
       }
@@ -440,8 +445,8 @@
             "title": "Intan Betta Pellets - All Life Stages, Fish, 55g",
             "image": "/products/aquarium_and_accesories/intan_betta_pellets_all_life_stages_fish_55_g.png",
             "description": "Highly nutritious Intan Betta Pellets formulated for all life stages. Promotes healthy growth, vibrant colors, and active vitality for betta fish.",
-            "price": 199,
-            "act-price": 299
+            "price": 279,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_37",
@@ -450,8 +455,8 @@
             "title": "Intan Flower Horn Pellets (Small 1.5mm Floating) | 160g - Highly Nutritious Fish Food for Flowerhorn & Kamfa",
             "image": "/products/aquarium_and_accesories/intan_flower_horn_pellets_small_1.5mm_floating_160gm_highly_nutritious_ornamental_fish_food_for_flowerhorn_kamfa_growel_feeds.png",
             "description": "Highly nutritious ornamental fish food specially formulated for Flowerhorn & Kamfa fish. 1.5mm floating pellets from Growel Feeds for growth and head formation.",
-            "price": 349,
-            "act-price": 499
+            "price": 396,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_38",
@@ -460,8 +465,8 @@
             "title": "Intan Ornamental Fish Wafers (Big 1.6mm Slow Sinking) | 520g - Highly Nutritious Fish Food for Angels, Gouramis, Goldfish, Barbs & Rainbows",
             "image": "/products/aquarium_and_accesories/intan_ornamental_fish_wafers_big_1.6mm_slow_sinking_520gm_highly_nutritious_ornamental_fish_food_for_angels_gouramis_goldfish_barbs_rainbows_growel_feeds.png",
             "description": "Big 1.6mm slow sinking ornamental fish wafers by Growel Feeds. Premium nutrition for Angels, Gouramis, Goldfish, Barbs, and Rainbows.",
-            "price": 599,
-            "act-price": 799
+            "price": 954,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_39",
@@ -471,7 +476,7 @@
             "image": "/products/aquarium_and_accesories/intan_red_enhance_pellets_small_1.5mm_floating_30gm_highly_nutritious_ornamental_fish_food_for_parrotfish_red_coloured_fish_growel_feeds.png",
             "description": "Enhance the brilliant red coloration of your Parrotfish and other red ornamental fish. Premium 1.5mm floating pellets from Growel Feeds.",
             "price": 149,
-            "act-price": 229
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_40",
@@ -480,8 +485,8 @@
             "title": "Intan Turtle Sticks (Small 1.5mm x 3-4.5mm Floating) | 50g - Highly Nutritious Food for Turtles, Amphibians & Newts",
             "image": "/products/aquarium_and_accesories/intan_turtle_sticks_small_1.5mm_x_3_4.5mm_floating_50gm_highly_nutritious_ornamental_fish_food_for_turtles_amphibians_newts_growel_feeds.png",
             "description": "Nutrient-rich floating turtle sticks (1.5mm x 3-4.5mm) suitable for all turtles, amphibians, and newts. Formulated for shell health and vitality by Growel Feeds.",
-            "price": 179,
-            "act-price": 249
+            "price": 153,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_41",
@@ -490,8 +495,8 @@
             "title": "Original AquaOne Freeze Dried Blood Worms 13g Pack - Premium Fish Food!",
             "image": "/products/aquarium_and_accesories/original_aquaone_freeze_dried_blood_worms_13_gms_pack_premium_fish_food_.png",
             "description": "Premium high-protein original freeze-dried blood worms pack. Ideal natural treat for all freshwater fish, promoting growth and color enhancement.",
-            "price": 129,
-            "act-price": 199
+            "price": 325,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_42",
@@ -500,8 +505,8 @@
             "title": "Taiyo Turtle Food 45g",
             "image": "/products/aquarium_and_accesories/taiyo_turtle_food_45g.png",
             "description": "Nutritious daily food sticks for turtles. Balanced diet with calcium to support strong shell growth and healthy development.",
-            "price": 99,
-            "act-price": 149
+            "price": 130,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_43",
@@ -510,8 +515,8 @@
             "title": "Tetra Bits Complete Fish Food 300g for Discus & Tropical Fish | Bio Active Granules",
             "image": "/products/aquarium_and_accesories/tetra_bits_complete_fish_food_300g_for_discus_tropical_fish_bio_active_granules_for_health_colour_growth.png",
             "description": "The standard complete diet for Discus and other demanding tropical fish. Slow-sinking granules featuring BioActive formula for health, color, and growth.",
-            "price": 549,
-            "act-price": 750
+            "price": 1250,
+            "act-price": 0
           },
           {
             "prod_id": "aquarium_1780653698073_44",
@@ -520,8 +525,8 @@
             "title": "XO HUMPY Head 100g Flower Horn Fish Food Pellets (Original) | Increases Head Growth & Shape",
             "image": "/products/aquarium_and_accesories/xo_humpy_head_100g_flower_horn_fish_food_pellets_original_to_increases_head_growth_and_shape._all_life_stages.png",
             "description": "Famous original Flower Horn fish food pellets designed to increase head growth and shape. Balanced nutrition for all life stages, enhancing colors and health.",
-            "price": 399,
-            "act-price": 599
+            "price": 750,
+            "act-price": 0
           },
           {
             "id": "new_1782992350356_0",
@@ -2473,8 +2478,8 @@
             "title": "Ancient Palem Toddy Hand Made Wood Sculpture",
             "image": "/products/kondapallibommalu/ancient_palem_toddy_hand_made_wood_sculpture.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ancient Palem Toddy Hand Made Wood Sculpture). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 299,
-            "act-price": 467
+            "price": 1250,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_1",
@@ -2483,8 +2488,8 @@
             "title": "Artificial Miniature Wooden Coconut Tree Showpiece",
             "image": "/products/kondapallibommalu/artificial_miniature_wooden_coconut_tree_showpiece.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Artificial Miniature Wooden Coconut Tree Showpiece). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 349,
-            "act-price": 537
+            "price": 215,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_2",
@@ -2493,8 +2498,8 @@
             "title": "Bobblehead Figures Set",
             "image": "/products/kondapallibommalu/bobblehead_figures_set.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Bobblehead Figures Set). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 399,
-            "act-price": 607
+            "price": 985,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_3",
@@ -2503,8 +2508,8 @@
             "title": "Etikoppaka Wooden Couple South Indian Marriage Ceremony Folk Art",
             "image": "/products/kondapallibommalu/etikoppaka_wooden_couple_south_indian_marriage_ceremony_folk_art.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Etikoppaka Wooden Couple South Indian Marriage Ceremony Folk Art). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 799,
-            "act-price": 1167
+            "price": 1450,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_4",
@@ -2513,8 +2518,8 @@
             "title": "Etikoppaka Wooden Veena Miniature",
             "image": "/products/kondapallibommalu/etikoppaka_wooden_veena_miniature.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Etikoppaka Wooden Veena Miniature). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 499,
-            "act-price": 747
+            "price": 1850,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_5",
@@ -2523,8 +2528,8 @@
             "title": "Ganesha Vinayaka idol red",
             "image": "/products/kondapallibommalu/ganesha_vinayaka_idol_red.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ganesha Vinayaka idol red). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1099,
-            "act-price": 1587
+            "price": 385,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_6",
@@ -2533,8 +2538,8 @@
             "title": "Ganesha Vinayaka idol white",
             "image": "/products/kondapallibommalu/ganesha_vinayaka_idol_white.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ganesha Vinayaka idol white). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1199,
-            "act-price": 1727
+            "price": 385,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_7",
@@ -2543,8 +2548,8 @@
             "title": "Ganesha Vinayaka idol yellow",
             "image": "/products/kondapallibommalu/ganesha_vinayaka_idol_yellow.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ganesha Vinayaka idol yellow). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1299,
-            "act-price": 1867
+            "price": 385,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_8",
@@ -2553,8 +2558,8 @@
             "title": "Gifts Traditional South Indian Couple",
             "image": "/products/kondapallibommalu/gifts_traditional_south_indian_couple.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Gifts Traditional South Indian Couple). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 399,
-            "act-price": 607
+            "price": 1150,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_9",
@@ -2563,8 +2568,8 @@
             "title": "Handcrafted Kondapalli Pelli Pallaki",
             "image": "/products/kondapallibommalu/handcrafted_kondapalli_pelli_pallaki.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Pelli Pallaki). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 499,
-            "act-price": 747
+            "price": 2450,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_10",
@@ -2573,8 +2578,8 @@
             "title": "Handcrafted Kondapalli Wooden Ambari Elephant Decorative Showpiece Toy",
             "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_ambari_elephant_decorative_showpiece_toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Ambari Elephant Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 599,
-            "act-price": 887
+            "price": 2150,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_11",
@@ -2583,8 +2588,8 @@
             "title": "Handcrafted Kondapalli Wooden Banana Tree Decorative Showpiece Toy",
             "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_banana_tree_decorative_showpiece_toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Banana Tree Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 549,
-            "act-price": 817
+            "price": 645,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_12",
@@ -2603,8 +2608,8 @@
             "title": "Handcrafted Kondapalli Wooden Mother and Child Decorative Showpiece Toy",
             "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_mother_and_child_decorative_showpiece_toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Mother and Child Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 349,
-            "act-price": 537
+            "price": 685,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_14",
@@ -2613,8 +2618,8 @@
             "title": "Handcrafted Wooden Indian Bride and Groom Doll Set",
             "image": "/products/kondapallibommalu/handcrafted_wooden_indian_bride_and_groom_doll_set.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Wooden Indian Bride and Groom Doll Set). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 399,
-            "act-price": 607
+            "price": 345,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_15",
@@ -2623,8 +2628,8 @@
             "title": "Kondapalli - Crawling Krishna with Butter",
             "image": "/products/kondapallibommalu/kondapalli_crawling_krishna_with_butter.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli - Crawling Krishna with Butter). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1099,
-            "act-price": 1587
+            "price": 685,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_16",
@@ -2633,8 +2638,8 @@
             "title": "Kondapalli Butta Bomma Red Blue",
             "image": "/products/kondapallibommalu/kondapalli_butta_bomma_red_blue.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Butta Bomma Red Blue). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 499,
-            "act-price": 747
+            "price": 985,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_17",
@@ -2643,8 +2648,8 @@
             "title": "Kondapalli Butta Bomma orange green",
             "image": "/products/kondapallibommalu/kondapalli_butta_bomma_orange_green.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Butta Bomma orange green). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 549,
-            "act-price": 817
+            "price": 985,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_18",
@@ -2653,8 +2658,8 @@
             "title": "Kondapalli Butta Bomma red yellow",
             "image": "/products/kondapallibommalu/kondapalli_butta_bomma_red_yellow.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Butta Bomma red yellow). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 299,
-            "act-price": 467
+            "price": 985,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_19",
@@ -2663,8 +2668,8 @@
             "title": "Kondapalli Krishna Arjuna Chariot",
             "image": "/products/kondapallibommalu/kondapalli_krishna_arjuna_chariot.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Krishna Arjuna Chariot). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1499,
-            "act-price": 2147
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_20",
@@ -2673,8 +2678,8 @@
             "title": "Kondapalli Mother and child with umbrella",
             "image": "/products/kondapallibommalu/kondapalli_mother_and_child_with_umbrella.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Mother and child with umbrella). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 399,
-            "act-price": 607
+            "price": 1450,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_21",
@@ -2683,8 +2688,8 @@
             "title": "Kondapalli Wooden Ambari Elephant Decorative Showpiece with Glass Case",
             "image": "/products/kondapallibommalu/kondapalli_wooden_ambari_elephant_decorative_showpiece_with_glass_case.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Ambari Elephant Decorative Showpiece with Glass Case). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 799,
-            "act-price": 1167
+            "price": 4850,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_22",
@@ -2693,8 +2698,8 @@
             "title": "Kondapalli Wooden Bullock Cart Decorative Showpiece with Glass Case",
             "image": "/products/kondapallibommalu/kondapalli_wooden_bullock_cart_decorative_showpiece_with_glass_case.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Bullock Cart Decorative Showpiece with Glass Case). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 899,
-            "act-price": 1307
+            "price": 8450,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_23",
@@ -2703,8 +2708,8 @@
             "title": "Kondapalli Wooden Handcrafted Marriage Set",
             "image": "/products/kondapallibommalu/kondapalli_wooden_handcrafted_marriage_set.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Handcrafted Marriage Set). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 999,
-            "act-price": 1447
+            "price": 1450,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_24",
@@ -2713,8 +2718,8 @@
             "title": "Kondapalli Wooden Lord Venkateswara Tirupati Balaji Idol with Showcase",
             "image": "/products/kondapallibommalu/kondapalli_wooden_lord_venkateswara_tirupati_balaji_idol_with_showcase.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Lord Venkateswara Tirupati Balaji Idol with Showcase). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 999,
-            "act-price": 1447
+            "price": 2450,
+            "act-price": 0
           },
           {
             "id": "kondapalli_1782500000000_25",
@@ -2814,8 +2819,8 @@
             "title": "Golden Buddha Lotus Tabletop Indoor Water Fountain Decorative Showpiece",
             "image": "/products/water_fountain_small/golden_buddha_lotus_tabletop_indoor_water_fountain_decorative_showpiece.png",
             "description": "Beautiful tabletop Golden Buddha Lotus Tabletop Indoor Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 399,
-            "act-price": 607
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_1",
@@ -2824,8 +2829,8 @@
             "title": "Golden Buddha Meditating Indoor Water Fountain Decorative Showpiece",
             "image": "/products/water_fountain_small/golden_buddha_meditating_indoor_water_fountain_decorative_showpiece.png",
             "description": "Beautiful tabletop Golden Buddha Meditating Indoor Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 499,
-            "act-price": 747
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_2",
@@ -2834,8 +2839,8 @@
             "title": "Golden Buddha Multi-Tier Tabletop Indoor Water Fountain Decorative Showpiece",
             "image": "/products/water_fountain_small/golden_buddha_multi_tier_tabletop_indoor_water_fountain_decorative_showpiece.png",
             "description": "Beautiful tabletop Golden Buddha Multi-Tier Tabletop Indoor Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 599,
-            "act-price": 887
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_3",
@@ -2844,8 +2849,8 @@
             "title": "Golden Ganesha 3-Step Tabletop Indoor Water Fountain Showpiece",
             "image": "/products/water_fountain_small/golden_ganesha_3_step_tabletop_indoor_water_fountain_showpiece.png",
             "description": "Beautiful tabletop Golden Ganesha 3-Step Tabletop Indoor Water Fountain Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 699,
-            "act-price": 1027
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_4",
@@ -2854,8 +2859,8 @@
             "title": "Golden Ganesha Indoor Water Fountain Decorative Showpiece for Home",
             "image": "/products/water_fountain_small/golden_ganesha_indoor_water_fountain_decorative_showpiece_for_home.png",
             "description": "Beautiful tabletop Golden Ganesha Indoor Water Fountain Decorative Showpiece for Home. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 799,
-            "act-price": 1167
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_5",
@@ -2864,8 +2869,8 @@
             "title": "Golden Ganesha Lotus Waterfall Tabletop Indoor Water Fountain Showpiece",
             "image": "/products/water_fountain_small/golden_ganesha_lotus_waterfall_tabletop_indoor_water_fountain_showpiece.png",
             "description": "Beautiful tabletop Golden Ganesha Lotus Waterfall Tabletop Indoor Water Fountain Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 399,
-            "act-price": 607
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_6",
@@ -2874,8 +2879,8 @@
             "title": "Golden Lord Krishna with Cow Tabletop Indoor Water Fountain Showpiece",
             "image": "/products/water_fountain_small/golden_lord_krishna_with_cow_tabletop_indoor_water_fountain_showpiece.png",
             "description": "Beautiful tabletop Golden Lord Krishna with Cow Tabletop Indoor Water Fountain Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 499,
-            "act-price": 747
+            "price": 1650,
+            "act-price": 0
           },
           {
             "id": "fountain_small_1782600000000_7",
@@ -2884,8 +2889,8 @@
             "title": "Golden Praying Buddha Indoor Tabletop Water Fountain Decorative Showpiece",
             "image": "/products/water_fountain_small/golden_praying_buddha_indoor_tabletop_water_fountain_decorative_showpiece.png",
             "description": "Beautiful tabletop Golden Praying Buddha Indoor Tabletop Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 599,
-            "act-price": 887
+            "price": 1650,
+            "act-price": 0
           }
         ]
       },
@@ -2899,8 +2904,8 @@
             "title": "Buddha Polyresin Table Top Decorative Water Fountain with LED Light- Antique Gold",
             "image": "/products/water_fountains_medium/buddha_polyresin_table_top_decorative_water_fountain_with_led_light_antique_gold.png",
             "description": "Beautiful tabletop Buddha Polyresin Table Top Decorative Water Fountain with LED Light- Antique Gold. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1199,
-            "act-price": 1727
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_1",
@@ -2909,8 +2914,8 @@
             "title": "Buddha Water Foluntain Foot Arificial Plant",
             "image": "/products/water_fountains_medium/buddha_water_foluntain_foot_arificial_plant.png",
             "description": "Beautiful tabletop Buddha Water Foluntain Foot Arificial Plant. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1299,
-            "act-price": 1867
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_2",
@@ -2919,8 +2924,8 @@
             "title": "CHRONIKLE Polyresin Designer Tabletop Indoor 3 Steps Water Fountain",
             "image": "/products/water_fountains_medium/chronikle_polyresin_designer_tabletop_indoor_3_steps_water_fountain.png",
             "description": "Beautiful tabletop CHRONIKLE Polyresin Designer Tabletop Indoor 3 Steps Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1399,
-            "act-price": 2007
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_3",
@@ -2929,8 +2934,8 @@
             "title": "Corsica Alpine Polyresin Buddha",
             "image": "/products/water_fountains_medium/corsica_alpine_polyresin_buddha.png",
             "description": "Beautiful tabletop Corsica Alpine Polyresin Buddha. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1499,
-            "act-price": 2147
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_4",
@@ -2939,8 +2944,8 @@
             "title": "Decorative Sculptures & spiritual Buddha Idol",
             "image": "/products/water_fountains_medium/decorative_sculptures_spiritual_buddha_idol.png",
             "description": "Beautiful tabletop Decorative Sculptures & spiritual Buddha Idol. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1599,
-            "act-price": 2287
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_5",
@@ -2949,8 +2954,8 @@
             "title": "Expleasia golden Buddha water fountain",
             "image": "/products/water_fountains_medium/expleasia_golden_buddha_water_fountain.png",
             "description": "Beautiful tabletop Expleasia golden Buddha water fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1699,
-            "act-price": 2427
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_6",
@@ -2959,8 +2964,8 @@
             "title": "Global Polyresin Krishna Water Fountain",
             "image": "/products/water_fountains_medium/global_polyresin_krishna_water_fountain.png",
             "description": "Beautiful tabletop Global Polyresin Krishna Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1799,
-            "act-price": 2567
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_7",
@@ -2969,8 +2974,8 @@
             "title": "Impression Polyresin Buddha fountain",
             "image": "/products/water_fountains_medium/impression_polyresin_buddha_fountain.png",
             "description": "Beautiful tabletop Impression Polyresin Buddha fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1899,
-            "act-price": 2707
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_8",
@@ -2979,8 +2984,8 @@
             "title": "Lord Ganesha Indoor Fountain  Indoor Water Fountain",
             "image": "/products/water_fountains_medium/lord_ganesha_indoor_fountain_indoor_water_fountain.png",
             "description": "Beautiful tabletop Lord Ganesha Indoor Fountain  Indoor Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1199,
-            "act-price": 1727
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_9",
@@ -2989,8 +2994,8 @@
             "title": "Lord Ganesha Water Fountain",
             "image": "/products/water_fountains_medium/lord_ganesha_water_fountain.png",
             "description": "Beautiful tabletop Lord Ganesha Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1299,
-            "act-price": 1867
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_10",
@@ -2999,8 +3004,8 @@
             "title": "Myaddition Buddha table top",
             "image": "/products/water_fountains_medium/myaddition_buddha_table_top.png",
             "description": "Beautiful tabletop Myaddition Buddha table top. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1399,
-            "act-price": 2007
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_11",
@@ -3009,8 +3014,8 @@
             "title": "This Expleasia golden Buddha indoor fountain",
             "image": "/products/water_fountains_medium/this_expleasia_golden_buddha_indoor_fountain.png",
             "description": "Beautiful tabletop This Expleasia golden Buddha indoor fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1499,
-            "act-price": 2147
+            "price": 2850,
+            "act-price": 0
           },
           {
             "id": "fountain_medium_1782600000000_12",
@@ -3019,8 +3024,8 @@
             "title": "Tree and Three Pots Polyresin Decorative Table Top Water Fountain",
             "image": "/products/water_fountains_medium/tree_and_three_pots_polyresin_decorative_table_top_water_fountain.png",
             "description": "Beautiful tabletop Tree and Three Pots Polyresin Decorative Table Top Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1599,
-            "act-price": 2287
+            "price": 2850,
+            "act-price": 0
           }
         ]
       }
