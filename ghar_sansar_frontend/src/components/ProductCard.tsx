@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { ShoppingCart, Eye } from "lucide-react";
+import { ShoppingCart, Eye, Share2 } from "lucide-react";
+import toast from "react-hot-toast";
 
 interface ProductCardProps {
   product: {
@@ -17,6 +18,28 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [hovered, setHovered] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const handleShare = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const shareData = {
+      title: product.name.replace(/_/g, " "),
+      text: `Check out ${product.name.replace(/_/g, " ")} at Ghar Sansar!`,
+      url: `${window.location.origin}/product/${product.id}`,
+    };
+
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        // user cancelled or error
+      }
+    } else {
+      navigator.clipboard.writeText(shareData.url);
+      toast.success("Link copied to clipboard!");
+    }
+  };
 
   const scrollToCard = () => {
     if (cardRef.current) {
@@ -61,7 +84,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <p className="text-sm line-clamp-2 mb-3">
           {product.description}
         </p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap">
+          <button
+            className="flex items-center gap-1 bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded transition"
+            onClick={handleShare}
+          >
+            <Share2 size={16} /> Share
+          </button>
           <button
             className="flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded transition"
             onClick={(e) => {
@@ -69,7 +98,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               // TODO: add to cart logic
             }}
           >
-            <ShoppingCart size={16} /> Add to Cart
+            <ShoppingCart size={16} /> Cart
           </button>
           <a
             href={product.image}

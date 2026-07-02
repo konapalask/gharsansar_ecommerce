@@ -17,7 +17,8 @@ import {
   Award,
   CreditCard,
   Heart,
-  Info
+  Info,
+  Share2
 } from "lucide-react";
 import { useProducts } from "../context/ProductContext";
 import { useCart } from "../context/CartContext";
@@ -70,6 +71,23 @@ const ProductDetail: React.FC = () => {
       day: "numeric",
     });
   }, []);
+
+  const handleShare = async () => {
+    if (!product) return;
+    const shareData = {
+      title: product.title || product.name,
+      text: `Check out ${product.title || product.name} at Ghar Sansar!`,
+      url: window.location.href,
+    };
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {}
+    } else {
+      navigator.clipboard.writeText(shareData.url);
+      toast.success("Link copied to clipboard!");
+    }
+  };
 
   // Review Form States
   const [formName, setFormName] = useState("");
@@ -367,6 +385,14 @@ const ProductDetail: React.FC = () => {
                 }`}
               >
                 <Heart className={`w-5 h-5 ${isWishlisted ? 'fill-current' : ''}`} />
+              </button>
+              
+              <button 
+                onClick={handleShare}
+                className="absolute top-20 right-6 p-3 rounded-full border shadow-lg transition bg-white text-gray-400 hover:text-blue-500 border-gray-100"
+                title="Share Product"
+              >
+                <Share2 className="w-5 h-5" />
               </button>
             </div>
 
