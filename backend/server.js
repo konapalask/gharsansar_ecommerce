@@ -290,7 +290,7 @@ const enrichProductData = (item, idx) => {
     title: finalTitle,
     description: item.description && !item.description.includes("Placeholder description") ? item.description : luxury.description,
     price: item.price || pricing.price,
-    actualPrice: item["act-price"] || pricing.actualPrice
+    actualPrice: (item.price && !item["act-price"]) ? 0 : (item["act-price"] || pricing.actualPrice)
   };
 };
 
