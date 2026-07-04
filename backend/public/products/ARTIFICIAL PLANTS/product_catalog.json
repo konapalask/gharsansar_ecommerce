@@ -1,0 +1,324 @@
+[
+    {
+        "file": "Artificial_Red_Succulent.png",
+        "name": "Ruby Red Faux Succulent",
+        "category": "Succulent",
+        "pot": "Black Square",
+        "description": "Add a pop of color with this vibrant red artificial succulent. Perfect for modern desks and small spaces."
+    },
+    {
+        "file": "Artificial_Green_Succulent.png",
+        "name": "Classic Green Faux Succulent",
+        "category": "Succulent",
+        "pot": "Black Square",
+        "description": "A lifelike green succulent that brings a touch of nature indoors without any of the maintenance."
+    },
+    {
+        "file": "Artificial_Haworthia_Succulent.png",
+        "name": "Spiky Haworthia Faux Succulent",
+        "category": "Succulent",
+        "pot": "Black Square",
+        "description": "Featuring distinct textured leaves, this faux Haworthia adds a unique geometric touch to your decor."
+    },
+    {
+        "file": "Artificial_English_Ivy.png",
+        "name": "Lush English Ivy",
+        "category": "Foliage",
+        "pot": "White Square",
+        "description": "Bring classic elegance to your home with this dense, vibrant artificial English Ivy plant."
+    },
+    {
+        "file": "Artificial_Wandering_Jew.png",
+        "name": "Vibrant Wandering Jew",
+        "category": "Foliage",
+        "pot": "White Square",
+        "description": "Striking purple and green striped leaves make this faux plant a stunning centerpiece for any room."
+    },
+    {
+        "file": "Artificial_Anthurium.png",
+        "name": "Red Anthurium Faux Plant",
+        "category": "Flowering",
+        "pot": "White Square",
+        "description": "Enjoy the tropical beauty of bright red heart-shaped blooms year-round with this realistic Anthurium."
+    },
+    {
+        "file": "Artificial_Yucca_Plant.png",
+        "name": "Desert Yucca Faux Plant",
+        "category": "Foliage",
+        "pot": "Black Square",
+        "description": "Add architectural interest to your space with the spiky, structured leaves of this artificial Yucca."
+    },
+    {
+        "file": "Artificial_Boxwood_Ball_Topiary.png",
+        "name": "Boxwood Ball Topiary",
+        "category": "Topiary",
+        "pot": "Black Cylinder",
+        "description": "Perfectly manicured spherical boxwood topiary that brings formal garden elegance to your interior."
+    },
+    {
+        "file": "Artificial_Ficus_Bonsai.png",
+        "name": "Zen Ficus Bonsai",
+        "category": "Bonsai",
+        "pot": "White Ceramic",
+        "description": "Create a peaceful atmosphere with this beautifully shaped artificial Ficus bonsai tree."
+    },
+    {
+        "file": "Artificial_Autumn_Maple_Bonsai.png",
+        "name": "Autumn Maple Bonsai",
+        "category": "Bonsai",
+        "pot": "White Ceramic",
+        "description": "Celebrate fall all year long with the fiery red and orange leaves of this realistic maple bonsai."
+    },
+    {
+        "file": "Artificial_Pine_Bonsai.png",
+        "name": "Classic Pine Bonsai",
+        "category": "Bonsai",
+        "pot": "White Ceramic",
+        "description": "A timeless miniature pine tree design that adds a touch of traditional Japanese aesthetics to your home."
+    },
+    {
+        "file": "Artificial_Bamboo_Plant.png",
+        "name": "Lucky Bamboo Faux Plant",
+        "category": "Foliage",
+        "pot": "White Ceramic",
+        "description": "Bring good fortune and a zen vibe to your space with this lush, realistic artificial bamboo."
+    },
+    {
+        "file": "Artificial_Monstera_Deliciosa.png",
+        "name": "Tropical Monstera Deliciosa",
+        "category": "Tropical",
+        "pot": "White Square",
+        "description": "Embrace the jungle trend with the iconic split leaves of this beautiful faux Monstera."
+    },
+    {
+        "file": "Artificial_Areca_Palm.png",
+        "name": "Mini Areca Palm",
+        "category": "Tropical",
+        "pot": "White Square",
+        "description": "Add a breezy, tropical feel to your desk or shelf with this vibrant miniature artificial palm."
+    },
+    {
+        "file": "Artificial_Braided_Croton.png",
+        "name": "Braided Stem Croton",
+        "category": "Tropical",
+        "pot": "White Square",
+        "description": "A unique braided trunk and colorful foliage make this artificial Croton a true statement piece."
+    },
+    {
+        "file": "Artificial_Red_Edged_Dracaena_1.png",
+        "name": "Red-Edged Dracaena",
+        "category": "Foliage",
+        "pot": "Black Round",
+        "description": "Sleek, spiky leaves with subtle red margins give this artificial Dracaena a striking modern look."
+    },
+    {
+        "file": "Artificial_Rubber_Plant.png",
+        "name": "Faux Rubber Plant",
+        "category": "Foliage",
+        "pot": "Black Cylinder",
+        "description": "Broad, glossy leaves give this artificial rubber plant a bold and realistic appearance."
+    },
+    {
+        "file": "Artificial_Red_Edged_Dracaena_2.png",
+        "name": "Tall Red-Edged Dracaena",
+        "category": "Foliage",
+        "pot": "Black Round",
+        "description": "An elegant, taller variety of the classic Dracaena, perfect for adding vertical interest to your decor."
+    },
+    {
+        "file": "Artificial_Croton_Petra_1.png",
+        "name": "Vibrant Croton Petra",
+        "category": "Tropical",
+        "pot": "Black Round",
+        "description": "Liven up any space with the spectacular red, yellow, and green foliage of this realistic Croton."
+    },
+    {
+        "file": "Artificial_Croton_Petra_2.png",
+        "name": "Lush Croton Petra",
+        "category": "Tropical",
+        "pot": "Black Round",
+        "description": "A dense and bushy artificial Croton that brings a burst of tropical autumn colors indoors."
+    },
+    {
+        "file": "Artificial_Boxwood_Cone_Topiary.png",
+        "name": "Boxwood Cone Topiary",
+        "category": "Topiary",
+        "pot": "Rustic Brown",
+        "description": "A classic cone-shaped boxwood topiary set in a charming rustic pot for timeless appeal."
+    },
+    {
+        "file": "Artificial_Snake_Plant.png",
+        "name": "Modern Snake Plant",
+        "category": "Succulent",
+        "pot": "White Decorative",
+        "description": "Sleek and vertical, this artificial snake plant is the ultimate modern decor accessory."
+    },
+    {
+        "file": "Artificial_Double_Ball_Topiary.png",
+        "name": "Double Ball Boxwood Topiary",
+        "category": "Topiary",
+        "pot": "Black Cylinder",
+        "description": "A sophisticated two-tier topiary design that adds a formal, manicured look to your home."
+    },
+    {
+        "file": "Artificial_Boxwood_Oval_Topiary.png",
+        "name": "Boxwood Oval Topiary",
+        "category": "Topiary",
+        "pot": "Rustic Brown",
+        "description": "An elegantly shaped oval topiary that combines formal styling with a relaxed, rustic base."
+    },
+    {
+        "file": "Artificial_Elephant_Ear_Plant.png",
+        "name": "Tropical Elephant Ear",
+        "category": "Tropical",
+        "pot": "Blue Ceramic",
+        "description": "Large, dramatic leaves make this artificial Elephant Ear plant a stunning focal point in any room."
+    },
+    {
+        "file": "Artificial_English_Ivy_Trellis.png",
+        "name": "Climbing English Ivy",
+        "category": "Foliage",
+        "pot": "White Square",
+        "description": "Beautifully arranged artificial ivy climbing a small trellis for added vertical greenery."
+    },
+    {
+        "file": "Artificial_Pothos_Trellis.png",
+        "name": "Climbing Pothos Plant",
+        "category": "Foliage",
+        "pot": "White Square",
+        "description": "Lush variegated pothos leaves perfectly arranged on a stake for a vibrant, growing appearance."
+    },
+    {
+        "file": "Artificial_Gold_Dust_Croton.png",
+        "name": "Gold Dust Croton",
+        "category": "Tropical",
+        "pot": "White Square",
+        "description": "Speckled with bright yellow spots, this faux Gold Dust Croton brings a sunny, tropical vibe."
+    },
+    {
+        "file": "Artificial_Spider_Plant.png",
+        "name": "Spiky Spider Plant",
+        "category": "Foliage",
+        "pot": "Black Square",
+        "description": "Bring dynamic texture to your decor with the arching, variegated leaves of this artificial spider plant."
+    },
+    {
+        "file": "Artificial_Grass_Plant.png",
+        "name": "Lush Green Grass Plant",
+        "category": "Foliage",
+        "pot": "White Square",
+        "description": "A simple, clean tuft of vibrant green artificial grass to add a refreshing touch to any modern space."
+    },
+    {
+        "file": "Artificial_Croton_Petra_Square_Pot.png",
+        "name": "Croton Petra in Square Pot",
+        "category": "Tropical",
+        "pot": "Black Square",
+        "description": "The fiery colors of a Croton Petra perfectly contrasted in a sleek black square planter."
+    },
+    {
+        "file": "Artificial_English_Ivy_Square_Pot.png",
+        "name": "English Ivy in Black Pot",
+        "category": "Foliage",
+        "pot": "Black Square",
+        "description": "A dense cluster of rich green ivy leaves set elegantly in a modern black square pot."
+    },
+    {
+        "file": "Artificial_Coleus.png",
+        "name": "Vibrant Faux Coleus",
+        "category": "Foliage",
+        "pot": "White Round",
+        "description": "Stunning pink and green patterned leaves make this artificial Coleus a colorful standout piece."
+    },
+    {
+        "file": "Artificial_Aglaonema.png",
+        "name": "Variegated Aglaonema",
+        "category": "Foliage",
+        "pot": "Black Square",
+        "description": "Lush green leaves with elegant light green variegation, perfect for brightening up shaded corners."
+    },
+    {
+        "file": "Artificial_Gold_Dust_Croton_Round_Pot.png",
+        "name": "Gold Dust Croton Bush",
+        "category": "Tropical",
+        "pot": "Brown Round",
+        "description": "A dense, bushy faux Gold Dust Croton with bright yellow speckles in a warm brown pot."
+    },
+    {
+        "file": "Artificial_Red_Tulips.png",
+        "name": "Crimson Red Tulips",
+        "category": "Flowering",
+        "pot": "Twine Wrapped",
+        "description": "A beautiful bundle of lifelike red tulips wrapped in rustic twine for a fresh, springtime feel."
+    },
+    {
+        "file": "Artificial_Purple_Tulips.png",
+        "name": "Deep Plum Tulips",
+        "category": "Flowering",
+        "pot": "Twine Wrapped",
+        "description": "Elegant and moody, these deep purple artificial tulips bring sophisticated color to your decor."
+    },
+    {
+        "file": "Artificial_Pink_Tulips.png",
+        "name": "Gradient Pink Tulips",
+        "category": "Flowering",
+        "pot": "Twine Wrapped",
+        "description": "Soft pink and white gradient petals make this artificial tulip bundle incredibly realistic and romantic."
+    },
+    {
+        "file": "Artificial_Yellow_Tulips.png",
+        "name": "Sunny Yellow Tulips",
+        "category": "Flowering",
+        "pot": "Twine Wrapped",
+        "description": "Brighten up your day with this cheerful bundle of vibrant yellow artificial tulips."
+    },
+    {
+        "file": "Artificial_Dracaena_Fragrans.png",
+        "name": "Striped Dracaena",
+        "category": "Foliage",
+        "pot": "Black Round",
+        "description": "A realistic faux Dracaena featuring long, elegant green leaves with striking yellow center stripes."
+    },
+    {
+        "file": "Artificial_Hanging_Maple_Leaves.png",
+        "name": "Hanging Autumn Maple",
+        "category": "Hanging",
+        "pot": "Burlap Cone",
+        "description": "A gorgeous hanging arrangement of fiery autumn maple leaves in a rustic burlap cone."
+    },
+    {
+        "file": "Artificial_Hanging_Tradescantia.png",
+        "name": "Hanging Wandering Jew",
+        "category": "Hanging",
+        "pot": "Burlap Cone",
+        "description": "Beautiful trailing striped green foliage cascading perfectly from a decorative burlap cone."
+    },
+    {
+        "file": "Artificial_Hanging_Yellow_Morning_Glory.png",
+        "name": "Yellow Hanging Morning Glory",
+        "category": "Hanging",
+        "pot": "Wire Basket",
+        "description": "Bright yellow blooms and trailing ivy leaves set in a classic hanging wire basket with moss."
+    },
+    {
+        "file": "Artificial_Hanging_White_Bougainvillea.png",
+        "name": "White Hanging Bougainvillea",
+        "category": "Hanging",
+        "pot": "Wire Basket",
+        "description": "Delicate white flowers and lush greenery cascade elegantly from this moss-lined hanging basket."
+    },
+    {
+        "file": "Artificial_Hanging_Pothos.png",
+        "name": "Hanging Variegated Pothos",
+        "category": "Hanging",
+        "pot": "Wire Basket",
+        "description": "A classic trailing faux pothos plant with realistic variegation in a charming hanging wire basket."
+    },
+    {
+        "file": "Artificial_Hanging_Red_Morning_Glory.png",
+        "name": "Red Hanging Morning Glory",
+        "category": "Hanging",
+        "pot": "Wire Basket",
+        "description": "Vibrant red blooms pop against trailing green ivy in this beautiful hanging basket arrangement."
+    }
+]

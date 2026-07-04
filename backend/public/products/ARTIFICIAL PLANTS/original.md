@@ -7,110 +7,87 @@
         "images": [
           {
             "name": "Cello 12 Pcs Soup Set",
-            "image": "/products/cello_prod/cello_12_pcs_soup_set.jpg",
+            "image": "/products/cello_prod/cello 12 pcs soup set.jpg",
             "description": "Elegant 12-piece Cello soup set — perfect for family dining. Includes 6 soup bowls with saucers. Made from high-quality porcelain with a glossy, food-safe finish. Microwave and dishwasher safe.",
-            "price": 749,
-            "act-price": 0
+            "price": 1299
           },
           {
             "name": "Cello 6Pcs Dinner Plate",
-            "image": "/products/cello_prod/cello_6pcs_dinner_plate.jpg",
+            "image": "/products/cello_prod/cello 6pcs dinner plate.jpg",
             "description": "Premium Cello 6-piece dinner plate set crafted from durable opalware glass. Scratch-resistant, chip-resistant and features an elegant solid finish. Perfect for everyday use and special occasions.",
-            "price": 1050,
-            "act-price": 0
+            "price": 899
           },
           {
             "name": "Cello Breakfast Set 4 Pcs",
-            "image": "/products/cello_prod/cello_breakfast_set_4_pcs.webp",
+            "image": "/products/cello_prod/cello breakfast set 4 pcs.webp",
             "description": "Start your mornings in style with the Cello 4-piece breakfast set. Includes plates, bowl and mug. BPA-free, microwave safe, and easy to clean. Ideal for individuals and compact families.",
-            "price": 499,
-            "act-price": 0
+            "price": 749
           },
           {
             "name": "Cello Dazzle Fruit 9 Pcs Set",
-            "image": "/products/cello_prod/cello_dazzle_fruit_9_pcs_set.jpg",
+            "image": "/products/cello_prod/cello dazzle fruit 9 pcs set.jpg",
             "description": "Vibrant 9-piece Cello Dazzle fruit serving set with eye-catching design. Includes large and small serving bowls in assorted colours. Lightweight, shatter-resistant, and BPA-free.",
-            "price": 759,
-            "act-price": 0
+            "price": 999
           },
           {
             "name": "Cello Dazzle Pudding Set 7 Pcs",
-            "image": "/products/cello_prod/cello_dazzle_pudding_set_7_pcs.jpg",
+            "image": "/products/cello_prod/cello dazzle pudding set 7 pcs.jpg",
             "description": "Stunning 7-piece Cello Dazzle pudding set for a premium dessert presentation. Includes individual pudding cups with a large serving bowl. Microwave safe and dishwasher friendly.",
-            "price": 595,
-            "act-price": 0
+            "price": 849
           },
           {
             "name": "Cello Designer Crockery Set 10Pcs Set",
-            "image": "/products/cello_prod/cello_designer_crockery_set_10pcs_set.jpeg",
+            "image": "/products/cello_prod/cello designer crockery set 10pcs set.jpeg",
             "description": "Elegant 10-piece Cello designer crockery set featuring premium opalware. Comes with dinner plates, side plates, and bowls. Graceful floral patterns make every meal feel special.",
-            "price": 1549,
-            "title": "Cello Designer Crockery Set 10Pcs Set",
-            "act-price": 0
+            "price": 1099
           },
           {
             "name": "Cello Designer Crockery Set 31Pcs Set",
-            "image": "/products/cello_prod/cello_designer_crockery_set_31pcs_set.webp",
+            "image": "/products/cello_prod/cello designer crockery set 31pcs set.webp",
             "description": "Comprehensive 31-piece Cello designer crockery set for full table settings. Includes dinner plates, side plates, bowls, cups, and saucers. Premium opalware with an elegant embossed design.",
-            "price": 2750,
-            "title": "Cello Designer Crockery Set 31Pcs Set",
-            "act-price": 0
+            "price": 2999
           },
           {
             "name": "Cello Designer Crockery Set 65Pcs Set",
-            "image": "/products/cello_prod/cello_designer_crockery_set_65pcs_set.webp",
+            "image": "/products/cello_prod/cello designer crockery set 65pcs set.webp",
             "description": "Royal 65-piece Cello designer crockery set — everything you need for entertaining large gatherings. Complete table service for 8 with dinner plates, dessert plates, bowls, cups and saucers.",
-            "price": 4999,
-            "title": "Cello Designer Crockery Set 65Pcs Set",
-            "act-price": 0
+            "price": 5499
           },
           {
             "name": "Cello Designer Crockery Set 6Pcs",
-            "image": "/products/cello_prod/cello_designer_crockery_set_6pcs.webp",
+            "image": "/products/cello_prod/cello designer crockery set 6pcs.webp",
             "description": "Stylish 6-piece Cello opalware dinner plate set with a refined designer pattern. Microwave and dishwasher safe. Perfect as a starter set or a thoughtful housewarming gift.",
-            "price": 949,
-            "title": "Cello Designer Crockery Set 6Pcs",
-            "act-price": 0
+            "price": 799
           },
           {
             "name": "Cello Designer Crockery Set 78Pcs Set",
-            "image": "/products/cello_prod/cello_designer_crockery_set_78pcs_set.avif",
+            "image": "/products/cello_prod/cello designer crockery set 78pcs set.avif",
             "description": "Grand 78-piece Cello designer crockery set — the ultimate in-home dining experience. Complete banquet-style service featuring plates, bowls, mugs, cups, and saucers with a matching designer motif.",
-            "price": 6999,
-            "title": "Cello Designer Crockery Set 78Pcs Set",
-            "act-price": 0
+            "price": 6499
           },
           {
             "name": "Cello Imperial Dessert Set 7 Pcs",
-            "image": "/products/cello_prod/cello_imperial_dessert_set_7_pcs.jpg",
+            "image": "/products/cello_prod/cello imperial dessert set 7 pcs.jpg",
             "description": "Refined 7-piece Cello Imperial dessert set with gold-trim accents. Includes 6 dessert bowls and one large serving bowl. Perfect for puddings, ice cream, and sweet delicacies.",
-            "price": 699,
-            "title": "Cello Imperial Dessert Set 7 Pcs",
-            "act-price": 0
+            "price": 899
           },
           {
             "name": "Cello Imperial Quick Bite Set 8 Pcs",
-            "image": "/products/cello_prod/cello_imperial_quick_bite_set_8_pcs.avif",
+            "image": "/products/cello_prod/cello imperial quick bite set 8 pcs.avif",
             "description": "Functional 8-piece Cello Imperial quick-bite set for snacks, starters, and side dishes. Compact size, easy to stack. Great for parties, school tiffins, and quick meal serving.",
-            "price": 749,
-            "title": "Cello Imperial Quick Bite Set 8 Pcs",
-            "act-price": 0
+            "price": 749
           },
           {
             "name": "Cello Multi Purpose Bowl Set 2 Pcs",
-            "image": "/products/cello_prod/cello_multi_purpose_bowl_set_2_pcs.jpg",
+            "image": "/products/cello_prod/cello multi purpose bowl set 2 pcs.jpg",
             "description": "Adaptable 2-piece Cello multi-purpose bowl set suitable for soups, cereals, fruits, and desserts. Deep design with comfortable grip. Non-toxic, food-grade material. Microwave and dishwasher safe.",
-            "price": 249,
-            "title": "Cello Multi Purpose Bowl Set 2 Pcs",
-            "act-price": 0
+            "price": 399
           },
           {
             "name": "Cello Veg Bowl Set 6Pcs",
-            "image": "/products/cello_prod/cello_veg_bowl_set_6pcs.webp",
+            "image": "/products/cello_prod/cello veg bowl set 6PCS.webp",
             "description": "Premium 6-piece Cello vegetable serving bowl set. Perfect for side dishes, salads, and curries. Matching design for a unified table look. Microwave safe, dishwasher friendly, and BPA-free.",
-            "price": 485,
-            "title": "Cello Veg Bowl Set 6Pcs",
-            "act-price": 0
+            "price": 899
           }
         ]
       },
@@ -119,37 +96,37 @@
         "images": [
           {
             "name": "Cello Cup & Saucer Regular 12 Pcs",
-            "image": "/products/cello_prod/cello_cup_saucer_regular_12_pcs.jpg",
+            "image": "/products/cello_prod/cello cup & saucer regular 12 pcs.jpg",
             "description": "Complete 12-piece Cello cup and saucer set for formal and casual tea service. Crafted from durable opalware with a smooth pearlescent finish. Microwave and dishwasher safe.",
             "price": 1199
           },
           {
             "name": "Cello Dazzle Tea Set 15Pcs",
-            "image": "/products/cello_prod/cello_dazzle_tea_set_15pcs.webp",
+            "image": "/products/cello_prod/cello dazzle tea set 15pcs.webp",
             "description": "Luxurious 15-piece Cello Dazzle tea set for hosting guests in style. Includes teacups, saucers, a teapot, and a sugar bowl. Dazzling floral design on a pure-white opalware base.",
             "price": 1599
           },
           {
             "name": "Cello Large Mug Set 2Pcs",
-            "image": "/products/cello_prod/cello_large_mug_set_2pcs.avif",
+            "image": "/products/cello_prod/cello large mug set 2pcs.avif",
             "description": "Enjoy your morning beverages in the Cello large mug set. Set of 2 generously-sized mugs crafted from durable opalware. Suitable for tea, coffee, and hot chocolate. Dishwasher safe.",
             "price": 449
           },
           {
             "name": "Cello Recca Mug 4 Pcs",
-            "image": "/products/cello_prod/cello_recca_mug_4_pcs.avif",
+            "image": "/products/cello_prod/cello recca mug 4 pcs.avif",
             "description": "Sophisticated 4-piece Cello Recca mug set with a sleek contemporary design. Generous capacity for a satisfying hot or cold beverage. Durable opalware construction. Microwave and dishwasher safe.",
             "price": 799
           },
           {
             "name": "Cello Ricca Sisley Vogue Mug 6Pcs",
-            "image": "/products/cello_prod/cello_ricca_sisley_vogue_mug_6pcs.jpeg",
+            "image": "/products/cello_prod/cello ricca sisley vogue mug 6pcs.jpeg",
             "description": "Fashionable 6-piece Cello Ricca Sisley Vogue mug collection — each mug features a distinct trendy pattern. Perfect for gifting or to elevate your kitchen shelf. Microwave and dishwasher safe.",
             "price": 1099
           },
           {
             "name": "Cello Stella Mug Regular 2 Pcs Set",
-            "image": "/products/cello_prod/cello_stella_mug_regular_2_pcs_set.jpg",
+            "image": "/products/cello_prod/cello stella mug regular 2 pcs set.jpg",
             "description": "Timeless 2-piece Cello Stella mug set in a clean, white opalware finish. Ideal for everyday use. Sturdy handle, smooth rim, and optimal capacity for tea or coffee. Dishwasher safe.",
             "price": 449
           }
@@ -160,19 +137,19 @@
         "images": [
           {
             "name": "Cello Creeper Storage Container 130M 2Pieces Set",
-            "image": "/products/cello_prod/cello_creeper_storage_container_130m_2pieces_set_.jpg",
+            "image": "/products/cello_prod/cello creeper storage container 130m 2pieces set .jpg",
             "description": "Compact Cello Creeper airtight storage containers with 130ml capacity each. Set of 2. Transparent body lets you see contents at a glance. Ideal for spices, seeds, and small food items. Leak-proof lids.",
             "price": 349
           },
           {
             "name": "Cello Imperial Storage Set With Lid 6Pcs",
-            "image": "/products/cello_prod/cello_imperial_storage_set_with_lid_6pcs.webp",
+            "image": "/products/cello_prod/cello imperial storage set with lid 6pcs.webp",
             "description": "Practical 6-piece Cello Imperial airtight storage container set with secure lids. Keeps food fresh for longer. Stackable design saves kitchen space. Microwave safe and BPA-free.",
             "price": 999
           },
           {
             "name": "Cello Istorage Container Small 4Pcs",
-            "image": "/products/cello_prod/cello_istorage_container_small_4pcs.webp",
+            "image": "/products/cello_prod/cello istorage container small 4pcs.webp",
             "description": "Space-saving 4-piece Cello iStorage small container set. Transparent body for easy identification. Air-tight lids prevent moisture and pests. Perfect for pulses, spices and grains.",
             "price": 649
           }
@@ -183,19 +160,19 @@
         "images": [
           {
             "name": "Cello Mixing Bowl Large With Premium Lid",
-            "image": "/products/cello_prod/cello_mixing_bowl_large_with_premium_lid.jpg",
+            "image": "/products/cello_prod/cello mixing bowl large with premium lid.jpg",
             "description": "Heavy-duty Cello large mixing bowl with a premium snap-fit lid. Ideal for baking, marinating, and food prep. Shatterproof and scratch-resistant. Wide base for stable mixing.",
             "price": 699
           },
           {
             "name": "Cello Mixing Bowl Medium 2Pieces",
-            "image": "/products/cello_prod/cello_mixing_bowl_medium_2pieces.webp",
+            "image": "/products/cello_prod/cello mixing bowl medium 2pieces.webp",
             "description": "Versatile 2-piece Cello medium mixing bowl set for everyday kitchen tasks. Lightweight yet durable. Suitable for salads, dough preparation, and marinating. Microwave safe.",
             "price": 549
           },
           {
             "name": "Cello Mixing Bowl Small 2Pc Set",
-            "image": "/products/cello_prod/cello_mixing_bowl_small_2pc_set.webp",
+            "image": "/products/cello_prod/cello mixing bowl small 2pc set.webp",
             "description": "Compact 2-piece Cello small mixing bowl set for sauces, dips, and portion servings. Stackable design for easy storage. BPA-free, microwave safe, and easy to clean.",
             "price": 449
           }
@@ -215,7 +192,7 @@
             "id": "sonu_1779295730883_0",
             "name": "Sonu 2 Tier Steamer With Glass Lid 20 Cm",
             "title": "Sonu 2 Tier Steamer With Glass Lid 20 Cm",
-            "image": "/products/sonu_steel_products/sonu_2_tier_steamer_with_glass_lid_20_cm.webp",
+            "image": "/products/sonu_steel_products/sonu 2 tier steamer with glass lid 20 cm.webp",
             "description": "Premium quality stainless steel 2-tier steamer featuring a durable tempered glass lid and 20 cm diameter. Perfect for steaming vegetables, dumplings, and healthy dishes efficiently on both gas and induction cooktops.",
             "price": 1499,
             "act-price": 1999
@@ -225,20 +202,20 @@
             "id": "sonu_1779295730883_1",
             "name": "Sonu Bellino Pressure Cooker 5.4 Lts",
             "title": "Sonu Bellino Pressure Cooker 5.4 Lts",
-            "image": "/products/sonu_steel_products/sonu_bellino_pressure_cooker_5.4_lts.webp",
+            "image": "/products/sonu_steel_products/sonu bellino pressure cooker 5.4 lts.webp",
             "description": "Robust 5.4-liter stainless steel pressure cooker with an outer lid design. Engineered with a heavy sandwich base for quick, even heat distribution, comfortable handles, and advanced safety features for everyday culinary perfection.",
-            "price": 3899,
-            "act-price": 0
+            "price": 2499,
+            "act-price": 3299
           },
           {
             "prod_id": "sonu_1779295730883_2",
             "id": "sonu_1779295730883_2",
             "name": "Sonu Chefmate Multi Cooker 5.4 Lts",
             "title": "Sonu Chefmate Multi Cooker 5.4 Lts",
-            "image": "/products/sonu_steel_products/sonu_chefmate_multi_cooker_5.4_lts.webp",
+            "image": "/products/sonu_steel_products/sonu chefmate multi cooker 5.4 lts.webp",
             "description": "Highly versatile 5.4-liter multi-cooker crafted from premium food-grade stainless steel. Perfect for steaming, boiling, and deep cooking. Features strong riveted side handles and a sturdy design.",
-            "price": 5296,
-            "act-price": 0
+            "price": 2299,
+            "act-price": 2999
           }
         ]
       },
@@ -250,37 +227,37 @@
             "id": "sonu_1779295730883_3",
             "name": "Sonu Crysta Pot 14cm 1000 Ml",
             "title": "Sonu Crysta Pot 14cm 1000 Ml",
-            "image": "/products/sonu_steel_products/sonu_crysta_pot_14cm_1000_ml.webp",
+            "image": "/products/sonu_steel_products/sonu crysta pot 14cm 1000 ml.webp",
             "description": "Elegant 1000 ml stainless steel Crysta pot with a 14 cm diameter. Beautiful mirror finish, heat-resistant handles, and superior heat retention, making it perfect for cooking and direct serving.",
-            "price": 599,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1099
           },
           {
             "prod_id": "sonu_1779295730883_4",
             "id": "sonu_1779295730883_4",
             "name": "Sonu Crysta Pot 16cm 1500 Ml",
             "title": "Sonu Crysta Pot 16cm 1500 Ml",
-            "image": "/products/sonu_steel_products/sonu_crysta_pot_16cm_1500_ml.webp",
+            "image": "/products/sonu_steel_products/sonu crysta pot 16cm 1500 ml.webp",
             "description": "Superior 1500 ml stainless steel Crysta pot with a 16 cm diameter. Designed with an encapsulation base for uniform heating, dual side grips, and a premium polish that elevates your kitchen aesthetic.",
-            "price": 799,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1399
           },
           {
             "prod_id": "sonu_1779295730883_5",
             "id": "sonu_1779295730883_5",
             "name": "Sonu Crysta Pot 18cm ",
             "title": "Sonu Crysta Pot 18cm ",
-            "image": "/products/sonu_steel_products/sonu_crysta_pot_18cm_.webp",
+            "image": "/products/sonu_steel_products/sonu crysta pot 18cm .webp",
             "description": "Spacious 18 cm stainless steel Crysta pot designed for preparing and serving larger portions. Extremely durable, easy to clean, and features an elegant sleek design ideal for modern kitchens.",
-            "price": 899,
-            "act-price": 0
+            "price": 1199,
+            "act-price": 1699
           },
           {
             "prod_id": "sonu_1779295730883_8",
             "id": "sonu_1779295730883_8",
             "name": "Sonu Elito Gravy Pot Induction Base 12 Ltr",
             "title": "Sonu Elito Gravy Pot Induction Base 12 Ltr",
-            "image": "/products/sonu_steel_products/sonu_elito_gravy_pot_induction_base_12_ltr.webp",
+            "image": "/products/sonu_steel_products/sonu elito gravy pot induction base 12 ltr.webp",
             "description": "Commercial-grade 12-liter Sonu Elito gravy pot with a heavy-duty induction-compatible base. Ideal for large family feasts, restaurants, and catering services. Built to last a lifetime.",
             "price": 3499,
             "act-price": 4599
@@ -290,37 +267,37 @@
             "id": "sonu_1779295730883_9",
             "name": "Sonu Eliza Pot 16cm 1500 Ml",
             "title": "Sonu Eliza Pot 16cm 1500 Ml",
-            "image": "/products/sonu_steel_products/sonu_eliza_pot_16cm_1500_ml.png",
+            "image": "/products/sonu_steel_products/sonu eliza pot 16cm 1500 ml.png",
             "description": "Beautifully designed 1500 ml Sonu Eliza pot with a 16 cm diameter. Crafted from premium mirror-polished stainless steel, featuring safe-grip side handles and outstanding thermal efficiency.",
-            "price": 550,
-            "act-price": 0
+            "price": 1199,
+            "act-price": 1599
           },
           {
             "prod_id": "sonu_1779295730883_10",
             "id": "sonu_1779295730883_10",
             "name": "Sonu Gravy Pot 16cm 1800ml",
             "title": "Sonu Gravy Pot 16cm 1800ml",
-            "image": "/products/sonu_steel_products/sonu_gravy_pot_16cm_1800ml.jpg",
+            "image": "/products/sonu_steel_products/sonu gravy pot 16cm 1800ml.jpg",
             "description": "Spacious 1800 ml Sonu Gravy Pot with a 16 cm diameter. Excellent for slow-cooking gravies, boiling milk, or preparing soups. Rust-resistant food-safe construction.",
-            "price": 2999,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1399
           },
           {
             "prod_id": "sonu_1779295730883_11",
             "id": "sonu_1779295730883_11",
             "name": "Sonu Italian Floral Gold 16cm 1500 Ml",
             "title": "Sonu Italian Floral Gold 16cm 1500 Ml",
-            "image": "/products/sonu_steel_products/sonu_italian_floral_gold_16cm_1500_ml.webp",
+            "image": "/products/sonu_steel_products/sonu italian floral gold 16cm 1500 ml.webp",
             "description": "Luxurious 1500 ml pot boasting a breathtaking Italian Floral Gold motif on high-quality stainless steel. Seamlessly merges artistic styling with durable cooking capability, perfect for fine dining.",
-            "price": 600,
-            "act-price": 0
+            "price": 1599,
+            "act-price": 2199
           },
           {
             "prod_id": "sonu_1779295730883_14",
             "id": "sonu_1779295730883_14",
             "name": "Sonu Quantum Stock Pot 16cm 1700ml With Lid",
             "title": "Sonu Quantum Stock Pot 16cm 1700ml With Lid",
-            "image": "/products/sonu_steel_products/sonu_quantum_stock_pot_16cm_1700ml_with_lid.webp",
+            "image": "/products/sonu_steel_products/sonu quantum stock pot 16cm 1700ml with lid.webp",
             "description": "Premium 1700 ml stock pot (16 cm diameter) equipped with a snug-fitting lid. Excellent heat circulation preserves maximum moisture, nutrients, and flavors in soups and stews.",
             "price": 1299,
             "act-price": 1799
@@ -330,20 +307,20 @@
             "id": "sonu_1779295730883_15",
             "name": "Sonu Quantum Stockpot 14cm 1.1 Ltr",
             "title": "Sonu Quantum Stockpot 14cm 1.1 Ltr",
-            "image": "/products/sonu_steel_products/sonu_quantum_stockpot_14cm_1.1_ltr.jpg",
+            "image": "/products/sonu_steel_products/sonu quantum stockpot 14cm 1.1 ltr.jpg",
             "description": "Compact 1.1-liter Quantum stockpot with a 14 cm diameter. Perfect for cooking smaller portions, boiling liquids, or heating side dishes. Heavy sandwich base for uniform heat distribution.",
-            "price": 799,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1199
           },
           {
             "prod_id": "sonu_1779295730883_16",
             "id": "sonu_1779295730883_16",
             "name": "Sonu Eliza Pot 14cm 1000ml",
             "title": "Sonu Eliza Pot 14cm 1000ml",
-            "image": "/products/sonu_steel_products/sonu_eliza_pot_14cm_1000ml.png",
+            "image": "/products/sonu_steel_products/sonu-eliza-pot-14cm-1000ml.png",
             "description": "Charming 1000 ml Sonu Eliza Pot featuring a 14 cm diameter. Crafted from pristine rust-proof stainless steel. Highly efficient heat distribution and induction compatible.",
-            "price": 350,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1199
           }
         ]
       },
@@ -355,30 +332,30 @@
             "id": "sonu_1779295730883_7",
             "name": "Sonu Elite Square Tawa",
             "title": "Sonu Elite Square Tawa",
-            "image": "/products/sonu_steel_products/sonu_elite_square_tawa.jpg",
+            "image": "/products/sonu_steel_products/sonu elite square tawa.jpg",
             "description": "Exquisite square tawa crafted for making perfect crispy dosas, fluffy parathas, and crepes. Features a durable construction and ergonomic stay-cool handle for excellent control.",
-            "price": 1396,
-            "act-price": 0
+            "price": 1099,
+            "act-price": 1499
           },
           {
             "prod_id": "sonu_1779295730883_12",
             "id": "sonu_1779295730883_12",
             "name": "Sonu Multi Kadai 8 Pcs",
             "title": "Sonu Multi Kadai 8 Pcs",
-            "image": "/products/sonu_steel_products/sonu_multi_kadai_8_pcs.webp",
+            "image": "/products/sonu_steel_products/sonu multi kadai 8 pcs.webp",
             "description": "The complete 8-piece Sonu Multi Kadai cooker set. Includes specialized plates for preparing idlis, dhoklas, momos, and steam-based dishes. Highly durable stainless steel with induction base.",
-            "price": 2499,
-            "act-price": 0
+            "price": 2999,
+            "act-price": 3999
           },
           {
             "prod_id": "sonu_1779295730883_13",
             "id": "sonu_1779295730883_13",
             "name": "Sonu Quantum Kadai With Lid 20 Cm 2.1Ltr",
             "title": "Sonu Quantum Kadai With Lid 20 Cm 2.1Ltr",
-            "image": "/products/sonu_steel_products/sonu_quantum_kadai_with_lid_20_cm_2.1ltr",
+            "image": "/products/sonu_steel_products/sonu quantum kadai with lid 20 cm 2.1ltr",
             "description": "Elegant 2.1-liter Sonu Quantum Kadai with a 20 cm diameter. Features a durable matching lid, induction compatible base, and sturdy stay-cool side handles.",
-            "price": 1250,
-            "act-price": 0
+            "price": 1399,
+            "act-price": 1899
           }
         ]
       },
@@ -388,12 +365,12 @@
           {
             "prod_id": "sonu_1779295730883_6",
             "id": "sonu_1779295730883_6",
-            "name": "Sonu Dezire Cook & Serve Set 2 With Glass Lid 14 cm",
-            "title": "Sonu Dezire Cook & Serve Set 2 With Glass Lid 14 cm",
-            "image": "/products/sonu_steel_products/sonu_dezire_cook_serve_set_2_with_glass_lid.jpeg",
+            "name": "Sonu Dezire Cook & Serve Set 2 With Glass Lid",
+            "title": "Sonu Dezire Cook & Serve Set 2 With Glass Lid",
+            "image": "/products/sonu_steel_products/sonu dezire cook & serve set 2 with glass lid.jpeg",
             "description": "Premium 2-piece Sonu Dezire Cook & Serve cookware set complete with elegant glass lids. Perfect for seamless cooking and elegant dining presentation. Features an induction-compatible heavy base.",
-            "price": 900,
-            "act-price": 0
+            "price": 1899,
+            "act-price": 2599
           }
         ]
       }
@@ -411,380 +388,140 @@
             "id": "aquarium_1780653698072_0",
             "name": "Holiday Block Tropical Fish Food (30 g)",
             "title": "Holiday Block Tropical Fish Food (30 g)",
-            "image": "/products/aquarium_and_accesories/_holiday_block_tropical_fish_food_30_g_.png",
+            "image": "/products/aquarium and accesories/ Holiday Block Tropical Fish Food (30 g).png",
             "description": "Premium Holiday Block Tropical Fish Food (30 g) for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 50,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1129
           },
           {
             "prod_id": "aquarium_1780653698073_12",
             "id": "aquarium_1780653698073_12",
             "name": "Mini Floating Fish Food Pellets 50g",
             "title": "Mini Floating Fish Food Pellets 50g",
-            "image": "/products/aquarium_and_accesories/mini_floating_fish_food_pellets_50g_1.8mm_pellet_size_highly_digestible_nutritious_fish_feed_for_all_aquarium_fish_set_of_10.png",
+            "image": "/products/aquarium and accesories/Mini Floating Fish Food Pellets 50g | 1.8mm Pellet Size | Highly Digestible & Nutritious Fish Feed for All Aquarium Fish set of 10.png",
             "description": "High-quality Mini Floating Fish Food Pellets 50g. 1.8mm Pellet Size. Highly Digestible & Nutritious Fish Feed for All Aquarium Fish set of 10.",
-            "price": 90,
-            "act-price": 0
+            "price": 249,
+            "act-price": 389
           },
           {
             "prod_id": "aquarium_1780653698073_13",
             "id": "aquarium_1780653698073_13",
             "name": "Optimum 3 in 1-6 percent - Fish Food for All Type Fish - Fast Color,Growth Fish",
             "title": "Optimum 3 in 1-6 percent - Fish Food for All Type Fish - Fast Color,Growth Fish",
-            "image": "/products/aquarium_and_accesories/optimum_3_in_1_6_percent_fish_food_for_all_type_fish_fast_color_growth_fish_.png",
+            "image": "/products/aquarium and accesories/Optimum 3 in 1-6 percent - Fish Food for All Type Fish - Fast Color,Growth Fish .png",
             "description": "Premium Optimum 3 in 1-6 percent - Fish Food for All Type Fish - Fast Color,Growth Fish for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 185,
-            "act-price": 0
+            "price": 399,
+            "act-price": 589
           },
           {
             "prod_id": "aquarium_1780653698073_14",
             "id": "aquarium_1780653698073_14",
             "name": "Optimum Fish Food 500g Mini Pellets for Aquarium Fish",
             "title": "Optimum Fish Food 500g Mini Pellets for Aquarium Fish",
-            "image": "/products/aquarium_and_accesories/optimum_fish_food_500g_mini_pellets_for_aquarium_fish_high_protein_floating_feed_for_guppy_molly_tetra_betta_tropical_fish_daily_nutrition_for_growth_color_enhancement.png",
+            "image": "/products/aquarium and accesories/Optimum Fish Food 500g Mini Pellets for Aquarium Fish | High Protein Floating Feed for Guppy, Molly, Tetra, Betta & Tropical Fish | Daily Nutrition for Growth & Color Enhancement.png",
             "description": "High-quality Optimum Fish Food 500g Mini Pellets for Aquarium Fish. High Protein Floating Feed for Guppy, Molly, Tetra, Betta & Tropical Fish. Daily Nutrition for Growth & Color Enhancement.",
-            "price": 425,
-            "act-price": 0
+            "price": 699,
+            "act-price": 989
           },
           {
             "prod_id": "aquarium_1780653698073_19",
             "id": "aquarium_1780653698073_19",
             "name": "RESUN Automatic Food Timer, Aquarium Fish Tank (AF2009D) Digital Automatic and Manual Fish Feeder (50 g)",
             "title": "RESUN Automatic Food Timer, Aquarium Fish Tank (AF2009D) Digital Automatic and Manual Fish Feeder (50 g)",
-            "image": "/products/aquarium_and_accesories/resun_automatic_food_timer_aquarium_fish_tank_af2009d_digital_automatic_and_manual_fish_feeder_50_g_.png",
+            "image": "/products/aquarium and accesories/RESUN Automatic Food Timer, Aquarium Fish Tank (AF2009D) Digital Automatic and Manual Fish Feeder (50 g).png",
             "description": "Premium RESUN Automatic Food Timer, Aquarium Fish Tank (AF2009D) Digital Automatic and Manual Fish Feeder (50 g) for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 1850,
-            "act-price": 0
+            "price": 499,
+            "act-price": 719
           },
           {
             "prod_id": "aquarium_1780653698073_36",
             "id": "aquarium_1780653698073_36",
             "name": "Intan Betta Pellets - All Life Stages, Fish, 55g",
             "title": "Intan Betta Pellets - All Life Stages, Fish, 55g",
-            "image": "/products/aquarium_and_accesories/intan_betta_pellets_all_life_stages_fish_55_g.png",
+            "image": "/products/aquarium and accesories/Intan - Betta Pellets - All Life Stages, Fish, 55 G.png",
             "description": "Highly nutritious Intan Betta Pellets formulated for all life stages. Promotes healthy growth, vibrant colors, and active vitality for betta fish.",
-            "price": 225,
-            "act-price": 0
+            "price": 199,
+            "act-price": 299
           },
           {
             "prod_id": "aquarium_1780653698073_37",
             "id": "aquarium_1780653698073_37",
             "name": "Intan Flower Horn Pellets (Small 1.5mm Floating) 160g",
             "title": "Intan Flower Horn Pellets (Small 1.5mm Floating) | 160g - Highly Nutritious Fish Food for Flowerhorn & Kamfa",
-            "image": "/products/aquarium_and_accesories/intan_flower_horn_pellets_small_1.5mm_floating_160gm_highly_nutritious_ornamental_fish_food_for_flowerhorn_kamfa_growel_feeds.png",
+            "image": "/products/aquarium and accesories/Intan Flower Horn Pellets (Small 1.5mm Floating) | 160gm - Highly Nutritious Ornamental Fish Food for Flowerhorn & Kamfa | Growel Feeds.png",
             "description": "Highly nutritious ornamental fish food specially formulated for Flowerhorn & Kamfa fish. 1.5mm floating pellets from Growel Feeds for growth and head formation.",
-            "price": 396,
-            "act-price": 0
+            "price": 349,
+            "act-price": 499
           },
           {
             "prod_id": "aquarium_1780653698073_38",
             "id": "aquarium_1780653698073_38",
             "name": "Intan Ornamental Fish Wafers (Big 1.6mm Slow Sinking) 520g",
             "title": "Intan Ornamental Fish Wafers (Big 1.6mm Slow Sinking) | 520g - Highly Nutritious Fish Food for Angels, Gouramis, Goldfish, Barbs & Rainbows",
-            "image": "/products/aquarium_and_accesories/intan_ornamental_fish_wafers_big_1.6mm_slow_sinking_520gm_highly_nutritious_ornamental_fish_food_for_angels_gouramis_goldfish_barbs_rainbows_growel_feeds.png",
+            "image": "/products/aquarium and accesories/Intan Ornamental Fish Wafers (Big 1.6mm Slow Sinking) | 520gm - Highly Nutritious Ornamental Fish Food for Angels, Gouramis, Goldfish, Barbs & Rainbows | Growel Feeds.png",
             "description": "Big 1.6mm slow sinking ornamental fish wafers by Growel Feeds. Premium nutrition for Angels, Gouramis, Goldfish, Barbs, and Rainbows.",
-            "price": 954,
-            "act-price": 0
+            "price": 599,
+            "act-price": 799
           },
           {
             "prod_id": "aquarium_1780653698073_39",
             "id": "aquarium_1780653698073_39",
             "name": "Intan Red Enhance Pellets (Small 1.5mm Floating) 30g",
             "title": "Intan Red Enhance Pellets (Small 1.5mm Floating) | 30g - Highly Nutritious Fish Food for Parrotfish & Red Coloured Fish",
-            "image": "/products/aquarium_and_accesories/intan_red_enhance_pellets_small_1.5mm_floating_30gm_highly_nutritious_ornamental_fish_food_for_parrotfish_red_coloured_fish_growel_feeds.png",
+            "image": "/products/aquarium and accesories/Intan Red Enhance Pellets (Small 1.5mm Floating) | 30gm - Highly Nutritious Ornamental Fish Food for Parrotfish & Red Coloured Fish | Growel Feeds.png",
             "description": "Enhance the brilliant red coloration of your Parrotfish and other red ornamental fish. Premium 1.5mm floating pellets from Growel Feeds.",
             "price": 149,
-            "act-price": 0
+            "act-price": 229
           },
           {
             "prod_id": "aquarium_1780653698073_40",
             "id": "aquarium_1780653698073_40",
             "name": "Intan Turtle Sticks (Small 1.5mm x 3-4.5mm Floating) 50g",
             "title": "Intan Turtle Sticks (Small 1.5mm x 3-4.5mm Floating) | 50g - Highly Nutritious Food for Turtles, Amphibians & Newts",
-            "image": "/products/aquarium_and_accesories/intan_turtle_sticks_small_1.5mm_x_3_4.5mm_floating_50gm_highly_nutritious_ornamental_fish_food_for_turtles_amphibians_newts_growel_feeds.png",
+            "image": "/products/aquarium and accesories/Intan Turtle Sticks (Small 1.5mm x 3-4.5mm Floating) | 50gm - Highly Nutritious Ornamental Fish Food for Turtles, Amphibians & Newts | Growel Feeds.png",
             "description": "Nutrient-rich floating turtle sticks (1.5mm x 3-4.5mm) suitable for all turtles, amphibians, and newts. Formulated for shell health and vitality by Growel Feeds.",
-            "price": 153,
-            "act-price": 0
+            "price": 179,
+            "act-price": 249
           },
           {
             "prod_id": "aquarium_1780653698073_41",
             "id": "aquarium_1780653698073_41",
             "name": "Original AquaOne Freeze Dried Blood Worms 13g",
             "title": "Original AquaOne Freeze Dried Blood Worms 13g Pack - Premium Fish Food!",
-            "image": "/products/aquarium_and_accesories/original_aquaone_freeze_dried_blood_worms_13_gms_pack_premium_fish_food_.png",
+            "image": "/products/aquarium and accesories/Original AquaOne Freeze Dried Blood Worms 13 GMS Pack - Premium Fish Food!.png",
             "description": "Premium high-protein original freeze-dried blood worms pack. Ideal natural treat for all freshwater fish, promoting growth and color enhancement.",
-            "price": 325,
-            "act-price": 0
+            "price": 129,
+            "act-price": 199
           },
           {
             "prod_id": "aquarium_1780653698073_42",
             "id": "aquarium_1780653698073_42",
             "name": "Taiyo Turtle Food 45g",
             "title": "Taiyo Turtle Food 45g",
-            "image": "/products/aquarium_and_accesories/taiyo_turtle_food_45g.png",
+            "image": "/products/aquarium and accesories/Taiyo Turtle Food 45g.png",
             "description": "Nutritious daily food sticks for turtles. Balanced diet with calcium to support strong shell growth and healthy development.",
-            "price": 130,
-            "act-price": 0
+            "price": 99,
+            "act-price": 149
           },
           {
             "prod_id": "aquarium_1780653698073_43",
             "id": "aquarium_1780653698073_43",
             "name": "Tetra Bits Complete Fish Food 300g",
             "title": "Tetra Bits Complete Fish Food 300g for Discus & Tropical Fish | Bio Active Granules",
-            "image": "/products/aquarium_and_accesories/tetra_bits_complete_fish_food_300g_for_discus_tropical_fish_bio_active_granules_for_health_colour_growth.png",
+            "image": "/products/aquarium and accesories/Tetra Bits Complete Fish Food 300g for Discus & Tropical Fish | Bio Active Granules for Health, Colour & Growth.png",
             "description": "The standard complete diet for Discus and other demanding tropical fish. Slow-sinking granules featuring BioActive formula for health, color, and growth.",
-            "price": 1250,
-            "act-price": 0
+            "price": 549,
+            "act-price": 750
           },
           {
             "prod_id": "aquarium_1780653698073_44",
             "id": "aquarium_1780653698073_44",
             "name": "XO Humpy Head 100g Flower Horn Fish Food",
             "title": "XO HUMPY Head 100g Flower Horn Fish Food Pellets (Original) | Increases Head Growth & Shape",
-            "image": "/products/aquarium_and_accesories/xo_humpy_head_100g_flower_horn_fish_food_pellets_original_to_increases_head_growth_and_shape._all_life_stages.png",
+            "image": "/products/aquarium and accesories/XO HUMPY Head 100g Flower Horn Fish Food Pellets (Original), to Increases Head Growth and Shape., All Life Stages.png",
             "description": "Famous original Flower Horn fish food pellets designed to increase head growth and shape. Balanced nutrition for all life stages, enhancing colors and health.",
-            "price": 750,
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350356_0",
-            "title": "aquacartman ya 8462 fish poop suction aquarium sponge filter",
-            "price": 945,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/aquacartman_ya_8462_fish_poop_suction_aquarium_sponge_filter.png",
-            "stock": 50,
-            "name": "aquacartman ya 8462 fish poop suction aquarium sponge filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_22",
-            "title": "hana hn 950f internal aquarium filter",
-            "price": 340,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hana_hn_950f_internal_aquarium_filter.png",
-            "stock": 50,
-            "name": "hana hn 950f internal aquarium filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_23",
-            "title": "nubios ds 20w dry burning aquarium submersible water pump",
-            "price": 899,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/nubios_ds_20w_dry_burning_aquarium_submersible_water_pump.png",
-            "stock": 50,
-            "name": "nubios ds 20w dry burning aquarium submersible water pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_24",
-            "title": "nubios ds series dry burning aquarium submersible water pump",
-            "price": 2150,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/nubios_ds_series_dry_burning_aquarium_submersible_water_pump.png",
-            "stock": 50,
-            "name": "nubios ds series dry burning aquarium submersible water pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_25",
-            "title": "petscope k4 double betta house rectangle aquarium tank ",
-            "price": 285,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/petscope_k4_double_betta_house_rectangle_aquarium_tank_.png",
-            "stock": 50,
-            "name": "petscope k4 double betta house rectangle aquarium tank ",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_28",
-            "title": "portable aquarium air pump essential oxygen for fish power outage backup live fish transport fishing battery operated",
-            "price": 645,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/portable_aquarium_air_pump_essential_oxygen_for_fish_power_outage_backup_live_fish_transport_fishing_battery_operated.png",
-            "stock": 50,
-            "name": "portable aquarium air pump essential oxygen for fish power outage backup live fish transport fishing battery operated",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_29",
-            "title": "rizopets blh 402 hang on filter aquarium filter 6w 400l h max output advanced air compressing system blh 402 ",
-            "price": 940,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/rizopets_blh_402_hang_on_filter_aquarium_filter_6w_400l_h_max_output_advanced_air_compressing_system_blh_402_.png",
-            "stock": 50,
-            "name": "rizopets blh 402 hang on filter aquarium filter 6w 400l h max output advanced air compressing system blh 402 ",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_30",
-            "title": "rs electrical rs 100w fully automatic with light indicator and auto on off facility submersible aquarium immersion heater",
-            "price": 285,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/rs_electrical_rs_100w_fully_automatic_with_light_indicator_and_auto_on_off_facility_submersible_aquarium_immersion_heater.png",
-            "stock": 50,
-            "name": "rs electrical rs 100w fully automatic with light indicator and auto on off facility submersible aquarium immersion heater",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_31",
-            "title": "rs electrical rs 50w fully automatic with light indicator and auto on off facility submersible aquarium immersion heater",
-            "price": 245,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/rs_electrical_rs_50w_fully_automatic_with_light_indicator_and_auto_on_off_facility_submersible_aquarium_immersion_heater.png",
-            "stock": 50,
-            "name": "rs electrical rs 50w fully automatic with light indicator and auto on off facility submersible aquarium immersion heater",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_32",
-            "title": "sobo fe 1502 aquarium internal filter 15w 1200 l h",
-            "price": 950,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_fe_1502_aquarium_internal_filter_15w_1200_l_h.png",
-            "stock": 50,
-            "name": "sobo fe 1502 aquarium internal filter 15w 1200 l h",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_33",
-            "title": "sobo portable battery air pump sb 980 safety design use long life motor air aquarium pump 0 cm ",
-            "price": 385,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_portable_battery_air_pump_sb_980_safety_design_use_long_life_motor_air_aquarium_pump_0_cm_.png",
-            "stock": 50,
-            "name": "sobo portable battery air pump sb 980 safety design use long life motor air aquarium pump 0 cm ",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_34",
-            "title": "sobo sb 108 two way aquarium air pump",
-            "price": 165,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_sb_108_two_way_aquarium_air_pump.webp",
-            "stock": 50,
-            "name": "sobo sb 108 two way aquarium air pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_35",
-            "title": "sobo sb 648 a two way aquarium air pump",
-            "price": 340,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_sb_348_a_two_way_aquarium_air_pump.png",
-            "stock": 50,
-            "name": "sobo sb 648 a two way aquarium air pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_36",
-            "title": "sobo sf 150f 7.4w external hang on aquarium canister filter",
-            "price": 1850,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_sf_150f_7.4w_external_hang_on_aquarium_canister_filter.png",
-            "stock": 50,
-            "name": "sobo sf 150f 7.4w external hang on aquarium canister filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_37",
-            "title": "sobo wp 338h 8w low water level internal aquarium filter",
-            "price": 1650,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_wp_338h_8w_low_water_level_internal_aquarium_filter.png",
-            "stock": 50,
-            "name": "sobo wp 338h 8w low water level internal aquarium filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_38",
-            "title": "sobo wp 348h 8w low water level internal aquarium filter",
-            "price": 1850,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sobo_wp_348h_8w_low_water_level_internal_aquarium_filter.png",
-            "stock": 50,
-            "name": "sobo wp 348h 8w low water level internal aquarium filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_39",
-            "title": "sunsun hj 111 submersible pump for fresh water aquarium pump 145 cm ",
-            "price": 385,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sunsun_hj_111_submersible_pump_for_fresh_water_aquarium_pump_145_cm_.png",
-            "stock": 50,
-            "name": "sunsun hj 111 submersible pump for fresh water aquarium pump 145 cm ",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_40",
-            "title": "sunsun jtp series frequency variation submersible aquarium water pump",
-            "price": 4850,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sunsun_jtp_series_frequency_variation_submersible_aquarium_water_pump.png",
-            "stock": 50,
-            "name": "sunsun jtp series frequency variation submersible aquarium water pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_41",
-            "title": "sunsun yuting aco 008 electrical magnetic aquarium air compressor pump",
-            "price": 12500,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/sunsun_yuting_aco_008_electrical_magnetic_aquarium_air_compressor_pump.png",
-            "stock": 50,
-            "name": "sunsun yuting aco 008 electrical magnetic aquarium air compressor pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350358_42",
-            "title": "super active carbon xy 5.0 4.8mm 500 gm improves water quality and keep fishes healthy suitable for all aquarium and fish tank",
-            "price": 245,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/super_active_carbon_xy_5.0_4.8mm_500_gm_improves_water_quality_and_keep_fishes_healthy_suitable_for_all_aquarium_and_fish_tank.png",
-            "stock": 50,
-            "name": "super active carbon xy 5.0 4.8mm 500 gm improves water quality and keep fishes healthy suitable for all aquarium and fish tank",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350359_45",
-            "title": "xinxiu silent internal aquarium filter for clean water water aquarium pump",
-            "price": 945,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/xinxiu_silent_internal_aquarium_filter_for_clean_water_water_aquarium_pump.png",
-            "stock": 50,
-            "name": "xinxiu silent internal aquarium filter for clean water water aquarium pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350359_46",
-            "title": "xinxiu wp 208yf 25w 3 in 1 internal aquarium filter pump",
-            "price": 945,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/xinxiu_wp_208yf_25w_3_in_1_internal_aquarium_filter_pump.png",
-            "stock": 50,
-            "name": "xinxiu wp 208yf 25w 3 in 1 internal aquarium filter pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350359_47",
-            "title": "yu fei yang wp 308ff 35w internal aquarium filter pump",
-            "price": 1150,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/yu_fei_yang_wp_308ff_35w_internal_aquarium_filter_pump.png",
-            "stock": 50,
-            "name": "yu fei yang wp 308ff 35w internal aquarium filter pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350359_48",
-            "title": "yuting aco 008 high power electrical magnetic aquarium air pump",
-            "price": 12500,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/yuting_aco_008_high_power_electrical_magnetic_aquarium_air_pump.png",
-            "stock": 50,
-            "name": "yuting aco 008 high power electrical magnetic aquarium air pump",
-            "act-price": 0
+            "price": 399,
+            "act-price": 599
           }
         ]
       },
@@ -796,7 +533,7 @@
             "id": "aquarium_1780653698073_1",
             "name": "Aquarium Filter Ceramic Rings Media Kits 300 GM",
             "title": "Aquarium Filter Ceramic Rings Media Kits 300 GM",
-            "image": "/products/aquarium_and_accesories/aquarium_filter_ceramic_rings_media_kits_300_gm_improves_water_quality_and_keep_fishes_healthy_suitable_for_all_aquarium_and_fish_tank.png",
+            "image": "/products/aquarium and accesories/Aquarium Filter Ceramic Rings Media Kits 300 GM | Improves Water Quality and Keep Fishes Healthy | Suitable for All Aquarium and Fish Tank.png",
             "description": "High-quality Aquarium Filter Ceramic Rings Media Kits 300 GM. Improves Water Quality and Keep Fishes Healthy. Suitable for All Aquarium and Fish Tank.",
             "price": 249,
             "act-price": 389
@@ -806,230 +543,130 @@
             "id": "aquarium_1780653698073_3",
             "name": "Blue Pet Xf 180 Sponge Filter",
             "title": "Blue Pet Xf 180 Sponge Filter",
-            "image": "/products/aquarium_and_accesories/blue_pet_xf_180_sponge_filter.png",
+            "image": "/products/aquarium and accesories/Blue Pet Xf 180 Sponge Filter.png",
             "description": "Premium Blue Pet Xf 180 Sponge Filter for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 145,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1129
           },
           {
             "prod_id": "aquarium_1780653698073_4",
             "id": "aquarium_1780653698073_4",
             "name": "Blue Pet Xf 380 Sponge Filter",
             "title": "Blue Pet Xf 380 Sponge Filter",
-            "image": "/products/aquarium_and_accesories/blue_pet_xf_380_sponge_filter.png",
+            "image": "/products/aquarium and accesories/Blue Pet Xf 380 Sponge Filter.png",
             "description": "Premium Blue Pet Xf 380 Sponge Filter for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 345,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1399
           },
           {
             "prod_id": "aquarium_1780653698073_5",
             "id": "aquarium_1780653698073_5",
             "name": "Bodyguard Power Filter AP800F",
             "title": "Bodyguard Power Filter AP800F",
-            "image": "/products/aquarium_and_accesories/bodyguard_power_filter_ap800f.png",
+            "image": "/products/aquarium and accesories/Bodyguard Power Filter AP800F.png",
             "description": "Premium Bodyguard Power Filter AP800F for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 950,
-            "act-price": 0
+            "price": 299,
+            "act-price": 449
           },
           {
             "prod_id": "aquarium_1780653698073_8",
             "id": "aquarium_1780653698073_8",
             "name": "HANA HN-950F internal Aquarium Filter",
             "title": "HANA HN-950F internal Aquarium Filter",
-            "image": "/products/aquarium_and_accesories/hana_hn_950f_internal_aquarium_filter.png",
+            "image": "/products/aquarium and accesories/HANA HN-950F internal Aquarium Filter.png",
             "description": "Premium HANA HN-950F internal Aquarium Filter for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 345,
-            "act-price": 0
+            "price": 699,
+            "act-price": 989
           },
           {
             "prod_id": "aquarium_1780653698073_11",
             "id": "aquarium_1780653698073_11",
             "name": "Hana Aqua Cure General Aid",
             "title": "Hana Aqua Cure General Aid",
-            "image": "/products/aquarium_and_accesories/hana_aqua_cure_general_aid.png",
+            "image": "/products/aquarium and accesories/Hana Aqua Cure General Aid.png",
             "description": "Premium Hana Aqua Cure General Aid for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 99,
-            "act-price": 0
+            "price": 199,
+            "act-price": 319
           },
           {
             "prod_id": "aquarium_1780653698073_22",
             "id": "aquarium_1780653698073_22",
             "name": "Rizopets BLH-402 Hang on Filter, Aquarium Filter, 6W, 400L:H Max Output, Advanced Air Compressing System (BLH-402)",
             "title": "Rizopets BLH-402 Hang on Filter, Aquarium Filter, 6W, 400L:H Max Output, Advanced Air Compressing System (BLH-402)",
-            "image": "/products/aquarium_and_accesories/rizopets_blh_402_hang_on_filter_aquarium_filter_6w_400l_h_max_output_advanced_air_compressing_system_blh_402_.png",
+            "image": "/products/aquarium and accesories/Rizopets BLH-402 Hang on Filter, Aquarium Filter, 6W, 400L:H Max Output, Advanced Air Compressing System (BLH-402).png",
             "description": "Premium Rizopets BLH-402 Hang on Filter, Aquarium Filter, 6W, 400L:H Max Output, Advanced Air Compressing System (BLH-402) for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 945,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1799
           },
           {
             "prod_id": "aquarium_1780653698073_25",
             "id": "aquarium_1780653698073_25",
             "name": "Sobo FE-1502 Aquarium Internal Filter (15W) – 1200 L:H",
             "title": "Sobo FE-1502 Aquarium Internal Filter (15W) – 1200 L:H",
-            "image": "/products/aquarium_and_accesories/sobo_fe_1502_aquarium_internal_filter_15w_1200_l_h.png",
+            "image": "/products/aquarium and accesories/Sobo FE-1502 Aquarium Internal Filter (15W) – 1200 L:H.png",
             "description": "Premium Sobo FE-1502 Aquarium Internal Filter (15W) – 1200 L:H for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 950,
-            "act-price": 0
+            "price": 199,
+            "act-price": 319
           },
           {
             "prod_id": "aquarium_1780653698073_28",
             "id": "aquarium_1780653698073_28",
             "name": "Super Active Carbon XY-5.0-4.8mm, 500 GM",
             "title": "Super Active Carbon XY-5.0-4.8mm, 500 GM",
-            "image": "/products/aquarium_and_accesories/super_active_carbon_xy_5.0_4.8mm_500_gm_improves_water_quality_and_keep_fishes_healthy_suitable_for_all_aquarium_and_fish_tank.png",
+            "image": "/products/aquarium and accesories/Super Active Carbon XY-5.0-4.8mm, 500 GM | Improves Water Quality and Keep Fishes Healthy | Suitable for All Aquarium and Fish Tank.png",
             "description": "High-quality Super Active Carbon XY-5.0-4.8mm, 500 GM. Improves Water Quality and Keep Fishes Healthy. Suitable for All Aquarium and Fish Tank.",
-            "price": 245,
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2069
           },
           {
             "prod_id": "aquarium_1780653698073_31",
             "id": "aquarium_1780653698073_31",
             "name": "XINXIU Silent Internal Aquarium Filter for Clean Water Water Aquarium Pump",
             "title": "XINXIU Silent Internal Aquarium Filter for Clean Water Water Aquarium Pump",
-            "image": "/products/aquarium_and_accesories/xinxiu_silent_internal_aquarium_filter_for_clean_water_water_aquarium_pump.png",
+            "image": "/products/aquarium and accesories/XINXIU Silent Internal Aquarium Filter for Clean Water Water Aquarium Pump.png",
             "description": "Premium XINXIU Silent Internal Aquarium Filter for Clean Water Water Aquarium Pump for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 945,
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2069
           },
           {
             "prod_id": "aquarium_1780653698073_33",
             "id": "aquarium_1780653698073_33",
             "name": "hana aqua cure anti chlorine",
             "title": "hana aqua cure anti chlorine",
-            "image": "/products/aquarium_and_accesories/hana_aqua_cure_anti_chlorine.png",
+            "image": "/products/aquarium and accesories/hana aqua cure anti chlorine.png",
             "description": "Premium hana aqua cure anti chlorine for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 99,
-            "act-price": 0
+            "price": 1199,
+            "act-price": 1669
           },
           {
             "prod_id": "aquarium_1780653698073_34",
             "id": "aquarium_1780653698073_34",
             "name": "hana aqua cure anti ich",
             "title": "hana aqua cure anti ich",
-            "image": "/products/aquarium_and_accesories/hana_aqua_cure_anti_ich.png",
+            "image": "/products/aquarium and accesories/hana aqua cure anti ich.png",
             "description": "Premium hana aqua cure anti ich for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 99,
-            "act-price": 0
+            "price": 699,
+            "act-price": 989
           },
           {
             "prod_id": "aquarium_1780653698073_35",
             "id": "aquarium_1780653698073_35",
             "name": "hana hashima anti fungus",
             "title": "hana hashima anti fungus",
-            "image": "/products/aquarium_and_accesories/hana_hashima_anti_fungus.png",
+            "image": "/products/aquarium and accesories/hana hashima anti fungus.png",
             "description": "Premium hana hashima anti fungus for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 99,
-            "act-price": 0
+            "price": 699,
+            "act-price": 989
           },
           {
             "prod_id": "aquarium_1780653698073_10",
             "id": "aquarium_1780653698073_10",
             "name": "Hallofeed Aquarium Vacuum Syphon Pipe Fish Tank Gravel Cleaner Electrical Aquarium Cleaner",
             "title": "Hallofeed Aquarium Vacuum Syphon Pipe Fish Tank Gravel Cleaner Electrical Aquarium Cleaner",
-            "image": "/products/aquarium_and_accesories/hallofeed_aquarium_vacuum_syphon_pipe_fish_tank_gravel_cleaner_electrical_aquarium_cleaner.png",
+            "image": "/products/aquarium and accesories/Hallofeed Aquarium Vacuum Syphon Pipe Fish Tank Gravel Cleaner Electrical Aquarium Cleaner.png",
             "description": "Premium Hallofeed Aquarium Vacuum Syphon Pipe Fish Tank Gravel Cleaner Electrical Aquarium Cleaner for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 145,
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_1",
-            "title": "aquarium filter ceramic rings media kits 300 gm improves water quality and keep fishes healthy suitable for all aquarium and fish tank",
-            "price": 249,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/aquarium_filter_ceramic_rings_media_kits_300_gm_improves_water_quality_and_keep_fishes_healthy_suitable_for_all_aquarium_and_fish_tank.png",
-            "stock": 50,
-            "name": "aquarium filter ceramic rings media kits 300 gm improves water quality and keep fishes healthy suitable for all aquarium and fish tank",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_2",
-            "title": "blue pet xf 180 sponge filter",
-            "price": 145,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/blue_pet_xf_180_sponge_filter.png",
-            "stock": 50,
-            "name": "blue pet xf 180 sponge filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_3",
-            "title": "blue pet xf 380 sponge filter",
-            "price": 345,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/blue_pet_xf_380_sponge_filter.png",
-            "stock": 50,
-            "name": "blue pet xf 380 sponge filter",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_4",
-            "title": "bluepet bl 1880f 25w aquarium top filter pump system",
-            "price": 945,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/bluepet_bl_1880f_25w_aquarium_top_filter_pump_system.png",
-            "stock": 50,
-            "name": "bluepet bl 1880f 25w aquarium top filter pump system",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_8",
-            "title": "bodyguard power filter ap800f",
-            "price": 950,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/bodyguard_power_filter_ap800f.png",
-            "stock": 50,
-            "name": "bodyguard power filter ap800f",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_17",
-            "title": "hallofeed aquarium vacuum syphon pipe fish tank gravel cleaner electrical aquarium cleaner",
-            "price": 145,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hallofeed_aquarium_vacuum_syphon_pipe_fish_tank_gravel_cleaner_electrical_aquarium_cleaner.png",
-            "stock": 50,
-            "name": "hallofeed aquarium vacuum syphon pipe fish tank gravel cleaner electrical aquarium cleaner",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_18",
-            "title": "hana aqua cure anti chlorine",
-            "price": 99,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hana_aqua_cure_anti_chlorine.png",
-            "stock": 50,
-            "name": "hana aqua cure anti chlorine",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_19",
-            "title": "hana aqua cure anti ich",
-            "price": 99,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hana_aqua_cure_anti_ich.png",
-            "stock": 50,
-            "name": "hana aqua cure anti ich",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_20",
-            "title": "hana aqua cure general aid",
-            "price": 99,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hana_aqua_cure_general_aid.png",
-            "stock": 50,
-            "name": "hana aqua cure general aid",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_21",
-            "title": "hana hashima anti fungus",
-            "price": 99,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hana_hashima_anti_fungus.png",
-            "stock": 50,
-            "name": "hana hashima anti fungus",
-            "act-price": 0
+            "price": 899,
+            "act-price": 1259
           }
         ]
       },
@@ -1041,17 +678,17 @@
             "id": "aquarium_1780653698073_9",
             "name": "Hailea ACO-208 Compressor Air Aquarium Pump",
             "title": "Hailea ACO-208 Compressor Air Aquarium Pump",
-            "image": "/products/aquarium_and_accesories/hailea_aco_208_compressor_air_aquarium_pump.png",
+            "image": "/products/aquarium and accesories/Hailea ACO-208 Compressor Air Aquarium Pump.png",
             "description": "Premium Hailea ACO-208 Compressor Air Aquarium Pump for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 2850,
-            "act-price": 0
+            "price": 249,
+            "act-price": 389
           },
           {
             "prod_id": "aquarium_1780653698073_18",
             "id": "aquarium_1780653698073_18",
             "name": "Portable Aquarium Air Pump — Essential Oxygen for Fish; Power Outage Backup; Live Fish Transport & Fishing",
             "title": "Portable Aquarium Air Pump — Essential Oxygen for Fish; Power Outage Backup; Live Fish Transport & Fishing",
-            "image": "/products/aquarium_and_accesories/portable_aquarium_air_pump_essential_oxygen_for_fish_power_outage_backup_live_fish_transport_fishing_battery_operated.png",
+            "image": "/products/aquarium and accesories/Portable Aquarium Air Pump — Essential Oxygen for Fish; Power Outage Backup; Live Fish Transport & Fishing | Battery Operated.png",
             "description": "High-quality Portable Aquarium Air Pump — Essential Oxygen for Fish; Power Outage Backup; Live Fish Transport & Fishing. Battery Operated.",
             "price": 599,
             "act-price": 859
@@ -1061,110 +698,40 @@
             "id": "aquarium_1780653698073_23",
             "name": "SOBO Portable Battery Air Pump SB-980",
             "title": "SOBO Portable Battery Air Pump SB-980",
-            "image": "/products/aquarium_and_accesories/sobo_portable_battery_air_pump_sb_980_safety_design_use_long_life_motor_air_aquarium_pump_0_cm_.png",
+            "image": "/products/aquarium and accesories/SOBO Portable Battery Air Pump SB-980 | Safety Design | Use Long Life Motor Air Aquarium Pump (0 cm).png",
             "description": "High-quality SOBO Portable Battery Air Pump SB-980. Safety Design. Use Long Life Motor Air Aquarium Pump (0 cm).",
-            "price": 385,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1799
           },
           {
             "prod_id": "aquarium_1780653698073_24",
             "id": "aquarium_1780653698073_24",
             "name": "SUNSUN HJ-111 Submersible Pump For Fresh &  Water Aquarium Pump (145 cm)",
             "title": "SUNSUN HJ-111 Submersible Pump For Fresh &  Water Aquarium Pump (145 cm)",
-            "image": "/products/aquarium_and_accesories/sunsun_hj_111_submersible_pump_for_fresh_water_aquarium_pump_145_cm_.png",
+            "image": "/products/aquarium and accesories/SUNSUN HJ-111 Submersible Pump For Fresh &  Water Aquarium Pump (145 cm).png",
             "description": "Premium SUNSUN HJ-111 Submersible Pump For Fresh &  Water Aquarium Pump (145 cm) for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 345,
-            "act-price": 0
+            "price": 499,
+            "act-price": 719
           },
           {
             "prod_id": "aquarium_1780653698073_26",
             "id": "aquarium_1780653698073_26",
             "name": "Sobo SB-108 Two Way Aquarium Air Pump",
             "title": "Sobo SB-108 Two Way Aquarium Air Pump",
-            "image": "/products/aquarium_and_accesories/sobo_sb_108_two_way_aquarium_air_pump.webp",
+            "image": "/products/aquarium and accesories/Sobo SB-108 Two Way Aquarium Air Pump.webp",
             "description": "Premium Sobo SB-108 Two Way Aquarium Air Pump for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 210,
-            "act-price": 0
+            "price": 399,
+            "act-price": 589
           },
           {
             "prod_id": "aquarium_1780653698073_27",
             "id": "aquarium_1780653698073_27",
-            "name": "Sobo SB-648 A Two Way Aquarium Air Pump",
-            "title": "Sobo SB-648 A Two Way Aquarium Air Pump",
-            "image": "/products/aquarium_and_accesories/sobo_sb_348_a_two_way_aquarium_air_pump.png",
+            "name": "Sobo SB-348 A Two Way Aquarium Air Pump",
+            "title": "Sobo SB-348 A Two Way Aquarium Air Pump",
+            "image": "/products/aquarium and accesories/Sobo SB-348 A Two Way Aquarium Air Pump.png",
             "description": "Premium Sobo SB-348 A Two Way Aquarium Air Pump for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 345,
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_5",
-            "title": "bluepet bl 750 35w 3 in 1 submersible aquarium power head pump",
-            "price": 845,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/bluepet_bl_750_35w_3_in_1_submersible_aquarium_power_head_pump.png",
-            "stock": 50,
-            "name": "bluepet bl 750 35w 3 in 1 submersible aquarium power head pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_6",
-            "title": "bluepet bl 850 45w 3 in 1 submersible aquarium power head pump",
-            "price": 945,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/bluepet_bl_850_45w_3_in_1_submersible_aquarium_power_head_pump.png",
-            "stock": 50,
-            "name": "bluepet bl 850 45w 3 in 1 submersible aquarium power head pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_12",
-            "title": "hailea aco 006d dc 12v permanent magnetic air compressor pump",
-            "price": 4450,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hailea_aco_006d_dc_12v_permanent_magnetic_air_compressor_pump.png",
-            "stock": 50,
-            "name": "hailea aco 006d dc 12v permanent magnetic air compressor pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_13",
-            "title": "hailea aco 208 compressor air aquarium pump",
-            "price": 2850,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hailea_aco_208_compressor_air_aquarium_pump.png",
-            "stock": 50,
-            "name": "hailea aco 208 compressor air aquarium pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_14",
-            "title": "hailea hap 100 large flow diaphragm aquarium air pump",
-            "price": 13500,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hailea_hap_100_large_flow_diaphragm_aquarium_air_pump.png",
-            "stock": 50,
-            "name": "hailea hap 100 large flow diaphragm aquarium air pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_15",
-            "title": "hailea hap 120 large flow diaphragm aquarium air pump",
-            "price": 15500,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hailea_hap_120_large_flow_diaphragm_aquarium_air_pump.png",
-            "stock": 50,
-            "name": "hailea hap 120 large flow diaphragm aquarium air pump",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_16",
-            "title": "hailea hap 80 large flow diaphragm aquarium air pump",
-            "price": 11500,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/hailea_hap_80_large_flow_diaphragm_aquarium_air_pump.png",
-            "stock": 50,
-            "name": "hailea hap 80 large flow diaphragm aquarium air pump",
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2069
           }
         ]
       },
@@ -1176,7 +743,7 @@
             "id": "aquarium_1780653698073_16",
             "name": "Petscope K4 Double Betta House Rectangle Aquarium Tank",
             "title": "Petscope K4 Double Betta House Rectangle Aquarium Tank",
-            "image": "/products/aquarium_and_accesories/petscope_k4_double_betta_house_rectangle_aquarium_tank_.png",
+            "image": "/products/aquarium and accesories/Petscope K4 Double Betta House Rectangle Aquarium Tank .png",
             "description": "Premium Petscope K4 Double Betta House Rectangle Aquarium Tank for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
             "price": 699,
             "act-price": 989
@@ -1186,80 +753,40 @@
             "id": "aquarium_1780653698073_17",
             "name": "Plastic Fish Tank, Aquarium Container",
             "title": "Plastic Fish Tank, Aquarium Container",
-            "image": "/products/aquarium_and_accesories/plastic_fish_tank_aquarium_container.png",
+            "image": "/products/aquarium and accesories/Plastic Fish Tank, Aquarium Container.png",
             "description": "Premium Plastic Fish Tank, Aquarium Container for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 180,
-            "act-price": 0
+            "price": 399,
+            "act-price": 589
           },
           {
             "prod_id": "aquarium_1780653698073_30",
             "id": "aquarium_1780653698073_30",
             "name": "WAKAYAMA Series 40BW Complete Set Aquarium",
             "title": "WAKAYAMA Series 40BW Complete Set Aquarium",
-            "image": "/products/aquarium_and_accesories/wakayama_series_40bw_complete_set_aquarium.png",
+            "image": "/products/aquarium and accesories/WAKAYAMA Series 40BW Complete Set Aquarium.png",
             "description": "Premium WAKAYAMA Series 40BW Complete Set Aquarium for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 2850,
-            "act-price": 0
+            "price": 149,
+            "act-price": 249
           },
           {
             "prod_id": "aquarium_1780653698073_20",
             "id": "aquarium_1780653698073_20",
             "name": "RS ELECTRICAL RS-100W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater",
             "title": "RS ELECTRICAL RS-100W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater",
-            "image": "/products/aquarium_and_accesories/rs_electrical_rs_100w_fully_automatic_with_light_indicator_and_auto_on_off_facility_submersible_aquarium_immersion_heater.png",
+            "image": "/products/aquarium and accesories/RS ELECTRICAL RS-100W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater.png",
             "description": "Premium RS ELECTRICAL RS-100W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 285,
-            "act-price": 0
+            "price": 599,
+            "act-price": 859
           },
           {
             "prod_id": "aquarium_1780653698073_21",
             "id": "aquarium_1780653698073_21",
             "name": "RS ELECTRICAL RS-50W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater",
             "title": "RS ELECTRICAL RS-50W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater",
-            "image": "/products/aquarium_and_accesories/rs_electrical_rs_50w_fully_automatic_with_light_indicator_and_auto_on_off_facility_submersible_aquarium_immersion_heater.png",
+            "image": "/products/aquarium and accesories/RS ELECTRICAL RS-50W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater.png",
             "description": "Premium RS ELECTRICAL RS-50W Fully Automatic With Light Indicator And Auto On:Off Facility Submersible Aquarium Immersion Heater for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 245,
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_7",
-            "title": "bnf bubble coral ornament decors resin ornament for living room fish tank garden blue home garden gardening supplies 1x bubble coral decor",
-            "price": 645,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/bnf_bubble_coral_ornament_decors_resin_ornament_for_living_room_fish_tank_garden_blue_home_garden_gardening_supplies_1x_bubble_coral_decor.png",
-            "stock": 50,
-            "name": "bnf bubble coral ornament decors resin ornament for living room fish tank garden blue home garden gardening supplies 1x bubble coral decor",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_9",
-            "title": "fish tank decor bonsai trees with faux moss aquarium rocks",
-            "price": 2850,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/fish_tank_decor_bonsai_trees_with_faux_moss_aquarium_rocks.png",
-            "stock": 50,
-            "name": "fish tank decor bonsai trees with faux moss aquarium rocks",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_10",
-            "title": "fish tank ornament 1pc crescent shaped mountain",
-            "price": 1450,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/fish_tank_ornament_1pc_crescent_shaped_mountain.png",
-            "stock": 50,
-            "name": "fish tank ornament 1pc crescent shaped mountain",
-            "act-price": 0
-          },
-          {
-            "id": "new_1782992350357_11",
-            "title": "fishyflex rs electrical t4 led submersible blue white light for aquarium fish tank suitable for fresh and salt water rs 600le ",
-            "price": 240,
-            "description": "Premium Aquarium Accessory",
-            "image": "/products/aquarium_and_accesories/fishyflex_rs_electrical_t4_led_submersible_blue_white_light_for_aquarium_fish_tank_suitable_for_fresh_and_salt_water_rs_600le_.png",
-            "stock": 50,
-            "name": "fishyflex rs electrical t4 led submersible blue white light for aquarium fish tank suitable for fresh and salt water rs 600le ",
-            "act-price": 0
+            "price": 599,
+            "act-price": 859
           }
         ]
       },
@@ -1271,60 +798,60 @@
             "id": "aquarium_1780653698073_2",
             "name": "BNF®Bubble Coral Ornament Decors Resin Ornament for Living Room Fish Tank Garden Blue",
             "title": "BNF®Bubble Coral Ornament Decors Resin Ornament for Living Room Fish Tank Garden Blue",
-            "image": "/products/aquarium_and_accesories/bnf_bubble_coral_ornament_decors_resin_ornament_for_living_room_fish_tank_garden_blue_home_garden_gardening_supplies_1x_bubble_coral_decor.png",
+            "image": "/products/aquarium and accesories/BNF®Bubble Coral Ornament Decors Resin Ornament for Living Room Fish Tank Garden Blue|Home & Garden | Gardening Supplies |1x Bubble Coral Decor.png",
             "description": "High-quality BNF®Bubble Coral Ornament Decors Resin Ornament for Living Room Fish Tank Garden Blue. Home & Garden. Gardening Supplies. 1x Bubble Coral Decor.",
-            "price": 645,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1799
           },
           {
             "prod_id": "aquarium_1780653698073_6",
             "id": "aquarium_1780653698073_6",
             "name": "Fish Tank Decor- Bonsai Trees with Faux Moss- Aquarium Rocks",
             "title": "Fish Tank Decor- Bonsai Trees with Faux Moss- Aquarium Rocks",
-            "image": "/products/aquarium_and_accesories/fish_tank_decor_bonsai_trees_with_faux_moss_aquarium_rocks.png",
+            "image": "/products/aquarium and accesories/Fish Tank Decor- Bonsai Trees with Faux Moss- Aquarium Rocks.png",
             "description": "Premium Fish Tank Decor- Bonsai Trees with Faux Moss- Aquarium Rocks for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 2850,
-            "act-price": 0
+            "price": 499,
+            "act-price": 719
           },
           {
             "prod_id": "aquarium_1780653698073_15",
             "id": "aquarium_1780653698073_15",
             "name": "POPETPOP Aquarium Mountain View Stone with Windmill - Aquarium Decoration Resin Rockery Fish Tank Decorations Fish Tank Landscaping Ornaments Aquarium Caves and Hides for Fish",
             "title": "POPETPOP Aquarium Mountain View Stone with Windmill - Aquarium Decoration Resin Rockery Fish Tank Decorations Fish Tank Landscaping Ornaments Aquarium Caves and Hides for Fish",
-            "image": "/products/aquarium_and_accesories/popetpop_aquarium_mountain_view_stone_with_windmill_aquarium_decoration_resin_rockery_fish_tank_decorations_fish_tank_landscaping_ornaments_aquarium_caves_and_hides_for_fish.png",
+            "image": "/products/aquarium and accesories/POPETPOP Aquarium Mountain View Stone with Windmill - Aquarium Decoration Resin Rockery Fish Tank Decorations Fish Tank Landscaping Ornaments Aquarium Caves and Hides for Fish.png",
             "description": "Premium POPETPOP Aquarium Mountain View Stone with Windmill - Aquarium Decoration Resin Rockery Fish Tank Decorations Fish Tank Landscaping Ornaments Aquarium Caves and Hides for Fish for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 645,
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2069
           },
           {
             "prod_id": "aquarium_1780653698073_7",
             "id": "aquarium_1780653698073_7",
             "name": "FishyFlex® RS Electrical T4 Led Submersible (Blue & White) Light for Aquarium Fish Tank,Suitable for Fresh and Salt Water (RS-600LE)",
             "title": "FishyFlex® RS Electrical T4 Led Submersible (Blue & White) Light for Aquarium Fish Tank,Suitable for Fresh and Salt Water (RS-600LE)",
-            "image": "/products/aquarium_and_accesories/fishyflex_rs_electrical_t4_led_submersible_blue_white_light_for_aquarium_fish_tank_suitable_for_fresh_and_salt_water_rs_600le_.png",
+            "image": "/products/aquarium and accesories/FishyFlex® RS Electrical T4 Led Submersible (Blue & White) Light for Aquarium Fish Tank,Suitable for Fresh and Salt Water (RS-600LE).png",
             "description": "Premium FishyFlex® RS Electrical T4 Led Submersible (Blue & White) Light for Aquarium Fish Tank,Suitable for Fresh and Salt Water (RS-600LE) for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 240,
-            "act-price": 0
+            "price": 499,
+            "act-price": 719
           },
           {
             "prod_id": "aquarium_1780653698073_29",
             "id": "aquarium_1780653698073_29",
             "name": "Underwater Treasures Trees & Rocks",
             "title": "Underwater Treasures Trees & Rocks",
-            "image": "/products/aquarium_and_accesories/underwater_treasures_trees_rocks.png",
+            "image": "/products/aquarium and accesories/Underwater Treasures Trees & Rocks.png",
             "description": "Premium Underwater Treasures Trees & Rocks for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 2450,
-            "act-price": 0
+            "price": 399,
+            "act-price": 589
           },
           {
             "prod_id": "aquarium_1780653698073_32",
             "id": "aquarium_1780653698073_32",
             "name": "fish tank ornament 1pc crescent shaped mountain",
             "title": "fish tank ornament 1pc crescent shaped mountain",
-            "image": "/products/aquarium_and_accesories/fish_tank_ornament_1pc_crescent_shaped_mountain.png",
+            "image": "/products/aquarium and accesories/fish tank ornament 1pc crescent shaped mountain.png",
             "description": "Premium fish tank ornament 1pc crescent shaped mountain for your aquarium or fish tank. Designed for reliability, safety, and enhancing your aquatic ecosystem.",
-            "price": 1450,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1259
           }
         ]
       }
@@ -1342,17 +869,17 @@
             "id": "lunchbox_1780653698074_0",
             "name": "500 mL Asian Hot Meal Stainless Steel Lunch Box",
             "title": "500 mL Asian Hot Meal Stainless Steel Lunch Box",
-            "image": "/products/lunch_boxes/school_products/500_ml_asian_hot_meal_stainless_steel_lunch_box.png",
+            "image": "/products/lunch boxes/school products/500 mL Asian Hot Meal Stainless Steel Lunch Box.png",
             "description": "High-quality 500 mL Asian Hot Meal Stainless Steel Lunch Box. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
-            "price": 549,
-            "act-price": 0
+            "price": 299,
+            "act-price": 418
           },
           {
             "prod_id": "lunchbox_1780653698074_1",
             "id": "lunchbox_1780653698074_1",
             "name": "800 mL Milton Hot Lunch Box",
             "title": "800 mL Milton Hot Lunch Box",
-            "image": "/products/lunch_boxes/school_products/800_ml_milton_hot_lunch_box.png",
+            "image": "/products/lunch boxes/school products/800 mL Milton Hot Lunch Box.png",
             "description": "High-quality 800 mL Milton Hot Lunch Box. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 499,
             "act-price": 698
@@ -1362,7 +889,7 @@
             "id": "lunchbox_1780653698074_2",
             "name": "ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL",
             "title": "ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL",
-            "image": "/products/lunch_boxes/school_products/asian_lunch_box_little_feast_3_teal_stainless_steel_pink_colour.png",
+            "image": "/products/lunch boxes/school products/ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL | Stainless Steel-pink colour.png",
             "description": "High-quality ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1372,7 +899,7 @@
             "id": "lunchbox_1780653698074_3",
             "name": "ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL",
             "title": "ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL",
-            "image": "/products/lunch_boxes/school_products/asian_lunch_box_little_feast_3_teal_stainless_steel.png",
+            "image": "/products/lunch boxes/school products/ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL | Stainless Steel.png",
             "description": "High-quality ASIAN LUNCH BOX LITTLE FEAST 3 -TEAL. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1382,7 +909,7 @@
             "id": "lunchbox_1780653698074_4",
             "name": "Asian Diet Meal Stainless Steel Lunch Box, Set of 3, Blue",
             "title": "Asian Diet Meal Stainless Steel Lunch Box, Set of 3, Blue",
-            "image": "/products/lunch_boxes/school_products/asian_diet_meal_stainless_steel_lunch_box_set_of_3_blue.png",
+            "image": "/products/lunch boxes/school products/Asian Diet Meal Stainless Steel Lunch Box, Set of 3, Blue.png",
             "description": "High-quality Asian Diet Meal Stainless Steel Lunch Box, Set of 3, Blue. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1392,7 +919,7 @@
             "id": "lunchbox_1780653698074_5",
             "name": "Asian Hydro Bite Combo Snack pack Lunch Box(850 ml),Mini box(150 ml)+Hydra Grip Bottle(700),Lunch Box Set Combo, Back to School",
             "title": "Asian Hydro Bite Combo Snack pack Lunch Box(850 ml),Mini box(150 ml)+Hydra Grip Bottle(700),Lunch Box Set Combo, Back to School",
-            "image": "/products/lunch_boxes/school_products/asian_hydro_bite_combo_snack_pack_lunch_box_850_ml_mini_box_150_ml_hydra_grip_bottle_700_lunch_box_set_combo_back_to_school.png",
+            "image": "/products/lunch boxes/school products/Asian Hydro Bite Combo Snack pack Lunch Box(850 ml),Mini box(150 ml)+Hydra Grip Bottle(700),Lunch Box Set Combo, Back to School.png",
             "description": "High-quality Asian Hydro Bite Combo Snack pack Lunch Box(850 ml),Mini box(150 ml)+Hydra Grip Bottle(700),Lunch Box Set Combo, Back to School. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 799,
             "act-price": 1118
@@ -1402,7 +929,7 @@
             "id": "lunchbox_1780653698074_6",
             "name": "Asian Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic)",
             "title": "Asian Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic)",
-            "image": "/products/lunch_boxes/school_products/asian_lunch_express_insulated_tiffin_and_water_bottle_orange_plastic_stainless_steel_tiffin_3_units_hot_and_cold_water_bottle_ideal_for_office_travel.png",
+            "image": "/products/lunch boxes/school products/Asian Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic) | Stainless Steel Tiffin 3 Units | Hot and Cold Water Bottle | Ideal for Office, Travel.png",
             "description": "High-quality Asian Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1412,7 +939,7 @@
             "id": "lunchbox_1780653698074_7",
             "name": "Asian Meal Star Combo,Wonder Meal Junior Lunch Box 700 ml",
             "title": "Asian Meal Star Combo,Wonder Meal Junior Lunch Box 700 ml",
-            "image": "/products/lunch_boxes/school_products/asian_meal_star_combo_wonder_meal_junior_lunch_box_700_ml.png",
+            "image": "/products/lunch boxes/school products/Asian Meal Star Combo,Wonder Meal Junior Lunch Box 700 ml.png",
             "description": "High-quality Asian Meal Star Combo,Wonder Meal Junior Lunch Box 700 ml. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 799,
             "act-price": 1118
@@ -1422,7 +949,7 @@
             "id": "lunchbox_1780653698074_8",
             "name": "Asian Plastic & Stainless Steel Lunch Box Set  500 ML",
             "title": "Asian Plastic & Stainless Steel Lunch Box Set  500 ML",
-            "image": "/products/lunch_boxes/school_products/asian_plastic_stainless_steel_lunch_box_set_500_ml.png",
+            "image": "/products/lunch boxes/school products/Asian Plastic & Stainless Steel Lunch Box Set  500 ML.png",
             "description": "High-quality Asian Plastic & Stainless Steel Lunch Box Set  500 ML. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 299,
             "act-price": 418
@@ -1432,7 +959,7 @@
             "id": "lunchbox_1780653698074_9",
             "name": "Asian Plastic & Stainless Steel Lunch Box Set - 500 ML",
             "title": "Asian Plastic & Stainless Steel Lunch Box Set - 500 ML",
-            "image": "/products/lunch_boxes/school_products/asian_plastic_stainless_steel_lunch_box_set_500_ml.png",
+            "image": "/products/lunch boxes/school products/Asian Plastic & Stainless Steel Lunch Box Set - 500 ML.png",
             "description": "High-quality Asian Plastic & Stainless Steel Lunch Box Set - 500 ML. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 299,
             "act-price": 418
@@ -1442,7 +969,7 @@
             "id": "lunchbox_1780653698074_10",
             "name": "Asian Plastowares - Snack Pack SS Lunch Box",
             "title": "Asian Plastowares - Snack Pack SS Lunch Box",
-            "image": "/products/lunch_boxes/school_products/asian_plastowares_snack_pack_ss_lunch_box_tiffin_box_leak_proof_airtight_lunch_box_for_kids_adults_durable_spill_free_school_office_and_college_tiffin_bright_pink.png",
+            "image": "/products/lunch boxes/school products/Asian Plastowares - Snack Pack SS Lunch Box | Tiffin Box - Leak-Proof, Airtight | Lunch Box for Kids & Adults | Durable & Spill-Free School, Office, and College Tiffin | Bright Pink.png",
             "description": "High-quality Asian Plastowares - Snack Pack SS Lunch Box. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1452,7 +979,7 @@
             "id": "lunchbox_1780653698074_11",
             "name": "Asian Plastowares Little Champions 3-in-1 Insulated Lunch Box Set for Kids",
             "title": "Asian Plastowares Little Champions 3-in-1 Insulated Lunch Box Set for Kids",
-            "image": "/products/lunch_boxes/school_products/asian_plastowares_little_champions_3_in_1_insulated_lunch_box_set_for_kids_700ml_steel_tiffin_500ml_water_bottle_leakproof_bpa_free_green_blue_must_have_back_to_school_set.png",
+            "image": "/products/lunch boxes/school products/Asian Plastowares Little Champions 3-in-1 Insulated Lunch Box Set for Kids | 700ml Steel Tiffin, 500ml Water Bottle | Leakproof, BPA Free | Green & Blue| Must-Have Back to School Set.png",
             "description": "High-quality Asian Plastowares Little Champions 3-in-1 Insulated Lunch Box Set for Kids. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1462,7 +989,7 @@
             "id": "lunchbox_1780653698074_12",
             "name": "Asian Plastowares Stainless Steel Safari Lunch Box, Set of 2",
             "title": "Asian Plastowares Stainless Steel Safari Lunch Box, Set of 2",
-            "image": "/products/lunch_boxes/school_products/asian_plastowares_stainless_steel_safari_lunch_box_set_of_2.png",
+            "image": "/products/lunch boxes/school products/Asian Plastowares Stainless Steel Safari Lunch Box, Set of 2.png",
             "description": "High-quality Asian Plastowares Stainless Steel Safari Lunch Box, Set of 2. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1472,7 +999,7 @@
             "id": "lunchbox_1780653698074_13",
             "name": "Asian Quick Bite COMBO Fresh Bite Lunch Box 850 ml",
             "title": "Asian Quick Bite COMBO Fresh Bite Lunch Box 850 ml",
-            "image": "/products/lunch_boxes/school_products/asian_quick_bite_combo_fresh_bite_lunch_box_850_ml.png",
+            "image": "/products/lunch boxes/school products/Asian Quick Bite COMBO Fresh Bite Lunch Box 850 ml.png",
             "description": "High-quality Asian Quick Bite COMBO Fresh Bite Lunch Box 850 ml. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1482,17 +1009,17 @@
             "id": "lunchbox_1780653698074_14",
             "name": "Asian Unicorn Themed Combo pack joy meal Combo hot meal Locker junior 500ml & Aqua joy Steel Water Bottle",
             "title": "Asian Unicorn Themed Combo pack joy meal Combo hot meal Locker junior 500ml & Aqua joy Steel Water Bottle",
-            "image": "/products/lunch_boxes/school_products/asian_unicorn_themed_combo_pack_joy_meal_combo_hot_meal_locker_junior_500ml_aqua_joy_steel_water_bottle.png",
+            "image": "/products/lunch boxes/school products/Asian Unicorn Themed Combo pack joy meal Combo hot meal Locker junior 500ml & Aqua joy Steel Water Bottle.png",
             "description": "High-quality Asian Unicorn Themed Combo pack joy meal Combo hot meal Locker junior 500ml & Aqua joy Steel Water Bottle. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
-            "price": 599,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1118
           },
           {
             "prod_id": "lunchbox_1780653698074_15",
             "id": "lunchbox_1780653698074_15",
             "name": "Asian Wonder Meal Junior Stainless Steel Lunch Box",
             "title": "Asian Wonder Meal Junior Stainless Steel Lunch Box",
-            "image": "/products/lunch_boxes/school_products/asian_wonder_meal_junior_stainless_steel_lunch_box_inner_small_leak_proof_container.png",
+            "image": "/products/lunch boxes/school products/Asian Wonder Meal Junior Stainless Steel Lunch Box | Inner Small Leak Proof Container.png",
             "description": "High-quality Asian Wonder Meal Junior Stainless Steel Lunch Box. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1502,7 +1029,7 @@
             "id": "lunchbox_1780653698074_16",
             "name": "CELLO Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic)",
             "title": "CELLO Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic)",
-            "image": "/products/lunch_boxes/school_products/cello_lunch_express_insulated_tiffin_and_water_bottle_orange_plastic_stainless_steel_tiffin_3_units_hot_and_cold_water_bottle_ideal_for_office_travel.png",
+            "image": "/products/lunch boxes/school products/CELLO Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic) | Stainless Steel Tiffin 3 Units | Hot and Cold Water Bottle | Ideal for Office, Travel.png",
             "description": "High-quality CELLO Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 549,
             "act-price": 768
@@ -1512,7 +1039,7 @@
             "id": "lunchbox_1780653698074_17",
             "name": "CELLO MF Fab Lunch Box Set with Jacket",
             "title": "CELLO MF Fab Lunch Box Set with Jacket",
-            "image": "/products/lunch_boxes/school_products/cello_mf_fab_lunch_box_set_with_jacket_brown_set_of_4_stainless_steel_containers_315ml_x_3_510ml_x_1_steel_tumbler_leakproof_airtight_ideal_for_dry_semi_liquid_food.png",
+            "image": "/products/lunch boxes/school products/CELLO MF Fab Lunch Box Set with Jacket | Brown | Set of 4 | Stainless Steel Containers | 315ml x 3 + 510ml x 1 Steel Tumbler | Leakproof & Airtight | Ideal for Dry & Semi Liquid Food.png",
             "description": "High-quality CELLO MF Fab Lunch Box Set with Jacket. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 549,
             "act-price": 768
@@ -1522,7 +1049,7 @@
             "id": "lunchbox_1780653698074_18",
             "name": "Dreamz TRENDY TIFFIN 3 3 Containers Plastic, Stainless Steel Office Lunch Box (300 ml)",
             "title": "Dreamz TRENDY TIFFIN 3 3 Containers Plastic, Stainless Steel Office Lunch Box (300 ml)",
-            "image": "/products/lunch_boxes/school_products/dreamz_trendy_tiffin_3_3_containers_plastic_stainless_steel_office_lunch_box_300_ml_.png",
+            "image": "/products/lunch boxes/school products/Dreamz TRENDY TIFFIN 3 3 Containers Plastic, Stainless Steel Office Lunch Box (300 ml).png",
             "description": "High-quality Dreamz TRENDY TIFFIN 3 3 Containers Plastic, Stainless Steel Office Lunch Box (300 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1532,7 +1059,7 @@
             "id": "lunchbox_1780653698074_19",
             "name": "HETIZEM Asian Hot Meal Locker Kids Insulated Lunch Box - GREEN 500 ml 2 Containers Stainless Steel, Plastic School Lunch Box (500 ml)",
             "title": "HETIZEM Asian Hot Meal Locker Kids Insulated Lunch Box - GREEN 500 ml 2 Containers Stainless Steel, Plastic School Lunch Box (500 ml)",
-            "image": "/products/lunch_boxes/school_products/hetizem_asian_hot_meal_locker_kids_insulated_lunch_box_green_500_ml_2_containers_stainless_steel_plastic_school_lunch_box_500_ml_.png",
+            "image": "/products/lunch boxes/school products/HETIZEM Asian Hot Meal Locker Kids Insulated Lunch Box - GREEN 500 ml 2 Containers Stainless Steel, Plastic School Lunch Box (500 ml).png",
             "description": "High-quality HETIZEM Asian Hot Meal Locker Kids Insulated Lunch Box - GREEN 500 ml 2 Containers Stainless Steel, Plastic School Lunch Box (500 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 299,
             "act-price": 418
@@ -1542,7 +1069,7 @@
             "id": "lunchbox_1780653698074_20",
             "name": "MILTON Big Bite Lunch Box PU Insulated Double-Walled Stainless Steel Container with Inner Partition Plate & Carrying Handle, 900 ml, Aqua Green for Travelling, School & Office",
             "title": "MILTON Big Bite Lunch Box PU Insulated Double-Walled Stainless Steel Container with Inner Partition Plate & Carrying Handle, 900 ml, Aqua Green for Travelling, School & Office",
-            "image": "/products/lunch_boxes/school_products/milton_big_bite_lunch_box_pu_insulated_double_walled_stainless_steel_container_with_inner_partition_plate_carrying_handle_900_ml_aqua_green_for_travelling_school_office.png",
+            "image": "/products/lunch boxes/school products/MILTON Big Bite Lunch Box PU Insulated Double-Walled Stainless Steel Container with Inner Partition Plate & Carrying Handle, 900 ml, Aqua Green for Travelling, School & Office.png",
             "description": "High-quality MILTON Big Bite Lunch Box PU Insulated Double-Walled Stainless Steel Container with Inner Partition Plate & Carrying Handle, 900 ml, Aqua Green for Travelling, School & Office. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 499,
             "act-price": 698
@@ -1552,7 +1079,7 @@
             "id": "lunchbox_1780653698074_21",
             "name": "MILTON Containers and 1 Tumbler with Jacket, Blue 4 Containers Stainless Steel, Plastic Office Lunch Box (1240 ml)",
             "title": "MILTON Containers and 1 Tumbler with Jacket, Blue 4 Containers Stainless Steel, Plastic Office Lunch Box (1240 ml)",
-            "image": "/products/lunch_boxes/school_products/milton_containers_and_1_tumbler_with_jacket_blue_4_containers_stainless_steel_plastic_office_lunch_box_1240_ml_.png",
+            "image": "/products/lunch boxes/school products/MILTON Containers and 1 Tumbler with Jacket, Blue 4 Containers Stainless Steel, Plastic Office Lunch Box (1240 ml).png",
             "description": "High-quality MILTON Containers and 1 Tumbler with Jacket, Blue 4 Containers Stainless Steel, Plastic Office Lunch Box (1240 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 649,
             "act-price": 908
@@ -1562,7 +1089,7 @@
             "id": "lunchbox_1780653698074_22",
             "name": "MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box (1200 ml)",
             "title": "MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box (1200 ml)",
-            "image": "/products/lunch_boxes/school_products/milton_new_econa_4_stainless_steel_tiffin_box_4_tiers_of_stainless_steel_4_containers_stainless_steel_office_lunch_box_1200_ml_.png",
+            "image": "/products/lunch boxes/school products/MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box (1200 ml).png",
             "description": "High-quality MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box (1200 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 649,
             "act-price": 908
@@ -1572,7 +1099,7 @@
             "id": "lunchbox_1780653698074_23",
             "name": "MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box 1200 ml",
             "title": "MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box 1200 ml",
-            "image": "/products/lunch_boxes/school_products/milton_new_econa_4_stainless_steel_tiffin_box_4_tiers_of_stainless_steel_4_containers_stainless_steel_office_lunch_box_1200_ml.png",
+            "image": "/products/lunch boxes/school products/MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box 1200 ml.png",
             "description": "High-quality MILTON New Econa 4 Stainless Steel Tiffin Box, 4 Tiers of Stainless Steel 4 Containers Stainless Steel Office Lunch Box 1200 ml. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 649,
             "act-price": 908
@@ -1582,17 +1109,17 @@
             "id": "lunchbox_1780653698074_24",
             "name": "Meal Star Combo Kids insulated Luch box Water Bottle Combo Back to School",
             "title": "Meal Star Combo Kids insulated Luch box Water Bottle Combo Back to School",
-            "image": "/products/lunch_boxes/school_products/meal_star_combo_kids_insulated_luch_box_water_bottle_combo_back_to_school.png",
+            "image": "/products/lunch boxes/school products/Meal Star Combo Kids insulated Luch box Water Bottle Combo Back to School.png",
             "description": "High-quality Meal Star Combo Kids insulated Luch box Water Bottle Combo Back to School. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
-            "price": 342,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1118
           },
           {
             "prod_id": "lunchbox_1780653698074_25",
             "id": "lunchbox_1780653698074_25",
             "name": "Milton Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic)",
             "title": "Milton Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic)",
-            "image": "/products/lunch_boxes/school_products/milton_lunch_express_insulated_tiffin_and_water_bottle_orange_plastic_stainless_steel_tiffin_3_units_hot_and_cold_water_bottle_ideal_for_office_travel.png",
+            "image": "/products/lunch boxes/school products/Milton Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic) | Stainless Steel Tiffin 3 Units | Hot and Cold Water Bottle Ideal for Office, Travel.png",
             "description": "High-quality Milton Lunch Express Insulated Tiffin and Water Bottle, Orange (Plastic). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 499,
             "act-price": 698
@@ -1602,7 +1129,7 @@
             "id": "lunchbox_1780653698074_26",
             "name": "asian FUSION BITE 3 INSULATED STAINALESS STEEL FRESH LUNCH BOX 3 Containers Stainless Steel School Lunch Box (750 ml)",
             "title": "asian FUSION BITE 3 INSULATED STAINALESS STEEL FRESH LUNCH BOX 3 Containers Stainless Steel School Lunch Box (750 ml)",
-            "image": "/products/lunch_boxes/school_products/asian_fusion_bite_3_insulated_stainaless_steel_fresh_lunch_box_3_containers_stainless_steel_school_lunch_box_750_ml_.png",
+            "image": "/products/lunch boxes/school products/asian FUSION BITE 3 INSULATED STAINALESS STEEL FRESH LUNCH BOX 3 Containers Stainless Steel School Lunch Box (750 ml).png",
             "description": "High-quality asian FUSION BITE 3 INSULATED STAINALESS STEEL FRESH LUNCH BOX 3 Containers Stainless Steel School Lunch Box (750 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 449,
             "act-price": 628
@@ -1612,7 +1139,7 @@
             "id": "lunchbox_1780653698074_27",
             "name": "asian SMART-3 TIFFI CARRIER 3 STAINLESS STEEL CONTAINERS 3 Containers Plastic Office Lunch Box (400 ml)",
             "title": "asian SMART-3 TIFFI CARRIER 3 STAINLESS STEEL CONTAINERS 3 Containers Plastic Office Lunch Box (400 ml)",
-            "image": "/products/lunch_boxes/school_products/asian_smart_3_tiffi_carrier_3_stainless_steel_containers_3_containers_plastic_office_lunch_box_400_ml_.png",
+            "image": "/products/lunch boxes/school products/asian SMART-3 TIFFI CARRIER 3 STAINLESS STEEL CONTAINERS 3 Containers Plastic Office Lunch Box (400 ml).png",
             "description": "High-quality asian SMART-3 TIFFI CARRIER 3 STAINLESS STEEL CONTAINERS 3 Containers Plastic Office Lunch Box (400 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1622,7 +1149,7 @@
             "id": "lunchbox_1780653698074_28",
             "name": "asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml) 2",
             "title": "asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml) 2",
-            "image": "/products/lunch_boxes/school_products/asian_snack_pack_stainaless_steel_fresh_bite_lunch_box_2_containers_stainless_steel_school_lunch_box_850_ml_2.png",
+            "image": "/products/lunch boxes/school products/asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml) 2.png",
             "description": "High-quality asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml) 2. Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1632,7 +1159,7 @@
             "id": "lunchbox_1780653698074_29",
             "name": "asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml)",
             "title": "asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml)",
-            "image": "/products/lunch_boxes/school_products/asian_snack_pack_stainaless_steel_fresh_bite_lunch_box_2_containers_stainless_steel_school_lunch_box_850_ml_.png",
+            "image": "/products/lunch boxes/school products/asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml).png",
             "description": "High-quality asian SNACK PACK STAINALESS STEEL FRESH BITE LUNCH BOX 2 Containers Stainless Steel School Lunch Box (850 ml). Features double-walled insulation, leakproof airtight lids, and premium food-grade stainless steel/BPA-free construction. Perfect for school, college, or office.",
             "price": 399,
             "act-price": 558
@@ -1642,7 +1169,7 @@
             "id": "lunchbox_1780653698074_30",
             "name": "Premium Insulated Stainless Steel Lunch Box Combo",
             "title": "Premium Insulated Stainless Steel Lunch Box Combo",
-            "image": "/products/lunch_boxes/school_products/i_want_to_display_this_product_in_website_so_give_this_image_acc_to_that_it_should_be_like_professional_image_i_want_like_the_products_are_outside_box_with_brand_box_also_as_background_i_want.png",
+            "image": "/products/lunch boxes/school products/i want to display this product in website so give this image acc to that it should be like professional image,i want like the products are outside box,with brand box also as background i want.png",
             "description": "Premium multi-container insulated lunch box combo with elegant outer carrier jacket, ideal for office or school.",
             "price": 799,
             "act-price": 1118
@@ -1663,37 +1190,37 @@
             "id": "waterbottle_1780653698075_0",
             "name": "AQUA SPORTS VACUUM STAINLESS STEEL BOTTLE - 600ml",
             "title": "AQUA SPORTS VACUUM STAINLESS STEEL BOTTLE - 600ml",
-            "image": "/products/waterbottles_and_jars/aqua_sports_vacuum_stainless_steel_bottle_600ml.png",
+            "image": "/products/waterbottles and jars/AQUA SPORTS VACUUM STAINLESS STEEL BOTTLE - 600ml.png",
             "description": "High-performance insulated stainless steel water bottle. Features advanced temperature retention (hot & cold), leakproof cap, and highly durable grip. Ideal for sports, gym, school, or office.",
-            "price": 785,
-            "act-price": 0
+            "price": 349,
+            "act-price": 488
           },
           {
             "prod_id": "waterbottle_1780653698075_1",
             "id": "waterbottle_1780653698075_1",
             "name": "Asian Diamond Insulated Inner Stainless Steel Flask",
             "title": "Asian Diamond Insulated Inner Stainless Steel Flask",
-            "image": "/products/waterbottles_and_jars/asian_diamond_insulated_inner_stainless_steel_flask_1_pc.png",
+            "image": "/products/waterbottles and jars/Asian Diamond Insulated Inner Stainless Steel Flask | 1 Pc.png",
             "description": "Elegant insulated flask/mug, designed for leakproof travel. Perfect for coffee, tea, and other hot/cold beverages on the go.",
-            "price": 265,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "waterbottle_1780653698075_2",
             "id": "waterbottle_1780653698075_2",
             "name": "Asian Dynamic Insulated 600 ML Water Bottle",
             "title": "Asian Dynamic Insulated 600 ML Water Bottle",
-            "image": "/products/waterbottles_and_jars/asian_dynamic_insulated_600_ml_water_bottle_1_pc.png",
+            "image": "/products/waterbottles and jars/Asian Dynamic Insulated 600 ML Water Bottle | 1 Pc.png",
             "description": "High-performance insulated stainless steel water bottle. Features advanced temperature retention (hot & cold), leakproof cap, and highly durable grip. Ideal for sports, gym, school, or office.",
-            "price": 485,
-            "act-price": 0
+            "price": 349,
+            "act-price": 488
           },
           {
             "prod_id": "waterbottle_1780653698075_3",
             "id": "waterbottle_1780653698075_3",
             "name": "Asian Dynamic Insulated 700 ML Water Bottle",
             "title": "Asian Dynamic Insulated 700 ML Water Bottle",
-            "image": "/products/waterbottles_and_jars/asian_dynamic_insulated_700_ml_water_bottle_1_pc.png",
+            "image": "/products/waterbottles and jars/Asian Dynamic Insulated 700 ML Water Bottle | 1 Pc.png",
             "description": "High-performance insulated stainless steel water bottle. Features advanced temperature retention (hot & cold), leakproof cap, and highly durable grip. Ideal for sports, gym, school, or office.",
             "price": 399,
             "act-price": 558
@@ -1703,80 +1230,80 @@
             "id": "waterbottle_1780653698075_4",
             "name": "Asian Easy Go Insulated Flask 400",
             "title": "Asian Easy Go Insulated Flask 400",
-            "image": "/products/waterbottles_and_jars/asian_easy_go_insulated_flask_400.png",
+            "image": "/products/waterbottles and jars/Asian Easy Go Insulated Flask 400.png",
             "description": "Elegant insulated flask/mug, designed for leakproof travel. Perfect for coffee, tea, and other hot/cold beverages on the go.",
-            "price": 250,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "waterbottle_1780653698075_5",
             "id": "waterbottle_1780653698075_5",
             "name": "Asian Hot Keg Thermal Jar",
             "title": "Asian Hot Keg Thermal Jar",
-            "image": "/products/waterbottles_and_jars/asian_hot_keg_thermal_jar.png",
+            "image": "/products/waterbottles and jars/Asian Hot Keg Thermal Jar.png",
             "description": "Premium double-walled leakproof food jar. Keeps your meals fresh, hot, and delicious for hours. Made from high-quality food-grade stainless steel.",
-            "price": 199,
-            "act-price": 0
+            "price": 549,
+            "act-price": 768
           },
           {
             "prod_id": "waterbottle_1780653698075_6",
             "id": "waterbottle_1780653698075_6",
             "name": "Asian Inner Stainless Steel Double Wall Leak Proof Food Jar 380ml",
             "title": "Asian Inner Stainless Steel Double Wall Leak Proof Food Jar 380ml",
-            "image": "/products/waterbottles_and_jars/asian_inner_stainless_steel_double_wall_leak_proof_food_jar_380ml.png",
+            "image": "/products/waterbottles and jars/Asian Inner Stainless Steel Double Wall Leak Proof Food Jar 380ml.png",
             "description": "Premium double-walled leakproof food jar. Keeps your meals fresh, hot, and delicious for hours. Made from high-quality food-grade stainless steel.",
-            "price": 279,
-            "act-price": 0
+            "price": 549,
+            "act-price": 768
           },
           {
             "prod_id": "waterbottle_1780653698075_7",
             "id": "waterbottle_1780653698075_7",
             "name": "Asian Plastowares Hydra Grip 900ml",
             "title": "Asian Plastowares Hydra Grip 900ml",
-            "image": "/products/waterbottles_and_jars/asian_plastowares_hydra_grip_900ml_hot_cold_6_hrs_leakproof_steel_bottle_trending_blue_summer_gym_office_.png",
+            "image": "/products/waterbottles and jars/Asian Plastowares Hydra Grip 900ml | Hot & Cold 6 Hrs | Leakproof Steel Bottle | Trending Blue | Summer Gym Office .png",
             "description": "High-performance insulated stainless steel water bottle. Features advanced temperature retention (hot & cold), leakproof cap, and highly durable grip. Ideal for sports, gym, school, or office.",
-            "price": 315,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "waterbottle_1780653698075_8",
             "id": "waterbottle_1780653698075_8",
             "name": "Asian Plastowares Java Mug 350ml Insulated Coffee & Tea Cup",
             "title": "Asian Plastowares Java Mug 350ml Insulated Coffee & Tea Cup",
-            "image": "/products/waterbottles_and_jars/asian_plastowares_java_mug_350ml_insulated_coffee_tea_cup_seen_on_farah_khan_show_thermoware_spill_proof_travel_mug.png",
+            "image": "/products/waterbottles and jars/Asian Plastowares Java Mug 350ml Insulated Coffee & Tea Cup | Seen on Farah Khan Show! | Thermoware Spill-Proof Travel Mug.png",
             "description": "Elegant insulated flask/mug, designed for leakproof travel. Perfect for coffee, tea, and other hot/cold beverages on the go.",
-            "price": 279,
-            "act-price": 0
+            "price": 299,
+            "act-price": 418
           },
           {
             "prod_id": "waterbottle_1780653698075_9",
             "id": "waterbottle_1780653698075_9",
             "name": "Cello Soup & Snack Set",
             "title": "Cello Soup & Snack Set",
-            "image": "/products/waterbottles_and_jars/cello_soup_snack_set.png",
+            "image": "/products/waterbottles and jars/Cello Soup & Snack Set.png",
             "description": "Premium Cello Soup & Snack set. Ideal for serving hot soups and snacks elegantly. Microwave and dishwasher safe.",
-            "price": 375,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1118
           },
           {
             "prod_id": "waterbottle_1780653698075_10",
             "id": "waterbottle_1780653698075_10",
             "name": "MUMASTORE Challenger Bottle Stainless Steel Inner 600ml",
             "title": "MUMASTORE Challenger Bottle Stainless Steel Inner 600ml",
-            "image": "/products/waterbottles_and_jars/mumastore_challenger_bottle_stainless_steel_inner_600ml_1pcs.png",
+            "image": "/products/waterbottles and jars/MUMASTORE Challenger Bottle Stainless Steel Inner 600ml - 1pcs.png",
             "description": "High-performance insulated stainless steel water bottle. Features advanced temperature retention (hot & cold), leakproof cap, and highly durable grip. Ideal for sports, gym, school, or office.",
-            "price": 455,
-            "act-price": 0
+            "price": 349,
+            "act-price": 488
           },
           {
             "prod_id": "waterbottle_1780653698075_11",
             "id": "waterbottle_1780653698075_11",
             "name": "MUMASTORE Challenger Bottle Stainless Steel Inner 700ml",
             "title": "MUMASTORE Challenger Bottle Stainless Steel Inner 700ml",
-            "image": "/products/waterbottles_and_jars/mumastore_challenger_bottle_stainless_steel_inner_700ml_1pcs.png",
+            "image": "/products/waterbottles and jars/MUMASTORE Challenger Bottle Stainless Steel Inner 700ml - 1pcs.png",
             "description": "High-performance insulated stainless steel water bottle. Features advanced temperature retention (hot & cold), leakproof cap, and highly durable grip. Ideal for sports, gym, school, or office.",
-            "price": 455,
-            "act-price": 0
+            "price": 399,
+            "act-price": 558
           }
         ]
       }
@@ -1794,270 +1321,270 @@
             "id": "germansilver_1780653698076_0",
             "name": "250 ml Silver Glow German Silver Serving Bowl Spoon Set",
             "title": "250 ml Silver Glow German Silver Serving Bowl Spoon Set",
-            "image": "/products/german_silver_and_more/250_ml_silver_glow_german_silver_serving_bowl_spoon_set.png",
+            "image": "/products/german silver and more/250 ml Silver Glow German Silver Serving Bowl Spoon Set.png",
             "description": "Premium gold/silver plated serving bowl set. Perfect for serving dry fruits, sweets, or mouth fresheners during festivals and special occasions.",
-            "price": 145,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "germansilver_1780653698076_1",
             "id": "germansilver_1780653698076_1",
             "name": "Alluring Metal German Silver Hamper Basket Tray for Pooja Plate Diwali, Wedding, Birthday Party -Color Coated Plate",
             "title": "Alluring Metal German Silver Hamper Basket Tray for Pooja Plate Diwali, Wedding, Birthday Party -Color Coated Plate",
-            "image": "/products/german_silver_and_more/alluring_metal_german_silver_hamper_basket_tray_for_pooja_plate_diwali_wedding_birthday_party_color_coated_plate_marriage_tray_finish_1_pcs_in_a_box.png",
+            "image": "/products/german silver and more/Alluring Metal German Silver Hamper Basket Tray for Pooja Plate Diwali, Wedding, Birthday Party -Color Coated Plate | Marriage Tray | - Finish 1 PCS in A Box.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 985,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_2",
             "id": "germansilver_1780653698076_2",
             "name": "Decorative Pichwai Storage Metal Container, Yellow and White Floral Cow Design, Crystal Knob Lid, Dry Fruits, Snaks Jar for Kitchen",
             "title": "Decorative Pichwai Storage Metal Container, Yellow and White Floral Cow Design, Crystal Knob Lid, Dry Fruits, Snaks Jar for Kitchen",
-            "image": "/products/german_silver_and_more/decorative_pichwai_storage_metal_container_yellow_and_white_floral_cow_design_crystal_knob_lid_dry_fruits_snaks_jar_for_kitchen.png",
+            "image": "/products/german silver and more/Decorative Pichwai Storage Metal Container, Yellow and White Floral Cow Design, Crystal Knob Lid, Dry Fruits, Snaks Jar for Kitchen.png",
             "description": "Decorative storage container with lid, adorned with traditional motifs. Beautiful addition to your kitchen counter, dining table, or pooja room.",
-            "price": 385,
-            "act-price": 0
+            "price": 599,
+            "act-price": 838
           },
           {
             "prod_id": "germansilver_1780653698076_3",
             "id": "germansilver_1780653698076_3",
             "name": "Designer Pichwai Art Tray, 8 inch, silver Finish",
             "title": "Designer Pichwai Art Tray, 8 inch, silver Finish",
-            "image": "/products/german_silver_and_more/designer_pichwai_art_tray_8_inch_silver_finish.png",
+            "image": "/products/german silver and more/Designer Pichwai Art Tray, 8 inch, silver Finish.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_4",
             "id": "germansilver_1780653698076_4",
             "name": "Dry Fruit Container with Lid, Vintage Storage Box, Multipurpose Metal Bowl for Dry Fruits, Sweets & Pooja, Decorative Gift Box for Diwali, Kitchen Use",
             "title": "Dry Fruit Container with Lid, Vintage Storage Box, Multipurpose Metal Bowl for Dry Fruits, Sweets & Pooja, Decorative Gift Box for Diwali, Kitchen Use",
-            "image": "/products/german_silver_and_more/dry_fruit_container_with_lid_vintage_storage_box_multipurpose_metal_bowl_for_dry_fruits_sweets_pooja_decorative_gift_box_for_diwali_kitchen_use.png",
+            "image": "/products/german silver and more/Dry Fruit Container with Lid, Vintage Storage Box, Multipurpose Metal Bowl for Dry Fruits, Sweets & Pooja, Decorative Gift Box for Diwali, Kitchen Use.png",
             "description": "Premium gold/silver plated serving bowl set. Perfect for serving dry fruits, sweets, or mouth fresheners during festivals and special occasions.",
-            "price": 145,
-            "act-price": 0
+            "price": 599,
+            "act-price": 838
           },
           {
             "prod_id": "germansilver_1780653698076_5",
             "id": "germansilver_1780653698076_5",
             "name": "Effigy Onlinehub Hammered Copper Plated Jar fo Dry Fruit Pot Shape Container Box Storage Box (Gold, Brown)",
             "title": "Effigy Onlinehub Hammered Copper Plated Jar fo Dry Fruit Pot Shape Container Box Storage Box (Gold, Brown)",
-            "image": "/products/german_silver_and_more/effigy_onlinehub_hammered_copper_plated_jar_fo_dry_fruit_pot_shape_container_box_storage_box_gold_brown_.png",
+            "image": "/products/german silver and more/Effigy Onlinehub Hammered Copper Plated Jar fo Dry Fruit Pot Shape Container Box Storage Box (Gold, Brown).png",
             "description": "Decorative storage container with lid, adorned with traditional motifs. Beautiful addition to your kitchen counter, dining table, or pooja room.",
-            "price": 145,
-            "act-price": 0
+            "price": 599,
+            "act-price": 838
           },
           {
             "prod_id": "germansilver_1780653698076_6",
             "id": "germansilver_1780653698076_6",
             "name": "Elegant german  silver serving set flat lay",
             "title": "Elegant german  silver serving set flat lay",
-            "image": "/products/german_silver_and_more/elegant_german_silver_serving_set_flat_lay.png",
+            "image": "/products/german silver and more/Elegant german  silver serving set flat lay.png",
             "description": "Beautifully handcrafted German Silver utility and decor piece. Exudes timeless elegance, perfect for pooja rituals, home decoration, or wedding return gifts.",
-            "price": 485,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "germansilver_1780653698076_7",
             "id": "germansilver_1780653698076_7",
             "name": "Enamel Printed Pichwai Cow Metal Box Jars",
             "title": "Enamel Printed Pichwai Cow Metal Box Jars",
-            "image": "/products/german_silver_and_more/enamel_printed_pichwai_cow_metal_box_jars_decorative_metal_storage_jars_with_lid_traditional_indian_art_containers_for_sweets_spices_pooja_return_gifting_4inch_.png",
+            "image": "/products/german silver and more/Enamel Printed Pichwai Cow Metal Box Jars – Decorative Metal Storage Jars with Lid – Traditional Indian Art Containers for Sweets, Spices, Pooja & Return Gifting (4inch).png",
             "description": "Decorative storage container with lid, adorned with traditional motifs. Beautiful addition to your kitchen counter, dining table, or pooja room.",
-            "price": 145,
-            "act-price": 0
+            "price": 599,
+            "act-price": 838
           },
           {
             "prod_id": "germansilver_1780653698076_8",
             "id": "germansilver_1780653698076_8",
             "name": "German Silver Round Tray 8 inch",
             "title": "German Silver Round Tray 8 inch",
-            "image": "/products/german_silver_and_more/german_silver_round_tray_8_inch.png",
+            "image": "/products/german silver and more/German Silver Round Tray 8 inch.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_9",
             "id": "germansilver_1780653698076_9",
             "name": "German Silver Serving Tray 8-Inch",
             "title": "German Silver Serving Tray 8-Inch",
-            "image": "/products/german_silver_and_more/german_silver_serving_tray_8_inch_pichwai_kamdhenu_tray_pack_of_1_ideal_for_diwali_gifting_navratri_weddings_pooja_return_gifts_home_decor_silver_.png",
+            "image": "/products/german silver and more/German Silver Serving Tray 8-Inch | Pichwai Kamdhenu Tray | Pack of 1 | Ideal for Diwali Gifting, Navratri, Weddings, Pooja Return Gifts Home Decor (Silver).png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_10",
             "id": "germansilver_1780653698076_10",
             "name": "German Silver Swan Spoon Holder",
             "title": "German Silver Swan Spoon Holder",
-            "image": "/products/german_silver_and_more/german_silver_swan_spoon_holder.png",
+            "image": "/products/german silver and more/German Silver Swan Spoon Holder.png",
             "description": "Beautifully handcrafted German Silver utility and decor piece. Exudes timeless elegance, perfect for pooja rituals, home decoration, or wedding return gifts.",
-            "price": 645,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "germansilver_1780653698076_11",
             "id": "germansilver_1780653698076_11",
             "name": "German Silver Tray Set for Serving",
             "title": "German Silver Tray Set for Serving",
-            "image": "/products/german_silver_and_more/german_silver_tray_set_for_serving_german_silver_rectangle_shape_serving_tray_designer_fancy_metal_tray_tray_size_11_inch_x_7_inch.png",
+            "image": "/products/german silver and more/German Silver Tray Set for Serving | German Silver Rectangle Shape Serving Tray | Designer Fancy Metal Tray | Tray Size 11 Inch x 7 Inch.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 875,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1818
           },
           {
             "prod_id": "germansilver_1780653698076_12",
             "id": "germansilver_1780653698076_12",
             "name": "Golden Brass Katori & Spoon Set with Red Velvet Gift Box",
             "title": "Golden Brass Katori & Spoon Set with Red Velvet Gift Box",
-            "image": "/products/german_silver_and_more/golden_brass_katori_spoon_set_with_red_velvet_gift_box_premium_4_inch_round_bowl_for_dry_fruits_sweets_home_de_cor_perfect_diwali_wedding_gift.png",
+            "image": "/products/german silver and more/Golden Brass Katori & Spoon Set with Red Velvet Gift Box – Premium 4 Inch Round Bowl for Dry Fruits, Sweets & Home Décor, Perfect Diwali & Wedding Gift.png",
             "description": "Premium gold/silver plated serving bowl set. Perfect for serving dry fruits, sweets, or mouth fresheners during festivals and special occasions.",
-            "price": 145,
-            "act-price": 0
+            "price": 599,
+            "act-price": 838
           },
           {
             "prod_id": "germansilver_1780653698076_13",
             "id": "germansilver_1780653698076_13",
             "name": "Hammered Copper Storage Jar with Lotus Flower Lid, Round, 8 cm x 8 cm",
             "title": "Hammered Copper Storage Jar with Lotus Flower Lid, Round, 8 cm x 8 cm",
-            "image": "/products/german_silver_and_more/hammered_copper_storage_jar_with_lotus_flower_lid_round_8_cm_x_8_cm.png",
+            "image": "/products/german silver and more/Hammered Copper Storage Jar with Lotus Flower Lid, Round, 8 cm x 8 cm.png",
             "description": "Decorative storage container with lid, adorned with traditional motifs. Beautiful addition to your kitchen counter, dining table, or pooja room.",
-            "price": 145,
-            "act-price": 0
+            "price": 599,
+            "act-price": 838
           },
           {
             "prod_id": "germansilver_1780653698076_14",
             "id": "germansilver_1780653698076_14",
             "name": "Handcrafted Multicolor Iron Pichwai Tray Set",
             "title": "Handcrafted Multicolor Iron Pichwai Tray Set",
-            "image": "/products/german_silver_and_more/handcrafted_multicolor_iron_pichwai_tray_set_lightweight_traditional_ethnic_decorative_cow_motif_trays_for_serving_festive_gifting_home_de_cor_multipurpose_use_green_flower_cow_.png",
+            "image": "/products/german silver and more/Handcrafted Multicolor Iron Pichwai Tray Set | Lightweight Traditional Ethnic Decorative Cow Motif Trays for Serving, Festive Gifting, Home Décor & Multipurpose Use (Green Flower Cow).png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1818
           },
           {
             "prod_id": "germansilver_1780653698076_15",
             "id": "germansilver_1780653698076_15",
             "name": "Indian Design Handicrafts Round Tray Set of 1 Cow Pichwai Tray High Glossy Raisen Work Tray (Pack of 1, Microwave Safe)",
             "title": "Indian Design Handicrafts Round Tray Set of 1 Cow Pichwai Tray High Glossy Raisen Work Tray (Pack of 1, Microwave Safe)",
-            "image": "/products/german_silver_and_more/indian_design_handicrafts_round_tray_set_of_1_cow_pichwai_tray_high_glossy_raisen_work_tray_pack_of_1_microwave_safe_.png",
+            "image": "/products/german silver and more/Indian Design Handicrafts Round Tray Set of 1 Cow Pichwai Tray High Glossy Raisen Work Tray (Pack of 1, Microwave Safe).png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1818
           },
           {
             "prod_id": "germansilver_1780653698076_16",
             "id": "germansilver_1780653698076_16",
             "name": "POSH Exquisite Round German Silver Tray A",
             "title": "POSH Exquisite Round German Silver Tray A",
-            "image": "/products/german_silver_and_more/posh_exquisite_round_german_silver_tray_a_elegant_decorative_tray_for_serving_and_home_decor_perfect_for_dining_tea_parties_cocktail_gatherings_and_festive_timeless_hosting_essential.png",
+            "image": "/products/german silver and more/POSH Exquisite Round German Silver Tray A – Elegant Decorative Tray for Serving and Home Decor | Perfect for Dining, Tea Parties, Cocktail Gatherings, and Festive | Timeless Hosting Essential.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 545,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_17",
             "id": "germansilver_1780653698076_17",
             "name": "Polished  german silver ornamental basket with handle",
             "title": "Polished  german silver ornamental basket with handle",
-            "image": "/products/german_silver_and_more/polished_german_silver_ornamental_basket_with_handle.png",
+            "image": "/products/german silver and more/Polished  german silver ornamental basket with handle.png",
             "description": "Beautifully handcrafted German Silver utility and decor piece. Exudes timeless elegance, perfect for pooja rituals, home decoration, or wedding return gifts.",
-            "price": 345,
-            "act-price": 0
+            "price": 699,
+            "act-price": 978
           },
           {
             "prod_id": "germansilver_1780653698076_18",
             "id": "germansilver_1780653698076_18",
             "name": "Premium Handmade Resin Coated Metal Serving Tray",
             "title": "Premium Handmade Resin Coated Metal Serving Tray",
-            "image": "/products/german_silver_and_more/premium_handmade_resin_coated_metal_serving_tray_elegant_cow_design_multiple_artistic_variants_perfect_for_home_de_cor_kitchen_festive_gifting_yellow_8_inch_.png",
+            "image": "/products/german silver and more/Premium Handmade Resin Coated Metal Serving Tray – Elegant Cow Design & Multiple Artistic Variants | Perfect for Home Décor, Kitchen & Festive Gifting (Yellow, 8 Inch).png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_19",
             "id": "germansilver_1780653698076_19",
             "name": "RK Silver Colour Plate with Embossed Design with 3 Legs 12.5 INCH",
             "title": "RK Silver Colour Plate with Embossed Design with 3 Legs 12.5 INCH",
-            "image": "/products/german_silver_and_more/rk_silver_colour_plate_with_embossed_design_with_3_legs_12.5_inch_tambalam_parat_marriage_gift_tray_german_silver_plate.png",
+            "image": "/products/german silver and more/RK Silver Colour Plate with Embossed Design with 3 Legs 12.5 INCH | Tambalam | Parat | Marriage Gift Tray | German Silver Plate.png",
             "description": "Beautifully handcrafted German Silver utility and decor piece. Exudes timeless elegance, perfect for pooja rituals, home decoration, or wedding return gifts.",
-            "price": 985,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "germansilver_1780653698076_20",
             "id": "germansilver_1780653698076_20",
             "name": "SAFESEED Best Gift Item Silver Plated Bowl Set Used for Dry Fruit, Sweets and Home Decor Bowl, Spoon, Tray Serving Set",
             "title": "SAFESEED Best Gift Item Silver Plated Bowl Set Used for Dry Fruit, Sweets and Home Decor Bowl, Spoon, Tray Serving Set",
-            "image": "/products/german_silver_and_more/safeseed_best_gift_item_silver_plated_bowl_set_used_for_dry_fruit_sweets_and_home_decor_bowl_spoon_tray_serving_set.png",
+            "image": "/products/german silver and more/SAFESEED Best Gift Item Silver Plated Bowl Set Used for Dry Fruit, Sweets and Home Decor Bowl, Spoon, Tray Serving Set.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 485,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1818
           },
           {
             "prod_id": "germansilver_1780653698076_21",
             "id": "germansilver_1780653698076_21",
             "name": "SMILES GIFT Bowl, Tray, Spoon Serving Set",
             "title": "SMILES GIFT Bowl, Tray, Spoon Serving Set",
-            "image": "/products/german_silver_and_more/smiles_gift_bowl_tray_spoon_serving_set.png",
+            "image": "/products/german silver and more/SMILES GIFT Bowl, Tray, Spoon Serving Set.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 385,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_22",
             "id": "germansilver_1780653698076_22",
             "name": "Silverglow De-Novo Glass Set",
             "title": "Silverglow De-Novo Glass Set",
-            "image": "/products/german_silver_and_more/silverglow_de_novo_glass_set_gold_silver_plated_water_serving_set_of_2_juice_water_beverages_serving_set_tableware_set_perfect_diwali_office_wedding_return_gift_item.png",
+            "image": "/products/german silver and more/Silverglow De-Novo Glass Set | Gold & Silver Plated Water Serving Set of 2 | Juice, Water, Beverages Serving Set | Tableware Set | Perfect Diwali, Office, Wedding Return Gift Item.png",
             "description": "Elegant gold & silver plated water serving set. Adds a touch of luxury to your dining and hosting experience.",
-            "price": 685,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1818
           },
           {
             "prod_id": "germansilver_1780653698076_23",
             "id": "germansilver_1780653698076_23",
             "name": "arexclusive Multipurpose Handcrafted White Metal German Silver Plate with handle Tray",
             "title": "arexclusive Multipurpose Handcrafted White Metal German Silver Plate with handle Tray",
-            "image": "/products/german_silver_and_more/arexclusive_multipurpose_handcrafted_white_metal_german_silver_plate_with_handle_tray.png",
+            "image": "/products/german silver and more/arexclusive Multipurpose Handcrafted White Metal German Silver Plate with handle Tray.png",
             "description": "Exquisite handcrafted metal serving tray featuring traditional Indian art. Ideal for festive serving, home decor, and return gifting.",
-            "price": 645,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1258
           },
           {
             "prod_id": "germansilver_1780653698076_24",
             "id": "germansilver_1780653698076_24",
             "name": "German Silver Round Flower Basket for Decor Traditional Handcrafted Flower Basket for Worship Plated Bowl Home Mandir Office Wedding Return Diwali Gift Items",
             "title": "German Silver Round Flower Basket for Decor Traditional Handcrafted Flower Basket for Worship Plated Bowl Home Mandir Office Wedding Return Diwali Gift Items",
-            "image": "/products/german_silver_and_more/erman_silver_round_flower_basket_for_decor_traditional_handcrafted_flower_basket_for_worship_plated_bowl_home_mandir_office_wedding_return_diwali_gift_items_silver_.png",
+            "image": "/products/german silver and more/erman Silver Round Flower Basket for Decor Traditional Handcrafted Flower Basket for Worship Plated Bowl Home Mandir Office Wedding Return Diwali Gift Items - (Silver).png",
             "description": "Premium gold/silver plated serving bowl set. Perfect for serving dry fruits, sweets, or mouth fresheners during festivals and special occasions.",
-            "price": 285,
-            "act-price": 0
+            "price": 699,
+            "act-price": 978
           },
           {
             "prod_id": "germansilver_1780653698076_25",
             "id": "germansilver_1780653698076_25",
             "name": "german silver handcrafted plate",
             "title": "german silver handcrafted plate",
-            "image": "/products/german_silver_and_more/german_silver_handcrafted_plate.png",
+            "image": "/products/german silver and more/german silver handcrafted plate.png",
             "description": "Beautifully handcrafted German Silver utility and decor piece. Exudes timeless elegance, perfect for pooja rituals, home decoration, or wedding return gifts.",
-            "price": 385,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           },
           {
             "prod_id": "germansilver_1780653698076_26",
             "id": "germansilver_1780653698076_26",
             "name": "sparkle dreams Copper Storage Bowl (Pack of 1, Gold)",
             "title": "sparkle dreams Copper Storage Bowl (Pack of 1, Gold)",
-            "image": "/products/german_silver_and_more/sparkle_dreams_copper_storage_bowl_pack_of_1_gold_.png",
+            "image": "/products/german silver and more/sparkle dreams Copper Storage Bowl (Pack of 1, Gold).png",
             "description": "Premium gold/silver plated serving bowl set. Perfect for serving dry fruits, sweets, or mouth fresheners during festivals and special occasions.",
-            "price": 265,
-            "act-price": 0
+            "price": 499,
+            "act-price": 698
           }
         ]
       }
@@ -2073,49 +1600,49 @@
           {
             "id": "mats_1782211200000_0",
             "prod_id": "mats_1782211200000_0",
-            "name": "Multipurpose 45cm X 10m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
-            "title": "Multipurpose 45cm X 10m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
-            "image": "/products/multiple_purpose_mats/multipurpose_45cm_x_1m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_white_.png",
+            "name": "Multipurpose 45cm X 1m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
+            "title": "Multipurpose 45cm X 1m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
+            "image": "/products/Multiple purpose mats/Multipurpose 45cm X 1m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white).png",
             "description": "Super strong white multipurpose anti-slip mat sheet roll (45cm X 1m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 985,
-            "act-price": 0
+            "price": 199,
+            "act-price": 299
           },
           {
             "id": "mats_1782211200000_1",
             "prod_id": "mats_1782211200000_1",
-            "name": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Brown)",
-            "title": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Brown)",
-            "image": "/products/multiple_purpose_mats/multipurpose_45cm_x_2m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_brown_.png",
+            "name": "Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Brown)",
+            "title": "Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Brown)",
+            "image": "/products/Multiple purpose mats/Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Brown).png",
             "description": "Super strong Brown multipurpose anti-slip mat sheet roll (45cm X 2m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 1450,
-            "act-price": 0
+            "price": 299,
+            "act-price": 499
           },
           {
             "id": "mats_1782211200000_2",
             "prod_id": "mats_1782211200000_2",
-            "name": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
-            "title": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
-            "image": "/products/multiple_purpose_mats/multipurpose_45cm_x_2m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_metallic_grey_.png",
+            "name": "Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
+            "title": "Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
+            "image": "/products/Multiple purpose mats/Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey).png",
             "description": "Super strong Metallic Grey multipurpose anti-slip mat sheet roll (45cm X 2m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 1450,
-            "act-price": 0
+            "price": 299,
+            "act-price": 499
           },
           {
             "id": "mats_1782211200000_3",
             "prod_id": "mats_1782211200000_3",
-            "name": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
-            "title": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
-            "image": "/products/multiple_purpose_mats/multipurpose_45cm_x_2m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_white_.png",
+            "name": "Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
+            "title": "Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
+            "image": "/products/Multiple purpose mats/Multipurpose 45cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white).png",
             "description": "Super strong white multipurpose anti-slip mat sheet roll (45cm X 2m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 1450,
-            "act-price": 0
+            "price": 299,
+            "act-price": 499
           },
           {
             "id": "mats_1782211200000_4",
             "prod_id": "mats_1782211200000_4",
             "name": "Multipurpose 45cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (deign)",
             "title": "Multipurpose 45cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (deign)",
-            "image": "/products/multiple_purpose_mats/multipurpose_45cm_x_500cm_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_deign_.png",
+            "image": "/products/Multiple purpose mats/Multipurpose 45cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (deign).png",
             "description": "Super strong deign multipurpose anti-slip mat sheet roll (45cm X 500cm). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
             "price": 499,
             "act-price": 799
@@ -2123,72 +1650,72 @@
           {
             "id": "mats_1782211200000_5",
             "prod_id": "mats_1782211200000_5",
-            "name": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
-            "title": "Multipurpose 45cm X 20m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
-            "image": "/products/multiple_purpose_mats/multipurpose_45cm_x_5m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_metallic_grey_.png",
+            "name": "Multipurpose 45cm X 5m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
+            "title": "Multipurpose 45cm X 5m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
+            "image": "/products/Multiple purpose mats/Multipurpose 45cm X 5m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey).png",
             "description": "Super strong Metallic Grey multipurpose anti-slip mat sheet roll (45cm X 5m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 1450,
-            "act-price": 0
+            "price": 499,
+            "act-price": 799
           },
           {
             "id": "mats_1782211200000_6",
             "prod_id": "mats_1782211200000_6",
-            "name": "Multipurpose 60cm X 10m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
-            "title": "Multipurpose 60cm X 10m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
-            "image": "/products/multiple_purpose_mats/multipurpose_60cm_x_1m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_white_.png",
+            "name": "Multipurpose 60cm X 1m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
+            "title": "Multipurpose 60cm X 1m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white)",
+            "image": "/products/Multiple purpose mats/Multipurpose 60cm X 1m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (white).png",
             "description": "Super strong white multipurpose anti-slip mat sheet roll (60cm X 1m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 1150,
-            "act-price": 0
+            "price": 249,
+            "act-price": 399
           },
           {
             "id": "mats_1782211200000_7",
             "prod_id": "mats_1782211200000_7",
             "name": "Multipurpose 60cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
             "title": "Multipurpose 60cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
-            "image": "/products/multiple_purpose_mats/multipurpose_60cm_x_2m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_metallic_grey_.png",
+            "image": "/products/Multiple purpose mats/Multipurpose 60cm X 2m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey).png",
             "description": "Super strong Metallic Grey multipurpose anti-slip mat sheet roll (60cm X 2m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 2150,
-            "act-price": 0
+            "price": 349,
+            "act-price": 549
           },
           {
             "id": "mats_1782211200000_8",
             "prod_id": "mats_1782211200000_8",
             "name": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Design)",
             "title": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Design)",
-            "image": "/products/multiple_purpose_mats/multipurpose_60cm_x_500cm_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_design_.png",
+            "image": "/products/Multiple purpose mats/Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Design).png",
             "description": "Super strong Design multipurpose anti-slip mat sheet roll (60cm X 500cm). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 685,
-            "act-price": 0
+            "price": 599,
+            "act-price": 899
           },
           {
             "id": "mats_1782211200000_9",
             "prod_id": "mats_1782211200000_9",
             "name": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
             "title": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey)",
-            "image": "/products/multiple_purpose_mats/multipurpose_60cm_x_500cm_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_metallic_grey_.png",
+            "image": "/products/Multiple purpose mats/Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic Grey).png",
             "description": "Super strong Metallic Grey multipurpose anti-slip mat sheet roll (60cm X 500cm). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 685,
-            "act-price": 0
+            "price": 599,
+            "act-price": 899
           },
           {
             "id": "mats_1782211200000_10",
             "prod_id": "mats_1782211200000_10",
             "name": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Pink Design)",
             "title": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Pink Design)",
-            "image": "/products/multiple_purpose_mats/multipurpose_60cm_x_500cm_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_pink_design_.png",
+            "image": "/products/Multiple purpose mats/Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Pink Design).png",
             "description": "Super strong Pink Design multipurpose anti-slip mat sheet roll (60cm X 500cm). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 685,
-            "act-price": 0
+            "price": 599,
+            "act-price": 899
           },
           {
             "id": "mats_1782211200000_11",
             "prod_id": "mats_1782211200000_11",
-            "name": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic deisgn)",
-            "title": "Multipurpose 60cm X 500cm Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic deisgn)",
-            "image": "/products/multiple_purpose_mats/multipurpose_60cm_x_500m_anti_slip_plastic_sheets_for_kitchen_cabinets_eva_shelf_liners_for_kitchen_shelves_drawers_fridge_cupboard_super_strong_kitchen_shelf_sheets_mat_roll_metallic_deisgn_.png",
+            "name": "Multipurpose 60cm X 500m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic deisgn)",
+            "title": "Multipurpose 60cm X 500m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic deisgn)",
+            "image": "/products/Multiple purpose mats/Multipurpose 60cm X 500m Anti-Slip Plastic Sheets for Kitchen Cabinets, EVA Shelf Liners for Kitchen Shelves, Drawers, Fridge, Cupboard, Super Strong Kitchen Shelf Sheets Mat Roll (Metallic deisgn).png",
             "description": "Super strong Metallic deisgn multipurpose anti-slip mat sheet roll (60cm X 500m). Perfect for kitchen cabinets, drawers, shelves, cupboards, refrigerators, and tables. Made from high-quality food-safe EVA plastic material. Waterproof, oil-proof, easy to wipe clean, and can be easily cut to any custom size.",
-            "price": 685,
-            "act-price": 0
+            "price": 599,
+            "act-price": 899
           }
         ]
       }
@@ -2206,7 +1733,7 @@
             "prod_id": "wallpaper_1782300000000_0",
             "name": "Beige Vintage Floral Self-Adhesive Contact Paper Wallpaper Roll",
             "title": "Beige Vintage Floral Self-Adhesive Contact Paper Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/beige_vintage_floral_self_adhesive_contact_paper_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Beige Vintage Floral Self-Adhesive Contact Paper Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2216,7 +1743,7 @@
             "prod_id": "wallpaper_1782300000000_1",
             "name": "Black and Pink Abstract Wave Self-Adhesive Wallpaper Roll",
             "title": "Black and Pink Abstract Wave Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/black_and_pink_abstract_wave_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Black and Pink Abstract Wave Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2226,7 +1753,7 @@
             "prod_id": "wallpaper_1782300000000_2",
             "name": "Blue Watercolor Floral Lily Cream Self-Adhesive Wallpaper Roll",
             "title": "Blue Watercolor Floral Lily Cream Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/blue_watercolor_floral_lily_cream_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Blue Watercolor Floral Lily Cream Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2236,7 +1763,7 @@
             "prod_id": "wallpaper_1782300000000_3",
             "name": "Blue and Gold Luxury Geometric Self-Adhesive Wallpaper Roll",
             "title": "Blue and Gold Luxury Geometric Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/blue_and_gold_luxury_geometric_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Blue and Gold Luxury Geometric Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2246,7 +1773,7 @@
             "prod_id": "wallpaper_1782300000000_4",
             "name": "Green Textured Yellow Floral Blossom Self-Adhesive Wallpaper Roll",
             "title": "Green Textured Yellow Floral Blossom Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/green_textured_yellow_floral_blossom_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Green Textured Yellow Floral Blossom Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2256,7 +1783,7 @@
             "prod_id": "wallpaper_1782300000000_5",
             "name": "Grey Marble Kintsugi Gold Vein Self-Adhesive Wallpaper Roll",
             "title": "Grey Marble Kintsugi Gold Vein Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/grey_marble_kintsugi_gold_vein_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Grey Marble Kintsugi Gold Vein Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2266,7 +1793,7 @@
             "prod_id": "wallpaper_1782300000000_6",
             "name": "Light Blue Marble Pattern Self-Adhesive Wallpaper Contact Paper Roll",
             "title": "Light Blue Marble Pattern Self-Adhesive Wallpaper Contact Paper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/light_blue_marble_pattern_self_adhesive_wallpaper_contact_paper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Light Blue Marble Pattern Self-Adhesive Wallpaper Contact Paper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2276,7 +1803,7 @@
             "prod_id": "wallpaper_1782300000000_7",
             "name": "Light Pink Self-Adhesive Floral Leaf Wallpaper Roll",
             "title": "Light Pink Self-Adhesive Floral Leaf Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/light_pink_self_adhesive_floral_leaf_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Light Pink Self-Adhesive Floral Leaf Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2286,7 +1813,7 @@
             "prod_id": "wallpaper_1782300000000_8",
             "name": "Pink Floral Blossom on Textured Grey Self-Adhesive Wallpaper Roll",
             "title": "Pink Floral Blossom on Textured Grey Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/pink_floral_blossom_on_textured_grey_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Pink Floral Blossom on Textured Grey Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2296,7 +1823,7 @@
             "prod_id": "wallpaper_1782300000000_9",
             "name": "Pink Horizontal Stripe Leaf Pattern Self-Adhesive Wallpaper Roll",
             "title": "Pink Horizontal Stripe Leaf Pattern Self-Adhesive Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/pink_horizontal_stripe_leaf_pattern_self_adhesive_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Pink Horizontal Stripe Leaf Pattern Self-Adhesive Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2306,7 +1833,7 @@
             "prod_id": "wallpaper_1782300000000_10",
             "name": "Pink Watercolor Floral White Self-Adhesive PVC Wallpaper Roll",
             "title": "Pink Watercolor Floral White Self-Adhesive PVC Wallpaper Roll",
-            "image": "/products/self_adhesive_wallpaper_rolls/pink_watercolor_floral_white_self_adhesive_pvc_wallpaper_roll.png",
+            "image": "/products/self adhesive wallpaper rolls/Pink Watercolor Floral White Self-Adhesive PVC Wallpaper Roll.png",
             "description": "Premium self-adhesive wallpaper roll featuring an elegant design. Made of high-quality PVC material, this peel-and-stick contact paper is waterproof, oil-proof, and easy to clean. Dimensions are exactly 45 cm x 500 cm (16 inches x 16.4 feet), providing approximately 24 square feet of coverage per roll. Perfect for walls, cabinets, shelves, countertops, and furniture DIY projects.",
             "price": 225,
             "act-price": 999
@@ -2327,17 +1854,17 @@
             "prod_id": "birds_nest_1782400000000_0",
             "name": "Double Hole Natural Coco Coir Fiber Hanging Bird Nest House",
             "title": "Double Hole Natural Coco Coir Fiber Hanging Bird Nest House",
-            "image": "/products/birds_accessories/double_hole_natural_coco_coir_fiber_hanging_bird_nest_house.png",
+            "image": "/products/Birds accessories/Double Hole Natural Coco Coir Fiber Hanging Bird Nest House.png",
             "description": "Premium quality Double Hole Natural Coco Coir Fiber Hanging Bird Nest House. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 385,
-            "act-price": 0
+            "price": 199,
+            "act-price": 327
           },
           {
             "id": "birds_nest_1782400000000_1",
             "prod_id": "birds_nest_1782400000000_1",
             "name": "Double Hole Vertical Natural Coco Coir Fiber Hanging Bird Nest",
             "title": "Double Hole Vertical Natural Coco Coir Fiber Hanging Bird Nest",
-            "image": "/products/birds_accessories/double_hole_vertical_natural_coco_coir_fiber_hanging_bird_nest.png",
+            "image": "/products/Birds accessories/Double Hole Vertical Natural Coco Coir Fiber Hanging Bird Nest.png",
             "description": "Premium quality Double Hole Vertical Natural Coco Coir Fiber Hanging Bird Nest. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
             "price": 249,
             "act-price": 397
@@ -2347,37 +1874,37 @@
             "prod_id": "birds_nest_1782400000000_2",
             "name": "Hanging Water Drop Shape Natural Coco Coir Fiber Bird Nest",
             "title": "Hanging Water Drop Shape Natural Coco Coir Fiber Bird Nest",
-            "image": "/products/birds_accessories/hanging_water_drop_shape_natural_coco_coir_fiber_bird_nest.png",
+            "image": "/products/Birds accessories/Hanging Water Drop Shape Natural Coco Coir Fiber Bird Nest.png",
             "description": "Premium quality Hanging Water Drop Shape Natural Coco Coir Fiber Bird Nest. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 115,
-            "act-price": 0
+            "price": 299,
+            "act-price": 467
           },
           {
             "id": "birds_nest_1782400000000_3",
             "prod_id": "birds_nest_1782400000000_3",
             "name": "Hut Shape Natural Coco Coir Fiber Bird Nest House",
             "title": "Hut Shape Natural Coco Coir Fiber Bird Nest House",
-            "image": "/products/birds_accessories/hut_shape_natural_coco_coir_fiber_bird_nest_house.png",
+            "image": "/products/Birds accessories/Hut Shape Natural Coco Coir Fiber Bird Nest House.png",
             "description": "Premium quality Hut Shape Natural Coco Coir Fiber Bird Nest House. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 245,
-            "act-price": 0
+            "price": 349,
+            "act-price": 537
           },
           {
             "id": "birds_nest_1782400000000_4",
             "prod_id": "birds_nest_1782400000000_4",
             "name": "Hut Shape Red Roof Wire Bird Cage with Feeding Cups",
             "title": "Hut Shape Red Roof Wire Bird Cage with Feeding Cups",
-            "image": "/products/birds_accessories/hut_shape_red_roof_wire_bird_cage_with_feeding_cups.png",
+            "image": "/products/Birds accessories/Hut Shape Red Roof Wire Bird Cage with Feeding Cups.png",
             "description": "Premium quality Hut Shape Red Roof Wire Bird Cage with Feeding Cups. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 420,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1447
           },
           {
             "id": "birds_nest_1782400000000_5",
             "prod_id": "birds_nest_1782400000000_5",
             "name": "Mushroom Roof Natural Coco Coir Fiber Hanging Bird Nest House",
             "title": "Mushroom Roof Natural Coco Coir Fiber Hanging Bird Nest House",
-            "image": "/products/birds_accessories/mushroom_roof_natural_coco_coir_fiber_hanging_bird_nest_house.png",
+            "image": "/products/Birds accessories/Mushroom Roof Natural Coco Coir Fiber Hanging Bird Nest House.png",
             "description": "Premium quality Mushroom Roof Natural Coco Coir Fiber Hanging Bird Nest House. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
             "price": 249,
             "act-price": 397
@@ -2387,40 +1914,40 @@
             "prod_id": "birds_nest_1782400000000_6",
             "name": "Rectangular Black Wire Bird Breeding Cage with Feeding Cups",
             "title": "Rectangular Black Wire Bird Breeding Cage with Feeding Cups",
-            "image": "/products/birds_accessories/rectangular_black_wire_bird_breeding_cage_with_feeding_cups.png",
+            "image": "/products/Birds accessories/Rectangular Black Wire Bird Breeding Cage with Feeding Cups.png",
             "description": "Premium quality Rectangular Black Wire Bird Breeding Cage with Feeding Cups. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 599,
-            "act-price": 0
+            "price": 699,
+            "act-price": 1027
           },
           {
             "id": "birds_nest_1782400000000_7",
             "prod_id": "birds_nest_1782400000000_7",
             "name": "Rectangular Black Wire Bird Breeding Cage with Removable Tray",
             "title": "Rectangular Black Wire Bird Breeding Cage with Removable Tray",
-            "image": "/products/birds_accessories/rectangular_black_wire_bird_breeding_cage_with_removable_tray.png",
+            "image": "/products/Birds accessories/Rectangular Black Wire Bird Breeding Cage with Removable Tray.png",
             "description": "Premium quality Rectangular Black Wire Bird Breeding Cage with Removable Tray. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 1450,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1167
           },
           {
             "id": "birds_nest_1782400000000_8",
             "prod_id": "birds_nest_1782400000000_8",
             "name": "Rectangular Blue Wire Bird Breeding Cage with Feeding Cups",
             "title": "Rectangular Blue Wire Bird Breeding Cage with Feeding Cups",
-            "image": "/products/birds_accessories/rectangular_blue_wire_bird_breeding_cage_with_feeding_cups.png",
+            "image": "/products/Birds accessories/Rectangular Blue Wire Bird Breeding Cage with Feeding Cups.png",
             "description": "Premium quality Rectangular Blue Wire Bird Breeding Cage with Feeding Cups. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 849,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1307
           },
           {
             "id": "birds_nest_1782400000000_9",
             "prod_id": "birds_nest_1782400000000_9",
             "name": "Rectangular Blue Wire Bird Breeding Cage with Removable Tray",
             "title": "Rectangular Blue Wire Bird Breeding Cage with Removable Tray",
-            "image": "/products/birds_accessories/rectangular_blue_wire_bird_breeding_cage_with_removable_tray.png",
+            "image": "/products/Birds accessories/Rectangular Blue Wire Bird Breeding Cage with Removable Tray.png",
             "description": "Premium quality Rectangular Blue Wire Bird Breeding Cage with Removable Tray. Designed for comfort, durability, and safety of your pet birds. Ideal for nesting, breeding, or cage setup.",
-            "price": 1999,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1447
           }
         ]
       },
@@ -2432,7 +1959,7 @@
             "prod_id": "birds_food_1782400000000_0",
             "name": "Healthy Raise Breed Natural Calcium Mineral Block for All Birds",
             "title": "Healthy Raise Breed Natural Calcium Mineral Block for All Birds",
-            "image": "/products/birds_accessories/birds_food_and_medicines/healthy_raise_breed_natural_calcium_mineral_block_for_all_birds.png",
+            "image": "/products/Birds accessories/birds food and medicines/Healthy Raise Breed Natural Calcium Mineral Block for All Birds.png",
             "description": "Premium quality Healthy Raise Breed Natural Calcium Mineral Block for All Birds. This mineral block is essential for birds to keep their beak trimmed, and provides a rich source of calcium for strong bones and feather health.",
             "price": 100,
             "act-price": 199
@@ -2442,17 +1969,17 @@
             "prod_id": "birds_food_1782400000000_1",
             "name": "Petslife Baby Bird Hand-Feeding Formula Nutrition Powder, 150g",
             "title": "Petslife Baby Bird Hand-Feeding Formula Nutrition Powder, 150g",
-            "image": "/products/birds_accessories/birds_food_and_medicines/petslife_baby_bird_hand_feeding_formula_nutrition_powder_150g.png",
+            "image": "/products/Birds accessories/birds food and medicines/Petslife Baby Bird Hand-Feeding Formula Nutrition Powder, 150g.png",
             "description": "Petslife Baby Bird Hand-Feeding Formula Nutrition Powder, 150g. Contains optimal protein and fat content for growing baby birds. Promotes excellent growth rate and colorful plumage.",
-            "price": 150,
-            "act-price": 0
+            "price": 250,
+            "act-price": 399
           },
           {
             "id": "birds_food_1782400000000_2",
             "prod_id": "birds_food_1782400000000_2",
             "name": "Petslife Mini Baby Bird Hand-Feeding Formula Powder, 50g Bag",
             "title": "Petslife Mini Baby Bird Hand-Feeding Formula Powder, 50g Bag",
-            "image": "/products/birds_accessories/birds_food_and_medicines/petslife_mini_baby_bird_hand_feeding_formula_powder_50g_bag.png",
+            "image": "/products/Birds accessories/birds food and medicines/Petslife Mini Baby Bird Hand-Feeding Formula Powder, 50g Bag.png",
             "description": "High-nutrition Petslife Mini Baby Bird Hand-Feeding Formula Powder, 50g Bag (Weight: 100g). Specially formulated hand-rearing food for baby birds. Provides all essential nutrients, vitamins, and minerals for healthy growth and development.",
             "price": 110,
             "act-price": 199
@@ -2462,27 +1989,27 @@
             "prod_id": "birds_food_1782400000000_3",
             "name": "Premium Kangni Seeds Foxtail Millet Bird Food, Pack of 3",
             "title": "Premium Kangni Seeds Foxtail Millet Bird Food, Pack of 3",
-            "image": "/products/birds_accessories/birds_food_and_medicines/premium_kangni_seeds_foxtail_millet_bird_food_pack_of_3.png",
+            "image": "/products/Birds accessories/birds food and medicines/Premium Kangni Seeds Foxtail Millet Bird Food, Pack of 3.png",
             "description": "Premium Kangni Seeds Foxtail Millet Bird Food, Pack of 3. Standard feed for small birds like Budgies, Lovebirds, and Finches. Natural, high-energy grain source.",
-            "price": 210,
-            "act-price": 0
+            "price": 150,
+            "act-price": 249
           },
           {
             "id": "birds_food_1782400000000_4",
             "prod_id": "birds_food_1782400000000_4",
             "name": "Premium Safflower Kardi Seeds Wild Bird Food, Pack of 3",
             "title": "Premium Safflower Kardi Seeds Wild Bird Food, Pack of 3",
-            "image": "/products/birds_accessories/birds_food_and_medicines/premium_safflower_kardi_seeds_wild_bird_food_pack_of_3.png",
+            "image": "/products/Birds accessories/birds food and medicines/Premium Safflower Kardi Seeds Wild Bird Food, Pack of 3.png",
             "description": "Premium Safflower Kardi Seeds Wild Bird Food, Pack of 3. High-quality seeds preferred by medium and large birds. Rich in essential oils and proteins.",
-            "price": 280,
-            "act-price": 0
+            "price": 180,
+            "act-price": 299
           },
           {
             "id": "birds_food_1782400000000_5",
             "prod_id": "birds_food_1782400000000_5",
             "name": "Premium Striped Sunflower Seeds Bird Food Diet, 1kg Bag",
             "title": "Premium Striped Sunflower Seeds Bird Food Diet, 1kg Bag",
-            "image": "/products/birds_accessories/birds_food_and_medicines/premium_striped_sunflower_seeds_bird_food_diet_1kg_bag.png",
+            "image": "/products/Birds accessories/birds food and medicines/Premium Striped Sunflower Seeds Bird Food Diet, 1kg Bag.png",
             "description": "Premium Striped Sunflower Seeds Bird Food Diet, 1kg Bag. Natural whole sunflower seeds high in energy, healthy fats, and fiber. Ideal for parrots and other cage birds.",
             "price": 199,
             "act-price": 349
@@ -2503,127 +2030,127 @@
             "prod_id": "kondapalli_1782500000000_0",
             "name": "Ancient Palem Toddy Hand Made Wood Sculpture",
             "title": "Ancient Palem Toddy Hand Made Wood Sculpture",
-            "image": "/products/kondapallibommalu/ancient_palem_toddy_hand_made_wood_sculpture.png",
+            "image": "/products/KondapalliBommalu/Ancient Palem Toddy Hand Made Wood Sculpture.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ancient Palem Toddy Hand Made Wood Sculpture). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1250,
-            "act-price": 0
+            "price": 299,
+            "act-price": 467
           },
           {
             "id": "kondapalli_1782500000000_1",
             "prod_id": "kondapalli_1782500000000_1",
             "name": "Artificial Miniature Wooden Coconut Tree Showpiece",
             "title": "Artificial Miniature Wooden Coconut Tree Showpiece",
-            "image": "/products/kondapallibommalu/artificial_miniature_wooden_coconut_tree_showpiece.png",
+            "image": "/products/KondapalliBommalu/Artificial Miniature Wooden Coconut Tree Showpiece.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Artificial Miniature Wooden Coconut Tree Showpiece). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 215,
-            "act-price": 0
+            "price": 349,
+            "act-price": 537
           },
           {
             "id": "kondapalli_1782500000000_2",
             "prod_id": "kondapalli_1782500000000_2",
             "name": "Bobblehead Figures Set",
             "title": "Bobblehead Figures Set",
-            "image": "/products/kondapallibommalu/bobblehead_figures_set.png",
+            "image": "/products/KondapalliBommalu/Bobblehead Figures Set.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Bobblehead Figures Set). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 985,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           },
           {
             "id": "kondapalli_1782500000000_3",
             "prod_id": "kondapalli_1782500000000_3",
             "name": "Etikoppaka Wooden Couple South Indian Marriage Ceremony Folk Art",
             "title": "Etikoppaka Wooden Couple South Indian Marriage Ceremony Folk Art",
-            "image": "/products/kondapallibommalu/etikoppaka_wooden_couple_south_indian_marriage_ceremony_folk_art.png",
+            "image": "/products/KondapalliBommalu/Etikoppaka Wooden Couple South Indian Marriage Ceremony Folk Art.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Etikoppaka Wooden Couple South Indian Marriage Ceremony Folk Art). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1450,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1167
           },
           {
             "id": "kondapalli_1782500000000_4",
             "prod_id": "kondapalli_1782500000000_4",
             "name": "Etikoppaka Wooden Veena Miniature",
             "title": "Etikoppaka Wooden Veena Miniature",
-            "image": "/products/kondapallibommalu/etikoppaka_wooden_veena_miniature.png",
+            "image": "/products/KondapalliBommalu/Etikoppaka Wooden Veena Miniature.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Etikoppaka Wooden Veena Miniature). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1850,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "kondapalli_1782500000000_5",
             "prod_id": "kondapalli_1782500000000_5",
             "name": "Ganesha Vinayaka idol red",
             "title": "Ganesha Vinayaka idol red",
-            "image": "/products/kondapallibommalu/ganesha_vinayaka_idol_red.png",
+            "image": "/products/KondapalliBommalu/Ganesha Vinayaka idol red.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ganesha Vinayaka idol red). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 385,
-            "act-price": 0
+            "price": 1099,
+            "act-price": 1587
           },
           {
             "id": "kondapalli_1782500000000_6",
             "prod_id": "kondapalli_1782500000000_6",
             "name": "Ganesha Vinayaka idol white",
             "title": "Ganesha Vinayaka idol white",
-            "image": "/products/kondapallibommalu/ganesha_vinayaka_idol_white.png",
+            "image": "/products/KondapalliBommalu/Ganesha Vinayaka idol white.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ganesha Vinayaka idol white). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 385,
-            "act-price": 0
+            "price": 1199,
+            "act-price": 1727
           },
           {
             "id": "kondapalli_1782500000000_7",
             "prod_id": "kondapalli_1782500000000_7",
             "name": "Ganesha Vinayaka idol yellow",
             "title": "Ganesha Vinayaka idol yellow",
-            "image": "/products/kondapallibommalu/ganesha_vinayaka_idol_yellow.png",
+            "image": "/products/KondapalliBommalu/Ganesha Vinayaka idol yellow.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Ganesha Vinayaka idol yellow). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 385,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1867
           },
           {
             "id": "kondapalli_1782500000000_8",
             "prod_id": "kondapalli_1782500000000_8",
             "name": "Gifts Traditional South Indian Couple",
             "title": "Gifts Traditional South Indian Couple",
-            "image": "/products/kondapallibommalu/gifts_traditional_south_indian_couple.png",
+            "image": "/products/KondapalliBommalu/Gifts Traditional South Indian Couple.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Gifts Traditional South Indian Couple). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1150,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           },
           {
             "id": "kondapalli_1782500000000_9",
             "prod_id": "kondapalli_1782500000000_9",
             "name": "Handcrafted Kondapalli Pelli Pallaki",
             "title": "Handcrafted Kondapalli Pelli Pallaki",
-            "image": "/products/kondapallibommalu/handcrafted_kondapalli_pelli_pallaki.png",
+            "image": "/products/KondapalliBommalu/Handcrafted Kondapalli Pelli Pallaki.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Pelli Pallaki). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 2450,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "kondapalli_1782500000000_10",
             "prod_id": "kondapalli_1782500000000_10",
             "name": "Handcrafted Kondapalli Wooden Ambari Elephant Decorative Showpiece Toy",
             "title": "Handcrafted Kondapalli Wooden Ambari Elephant Decorative Showpiece Toy",
-            "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_ambari_elephant_decorative_showpiece_toy.png",
+            "image": "/products/KondapalliBommalu/Handcrafted Kondapalli Wooden Ambari Elephant Decorative Showpiece Toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Ambari Elephant Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 2150,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           },
           {
             "id": "kondapalli_1782500000000_11",
             "prod_id": "kondapalli_1782500000000_11",
             "name": "Handcrafted Kondapalli Wooden Banana Tree Decorative Showpiece Toy",
             "title": "Handcrafted Kondapalli Wooden Banana Tree Decorative Showpiece Toy",
-            "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_banana_tree_decorative_showpiece_toy.png",
+            "image": "/products/KondapalliBommalu/Handcrafted Kondapalli Wooden Banana Tree Decorative Showpiece Toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Banana Tree Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 645,
-            "act-price": 0
+            "price": 549,
+            "act-price": 817
           },
           {
             "id": "kondapalli_1782500000000_12",
             "prod_id": "kondapalli_1782500000000_12",
             "name": "Handcrafted Kondapalli Wooden Krishna with Cow Decorative Showpiece Toy",
             "title": "Handcrafted Kondapalli Wooden Krishna with Cow Decorative Showpiece Toy",
-            "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_krishna_with_cow_decorative_showpiece_toy.png",
+            "image": "/products/KondapalliBommalu/Handcrafted Kondapalli Wooden Krishna with Cow Decorative Showpiece Toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Krishna with Cow Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
             "price": 799,
             "act-price": 1167
@@ -2633,127 +2160,127 @@
             "prod_id": "kondapalli_1782500000000_13",
             "name": "Handcrafted Kondapalli Wooden Mother and Child Decorative Showpiece Toy",
             "title": "Handcrafted Kondapalli Wooden Mother and Child Decorative Showpiece Toy",
-            "image": "/products/kondapallibommalu/handcrafted_kondapalli_wooden_mother_and_child_decorative_showpiece_toy.png",
+            "image": "/products/KondapalliBommalu/Handcrafted Kondapalli Wooden Mother and Child Decorative Showpiece Toy.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Kondapalli Wooden Mother and Child Decorative Showpiece Toy). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 685,
-            "act-price": 0
+            "price": 349,
+            "act-price": 537
           },
           {
             "id": "kondapalli_1782500000000_14",
             "prod_id": "kondapalli_1782500000000_14",
             "name": "Handcrafted Wooden Indian Bride and Groom Doll Set",
             "title": "Handcrafted Wooden Indian Bride and Groom Doll Set",
-            "image": "/products/kondapallibommalu/handcrafted_wooden_indian_bride_and_groom_doll_set.png",
+            "image": "/products/KondapalliBommalu/Handcrafted Wooden Indian Bride and Groom Doll Set.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Handcrafted Wooden Indian Bride and Groom Doll Set). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 345,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           },
           {
             "id": "kondapalli_1782500000000_15",
             "prod_id": "kondapalli_1782500000000_15",
             "name": "Kondapalli - Crawling Krishna with Butter",
             "title": "Kondapalli - Crawling Krishna with Butter",
-            "image": "/products/kondapallibommalu/kondapalli_crawling_krishna_with_butter.png",
+            "image": "/products/KondapalliBommalu/Kondapalli - Crawling Krishna with Butter.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli - Crawling Krishna with Butter). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 685,
-            "act-price": 0
+            "price": 1099,
+            "act-price": 1587
           },
           {
             "id": "kondapalli_1782500000000_16",
             "prod_id": "kondapalli_1782500000000_16",
             "name": "Kondapalli Butta Bomma Red Blue",
             "title": "Kondapalli Butta Bomma Red Blue",
-            "image": "/products/kondapallibommalu/kondapalli_butta_bomma_red_blue.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Butta Bomma Red Blue.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Butta Bomma Red Blue). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 985,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "kondapalli_1782500000000_17",
             "prod_id": "kondapalli_1782500000000_17",
             "name": "Kondapalli Butta Bomma orange green",
             "title": "Kondapalli Butta Bomma orange green",
-            "image": "/products/kondapallibommalu/kondapalli_butta_bomma_orange_green.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Butta Bomma orange green.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Butta Bomma orange green). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 985,
-            "act-price": 0
+            "price": 549,
+            "act-price": 817
           },
           {
             "id": "kondapalli_1782500000000_18",
             "prod_id": "kondapalli_1782500000000_18",
             "name": "Kondapalli Butta Bomma red yellow",
             "title": "Kondapalli Butta Bomma red yellow",
-            "image": "/products/kondapallibommalu/kondapalli_butta_bomma_red_yellow.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Butta Bomma red yellow.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Butta Bomma red yellow). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 985,
-            "act-price": 0
+            "price": 299,
+            "act-price": 467
           },
           {
             "id": "kondapalli_1782500000000_19",
             "prod_id": "kondapalli_1782500000000_19",
             "name": "Kondapalli Krishna Arjuna Chariot",
             "title": "Kondapalli Krishna Arjuna Chariot",
-            "image": "/products/kondapallibommalu/kondapalli_krishna_arjuna_chariot.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Krishna Arjuna Chariot.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Krishna Arjuna Chariot). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2147
           },
           {
             "id": "kondapalli_1782500000000_20",
             "prod_id": "kondapalli_1782500000000_20",
             "name": "Kondapalli Mother and child with umbrella",
             "title": "Kondapalli Mother and child with umbrella",
-            "image": "/products/kondapallibommalu/kondapalli_mother_and_child_with_umbrella.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Mother and child with umbrella.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Mother and child with umbrella). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1450,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           },
           {
             "id": "kondapalli_1782500000000_21",
             "prod_id": "kondapalli_1782500000000_21",
             "name": "Kondapalli Wooden Ambari Elephant Decorative Showpiece with Glass Case",
             "title": "Kondapalli Wooden Ambari Elephant Decorative Showpiece with Glass Case",
-            "image": "/products/kondapallibommalu/kondapalli_wooden_ambari_elephant_decorative_showpiece_with_glass_case.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Wooden Ambari Elephant Decorative Showpiece with Glass Case.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Ambari Elephant Decorative Showpiece with Glass Case). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 4850,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1167
           },
           {
             "id": "kondapalli_1782500000000_22",
             "prod_id": "kondapalli_1782500000000_22",
             "name": "Kondapalli Wooden Bullock Cart Decorative Showpiece with Glass Case",
             "title": "Kondapalli Wooden Bullock Cart Decorative Showpiece with Glass Case",
-            "image": "/products/kondapallibommalu/kondapalli_wooden_bullock_cart_decorative_showpiece_with_glass_case.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Wooden Bullock Cart Decorative Showpiece with Glass Case.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Bullock Cart Decorative Showpiece with Glass Case). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 8450,
-            "act-price": 0
+            "price": 899,
+            "act-price": 1307
           },
           {
             "id": "kondapalli_1782500000000_23",
             "prod_id": "kondapalli_1782500000000_23",
             "name": "Kondapalli Wooden Handcrafted Marriage Set",
             "title": "Kondapalli Wooden Handcrafted Marriage Set",
-            "image": "/products/kondapallibommalu/kondapalli_wooden_handcrafted_marriage_set.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Wooden Handcrafted Marriage Set.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Handcrafted Marriage Set). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 1450,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1447
           },
           {
             "id": "kondapalli_1782500000000_24",
             "prod_id": "kondapalli_1782500000000_24",
             "name": "Kondapalli Wooden Lord Venkateswara Tirupati Balaji Idol with Showcase",
             "title": "Kondapalli Wooden Lord Venkateswara Tirupati Balaji Idol with Showcase",
-            "image": "/products/kondapallibommalu/kondapalli_wooden_lord_venkateswara_tirupati_balaji_idol_with_showcase.png",
+            "image": "/products/KondapalliBommalu/Kondapalli Wooden Lord Venkateswara Tirupati Balaji Idol with Showcase.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli Wooden Lord Venkateswara Tirupati Balaji Idol with Showcase). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 2450,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1447
           },
           {
             "id": "kondapalli_1782500000000_25",
             "prod_id": "kondapalli_1782500000000_25",
             "name": "Kondapalli bullock cart",
             "title": "Kondapalli bullock cart",
-            "image": "/products/kondapallibommalu/kondapalli_bullock_cart.png",
+            "image": "/products/KondapalliBommalu/Kondapalli bullock cart.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Kondapalli bullock cart). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
             "price": 1199,
             "act-price": 1727
@@ -2763,7 +2290,7 @@
             "prod_id": "kondapalli_1782500000000_26",
             "name": "Male and female pair shaped haldi  KumKum container pair  Etikoppaka Wooden handcrafted decor",
             "title": "Male and female pair shaped haldi  KumKum container pair  Etikoppaka Wooden handcrafted decor",
-            "image": "/products/kondapallibommalu/male_and_female_pair_shaped_haldi_kumkum_container_pair_etikoppaka_wooden_handcrafted_decor.png",
+            "image": "/products/KondapalliBommalu/Male and female pair shaped haldi  KumKum container pair  Etikoppaka Wooden handcrafted decor.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Male and female pair shaped haldi  KumKum container pair  Etikoppaka Wooden handcrafted decor). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
             "price": 399,
             "act-price": 607
@@ -2773,7 +2300,7 @@
             "prod_id": "kondapalli_1782500000000_27",
             "name": "Thalayattu Thaatha Paati Kondapalli toys",
             "title": "Thalayattu Thaatha Paati Kondapalli toys",
-            "image": "/products/kondapallibommalu/thalayattu_thaatha_paati_kondapalli_toys.png",
+            "image": "/products/KondapalliBommalu/Thalayattu Thaatha Paati Kondapalli toys.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Thalayattu Thaatha Paati Kondapalli toys). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
             "price": 449,
             "act-price": 677
@@ -2783,7 +2310,7 @@
             "prod_id": "kondapalli_1782500000000_28",
             "name": "The Etikoppaka toy of Lord Balaji is a handcrafted wooden idol",
             "title": "The Etikoppaka toy of Lord Balaji is a handcrafted wooden idol",
-            "image": "/products/kondapallibommalu/the_etikoppaka_toy_of_lord_balaji_is_a_handcrafted_wooden_idol.png",
+            "image": "/products/KondapalliBommalu/The Etikoppaka toy of Lord Balaji is a handcrafted wooden idol.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (The Etikoppaka toy of Lord Balaji is a handcrafted wooden idol). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
             "price": 1399,
             "act-price": 2007
@@ -2793,7 +2320,7 @@
             "prod_id": "kondapalli_1782500000000_29",
             "name": "WOODEN KONDAPALLI RADHA KRISHNA",
             "title": "WOODEN KONDAPALLI RADHA KRISHNA",
-            "image": "/products/kondapallibommalu/wooden_kondapalli_radha_krishna.png",
+            "image": "/products/KondapalliBommalu/WOODEN KONDAPALLI RADHA KRISHNA.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (WOODEN KONDAPALLI RADHA KRISHNA). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
             "price": 1499,
             "act-price": 2147
@@ -2803,30 +2330,30 @@
             "prod_id": "kondapalli_1782500000000_30",
             "name": "Wooden Handicraft Elephant",
             "title": "Wooden Handicraft Elephant",
-            "image": "/products/kondapallibommalu/wooden_handicraft_elephant.png",
+            "image": "/products/KondapalliBommalu/Wooden Handicraft Elephant.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (Wooden Handicraft Elephant). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 4850,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1167
           },
           {
             "id": "kondapalli_1782500000000_31",
             "prod_id": "kondapalli_1782500000000_31",
             "name": "b6756c24-ffe0-41c7-95f1-becdc7792a9a",
             "title": "b6756c24-ffe0-41c7-95f1-becdc7792a9a",
-            "image": "/products/kondapallibommalu/b6756c24_ffe0_41c7_95f1_becdc7792a9a.png",
+            "image": "/products/KondapalliBommalu/b6756c24-ffe0-41c7-95f1-becdc7792a9a.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (b6756c24-ffe0-41c7-95f1-becdc7792a9a). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 2650,
-            "act-price": 0
+            "price": 349,
+            "act-price": 537
           },
           {
             "id": "kondapalli_1782500000000_32",
             "prod_id": "kondapalli_1782500000000_32",
             "name": "c3bf656e-4116-419e-b257-905c04ce2013",
             "title": "c3bf656e-4116-419e-b257-905c04ce2013",
-            "image": "/products/kondapallibommalu/c3bf656e_4116_419e_b257_905c04ce2013.png",
+            "image": "/products/KondapalliBommalu/c3bf656e-4116-419e-b257-905c04ce2013.png",
             "description": "Traditional handcrafted Kondapalli wooden toy (c3bf656e-4116-419e-b257-905c04ce2013). Exquisitely painted by skilled local artisans of Andhra Pradesh using organic vegetable colors. A beautiful heritage decor item.",
-            "price": 2450,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           }
         ]
       }
@@ -2844,80 +2371,80 @@
             "prod_id": "fountain_small_1782600000000_0",
             "name": "Golden Buddha Lotus Tabletop Indoor Water Fountain Decorative Showpiece",
             "title": "Golden Buddha Lotus Tabletop Indoor Water Fountain Decorative Showpiece",
-            "image": "/products/water_fountain_small/golden_buddha_lotus_tabletop_indoor_water_fountain_decorative_showpiece.png",
+            "image": "/products/water fountain small/Golden Buddha Lotus Tabletop Indoor Water Fountain Decorative Showpiece.png",
             "description": "Beautiful tabletop Golden Buddha Lotus Tabletop Indoor Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           },
           {
             "id": "fountain_small_1782600000000_1",
             "prod_id": "fountain_small_1782600000000_1",
             "name": "Golden Buddha Meditating Indoor Water Fountain Decorative Showpiece",
             "title": "Golden Buddha Meditating Indoor Water Fountain Decorative Showpiece",
-            "image": "/products/water_fountain_small/golden_buddha_meditating_indoor_water_fountain_decorative_showpiece.png",
+            "image": "/products/water fountain small/Golden Buddha Meditating Indoor Water Fountain Decorative Showpiece.png",
             "description": "Beautiful tabletop Golden Buddha Meditating Indoor Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "fountain_small_1782600000000_2",
             "prod_id": "fountain_small_1782600000000_2",
             "name": "Golden Buddha Multi-Tier Tabletop Indoor Water Fountain Decorative Showpiece",
             "title": "Golden Buddha Multi-Tier Tabletop Indoor Water Fountain Decorative Showpiece",
-            "image": "/products/water_fountain_small/golden_buddha_multi_tier_tabletop_indoor_water_fountain_decorative_showpiece.png",
+            "image": "/products/water fountain small/Golden Buddha Multi-Tier Tabletop Indoor Water Fountain Decorative Showpiece.png",
             "description": "Beautiful tabletop Golden Buddha Multi-Tier Tabletop Indoor Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           },
           {
             "id": "fountain_small_1782600000000_3",
             "prod_id": "fountain_small_1782600000000_3",
             "name": "Golden Ganesha 3-Step Tabletop Indoor Water Fountain Showpiece",
             "title": "Golden Ganesha 3-Step Tabletop Indoor Water Fountain Showpiece",
-            "image": "/products/water_fountain_small/golden_ganesha_3_step_tabletop_indoor_water_fountain_showpiece.png",
+            "image": "/products/water fountain small/Golden Ganesha 3-Step Tabletop Indoor Water Fountain Showpiece.png",
             "description": "Beautiful tabletop Golden Ganesha 3-Step Tabletop Indoor Water Fountain Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 699,
+            "act-price": 1027
           },
           {
             "id": "fountain_small_1782600000000_4",
             "prod_id": "fountain_small_1782600000000_4",
             "name": "Golden Ganesha Indoor Water Fountain Decorative Showpiece for Home",
             "title": "Golden Ganesha Indoor Water Fountain Decorative Showpiece for Home",
-            "image": "/products/water_fountain_small/golden_ganesha_indoor_water_fountain_decorative_showpiece_for_home.png",
+            "image": "/products/water fountain small/Golden Ganesha Indoor Water Fountain Decorative Showpiece for Home.png",
             "description": "Beautiful tabletop Golden Ganesha Indoor Water Fountain Decorative Showpiece for Home. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 799,
+            "act-price": 1167
           },
           {
             "id": "fountain_small_1782600000000_5",
             "prod_id": "fountain_small_1782600000000_5",
             "name": "Golden Ganesha Lotus Waterfall Tabletop Indoor Water Fountain Showpiece",
             "title": "Golden Ganesha Lotus Waterfall Tabletop Indoor Water Fountain Showpiece",
-            "image": "/products/water_fountain_small/golden_ganesha_lotus_waterfall_tabletop_indoor_water_fountain_showpiece.png",
+            "image": "/products/water fountain small/Golden Ganesha Lotus Waterfall Tabletop Indoor Water Fountain Showpiece.png",
             "description": "Beautiful tabletop Golden Ganesha Lotus Waterfall Tabletop Indoor Water Fountain Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 399,
+            "act-price": 607
           },
           {
             "id": "fountain_small_1782600000000_6",
             "prod_id": "fountain_small_1782600000000_6",
             "name": "Golden Lord Krishna with Cow Tabletop Indoor Water Fountain Showpiece",
             "title": "Golden Lord Krishna with Cow Tabletop Indoor Water Fountain Showpiece",
-            "image": "/products/water_fountain_small/golden_lord_krishna_with_cow_tabletop_indoor_water_fountain_showpiece.png",
+            "image": "/products/water fountain small/Golden Lord Krishna with Cow Tabletop Indoor Water Fountain Showpiece.png",
             "description": "Beautiful tabletop Golden Lord Krishna with Cow Tabletop Indoor Water Fountain Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "fountain_small_1782600000000_7",
             "prod_id": "fountain_small_1782600000000_7",
             "name": "Golden Praying Buddha Indoor Tabletop Water Fountain Decorative Showpiece",
             "title": "Golden Praying Buddha Indoor Tabletop Water Fountain Decorative Showpiece",
-            "image": "/products/water_fountain_small/golden_praying_buddha_indoor_tabletop_water_fountain_decorative_showpiece.png",
+            "image": "/products/water fountain small/Golden Praying Buddha Indoor Tabletop Water Fountain Decorative Showpiece.png",
             "description": "Beautiful tabletop Golden Praying Buddha Indoor Tabletop Water Fountain Decorative Showpiece. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 1650,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           }
         ]
       },
@@ -2929,130 +2456,130 @@
             "prod_id": "fountain_medium_1782600000000_0",
             "name": "Buddha Polyresin Table Top Decorative Water Fountain with LED Light- Antique Gold",
             "title": "Buddha Polyresin Table Top Decorative Water Fountain with LED Light- Antique Gold",
-            "image": "/products/water_fountains_medium/buddha_polyresin_table_top_decorative_water_fountain_with_led_light_antique_gold.png",
+            "image": "/products/water fountains medium/Buddha Polyresin Table Top Decorative Water Fountain with LED Light- Antique Gold.png",
             "description": "Beautiful tabletop Buddha Polyresin Table Top Decorative Water Fountain with LED Light- Antique Gold. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1199,
+            "act-price": 1727
           },
           {
             "id": "fountain_medium_1782600000000_1",
             "prod_id": "fountain_medium_1782600000000_1",
             "name": "Buddha Water Foluntain Foot Arificial Plant",
             "title": "Buddha Water Foluntain Foot Arificial Plant",
-            "image": "/products/water_fountains_medium/buddha_water_foluntain_foot_arificial_plant.png",
+            "image": "/products/water fountains medium/Buddha Water Foluntain Foot Arificial Plant.png",
             "description": "Beautiful tabletop Buddha Water Foluntain Foot Arificial Plant. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1867
           },
           {
             "id": "fountain_medium_1782600000000_2",
             "prod_id": "fountain_medium_1782600000000_2",
             "name": "CHRONIKLE Polyresin Designer Tabletop Indoor 3 Steps Water Fountain",
             "title": "CHRONIKLE Polyresin Designer Tabletop Indoor 3 Steps Water Fountain",
-            "image": "/products/water_fountains_medium/chronikle_polyresin_designer_tabletop_indoor_3_steps_water_fountain.png",
+            "image": "/products/water fountains medium/CHRONIKLE Polyresin Designer Tabletop Indoor 3 Steps Water Fountain.png",
             "description": "Beautiful tabletop CHRONIKLE Polyresin Designer Tabletop Indoor 3 Steps Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1399,
+            "act-price": 2007
           },
           {
             "id": "fountain_medium_1782600000000_3",
             "prod_id": "fountain_medium_1782600000000_3",
             "name": "Corsica Alpine Polyresin Buddha",
             "title": "Corsica Alpine Polyresin Buddha",
-            "image": "/products/water_fountains_medium/corsica_alpine_polyresin_buddha.png",
+            "image": "/products/water fountains medium/Corsica Alpine Polyresin Buddha.png",
             "description": "Beautiful tabletop Corsica Alpine Polyresin Buddha. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2147
           },
           {
             "id": "fountain_medium_1782600000000_4",
             "prod_id": "fountain_medium_1782600000000_4",
             "name": "Decorative Sculptures & spiritual Buddha Idol",
             "title": "Decorative Sculptures & spiritual Buddha Idol",
-            "image": "/products/water_fountains_medium/decorative_sculptures_spiritual_buddha_idol.png",
+            "image": "/products/water fountains medium/Decorative Sculptures & spiritual Buddha Idol.png",
             "description": "Beautiful tabletop Decorative Sculptures & spiritual Buddha Idol. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1599,
+            "act-price": 2287
           },
           {
             "id": "fountain_medium_1782600000000_5",
             "prod_id": "fountain_medium_1782600000000_5",
             "name": "Expleasia golden Buddha water fountain",
             "title": "Expleasia golden Buddha water fountain",
-            "image": "/products/water_fountains_medium/expleasia_golden_buddha_water_fountain.png",
+            "image": "/products/water fountains medium/Expleasia golden Buddha water fountain.png",
             "description": "Beautiful tabletop Expleasia golden Buddha water fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1699,
+            "act-price": 2427
           },
           {
             "id": "fountain_medium_1782600000000_6",
             "prod_id": "fountain_medium_1782600000000_6",
             "name": "Global Polyresin Krishna Water Fountain",
             "title": "Global Polyresin Krishna Water Fountain",
-            "image": "/products/water_fountains_medium/global_polyresin_krishna_water_fountain.png",
+            "image": "/products/water fountains medium/Global Polyresin Krishna Water Fountain.png",
             "description": "Beautiful tabletop Global Polyresin Krishna Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1799,
+            "act-price": 2567
           },
           {
             "id": "fountain_medium_1782600000000_7",
             "prod_id": "fountain_medium_1782600000000_7",
             "name": "Impression Polyresin Buddha fountain",
             "title": "Impression Polyresin Buddha fountain",
-            "image": "/products/water_fountains_medium/impression_polyresin_buddha_fountain.png",
+            "image": "/products/water fountains medium/Impression Polyresin Buddha fountain.png",
             "description": "Beautiful tabletop Impression Polyresin Buddha fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1899,
+            "act-price": 2707
           },
           {
             "id": "fountain_medium_1782600000000_8",
             "prod_id": "fountain_medium_1782600000000_8",
             "name": "Lord Ganesha Indoor Fountain  Indoor Water Fountain",
             "title": "Lord Ganesha Indoor Fountain  Indoor Water Fountain",
-            "image": "/products/water_fountains_medium/lord_ganesha_indoor_fountain_indoor_water_fountain.png",
+            "image": "/products/water fountains medium/Lord Ganesha Indoor Fountain  Indoor Water Fountain.png",
             "description": "Beautiful tabletop Lord Ganesha Indoor Fountain  Indoor Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1199,
+            "act-price": 1727
           },
           {
             "id": "fountain_medium_1782600000000_9",
             "prod_id": "fountain_medium_1782600000000_9",
             "name": "Lord Ganesha Water Fountain",
             "title": "Lord Ganesha Water Fountain",
-            "image": "/products/water_fountains_medium/lord_ganesha_water_fountain.png",
+            "image": "/products/water fountains medium/Lord Ganesha Water Fountain.png",
             "description": "Beautiful tabletop Lord Ganesha Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1867
           },
           {
             "id": "fountain_medium_1782600000000_10",
             "prod_id": "fountain_medium_1782600000000_10",
             "name": "Myaddition Buddha table top",
             "title": "Myaddition Buddha table top",
-            "image": "/products/water_fountains_medium/myaddition_buddha_table_top.png",
+            "image": "/products/water fountains medium/Myaddition Buddha table top.png",
             "description": "Beautiful tabletop Myaddition Buddha table top. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1399,
+            "act-price": 2007
           },
           {
             "id": "fountain_medium_1782600000000_11",
             "prod_id": "fountain_medium_1782600000000_11",
             "name": "This Expleasia golden Buddha indoor fountain",
             "title": "This Expleasia golden Buddha indoor fountain",
-            "image": "/products/water_fountains_medium/this_expleasia_golden_buddha_indoor_fountain.png",
+            "image": "/products/water fountains medium/This Expleasia golden Buddha indoor fountain.png",
             "description": "Beautiful tabletop This Expleasia golden Buddha indoor fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1499,
+            "act-price": 2147
           },
           {
             "id": "fountain_medium_1782600000000_12",
             "prod_id": "fountain_medium_1782600000000_12",
             "name": "Tree and Three Pots Polyresin Decorative Table Top Water Fountain",
             "title": "Tree and Three Pots Polyresin Decorative Table Top Water Fountain",
-            "image": "/products/water_fountains_medium/tree_and_three_pots_polyresin_decorative_table_top_water_fountain.png",
+            "image": "/products/water fountains medium/Tree and Three Pots Polyresin Decorative Table Top Water Fountain.png",
             "description": "Beautiful tabletop Tree and Three Pots Polyresin Decorative Table Top Water Fountain. Built from premium quality polyresin and features gentle water flows with integrated LED lighting to create a soothing, calm vibe in any space.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1599,
+            "act-price": 2287
           }
         ]
       }
@@ -3070,60 +2597,60 @@
             "prod_id": "clock_1782700000000_0",
             "name": "Large Peacock Wall Clock for Living Room Decor,Mid Century Decorative Big Wall Clocks Non-Ticking Silent Luxury Peacock Clock for Dining Room Bedroom",
             "title": "Large Peacock Wall Clock for Living Room Decor,Mid Century Decorative Big Wall Clocks Non-Ticking Silent Luxury Peacock Clock for Dining Room Bedroom",
-            "image": "/products/wall_clocks/peacock_wall_clock/large_peacock_wall_clock_for_living_room_decor_mid_century_decorative_big_wall_clocks_non_ticking_silent_luxury_peacock_clock_for_dining_room_bedroom.png",
+            "image": "/products/wall clocks/peacock wall clock/Large Peacock Wall Clock for Living Room Decor,Mid Century Decorative Big Wall Clocks Non-Ticking Silent Luxury Peacock Clock for Dining Room Bedroom.png",
             "description": "Exquisite luxury Large Peacock Wall Clock for Living Room Decor,Mid Century Decorative Big Wall Clocks Non-Ticking Silent Luxury Peacock Clock for Dining Room Bedroom. Handcrafted metal art wall clock featuring silent, non-ticking sweep movement. Designed with vibrant colors and rich details, making it a perfect decorative piece for living rooms, bedrooms, or offices. Durable construction and premium finish.",
-            "price": 4850,
-            "act-price": 0
+            "price": 2199,
+            "act-price": 3397
           },
           {
             "id": "clock_1782700000000_1",
             "prod_id": "clock_1782700000000_1",
             "name": "Luxury Double Peacock Feather Crown Wall Clock with Metal Art",
             "title": "Luxury Double Peacock Feather Crown Wall Clock with Metal Art",
-            "image": "/products/wall_clocks/peacock_wall_clock/luxury_double_peacock_feather_crown_wall_clock_with_metal_art.png",
+            "image": "/products/wall clocks/peacock wall clock/Luxury Double Peacock Feather Crown Wall Clock with Metal Art.png",
             "description": "Exquisite luxury Luxury Double Peacock Feather Crown Wall Clock with Metal Art. Handcrafted metal art wall clock featuring silent, non-ticking sweep movement. Designed with vibrant colors and rich details, making it a perfect decorative piece for living rooms, bedrooms, or offices. Durable construction and premium finish.",
-            "price": 5850,
-            "act-price": 0
+            "price": 3299,
+            "act-price": 5047
           },
           {
             "id": "clock_1782700000000_2",
             "prod_id": "clock_1782700000000_2",
             "name": "Luxury Emerald Green Sunburst Peacock Wall Clock with Art Pendulum",
             "title": "Luxury Emerald Green Sunburst Peacock Wall Clock with Art Pendulum",
-            "image": "/products/wall_clocks/peacock_wall_clock/luxury_emerald_green_sunburst_peacock_wall_clock_with_art_pendulum.png",
+            "image": "/products/wall clocks/peacock wall clock/Luxury Emerald Green Sunburst Peacock Wall Clock with Art Pendulum.png",
             "description": "Exquisite luxury Luxury Emerald Green Sunburst Peacock Wall Clock with Art Pendulum. Handcrafted metal art wall clock featuring silent, non-ticking sweep movement. Designed with vibrant colors and rich details, making it a perfect decorative piece for living rooms, bedrooms, or offices. Durable construction and premium finish.",
-            "price": 4850,
-            "act-price": 0
+            "price": 2899,
+            "act-price": 4447
           },
           {
             "id": "clock_1782700000000_3",
             "prod_id": "clock_1782700000000_3",
             "name": "Luxury Golden Peacock Wall Clock with Metal Art Pendulum",
             "title": "Luxury Golden Peacock Wall Clock with Metal Art Pendulum",
-            "image": "/products/wall_clocks/peacock_wall_clock/luxury_golden_peacock_wall_clock_with_metal_art_pendulum.png",
+            "image": "/products/wall clocks/peacock wall clock/Luxury Golden Peacock Wall Clock with Metal Art Pendulum.png",
             "description": "Exquisite luxury Luxury Golden Peacock Wall Clock with Metal Art Pendulum. Handcrafted metal art wall clock featuring silent, non-ticking sweep movement. Designed with vibrant colors and rich details, making it a perfect decorative piece for living rooms, bedrooms, or offices. Durable construction and premium finish.",
-            "price": 5450,
-            "act-price": 0
+            "price": 2699,
+            "act-price": 4147
           },
           {
             "id": "clock_1782700000000_4",
             "prod_id": "clock_1782700000000_4",
             "name": "Luxury Multi-Beaded Diamond Peacock Wall Clock with Metal Pendulum",
             "title": "Luxury Multi-Beaded Diamond Peacock Wall Clock with Metal Pendulum",
-            "image": "/products/wall_clocks/peacock_wall_clock/luxury_multi_beaded_diamond_peacock_wall_clock_with_metal_pendulum.png",
+            "image": "/products/wall clocks/peacock wall clock/Luxury Multi-Beaded Diamond Peacock Wall Clock with Metal Pendulum.png",
             "description": "Exquisite luxury Luxury Multi-Beaded Diamond Peacock Wall Clock with Metal Pendulum. Handcrafted metal art wall clock featuring silent, non-ticking sweep movement. Designed with vibrant colors and rich details, making it a perfect decorative piece for living rooms, bedrooms, or offices. Durable construction and premium finish.",
-            "price": 5450,
-            "act-price": 0
+            "price": 2499,
+            "act-price": 3847
           },
           {
             "id": "clock_1782700000000_5",
             "prod_id": "clock_1782700000000_5",
             "name": "Metal Large Peacock Birds Metal Wall Clock for Home Art Decor (Gold Blue, 82 x 60 cm)",
             "title": "Metal Large Peacock Birds Metal Wall Clock for Home Art Decor (Gold Blue, 82 x 60 cm)",
-            "image": "/products/wall_clocks/peacock_wall_clock/metal_large_peacock_birds_metal_wall_clock_for_home_art_decor_gold_blue_82_x_60_cm_.png",
+            "image": "/products/wall clocks/peacock wall clock/Metal Large Peacock Birds Metal Wall Clock for Home Art Decor (Gold Blue, 82 x 60 cm).png",
             "description": "Exquisite luxury Metal Large Peacock Birds Metal Wall Clock for Home Art Decor (Gold Blue, 82 x 60 cm). Handcrafted metal art wall clock featuring silent, non-ticking sweep movement. Designed with vibrant colors and rich details, making it a perfect decorative piece for living rooms, bedrooms, or offices. Durable construction and premium finish.",
-            "price": 5450,
-            "act-price": 0
+            "price": 2199,
+            "act-price": 3397
           }
         ]
       }
@@ -3141,77 +2668,77 @@
             "prod_id": "rajasthan_1782800000000_0",
             "name": "Handcrafted Rajasthani Blacksmith Lohar Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Blacksmith Lohar Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_blacksmith_lohar_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Blacksmith Lohar Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Blacksmith Lohar Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 1250,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           },
           {
             "id": "rajasthan_1782800000000_1",
             "prod_id": "rajasthan_1782800000000_1",
             "name": "Handcrafted Rajasthani Dafli Player Woman Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Dafli Player Woman Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_dafli_player_woman_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Dafli Player Woman Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Dafli Player Woman Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 1250,
-            "act-price": 0
+            "price": 549,
+            "act-price": 817
           },
           {
             "id": "rajasthan_1782800000000_2",
             "prod_id": "rajasthan_1782800000000_2",
             "name": "Handcrafted Rajasthani Dholak Player Woman Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Dholak Player Woman Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_dholak_player_woman_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Dholak Player Woman Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Dholak Player Woman Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 875,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           },
           {
             "id": "rajasthan_1782800000000_3",
             "prod_id": "rajasthan_1782800000000_3",
             "name": "Handcrafted Rajasthani Flute Player Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Flute Player Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_flute_player_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Flute Player Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Flute Player Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 600,
-            "act-price": 0
+            "price": 649,
+            "act-price": 957
           },
           {
             "id": "rajasthan_1782800000000_4",
             "prod_id": "rajasthan_1782800000000_4",
             "name": "Handcrafted Rajasthani Folk Musician Dhol Player Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Folk Musician Dhol Player Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_folk_musician_dhol_player_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Folk Musician Dhol Player Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Folk Musician Dhol Player Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 600,
-            "act-price": 0
+            "price": 699,
+            "act-price": 1027
           },
           {
             "id": "rajasthan_1782800000000_5",
             "prod_id": "rajasthan_1782800000000_5",
             "name": "Handcrafted Rajasthani Folk Musician Dholak Player Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Folk Musician Dholak Player Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_folk_musician_dholak_player_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Folk Musician Dholak Player Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Folk Musician Dholak Player Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 600,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "rajasthan_1782800000000_6",
             "prod_id": "rajasthan_1782800000000_6",
             "name": "Handcrafted Rajasthani Folk Singer Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Folk Singer Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_folk_singer_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Folk Singer Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Folk Singer Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 600,
-            "act-price": 0
+            "price": 549,
+            "act-price": 817
           },
           {
             "id": "rajasthan_1782800000000_7",
             "prod_id": "rajasthan_1782800000000_7",
             "name": "Handcrafted Rajasthani Harmonium Player Man Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Harmonium Player Man Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_harmonium_player_man_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Harmonium Player Man Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Harmonium Player Man Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
             "price": 599,
             "act-price": 887
@@ -3221,7 +2748,7 @@
             "prod_id": "rajasthan_1782800000000_8",
             "name": "Handcrafted Rajasthani Harmonium Player Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Harmonium Player Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_harmonium_player_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Harmonium Player Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Harmonium Player Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
             "price": 649,
             "act-price": 957
@@ -3231,57 +2758,57 @@
             "prod_id": "rajasthan_1782800000000_9",
             "name": "Handcrafted Rajasthani Harmonium Player Traditional Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Harmonium Player Traditional Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_harmonium_player_traditional_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Harmonium Player Traditional Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Harmonium Player Traditional Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 685,
-            "act-price": 0
+            "price": 699,
+            "act-price": 1027
           },
           {
             "id": "rajasthan_1782800000000_10",
             "prod_id": "rajasthan_1782800000000_10",
             "name": "Handcrafted Rajasthani Lady Dholak Player Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Lady Dholak Player Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_lady_dholak_player_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Lady Dholak Player Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Lady Dholak Player Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 875,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "rajasthan_1782800000000_11",
             "prod_id": "rajasthan_1782800000000_11",
             "name": "Handcrafted Rajasthani Man Hookah Smoker Traditional Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Man Hookah Smoker Traditional Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_man_hookah_smoker_traditional_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Man Hookah Smoker Traditional Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Man Hookah Smoker Traditional Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 685,
-            "act-price": 0
+            "price": 749,
+            "act-price": 1097
           },
           {
             "id": "rajasthan_1782800000000_12",
             "prod_id": "rajasthan_1782800000000_12",
             "name": "Handcrafted Rajasthani Manjira Player Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Manjira Player Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_manjira_player_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Manjira Player Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Manjira Player Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 685,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           },
           {
             "id": "rajasthan_1782800000000_13",
             "prod_id": "rajasthan_1782800000000_13",
             "name": "Handcrafted Rajasthani Musician Couple Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Musician Couple Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_musician_couple_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Musician Couple Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Musician Couple Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 1450,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1447
           },
           {
             "id": "rajasthan_1782800000000_14",
             "prod_id": "rajasthan_1782800000000_14",
             "name": "Handcrafted Rajasthani Saxophone Player Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Saxophone Player Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_saxophone_player_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Saxophone Player Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Saxophone Player Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
             "price": 699,
             "act-price": 1027
@@ -3291,50 +2818,50 @@
             "prod_id": "rajasthan_1782800000000_15",
             "name": "Handcrafted Rajasthani Sitar Player Musician Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Sitar Player Musician Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_sitar_player_musician_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Sitar Player Musician Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Sitar Player Musician Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 875,
-            "act-price": 0
+            "price": 499,
+            "act-price": 747
           },
           {
             "id": "rajasthan_1782800000000_16",
             "prod_id": "rajasthan_1782800000000_16",
             "name": "Handcrafted Rajasthani Sitting Woman Traditional Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Sitting Woman Traditional Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_sitting_woman_traditional_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Sitting Woman Traditional Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Sitting Woman Traditional Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 685,
-            "act-price": 0
+            "price": 599,
+            "act-price": 887
           },
           {
             "id": "rajasthan_1782800000000_17",
             "prod_id": "rajasthan_1782800000000_17",
             "name": "Handcrafted Rajasthani Traditional Woman Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Traditional Woman Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_traditional_woman_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Traditional Woman Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Traditional Woman Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 1250,
-            "act-price": 0
+            "price": 649,
+            "act-price": 957
           },
           {
             "id": "rajasthan_1782800000000_18",
             "prod_id": "rajasthan_1782800000000_18",
             "name": "Handcrafted Rajasthani Village Couple Traditional Kitchen Decorative Showpiece Figurine",
             "title": "Handcrafted Rajasthani Village Couple Traditional Kitchen Decorative Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_village_couple_traditional_kitchen_decorative_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Village Couple Traditional Kitchen Decorative Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Village Couple Traditional Kitchen Decorative Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 2450,
-            "act-price": 0
+            "price": 999,
+            "act-price": 1447
           },
           {
             "id": "rajasthan_1782800000000_19",
             "prod_id": "rajasthan_1782800000000_19",
             "name": "Handcrafted Rajasthani Village Musicians Trio Decorative Ethnic Showpiece Figurine",
             "title": "Handcrafted Rajasthani Village Musicians Trio Decorative Ethnic Showpiece Figurine",
-            "image": "/products/traditional_rajasthan_idols/handcrafted_rajasthani_village_musicians_trio_decorative_ethnic_showpiece_figurine.png",
+            "image": "/products/Traditional Rajasthan idols/Handcrafted Rajasthani Village Musicians Trio Decorative Ethnic Showpiece Figurine.png",
             "description": "Exquisite handcrafted Traditional Rajasthani decorative showpiece figurine (Handcrafted Rajasthani Village Musicians Trio Decorative Ethnic Showpiece Figurine). Meticulously painted by expert local artisans using dynamic colors and authentic patterns that celebrate the rich folk heritage of Rajasthan. Built with premium materials, this cultural showpiece is perfect for home decoration, festive vibes, or ethnic gifting.",
-            "price": 2850,
-            "act-price": 0
+            "price": 1299,
+            "act-price": 1867
           }
         ]
       }
@@ -3352,67 +2879,67 @@
             "prod_id": "garden_1782900000000_2",
             "name": "Falcon 180mm Premium Fruit Pruners Sharp Garden Cutter Shears",
             "title": "Falcon 180mm Premium Fruit Pruners Sharp Garden Cutter Shears",
-            "image": "/products/garden_tools_and_compost/falcon_180mm_premium_fruit_pruners_sharp_garden_cutter_shears.png",
+            "image": "/products/Garden tools and compost/Falcon 180mm Premium Fruit Pruners Sharp Garden Cutter Shears.png",
             "description": "Premium heavy-duty Falcon 180mm Premium Fruit Pruners Sharp Garden Cutter Shears. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
-            "price": 290,
-            "act-price": 0
+            "price": 299,
+            "act-price": 499
           },
           {
             "id": "garden_1782900000000_3",
             "prod_id": "garden_1782900000000_3",
             "name": "Falcon Premium FPS-21 Folding Pruning Saw for Garden Trees",
             "title": "Falcon Premium FPS-21 Folding Pruning Saw for Garden Trees",
-            "image": "/products/garden_tools_and_compost/falcon_premium_fps_21_folding_pruning_saw_for_garden_trees.png",
+            "image": "/products/Garden tools and compost/Falcon Premium FPS-21 Folding Pruning Saw for Garden Trees.png",
             "description": "Premium heavy-duty Falcon Premium FPS-21 Folding Pruning Saw for Garden Trees. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
-            "price": 1300,
-            "act-price": 0
+            "price": 399,
+            "act-price": 699
           },
           {
             "id": "garden_1782900000000_4",
             "prod_id": "garden_1782900000000_4",
             "name": "Falcon Premium Heavy Duty Agricultural Carbon Steel Bill Hook Machete",
             "title": "Falcon Premium Heavy Duty Agricultural Carbon Steel Bill Hook Machete",
-            "image": "/products/garden_tools_and_compost/falcon_premium_heavy_duty_agricultural_carbon_steel_bill_hook_machete.png",
+            "image": "/products/Garden tools and compost/Falcon Premium Heavy Duty Agricultural Carbon Steel Bill Hook Machete.png",
             "description": "Premium heavy-duty Falcon Premium Heavy Duty Agricultural Carbon Steel Bill Hook Machete. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
-            "price": 585,
-            "act-price": 0
+            "price": 499,
+            "act-price": 799
           },
           {
             "id": "garden_1782900000000_5",
             "prod_id": "garden_1782900000000_5",
             "name": "Falcon Premium Professional Garden Hedge Shears with Protective Leather Pouch",
             "title": "Falcon Premium Professional Garden Hedge Shears with Protective Leather Pouch",
-            "image": "/products/garden_tools_and_compost/falcon_premium_professional_garden_hedge_shears_with_protective_leather_pouch.png",
+            "image": "/products/Garden tools and compost/Falcon Premium Professional Garden Hedge Shears with Protective Leather Pouch.png",
             "description": "Premium heavy-duty Falcon Premium Professional Garden Hedge Shears with Protective Leather Pouch. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
-            "price": 890,
-            "act-price": 0
+            "price": 699,
+            "act-price": 1199
           },
           {
             "id": "garden_1782900000000_6",
             "prod_id": "garden_1782900000000_6",
             "name": "Falcon Premium Wooden Handle Professional Garden Hedge Shears Cutter",
             "title": "Falcon Premium Wooden Handle Professional Garden Hedge Shears Cutter",
-            "image": "/products/garden_tools_and_compost/falcon_premium_wooden_handle_professional_garden_hedge_shears_cutter.png",
+            "image": "/products/Garden tools and compost/Falcon Premium Wooden Handle Professional Garden Hedge Shears Cutter.png",
             "description": "Premium heavy-duty Falcon Premium Wooden Handle Professional Garden Hedge Shears Cutter. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
-            "price": 960,
-            "act-price": 0
+            "price": 699,
+            "act-price": 1199
           },
           {
             "id": "garden_1782900000000_7",
             "prod_id": "garden_1782900000000_7",
             "name": "Falcon Super Anvil Type Pruning Secateurs Garden Cutter Shears",
             "title": "Falcon Super Anvil Type Pruning Secateurs Garden Cutter Shears",
-            "image": "/products/garden_tools_and_compost/falcon_super_anvil_type_pruning_secateurs_garden_cutter_shears.png",
+            "image": "/products/Garden tools and compost/Falcon Super Anvil Type Pruning Secateurs Garden Cutter Shears.png",
             "description": "Premium heavy-duty Falcon Super Anvil Type Pruning Secateurs Garden Cutter Shears. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
-            "price": 530,
-            "act-price": 0
+            "price": 299,
+            "act-price": 499
           },
           {
             "id": "garden_1782900000000_8",
             "prod_id": "garden_1782900000000_8",
             "name": "Garden's Need Premium Green Plastic Gardener's Watering Can for Plants",
             "title": "Garden's Need Premium Green Plastic Gardener's Watering Can for Plants",
-            "image": "/products/garden_tools_and_compost/garden_s_need_premium_green_plastic_gardener_s_watering_can_for_plants.png",
+            "image": "/products/Garden tools and compost/Garden's Need Premium Green Plastic Gardener's Watering Can for Plants.png",
             "description": "Premium quality plant watering can (Garden's Need Premium Green Plastic Gardener's Watering Can for Plants). Made of high-grade plastic with a long, narrow spout for precise watering. Allows you to easily reach dense foliage or target roots directly without splashing or spills. Ideal for indoor pot plants and outdoor garden flowerbeds.",
             "price": 249,
             "act-price": 399
@@ -3422,7 +2949,7 @@
             "prod_id": "garden_1782900000000_9",
             "name": "HT High Pressure Washing Water Gun Nozzle Connector Set",
             "title": "HT High Pressure Washing Water Gun Nozzle Connector Set",
-            "image": "/products/garden_tools_and_compost/ht_high_pressure_washing_water_gun_nozzle_connector_set.png",
+            "image": "/products/Garden tools and compost/HT High Pressure Washing Water Gun Nozzle Connector Set.png",
             "description": "High quality gardening product: HT High Pressure Washing Water Gun Nozzle Connector Set. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 349,
             "act-price": 599
@@ -3432,7 +2959,7 @@
             "prod_id": "garden_1782900000000_10",
             "name": "Hong Xing Blue Manual Garden Pressure Sprayer Pump with Hose",
             "title": "Hong Xing Blue Manual Garden Pressure Sprayer Pump with Hose",
-            "image": "/products/garden_tools_and_compost/hong_xing_blue_manual_garden_pressure_sprayer_pump_with_hose.png",
+            "image": "/products/Garden tools and compost/Hong Xing Blue Manual Garden Pressure Sprayer Pump with Hose.png",
             "description": "Premium compression pump garden pressure sprayer (Hong Xing Blue Manual Garden Pressure Sprayer Pump with Hose). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 999,
             "act-price": 1699
@@ -3442,7 +2969,7 @@
             "prod_id": "garden_1782900000000_11",
             "name": "Kass 1L White Manual Compression Pump Garden Pressure Spray Bottle",
             "title": "Kass 1L White Manual Compression Pump Garden Pressure Spray Bottle",
-            "image": "/products/garden_tools_and_compost/kass_1l_white_manual_compression_pump_garden_pressure_spray_bottle.png",
+            "image": "/products/Garden tools and compost/Kass 1L White Manual Compression Pump Garden Pressure Spray Bottle.png",
             "description": "Premium compression pump garden pressure sprayer (Kass 1L White Manual Compression Pump Garden Pressure Spray Bottle). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 149,
             "act-price": 249
@@ -3452,7 +2979,7 @@
             "prod_id": "garden_1782900000000_12",
             "name": "Kass 2L Orange Manual Compression Pump Garden Pressure Sprayer",
             "title": "Kass 2L Orange Manual Compression Pump Garden Pressure Sprayer",
-            "image": "/products/garden_tools_and_compost/kass_2l_orange_manual_compression_pump_garden_pressure_sprayer.png",
+            "image": "/products/Garden tools and compost/Kass 2L Orange Manual Compression Pump Garden Pressure Sprayer.png",
             "description": "Premium compression pump garden pressure sprayer (Kass 2L Orange Manual Compression Pump Garden Pressure Sprayer). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 299,
             "act-price": 499
@@ -3462,7 +2989,7 @@
             "prod_id": "garden_1782900000000_13",
             "name": "Modular Raised Garden Bed Heavy Duty Corner Connector Joint Bracket",
             "title": "Modular Raised Garden Bed Heavy Duty Corner Connector Joint Bracket",
-            "image": "/products/garden_tools_and_compost/modular_raised_garden_bed_heavy_duty_corner_connector_joint_bracket.png",
+            "image": "/products/Garden tools and compost/Modular Raised Garden Bed Heavy Duty Corner Connector Joint Bracket.png",
             "description": "High quality gardening product: Modular Raised Garden Bed Heavy Duty Corner Connector Joint Bracket. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 249,
             "act-price": 399
@@ -3472,7 +2999,7 @@
             "prod_id": "garden_1782900000000_14",
             "name": "Premium 10L Yellow Manual Garden Pressure Sprayer Pump with Hose",
             "title": "Premium 10L Yellow Manual Garden Pressure Sprayer Pump with Hose",
-            "image": "/products/garden_tools_and_compost/premium_10l_yellow_manual_garden_pressure_sprayer_pump_with_hose.png",
+            "image": "/products/Garden tools and compost/Premium 10L Yellow Manual Garden Pressure Sprayer Pump with Hose.png",
             "description": "Premium compression pump garden pressure sprayer (Premium 10L Yellow Manual Garden Pressure Sprayer Pump with Hose). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 999,
             "act-price": 1699
@@ -3482,7 +3009,7 @@
             "prod_id": "garden_1782900000000_15",
             "name": "Premium 2-in-1 Garden Grafting Tool Set Replacement Blades Pack",
             "title": "Premium 2-in-1 Garden Grafting Tool Set Replacement Blades Pack",
-            "image": "/products/garden_tools_and_compost/premium_2_in_1_garden_grafting_tool_set_replacement_blades_pack.png",
+            "image": "/products/Garden tools and compost/Premium 2-in-1 Garden Grafting Tool Set Replacement Blades Pack.png",
             "description": "High quality gardening product: Premium 2-in-1 Garden Grafting Tool Set Replacement Blades Pack. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 249,
             "act-price": 449
@@ -3492,7 +3019,7 @@
             "prod_id": "garden_1782900000000_16",
             "name": "Premium 3-Piece Colorful Kids Garden Tool Set with Wooden Handles",
             "title": "Premium 3-Piece Colorful Kids Garden Tool Set with Wooden Handles",
-            "image": "/products/garden_tools_and_compost/premium_3_piece_colorful_kids_garden_tool_set_with_wooden_handles.png",
+            "image": "/products/Garden tools and compost/Premium 3-Piece Colorful Kids Garden Tool Set with Wooden Handles.png",
             "description": "High quality gardening product: Premium 3-Piece Colorful Kids Garden Tool Set with Wooden Handles. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 249,
             "act-price": 449
@@ -3502,7 +3029,7 @@
             "prod_id": "garden_1782900000000_17",
             "name": "Premium 3L Orange Manual Garden Pressure Sprayer with Strap",
             "title": "Premium 3L Orange Manual Garden Pressure Sprayer with Strap",
-            "image": "/products/garden_tools_and_compost/premium_3l_orange_manual_garden_pressure_sprayer_with_strap.png",
+            "image": "/products/Garden tools and compost/Premium 3L Orange Manual Garden Pressure Sprayer with Strap.png",
             "description": "Premium compression pump garden pressure sprayer (Premium 3L Orange Manual Garden Pressure Sprayer with Strap). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 399,
             "act-price": 599
@@ -3512,7 +3039,7 @@
             "prod_id": "garden_1782900000000_18",
             "name": "Premium 5L Orange Manual Garden Pressure Sprayer with Wand",
             "title": "Premium 5L Orange Manual Garden Pressure Sprayer with Wand",
-            "image": "/products/garden_tools_and_compost/premium_5l_orange_manual_garden_pressure_sprayer_with_wand.png",
+            "image": "/products/Garden tools and compost/Premium 5L Orange Manual Garden Pressure Sprayer with Wand.png",
             "description": "Premium compression pump garden pressure sprayer (Premium 5L Orange Manual Garden Pressure Sprayer with Wand). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 599,
             "act-price": 999
@@ -3522,7 +3049,7 @@
             "prod_id": "garden_1782900000000_19",
             "name": "Premium Carbon Steel Curved Garden Grass Cutting Hand Sickle",
             "title": "Premium Carbon Steel Curved Garden Grass Cutting Hand Sickle",
-            "image": "/products/garden_tools_and_compost/premium_carbon_steel_curved_garden_grass_cutting_hand_sickle.png",
+            "image": "/products/Garden tools and compost/Premium Carbon Steel Curved Garden Grass Cutting Hand Sickle.png",
             "description": "High quality gardening product: Premium Carbon Steel Curved Garden Grass Cutting Hand Sickle. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 149,
             "act-price": 249
@@ -3532,7 +3059,7 @@
             "prod_id": "garden_1782900000000_20",
             "name": "Premium Carbon Steel Dandelion Hand Weeder Tool with Red Handle",
             "title": "Premium Carbon Steel Dandelion Hand Weeder Tool with Red Handle",
-            "image": "/products/garden_tools_and_compost/premium_carbon_steel_dandelion_hand_weeder_tool_with_red_handle.png",
+            "image": "/products/Garden tools and compost/Premium Carbon Steel Dandelion Hand Weeder Tool with Red Handle.png",
             "description": "High quality gardening product: Premium Carbon Steel Dandelion Hand Weeder Tool with Red Handle. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 129,
             "act-price": 249
@@ -3542,7 +3069,7 @@
             "prod_id": "garden_1782900000000_21",
             "name": "Premium Carbon Steel Gardening Hand Cultivator Tool with Orange Handle",
             "title": "Premium Carbon Steel Gardening Hand Cultivator Tool with Orange Handle",
-            "image": "/products/garden_tools_and_compost/premium_carbon_steel_gardening_hand_cultivator_tool_with_orange_handle.png",
+            "image": "/products/Garden tools and compost/Premium Carbon Steel Gardening Hand Cultivator Tool with Orange Handle.png",
             "description": "High quality gardening product: Premium Carbon Steel Gardening Hand Cultivator Tool with Orange Handle. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 129,
             "act-price": 249
@@ -3552,7 +3079,7 @@
             "prod_id": "garden_1782900000000_22",
             "name": "Premium Carbon Steel Gardening Hand Fork Tool with Orange Handle",
             "title": "Premium Carbon Steel Gardening Hand Fork Tool with Orange Handle",
-            "image": "/products/garden_tools_and_compost/premium_carbon_steel_gardening_hand_fork_tool_with_orange_handle.png",
+            "image": "/products/Garden tools and compost/Premium Carbon Steel Gardening Hand Fork Tool with Orange Handle.png",
             "description": "High quality gardening product: Premium Carbon Steel Gardening Hand Fork Tool with Orange Handle. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 129,
             "act-price": 249
@@ -3562,7 +3089,7 @@
             "prod_id": "garden_1782900000000_23",
             "name": "Premium Carbon Steel Gardening Hand Trowel Shovel with Red Handle",
             "title": "Premium Carbon Steel Gardening Hand Trowel Shovel with Red Handle",
-            "image": "/products/garden_tools_and_compost/premium_carbon_steel_gardening_hand_trowel_shovel_with_red_handle.png",
+            "image": "/products/Garden tools and compost/Premium Carbon Steel Gardening Hand Trowel Shovel with Red Handle.png",
             "description": "High quality gardening product: Premium Carbon Steel Gardening Hand Trowel Shovel with Red Handle. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 129,
             "act-price": 249
@@ -3572,7 +3099,7 @@
             "prod_id": "garden_1782900000000_25",
             "name": "Premium Extendable Heavy Duty Garden Hedge Shears Trimming Cutter",
             "title": "Premium Extendable Heavy Duty Garden Hedge Shears Trimming Cutter",
-            "image": "/products/garden_tools_and_compost/premium_extendable_heavy_duty_garden_hedge_shears_trimming_cutter.png",
+            "image": "/products/Garden tools and compost/Premium Extendable Heavy Duty Garden Hedge Shears Trimming Cutter.png",
             "description": "Premium heavy-duty Premium Extendable Heavy Duty Garden Hedge Shears Trimming Cutter. Engineered with hardened carbon steel blades for clean, precise cuts. Ergonomic handles ensure anti-slip comfort and reduced fatigue during extended gardening, pruning, and landscaping sessions. Durable build built to last.",
             "price": 699,
             "act-price": 1199
@@ -3582,7 +3109,7 @@
             "prod_id": "garden_1782900000000_26",
             "name": "Premium Flexible Spray Extension Tube Rod for Garden Pressure Sprayer",
             "title": "Premium Flexible Spray Extension Tube Rod for Garden Pressure Sprayer",
-            "image": "/products/garden_tools_and_compost/premium_flexible_spray_extension_tube_rod_for_garden_pressure_sprayer.png",
+            "image": "/products/Garden tools and compost/Premium Flexible Spray Extension Tube Rod for Garden Pressure Sprayer.png",
             "description": "Premium compression pump garden pressure sprayer (Premium Flexible Spray Extension Tube Rod for Garden Pressure Sprayer). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 199,
             "act-price": 349
@@ -3592,7 +3119,7 @@
             "prod_id": "garden_1782900000000_27",
             "name": "Premium Handheld Garden Water Spray Bottle for Plants Gardening",
             "title": "Premium Handheld Garden Water Spray Bottle for Plants Gardening",
-            "image": "/products/garden_tools_and_compost/premium_handheld_garden_water_spray_bottle_for_plants_gardening.png",
+            "image": "/products/Garden tools and compost/Premium Handheld Garden Water Spray Bottle for Plants Gardening.png",
             "description": "Premium compression pump garden pressure sprayer (Premium Handheld Garden Water Spray Bottle for Plants Gardening). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 149,
             "act-price": 249
@@ -3602,7 +3129,7 @@
             "prod_id": "garden_1782900000000_28",
             "name": "Premium Long Spout White Plastic Indoor Plant Watering Can Mug",
             "title": "Premium Long Spout White Plastic Indoor Plant Watering Can Mug",
-            "image": "/products/garden_tools_and_compost/premium_long_spout_white_plastic_indoor_plant_watering_can_mug.png",
+            "image": "/products/Garden tools and compost/Premium Long Spout White Plastic Indoor Plant Watering Can Mug.png",
             "description": "Premium quality plant watering can (Premium Long Spout White Plastic Indoor Plant Watering Can Mug). Made of high-grade plastic with a long, narrow spout for precise watering. Allows you to easily reach dense foliage or target roots directly without splashing or spills. Ideal for indoor pot plants and outdoor garden flowerbeds.",
             "price": 249,
             "act-price": 399
@@ -3612,7 +3139,7 @@
             "prod_id": "garden_1782900000000_29",
             "name": "Premium Manual Compression Pump Garden Pressure Spray Bottle for Plants",
             "title": "Premium Manual Compression Pump Garden Pressure Spray Bottle for Plants",
-            "image": "/products/garden_tools_and_compost/premium_manual_compression_pump_garden_pressure_spray_bottle_for_plants.png",
+            "image": "/products/Garden tools and compost/Premium Manual Compression Pump Garden Pressure Spray Bottle for Plants.png",
             "description": "Premium compression pump garden pressure sprayer (Premium Manual Compression Pump Garden Pressure Spray Bottle for Plants). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 199,
             "act-price": 349
@@ -3622,7 +3149,7 @@
             "prod_id": "garden_1782900000000_30",
             "name": "Premium Orange Heavy Duty Garden Weeding Khurpa Scraper Tool",
             "title": "Premium Orange Heavy Duty Garden Weeding Khurpa Scraper Tool",
-            "image": "/products/garden_tools_and_compost/premium_orange_heavy_duty_garden_weeding_khurpa_scraper_tool.png",
+            "image": "/products/Garden tools and compost/Premium Orange Heavy Duty Garden Weeding Khurpa Scraper Tool.png",
             "description": "High quality gardening product: Premium Orange Heavy Duty Garden Weeding Khurpa Scraper Tool. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 129,
             "act-price": 249
@@ -3632,7 +3159,7 @@
             "prod_id": "garden_1782900000000_32",
             "name": "Premium Pink Manual Compression Pump Garden Pressure Spray Bottle for Plants",
             "title": "Premium Pink Manual Compression Pump Garden Pressure Spray Bottle for Plants",
-            "image": "/products/garden_tools_and_compost/premium_pink_manual_compression_pump_garden_pressure_spray_bottle_for_plants.png",
+            "image": "/products/Garden tools and compost/Premium Pink Manual Compression Pump Garden Pressure Spray Bottle for Plants.png",
             "description": "Premium compression pump garden pressure sprayer (Premium Pink Manual Compression Pump Garden Pressure Spray Bottle for Plants). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 199,
             "act-price": 349
@@ -3642,7 +3169,7 @@
             "prod_id": "garden_1782900000000_33",
             "name": "Premium Printed Plastic Garden Water Spray Bottle for Plants Gardening",
             "title": "Premium Printed Plastic Garden Water Spray Bottle for Plants Gardening",
-            "image": "/products/garden_tools_and_compost/premium_printed_plastic_garden_water_spray_bottle_for_plants_gardening.png",
+            "image": "/products/Garden tools and compost/Premium Printed Plastic Garden Water Spray Bottle for Plants Gardening.png",
             "description": "Premium compression pump garden pressure sprayer (Premium Printed Plastic Garden Water Spray Bottle for Plants Gardening). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 149,
             "act-price": 249
@@ -3652,7 +3179,7 @@
             "prod_id": "garden_1782900000000_34",
             "name": "Premium Stainless Steel Mini Garden Trowel and Hand Rake Set",
             "title": "Premium Stainless Steel Mini Garden Trowel and Hand Rake Set",
-            "image": "/products/garden_tools_and_compost/premium_stainless_steel_mini_garden_trowel_and_hand_rake_set.png",
+            "image": "/products/Garden tools and compost/Premium Stainless Steel Mini Garden Trowel and Hand Rake Set.png",
             "description": "High quality gardening product: Premium Stainless Steel Mini Garden Trowel and Hand Rake Set. Designed for maximum utility, comfort, and efficiency. Essential for maintain a beautiful garden, lawn, and house plants. Made of premium materials.",
             "price": 249,
             "act-price": 449
@@ -3662,7 +3189,7 @@
             "prod_id": "garden_1782900000000_36",
             "name": "Premium Watering Can Long Spout Extension Rose Shower Nozzle Head",
             "title": "Premium Watering Can Long Spout Extension Rose Shower Nozzle Head",
-            "image": "/products/garden_tools_and_compost/premium_watering_can_long_spout_extension_rose_shower_nozzle_head.png",
+            "image": "/products/Garden tools and compost/Premium Watering Can Long Spout Extension Rose Shower Nozzle Head.png",
             "description": "Premium quality plant watering can (Premium Watering Can Long Spout Extension Rose Shower Nozzle Head). Made of high-grade plastic with a long, narrow spout for precise watering. Allows you to easily reach dense foliage or target roots directly without splashing or spills. Ideal for indoor pot plants and outdoor garden flowerbeds.",
             "price": 99,
             "act-price": 199
@@ -3672,7 +3199,7 @@
             "prod_id": "garden_1782900000000_37",
             "name": "Premium Yellow Manual Compression Pump Garden Pressure Spray Bottle for Plants",
             "title": "Premium Yellow Manual Compression Pump Garden Pressure Spray Bottle for Plants",
-            "image": "/products/garden_tools_and_compost/premium_yellow_manual_compression_pump_garden_pressure_spray_bottle_for_plants.png",
+            "image": "/products/Garden tools and compost/Premium Yellow Manual Compression Pump Garden Pressure Spray Bottle for Plants.png",
             "description": "Premium compression pump garden pressure sprayer (Premium Yellow Manual Compression Pump Garden Pressure Spray Bottle for Plants). Crafted from durable, chemical-resistant plastic. Features an adjustable brass nozzle to change spray from a fine mist to a solid stream. Equipped with a safety pressure release valve and ergonomic trigger handle for effortless watering and pest control.",
             "price": 199,
             "act-price": 349
@@ -3682,7 +3209,7 @@
             "prod_id": "garden_1782900000000_39",
             "name": "Spotzero by Milton Super Safari Pink Rubber Gardening Hand Gloves",
             "title": "Spotzero by Milton Super Safari Pink Rubber Gardening Hand Gloves",
-            "image": "/products/garden_tools_and_compost/spotzero_by_milton_super_safari_pink_rubber_gardening_hand_gloves.png",
+            "image": "/products/Garden tools and compost/Spotzero by Milton Super Safari Pink Rubber Gardening Hand Gloves.png",
             "description": "Milton Spotzero Super Safari Gardening Hand Gloves. Heavy-duty rubber gloves to protect your hands from dirt, thorns, chemicals, and sharp gardening tools. Anti-slip textured grip provides excellent handling of wet pots and tools. Soft lining keeps hands dry and comfortable.",
             "price": 199,
             "act-price": 299
@@ -3697,7 +3224,7 @@
             "prod_id": "garden_1782900000000_0",
             "name": "Agrishield Green 75 Percent Agro Shading Fabric Net Roll",
             "title": "Agrishield Green 75 Percent Agro Shading Fabric Net Roll",
-            "image": "/products/garden_tools_and_compost/agrishield_green_75_percent_agro_shading_fabric_net_roll.png",
+            "image": "/products/Garden tools and compost/Agrishield Green 75 Percent Agro Shading Fabric Net Roll.png",
             "description": "Premium quality Agrishield Green 75 Percent Agro Shading Fabric Net Roll. Designed to block harsh sunlight, UV rays, and protect your garden plants, terrace gardens, and nurseries. Made of heavy-duty, highly durable HDPE shading fabric net. Breathable mesh design allows water and air to flow through easily.",
             "price": 899,
             "act-price": 1499
@@ -3707,7 +3234,7 @@
             "prod_id": "garden_1782900000000_1",
             "name": "Agrishield Green 90 Percent Agro Shading Fabric Net Roll",
             "title": "Agrishield Green 90 Percent Agro Shading Fabric Net Roll",
-            "image": "/products/garden_tools_and_compost/agrishield_green_90_percent_agro_shading_fabric_net_roll.png",
+            "image": "/products/Garden tools and compost/Agrishield Green 90 Percent Agro Shading Fabric Net Roll.png",
             "description": "Premium quality Agrishield Green 90 Percent Agro Shading Fabric Net Roll. Designed to block harsh sunlight, UV rays, and protect your garden plants, terrace gardens, and nurseries. Made of heavy-duty, highly durable HDPE shading fabric net. Breathable mesh design allows water and air to flow through easily.",
             "price": 899,
             "act-price": 1499
@@ -3717,7 +3244,7 @@
             "prod_id": "garden_1782900000000_24",
             "name": "Premium Expanded Clay Pebbles Hydroponic Grow Media For Plants",
             "title": "Premium Expanded Clay Pebbles Hydroponic Grow Media For Plants",
-            "image": "/products/garden_tools_and_compost/premium_expanded_clay_pebbles_hydroponic_grow_media_for_plants.png",
+            "image": "/products/Garden tools and compost/Premium Expanded Clay Pebbles Hydroponic Grow Media For Plants.png",
             "description": "Premium Expanded Clay Pebbles Hydroponic Grow Media. Eco-friendly, lightweight clay aggregate pebbles. Perfect grow medium for hydroponic systems, aquaponics, orchid potting mixes, drainage layers at the bottom of plant pots, and decorative top soil styling.",
             "price": 299,
             "act-price": 499
@@ -3727,7 +3254,7 @@
             "prod_id": "garden_1782900000000_31",
             "name": "Premium Organic Vermicompost Fertilizer Manure Packet For Plants",
             "title": "Premium Organic Vermicompost Fertilizer Manure Packet For Plants",
-            "image": "/products/garden_tools_and_compost/premium_organic_vermicompost_fertilizer_manure_packet_for_plants.png",
+            "image": "/products/Garden tools and compost/Premium Organic Vermicompost Fertilizer Manure Packet For Plants.png",
             "description": "Premium Organic Vermicompost Fertilizer Manure Packet for Plants. 100% organic, nutrient-rich soil supplement produced by earthworms. Enhances plant growth, improves soil structure, aeration, and water retention capacity. Safe for indoor and outdoor plants, vegetables, and flowers.",
             "price": 149,
             "act-price": 249
@@ -3737,7 +3264,7 @@
             "prod_id": "garden_1782900000000_35",
             "name": "Premium Water Soluble Pink NPK Fertilizer Powder For Plants",
             "title": "Premium Water Soluble Pink NPK Fertilizer Powder For Plants",
-            "image": "/products/garden_tools_and_compost/premium_water_soluble_pink_npk_fertilizer_powder_for_plants.png",
+            "image": "/products/Garden tools and compost/Premium Water Soluble Pink NPK Fertilizer Powder For Plants.png",
             "description": "Premium quality Premium Water Soluble Pink NPK Fertilizer Powder For Plants. Naturally enriched compost fertilizer to boost flowering, fruiting, and overall plant health. Enhances root growth, soil microbes, and disease resistance. 100% natural and chemical-free.",
             "price": 179,
             "act-price": 299
@@ -3747,7 +3274,7 @@
             "prod_id": "garden_1782900000000_38",
             "name": "Safaya All In One Premium Plant Root Growth Regulator Liquid",
             "title": "Safaya All In One Premium Plant Root Growth Regulator Liquid",
-            "image": "/products/garden_tools_and_compost/safaya_all_in_one_premium_plant_root_growth_regulator_liquid.png",
+            "image": "/products/Garden tools and compost/Safaya All In One Premium Plant Root Growth Regulator Liquid.png",
             "description": "Safaya All-In-One Premium Plant Root Growth Regulator Liquid. Specially formulated bio-stimulant liquid designed to promote explosive root development, reduce transplant shock, and enhance nutrient absorption. Suitable for propagation, cuttings, and routine plant care.",
             "price": 249,
             "act-price": 399
@@ -3757,7 +3284,7 @@
             "prod_id": "garden_1782900000000_40",
             "name": "T. Stanes Packaged Premium Organic Fertilizer Manure For Flowers",
             "title": "T. Stanes Packaged Premium Organic Fertilizer Manure For Flowers",
-            "image": "/products/garden_tools_and_compost/t._stanes_packaged_premium_organic_fertilizer_manure_for_flowers.png",
+            "image": "/products/Garden tools and compost/T. Stanes Packaged Premium Organic Fertilizer Manure For Flowers.png",
             "description": "Premium quality T. Stanes Packaged Premium Organic Fertilizer Manure For Flowers. Naturally enriched compost fertilizer to boost flowering, fruiting, and overall plant health. Enhances root growth, soil microbes, and disease resistance. 100% natural and chemical-free.",
             "price": 199,
             "act-price": 349
@@ -3778,7 +3305,7 @@
             "prod_id": "idols_1783000000000_0",
             "name": "Handcrafted Textured Black Stone Effect Lord Ganesha Polyresin Idol",
             "title": "Handcrafted Textured Black Stone Effect Lord Ganesha Polyresin Idol",
-            "image": "/products/idols/handcrafted_textured_black_stone_effect_lord_ganesha_polyresin_idol.png",
+            "image": "/products/idols/Handcrafted Textured Black Stone Effect Lord Ganesha Polyresin Idol.png",
             "description": "Strikingly crafted Lord Ganesha idol with a premium textured black stone effect finish made from high-quality polyresin. A bold statement decor piece radiating divine energy and artisanal craftsmanship. Perfect for home altars, living room shelves, and gifting on auspicious occasions.",
             "price": 899,
             "act-price": 1499
@@ -3788,7 +3315,7 @@
             "prod_id": "idols_1783000000000_1",
             "name": "Lalbaugcha Raja Ganesha Seated On Throne Polyresin God Idol",
             "title": "Lalbaugcha Raja Ganesha Seated On Throne Polyresin God Idol",
-            "image": "/products/idols/lalbaugcha_raja_ganesha_seated_on_throne_polyresin_god_idol.png",
+            "image": "/products/idols/Lalbaugcha Raja Ganesha Seated On Throne Polyresin God Idol.png",
             "description": "Iconic Lalbaugcha Raja Ganesha idol seated on a grand throne, crafted from premium polyresin with meticulous detailing and vibrant colors. A revered representation of Lord Ganesha inspired by the famous Mumbai Ganesh festival idol. Ideal for pooja rooms, festival decor, and gifting.",
             "price": 1199,
             "act-price": 1999
@@ -3798,7 +3325,7 @@
             "prod_id": "idols_1783000000000_2",
             "name": "Modern High-Gloss Minimalist Orange Abstract Lord Ganesha Resin Idol",
             "title": "Modern High-Gloss Minimalist Orange Abstract Lord Ganesha Resin Idol",
-            "image": "/products/idols/modern_high_gloss_minimalist_orange_abstract_lord_ganesha_resin_idol.png",
+            "image": "/products/idols/Modern High-Gloss Minimalist Orange Abstract Lord Ganesha Resin Idol.png",
             "description": "Contemporary abstract Lord Ganesha idol in a vibrant orange high-gloss finish. A modern artistic interpretation of the divine, crafted from premium resin. A stunning conversation piece for modern homes, offices, and minimalist living spaces.",
             "price": 799,
             "act-price": 1299
@@ -3808,7 +3335,7 @@
             "prod_id": "idols_1783000000000_3",
             "name": "Premium Polyresin Sitting Lord Ganesha Idol with Green Dhoti",
             "title": "Premium Polyresin Sitting Lord Ganesha Idol with Green Dhoti",
-            "image": "/products/idols/premium_polyresin_sitting_lord_ganesha_idol_with_green_dhoti.png",
+            "image": "/products/idols/Premium Polyresin Sitting Lord Ganesha Idol with Green Dhoti.png",
             "description": "Beautifully crafted sitting Lord Ganesha idol wearing a vibrant green dhoti, made from premium polyresin. Detailed hand-painted features and ornaments make this a spiritually uplifting and visually stunning decor piece. Perfect for pooja rooms, shelves, and festive gifting.",
             "price": 849,
             "act-price": 1399
@@ -3818,7 +3345,7 @@
             "prod_id": "idols_1783000000000_4",
             "name": "Premium White and Gold Seated Lord Ganesha Polyresin Idol",
             "title": "Premium White and Gold Seated Lord Ganesha Polyresin Idol",
-            "image": "/products/idols/premium_white_and_gold_seated_lord_ganesha_polyresin_idol.png",
+            "image": "/products/idols/Premium White and Gold Seated Lord Ganesha Polyresin Idol.png",
             "description": "Elegant white and gold seated Lord Ganesha idol crafted from premium polyresin. The pristine white finish accented with golden details gives this idol a regal and spiritual appearance. A timeless piece for home altars, corporate gifting, and auspicious occasions.",
             "price": 999,
             "act-price": 1599
@@ -3828,7 +3355,7 @@
             "prod_id": "idols_1783000000000_5",
             "name": "Divine Lord Krishna Seated with Holy Kamdhenu Cow Polyresin Idol",
             "title": "Divine Lord Krishna Seated with Holy Kamdhenu Cow Polyresin Idol",
-            "image": "/products/idols/divine_lord_krishna_seated_with_holy_kamdhenu_cow_polyresin_idol.png",
+            "image": "/products/idols/Divine Lord Krishna Seated with Holy Kamdhenu Cow Polyresin Idol.png",
             "description": "Serene and divine polyresin idol depicting Lord Krishna seated alongside the holy Kamdhenu cow. Exquisitely crafted with rich hand-painted details, vibrant colors, and fine finishing. Radiates devotion, prosperity, and spiritual harmony. Ideal for pooja rooms and home decor.",
             "price": 1099,
             "act-price": 1799
@@ -3838,7 +3365,7 @@
             "prod_id": "idols_1783000000000_6",
             "name": "Vibrant Seated Lord Krishna with Cows and Peacock Polyresin Idol",
             "title": "Vibrant Seated Lord Krishna with Cows and Peacock Polyresin Idol",
-            "image": "/products/idols/vibrant_seated_lord_krishna_with_cows_and_peacock_polyresin_idol.png",
+            "image": "/products/idols/Vibrant Seated Lord Krishna with Cows and Peacock Polyresin Idol.png",
             "description": "Vibrant and colorful polyresin idol of Lord Krishna seated in a pastoral scene with cows and a peacock. The intricate detailing and rich multicolor palette make this a captivating spiritual decor piece. Perfect for home altars, festival celebrations, and meaningful gifting.",
             "price": 1199,
             "act-price": 1999
@@ -3848,7 +3375,7 @@
             "prod_id": "idols_1783000000000_7",
             "name": "Vibrant Standing Lord Krishna Playing Flute Polyresin Idol with Cow",
             "title": "Vibrant Standing Lord Krishna Playing Flute Polyresin Idol with Cow",
-            "image": "/products/idols/vibrant_standing_lord_krishna_playing_flute_polyresin_idol_with_cow.png",
+            "image": "/products/idols/Vibrant Standing Lord Krishna Playing Flute Polyresin Idol with Cow.png",
             "description": "Enchanting polyresin idol of Lord Krishna standing in a graceful pose playing his flute, accompanied by a cow. Finished with vibrant hand-painted colors and fine detailing. Brings a divine and joyful energy to any space — ideal for homes, offices, and gifting.",
             "price": 999,
             "act-price": 1649
@@ -3858,7 +3385,7 @@
             "prod_id": "idols_1783000000000_8",
             "name": "Multicolor Polyresin Seated Radha Krishna Sitting on Rock Idol Statue",
             "title": "Multicolor Polyresin Seated Radha Krishna Sitting on Rock Idol Statue",
-            "image": "/products/idols/multicolor_polyresin_seated_radha_krishna_sitting_on_rock_idol_statue.png",
+            "image": "/products/idols/Multicolor Polyresin Seated Radha Krishna Sitting on Rock Idol Statue.png",
             "description": "Beautiful multicolor polyresin statue depicting Radha and Krishna seated together on a rock in eternal devotion. Meticulously hand-painted with vibrant hues and detailed ornamentation. A symbol of divine love and spiritual bliss, perfect for home altars and gifting.",
             "price": 1299,
             "act-price": 2099
@@ -3868,7 +3395,7 @@
             "prod_id": "idols_1783000000000_9",
             "name": "Premium Antique Brass Finish Meditating Buddha Idol with Leaf Halo",
             "title": "Premium Antique Brass Finish Meditating Buddha Idol with Leaf Halo",
-            "image": "/products/idols/premium_antique_brass_finish_meditating_buddha_idol_with_leaf_halo.png",
+            "image": "/products/idols/Premium Antique Brass Finish Meditating Buddha Idol with Leaf Halo.png",
             "description": "Exquisite meditating Buddha idol in a luxurious antique brass finish, adorned with an intricate leaf-shaped halo. Crafted from premium polyresin with masterful detail. Promotes peace, mindfulness, and spiritual harmony. Ideal for meditation spaces, living rooms, and gifting.",
             "price": 1199,
             "act-price": 1999
@@ -3878,7 +3405,7 @@
             "prod_id": "idols_1783000000000_10",
             "name": "Premium Black and Orange Robe Meditating Bhumisparsha Buddha Idol",
             "title": "Premium Black and Orange Robe Meditating Bhumisparsha Buddha Idol",
-            "image": "/products/idols/premium_black_and_orange_robe_meditating_bhumisparsha_buddha_idol.png",
+            "image": "/products/idols/Premium Black and Orange Robe Meditating Bhumisparsha Buddha Idol.png",
             "description": "Striking meditating Buddha idol in the Bhumisparsha mudra, dressed in a dramatic black and orange robe. Crafted from premium polyresin with intricate detailing. A powerful spiritual symbol of enlightenment and inner peace. Perfect for meditation rooms, homes, and offices.",
             "price": 999,
             "act-price": 1649
@@ -3888,7 +3415,7 @@
             "prod_id": "idols_1783000000000_11",
             "name": "Premium Golden Seated Vitarka Mudra Lord Buddha Polyresin Idol",
             "title": "Premium Golden Seated Vitarka Mudra Lord Buddha Polyresin Idol",
-            "image": "/products/idols/premium_golden_seated_vitarka_mudra_lord_buddha_polyresin_idol.png",
+            "image": "/products/idols/Premium Golden Seated Vitarka Mudra Lord Buddha Polyresin Idol.png",
             "description": "Majestic golden-finish Lord Buddha idol in the Vitarka teaching mudra, crafted from premium polyresin. The lustrous golden surface exudes divine wisdom and serenity. An elegant decor piece for meditation rooms, living spaces, corporate gifting, and spiritual interiors.",
             "price": 1099,
             "act-price": 1799
@@ -3898,7 +3425,7 @@
             "prod_id": "idols_1783000000000_12",
             "name": "Premium Polyresin Shiny Golden Meditating Lord Buddha Dhyana Idol",
             "title": "Premium Polyresin Shiny Golden Meditating Lord Buddha Dhyana Idol",
-            "image": "/products/idols/premium_polyresin_shiny_golden_meditating_lord_buddha_dhyana_idol.png",
+            "image": "/products/idols/Premium Polyresin Shiny Golden Meditating Lord Buddha Dhyana Idol.png",
             "description": "Resplendent shiny golden Lord Buddha idol in the Dhyana meditation pose. Crafted from high-quality polyresin with a mirror-like gold finish that radiates peace and divinity. Perfect for meditation corners, home altars, living rooms, and as a premium spiritual gift.",
             "price": 899,
             "act-price": 1499
@@ -3908,7 +3435,7 @@
             "prod_id": "idols_1783000000000_13",
             "name": "Premium Polyresin Sitting Buddha Statue in Vitarka Mudra",
             "title": "Premium Polyresin Sitting Buddha Statue in Vitarka Mudra",
-            "image": "/products/idols/premium_polyresin_sitting_buddha_statue_in_vitarka_mudra.png",
+            "image": "/products/idols/Premium Polyresin Sitting Buddha Statue in Vitarka Mudra.png",
             "description": "Premium polyresin sitting Buddha statue captured in the Vitarka (teaching) mudra with serene expression and fine detailing. The balanced composition and peaceful demeanor make it a spiritual focal point for any space. Ideal for homes, offices, yoga studios, and gifting.",
             "price": 849,
             "act-price": 1399
@@ -3918,7 +3445,7 @@
             "prod_id": "idols_1783000000000_14",
             "name": "Premium Polyresin White and Blue Robe Meditating Buddha Idol",
             "title": "Premium Polyresin White and Blue Robe Meditating Buddha Idol",
-            "image": "/products/idols/premium_polyresin_white_and_blue_robe_meditating_buddha_idol.png",
+            "image": "/products/idols/Premium Polyresin White and Blue Robe Meditating Buddha Idol.png",
             "description": "Serene meditating Buddha idol draped in an elegant white and blue robe, crafted from premium polyresin. The calming color combination and peaceful expression make this a soothing presence in any room. Perfect for meditation spaces, bedrooms, living areas, and spiritual gifting.",
             "price": 949,
             "act-price": 1549
@@ -3928,7 +3455,7 @@
             "prod_id": "idols_1783000000000_15",
             "name": "Premium Polyresin White and Silver Meditating Lord Buddha Head Showpiece",
             "title": "Premium Polyresin White and Silver Meditating Lord Buddha Head Showpiece",
-            "image": "/products/idols/premium_polyresin_white_and_silver_meditating_lord_buddha_head_showpiece.png",
+            "image": "/products/idols/Premium Polyresin White and Silver Meditating Lord Buddha Head Showpiece.png",
             "description": "Elegant meditating Buddha head showpiece in premium white and silver finish, crafted from high-quality polyresin. The sculpted serene expression and refined silver accents create a sophisticated decorative accent. Perfect for modern homes, spas, meditation rooms, and gifting.",
             "price": 799,
             "act-price": 1299
@@ -3938,7 +3465,7 @@
             "prod_id": "idols_1783000000000_16",
             "name": "Premium Glossy Shirdi Sai Baba Seated On Rock Polyresin Idol",
             "title": "Premium Glossy Shirdi Sai Baba Seated On Rock Polyresin Idol",
-            "image": "/products/idols/premium_glossy_shirdi_sai_baba_seated_on_rock_polyresin_idol.png",
+            "image": "/products/idols/Premium Glossy Shirdi Sai Baba Seated On Rock Polyresin Idol.png",
             "description": "Devotional polyresin idol of Shirdi Sai Baba seated on a rock in a serene and blessing posture with a premium glossy finish. Beautifully crafted with realistic details and vibrant colors. A spiritually uplifting piece for home altars, pooja rooms, and devotional gifting.",
             "price": 999,
             "act-price": 1649
@@ -3948,7 +3475,7 @@
             "prod_id": "idols_1783000000000_17",
             "name": "Shirdi Sai Baba Seated Under Neem Tree Polyresin Idol",
             "title": "Shirdi Sai Baba Seated Under Neem Tree Polyresin Idol",
-            "image": "/products/idols/shirdi_sai_baba_seated_under_neem_tree_polyresin_idol.png",
+            "image": "/products/idols/Shirdi Sai Baba Seated Under Neem Tree Polyresin Idol.png",
             "description": "Devotional polyresin idol of Shirdi Sai Baba seated peacefully under a neem tree — a scene deeply rooted in spiritual lore. Hand-painted with reverence and intricate detailing. Brings divine blessings and peaceful energy to pooja rooms, living spaces, and homes.",
             "price": 1099,
             "act-price": 1799
@@ -3958,7 +3485,7 @@
             "prod_id": "idols_1783000000000_18",
             "name": "Premium Black Adiyogi Lord Shiva Polyresin Bust Statue Idol",
             "title": "Premium Black Adiyogi Lord Shiva Polyresin Bust Statue Idol",
-            "image": "/products/idols/premium_black_adiyogi_lord_shiva_polyresin_bust_statue_idol.png",
+            "image": "/products/idols/Premium Black Adiyogi Lord Shiva Polyresin Bust Statue Idol.png",
             "description": "Powerful and awe-inspiring Adiyogi Lord Shiva bust idol in a premium matte black finish, crafted from high-quality polyresin. Inspired by the iconic Adiyogi face at Coimbatore, this piece is a symbol of yoga, meditation, and cosmic energy. Perfect for meditation rooms and gifting.",
             "price": 1299,
             "act-price": 2099
@@ -3968,7 +3495,7 @@
             "prod_id": "idols_1783000000000_19",
             "name": "Handcrafted Side Plank Yoga Lady with Cats Polyresin Decorative Showpiece",
             "title": "Handcrafted Side Plank Yoga Lady with Cats Polyresin Decorative Showpiece",
-            "image": "/products/idols/handcrafted_side_plank_yoga_lady_with_cats_polyresin_decorative_showpiece.png",
+            "image": "/products/idols/Handcrafted Side Plank Yoga Lady with Cats Polyresin Decorative Showpiece.png",
             "description": "Whimsical and charming polyresin showpiece of a yoga lady in a side plank pose accompanied by adorable playful cats. Handcrafted with vibrant colors and fine detailing. A delightful decor accent for yoga studios, living rooms, and gifting to yoga enthusiasts.",
             "price": 699,
             "act-price": 1149
@@ -3978,7 +3505,7 @@
             "prod_id": "idols_1783000000000_20",
             "name": "Polyresin Yoga Lady and Playful Cats Decorative Figurine Showpiece",
             "title": "Polyresin Yoga Lady and Playful Cats Decorative Figurine Showpiece",
-            "image": "/products/idols/polyresin_yoga_lady_and_playful_cats_decorative_figurine_showpiece.png",
+            "image": "/products/idols/Polyresin Yoga Lady and Playful Cats Decorative Figurine Showpiece.png",
             "description": "Charming polyresin figurine of a graceful yoga lady surrounded by playful cats. Hand-painted with warm, vibrant tones and expressive detailing. A joyful and unique decorative piece perfect for yoga studios, shelves, desktops, and gifting to cat and yoga lovers alike.",
             "price": 649,
             "act-price": 1099
@@ -3988,7 +3515,7 @@
             "prod_id": "idols_1783000000000_21",
             "name": "Premium Polyresin King Pigeon Yoga Pose Lady Figurine Decorative Showpiece",
             "title": "Premium Polyresin King Pigeon Yoga Pose Lady Figurine Decorative Showpiece",
-            "image": "/products/idols/premium_polyresin_king_pigeon_yoga_pose_lady_figurine_decorative_showpiece.png",
+            "image": "/products/idols/Premium Polyresin King Pigeon Yoga Pose Lady Figurine Decorative Showpiece.png",
             "description": "Elegant polyresin figurine of a lady in the graceful King Pigeon yoga pose. Expertly crafted with premium finishing and fluid form. A sophisticated decor piece celebrating mindfulness and flexibility. Ideal for yoga studios, wellness spaces, home shelves, and gifting.",
             "price": 749,
             "act-price": 1249
@@ -3998,7 +3525,7 @@
             "prod_id": "idols_1783000000000_22",
             "name": "Cute Polyresin Poodle Dog Figurine with Welcome Bone Sign",
             "title": "Cute Polyresin Poodle Dog Figurine with Welcome Bone Sign",
-            "image": "/products/idols/cute_polyresin_poodle_dog_figurine_with_welcome_bone_sign.png",
+            "image": "/products/idols/Cute Polyresin Poodle Dog Figurine with Welcome Bone Sign.png",
             "description": "Adorable polyresin poodle dog figurine holding a charming welcome bone sign. Expertly crafted with lifelike fur detailing and warm colors. A delightful home entrance decor piece and a perfect gift for dog lovers, pet owners, and anyone who loves cute decorative accents.",
             "price": 599,
             "act-price": 999
@@ -4008,7 +3535,7 @@
             "prod_id": "idols_1783000000000_23",
             "name": "Realistic Lifelike Sitting Irish Setter Dog Polyresin Figurine Showpiece",
             "title": "Realistic Lifelike Sitting Irish Setter Dog Polyresin Figurine Showpiece",
-            "image": "/products/idols/realistic_lifelike_sitting_irish_setter_dog_polyresin_figurine_showpiece.png",
+            "image": "/products/idols/Realistic Lifelike Sitting Irish Setter Dog Polyresin Figurine Showpiece.png",
             "description": "Strikingly realistic polyresin figurine of a sitting Irish Setter dog with lifelike fur texture and expressive features. Crafted with premium materials and detailed hand-painting. A wonderful home decor accent and a heartfelt gift for dog lovers and pet enthusiasts.",
             "price": 799,
             "act-price": 1299
@@ -4018,7 +3545,7 @@
             "prod_id": "idols_1783000000000_24",
             "name": "Modern Astronaut Figurine with Golden Serving Tray Key Holder Showpiece",
             "title": "Modern Astronaut Figurine with Golden Serving Tray Key Holder Showpiece",
-            "image": "/products/idols/modern_astronaut_figurine_with_golden_serving_tray_key_holder_showpiece.png",
+            "image": "/products/idols/Modern Astronaut Figurine with Golden Serving Tray Key Holder Showpiece.png",
             "description": "Quirky and modern astronaut figurine holding a golden serving tray — a functional showpiece that doubles as a key holder or desk organizer. Perfect for contemporary and minimal home decor, office spaces, and as a fun and creative gift for space enthusiasts.",
             "price": 699,
             "act-price": 1149
@@ -4028,7 +3555,7 @@
             "prod_id": "idols_1783000000000_25",
             "name": "Modern Rocker Astronaut Playing Guitar Decorative Polyresin Figurine Showpiece",
             "title": "Modern Rocker Astronaut Playing Guitar Decorative Polyresin Figurine Showpiece",
-            "image": "/products/idols/modern_rocker_astronaut_playing_guitar_decorative_polyresin_figurine_showpiece.png",
+            "image": "/products/idols/Modern Rocker Astronaut Playing Guitar Decorative Polyresin Figurine Showpiece.png",
             "description": "Fun and imaginative polyresin showpiece of an astronaut rocking out on a guitar. A playful fusion of space exploration and music culture. The vibrant colors and quirky character make it a unique statement decor piece for homes, offices, music rooms, and gifting.",
             "price": 749,
             "act-price": 1249
@@ -4038,7 +3565,7 @@
             "prod_id": "idols_1783000000000_26",
             "name": "Traditional Handcrafted Rajasthani Musician Man Playing Veena Polyresin Figurine",
             "title": "Traditional Handcrafted Rajasthani Musician Man Playing Veena Polyresin Figurine",
-            "image": "/products/idols/traditional_handcrafted_rajasthani_musician_man_playing_veena_polyresin_figurine.png",
+            "image": "/products/idols/Traditional Handcrafted Rajasthani Musician Man Playing Veena Polyresin Figurine.png",
             "description": "Beautifully crafted polyresin figurine of a traditional Rajasthani musician man playing the Veena. Vibrant ethnic colors and intricate traditional costume detailing celebrate India's rich folk music heritage. A stunning decor piece for homes, cultural enthusiasts, and gifting.",
             "price": 649,
             "act-price": 1099
@@ -4048,7 +3575,7 @@
             "prod_id": "idols_1783000000000_27",
             "name": "Traditional Handcrafted Rajasthani Sitting Hookah Man Decorative Showpiece Figurine",
             "title": "Traditional Handcrafted Rajasthani Sitting Hookah Man Decorative Showpiece Figurine",
-            "image": "/products/idols/traditional_handcrafted_rajasthani_sitting_hookah_man_decorative_showpiece_figurine.png",
+            "image": "/products/idols/Traditional Handcrafted Rajasthani Sitting Hookah Man Decorative Showpiece Figurine.png",
             "description": "Charming handcrafted polyresin figurine of a traditionally dressed Rajasthani man leisurely smoking a hookah. Vibrant ethnic colors and authentic costume detailing bring folk culture to life. A wonderful ethnic decor accent for homes, offices, and as a novelty gift.",
             "price": 599,
             "act-price": 999
@@ -4058,7 +3585,7 @@
             "prod_id": "idols_1783000000000_28",
             "name": "Traditional Polyresin Rajasthani Lady Musician Playing Dholak Figurine Showpiece",
             "title": "Traditional Polyresin Rajasthani Lady Musician Playing Dholak Figurine Showpiece",
-            "image": "/products/idols/traditional_polyresin_rajasthani_lady_musician_playing_dholak_figurine_showpiece.png",
+            "image": "/products/idols/Traditional Polyresin Rajasthani Lady Musician Playing Dholak Figurine Showpiece.png",
             "description": "Vibrant polyresin figurine of a Rajasthani lady musician playing the dholak in full traditional attire. Exquisitely hand-painted with rich ethnic colors and fine detailing that capture the spirit of Rajasthani folk culture. Perfect for ethnic home decor, cultural spaces, and gifting.",
             "price": 649,
             "act-price": 1099
@@ -4068,7 +3595,7 @@
             "prod_id": "idols_1783000000000_29",
             "name": "Traditional Polyresin Rajasthani Village Couple Churning Buttermilk Decorative Showpiece",
             "title": "Traditional Polyresin Rajasthani Village Couple Churning Buttermilk Decorative Showpiece",
-            "image": "/products/idols/traditional_polyresin_rajasthani_village_couple_churning_buttermilk_decorative_showpiece.png",
+            "image": "/products/idols/Traditional Polyresin Rajasthani Village Couple Churning Buttermilk Decorative Showpiece.png",
             "description": "Heartwarming polyresin showpiece depicting a traditional Rajasthani village couple together churning buttermilk. Richly detailed traditional attire, vibrant colors, and authentic scene composition celebrate rural Indian life and heritage. A charming decor piece and a meaningful cultural gift.",
             "price": 799,
             "act-price": 1299
@@ -4077,1009 +3604,5 @@
       }
     ],
     "stock": 50
-  },
-  {
-    "name": "Ceramic Pots",
-    "subcategories": [
-      {
-        "name": "Ceramic Pots",
-        "images": [
-          {
-            "prod_id": "ceramic_1782994471251",
-            "id": "ceramic_1782994471251",
-            "name": "White Ceramic Footed Urn Planter",
-            "title": "White Ceramic Footed Urn Planter",
-            "image": "/products/ceramic_pots/white_ceramic_footed_urn_planter.png",
-            "description": "Elegant white ceramic urn planter with lattice and cutout details, perfect for a classic look.",
-            "price": 7850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471252",
-            "id": "ceramic_1782994471252",
-            "name": "White Ceramic Two-Handled Classic Urn",
-            "title": "White Ceramic Two-Handled Classic Urn",
-            "image": "/products/ceramic_pots/white_ceramic_two_handled_classic_urn.png",
-            "description": "Small white ceramic urn planter featuring two handles and decorative cutouts.",
-            "price": 6850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471253",
-            "id": "ceramic_1782994471253",
-            "name": "Grey Ribbed Footed Ceramic Planter",
-            "title": "Grey Ribbed Footed Ceramic Planter",
-            "image": "/products/ceramic_pots/grey_ribbed_footed_ceramic_planter.png",
-            "description": "Tall grey ceramic pot featuring a ribbed body and an ornate lattice upper rim.",
-            "price": 8500,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471254",
-            "id": "ceramic_1782994471254",
-            "name": "White Fluted Ceramic Cup Planter",
-            "title": "White Fluted Ceramic Cup Planter",
-            "image": "/products/ceramic_pots/white_fluted_ceramic_cup_planter.png",
-            "description": "A simple and elegant white fluted ceramic pot shaped like a cup.",
-            "price": 3850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471255",
-            "id": "ceramic_1782994471255",
-            "name": "Orange Wavy Textured Ceramic Pot",
-            "title": "Orange Wavy Textured Ceramic Pot",
-            "image": "/products/ceramic_pots/orange_wavy_textured_ceramic_pot.png",
-            "description": "Vibrant orange ceramic pot with a unique wavy, wrinkled texture.",
-            "price": 2200,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471256",
-            "id": "ceramic_1782994471256",
-            "name": "Shiny Gold Ceramic Rounded Planter",
-            "title": "Shiny Gold Ceramic Rounded Planter",
-            "image": "/products/ceramic_pots/shiny_gold_ceramic_rounded_planter.png",
-            "description": "A luxurious shiny gold/brass finished rounded ceramic planter.",
-            "price": 7450,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471257",
-            "id": "ceramic_1782994471257",
-            "name": "Cream Delft Blue Floral Ceramic Pot",
-            "title": "Cream Delft Blue Floral Ceramic Pot",
-            "image": "/products/ceramic_pots/cream_delft_blue_floral_ceramic_pot.png",
-            "description": "Classic cream ceramic pot adorned with dark blue floral and butterfly patterns in a Delft style.",
-            "price": 2500,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471259",
-            "id": "ceramic_1782994471259",
-            "name": "White Ceramic Planter with Painted Pink Flowers",
-            "title": "White Ceramic Planter with Painted Pink Flowers",
-            "image": "/products/ceramic_pots/white_ceramic_planter_with_painted_pink_flowers.png",
-            "description": "Beautiful white ceramic planter hand-painted with pink flowers, green leaves, and black horizontal lines.",
-            "price": 3650,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471260",
-            "id": "ceramic_1782994471260",
-            "name": "White Ceramic Pot with Black Floral Vine Design",
-            "title": "White Ceramic Pot with Black Floral Vine Design",
-            "image": "/products/ceramic_pots/white_ceramic_pot_with_black_floral_vine_design.png",
-            "description": "Striking white ceramic pot heavily decorated with intricate black floral and vine patterns.",
-            "price": 3650,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471261",
-            "id": "ceramic_1782994471261",
-            "name": "Black Ceramic Well-Shaped Novelty Planter",
-            "title": "Black Ceramic Well-Shaped Novelty Planter",
-            "image": "/products/ceramic_pots/black_ceramic_well_shaped_novelty_planter.png",
-            "description": "A unique dark black novelty planter shaped like a brick well.",
-            "price": 4000,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471262",
-            "id": "ceramic_1782994471262",
-            "name": "Royal Blue Textured Ceramic Pot",
-            "title": "Royal Blue Textured Ceramic Pot",
-            "image": "/products/ceramic_pots/royal_blue_textured_ceramic_pot.png",
-            "description": "Deep royal blue ceramic pot featuring a rich textured finish.",
-            "price": 1850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471263",
-            "id": "ceramic_1782994471263",
-            "name": "Two-Toned Light Brown Dripping Glaze Pot",
-            "title": "Two-Toned Light Brown Dripping Glaze Pot",
-            "image": "/products/ceramic_pots/two_toned_light_brown_dripping_glaze_pot.png",
-            "description": "Beautiful ceramic pot with a two-toned light brown dripping glaze over a cream base.",
-            "price": 1850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471264",
-            "id": "ceramic_1782994471264",
-            "name": "Yellow Sculptured Face Planter Open Mouth",
-            "title": "Yellow Sculptured Face Planter Open Mouth",
-            "image": "/products/ceramic_pots/yellow_sculptured_face_planter_open_mouth.png",
-            "description": "An artistic yellow ceramic sculptured face planter featuring a quirky open mouth design.",
-            "price": 1850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471265",
-            "id": "ceramic_1782994471265",
-            "name": "White Geometric Honeycomb Ceramic Pot",
-            "title": "White Geometric Honeycomb Ceramic Pot",
-            "image": "/products/ceramic_pots/white_geometric_honeycomb_ceramic_pot.png",
-            "description": "Modern white ceramic pot with a textured geometric honeycomb pattern.",
-            "price": 1150,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471266",
-            "id": "ceramic_1782994471266",
-            "name": "White Ornate Lattice Rectangular Planter",
-            "title": "White Ornate Lattice Rectangular Planter",
-            "image": "/products/ceramic_pots/white_ornate_lattice_rectangular_planter.png",
-            "description": "Elegant rectangular white ceramic planter on small feet, detailed with ornate lattice cutouts.",
-            "price": 785,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471267",
-            "id": "ceramic_1782994471267",
-            "name": "Yellow Sculptured Face Planter Wide Base",
-            "title": "Yellow Sculptured Face Planter Wide Base",
-            "image": "/products/ceramic_pots/yellow_sculptured_face_planter_wide_base.png",
-            "description": "A creative yellow ceramic sculptured face planter with a wide stable base.",
-            "price": 1200,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471268",
-            "id": "ceramic_1782994471268",
-            "name": "Woman Figurine Planter holding Pink Bowl",
-            "title": "Woman Figurine Planter holding Pink Bowl",
-            "image": "/products/ceramic_pots/woman_figurine_planter_holding_pink_bowl.png",
-            "description": "Charming figurine planter of a woman holding a large pink blossom bowl.",
-            "price": 1850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471269",
-            "id": "ceramic_1782994471269",
-            "name": "Orange Pig Figurine Planter Garden",
-            "title": "Orange Pig Figurine Planter Garden",
-            "image": "/products/ceramic_pots/orange_pig_figurine_planter_garden.png",
-            "description": "Adorable orange pig figurine planter holding a blue bowl that reads 'Garden'.",
-            "price": 1500,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471270",
-            "id": "ceramic_1782994471270",
-            "name": "Rabbit Figurine Planter holding Blue Bowl",
-            "title": "Rabbit Figurine Planter holding Blue Bowl",
-            "image": "/products/ceramic_pots/rabbit_figurine_planter_holding_blue_bowl.png",
-            "description": "Cute rabbit figurine in green overalls holding a blue bowl decorated with Asian characters.",
-            "price": 700,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471272",
-            "id": "ceramic_1782994471272",
-            "name": "Dark Brown Ceramic Pot with Yellow Ornate Rim",
-            "title": "Dark Brown Ceramic Pot with Yellow Ornate Rim",
-            "image": "/products/ceramic_pots/dark_brown_ceramic_pot_with_yellow_ornate_rim.png",
-            "description": "Rich dark brown ceramic pot accented by a wide yellow/gold ornate patterned rim.",
-            "price": 650,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471273",
-            "id": "ceramic_1782994471273",
-            "name": "Grey Footed Planter with Scroll Cutouts",
-            "title": "Grey Footed Planter with Scroll Cutouts",
-            "image": "/products/ceramic_pots/grey_footed_planter_with_scroll_cutouts.png",
-            "description": "Classic grey and white footed planter featuring beautiful leaf and scroll cutouts at the top rim.",
-            "price": 875,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471274",
-            "id": "ceramic_1782994471274",
-            "name": "Small White Ceramic Urn Planter with Cutouts",
-            "title": "Small White Ceramic Urn Planter with Cutouts",
-            "image": "/products/ceramic_pots/small_white_ceramic_urn_planter_with_cutouts.png",
-            "description": "A petite white ceramic urn-like footed planter with intricate cutouts around the top rim.",
-            "price": 845,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471275",
-            "id": "ceramic_1782994471275",
-            "name": "Grey Ribbed Planter with Lattice Top",
-            "title": "Grey Ribbed Planter with Lattice Top",
-            "image": "/products/ceramic_pots/grey_ribbed_planter_with_lattice_top.png",
-            "description": "Tall grey ceramic pot with vertical ribbed lines and a decorative lattice top rim.",
-            "price": 685,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471276",
-            "id": "ceramic_1782994471276",
-            "name": "Simple White Ceramic Fluted Pot",
-            "title": "Simple White Ceramic Fluted Pot",
-            "image": "/products/ceramic_pots/simple_white_ceramic_fluted_pot.png",
-            "description": "Minimalist white ceramic pot with vertical fluting for a clean, modern aesthetic.",
-            "price": 1150,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471277",
-            "id": "ceramic_1782994471277",
-            "name": "Vibrant Orange Wrinkled Ceramic Pot",
-            "title": "Vibrant Orange Wrinkled Ceramic Pot",
-            "image": "/products/ceramic_pots/vibrant_orange_wrinkled_ceramic_pot.png",
-            "description": "Eye-catching vibrant orange ceramic pot featuring a heavily textured wrinkled surface.",
-            "price": 850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471278",
-            "id": "ceramic_1782994471278",
-            "name": "Shiny Brass Finish Rounded Ceramic Pot",
-            "title": "Shiny Brass Finish Rounded Ceramic Pot",
-            "image": "/products/ceramic_pots/shiny_brass_finish_rounded_ceramic_pot.png",
-            "description": "A stunning rounded ceramic pot with a highly reflective shiny brass finish.",
-            "price": 585,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471279",
-            "id": "ceramic_1782994471279",
-            "name": "Cream Delft Blue Butterfly Ceramic Pot",
-            "title": "Cream Delft Blue Butterfly Ceramic Pot",
-            "image": "/products/ceramic_pots/cream_delft_blue_butterfly_ceramic_pot.png",
-            "description": "Cream-colored ceramic pot featuring classic Delft blue floral and butterfly designs.",
-            "price": 685,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471280",
-            "id": "ceramic_1782994471280",
-            "name": "White Ceramic Planter Painted Pink Flowers with Saucer",
-            "title": "White Ceramic Planter Painted Pink Flowers with Saucer",
-            "image": "/products/ceramic_pots/white_ceramic_planter_painted_pink_flowers_with_saucer.png",
-            "description": "White ceramic pot with a built-in saucer, decorated with hand-painted pink flowers and black lines.",
-            "price": 545,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471281",
-            "id": "ceramic_1782994471281",
-            "name": "White Ceramic Pot Intricate Black Florals",
-            "title": "White Ceramic Pot Intricate Black Florals",
-            "image": "/products/ceramic_pots/white_ceramic_pot_intricate_black_florals.png",
-            "description": "Elegant white ceramic pot covered in intricate, dense black floral and vine patterns.",
-            "price": 585,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471282",
-            "id": "ceramic_1782994471282",
-            "name": "Black Ceramic Well Novelty Planter",
-            "title": "Black Ceramic Well Novelty Planter",
-            "image": "/products/ceramic_pots/black_ceramic_well_novelty_planter.png",
-            "description": "A distinctive black ceramic novelty planter designed to look like a brick well or small structure.",
-            "price": 385,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471283",
-            "id": "ceramic_1782994471283",
-            "name": "Large Orange Cup Shaped Planter",
-            "title": "Large Orange Cup Shaped Planter",
-            "image": "/products/ceramic_pots/large_orange_cup_shaped_planter.png",
-            "description": "A fun and quirky large orange ceramic planter shaped like an oversized mug or cup.",
-            "price": 650,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471285",
-            "id": "ceramic_1782994471285",
-            "name": "Grey Aztec Pattern Ceramic Pot",
-            "title": "Grey Aztec Pattern Ceramic Pot",
-            "image": "/products/ceramic_pots/grey_aztec_pattern_ceramic_pot.png",
-            "description": "Grey ceramic pot featuring geometric tribal/aztec patterns with a contrasting tan base.",
-            "price": 850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471286",
-            "id": "ceramic_1782994471286",
-            "name": "Light Blue Speckled Pot with Grain Stalks",
-            "title": "Light Blue Speckled Pot with Grain Stalks",
-            "image": "/products/ceramic_pots/light_blue_speckled_pot_with_grain_stalks.png",
-            "description": "Serene light blue speckled ceramic pot painted with white grain stalks.",
-            "price": 850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471287",
-            "id": "ceramic_1782994471287",
-            "name": "Black Dimpled Ceramic Pot with Twine Bow",
-            "title": "Black Dimpled Ceramic Pot with Twine Bow",
-            "image": "/products/ceramic_pots/black_dimpled_ceramic_pot_with_twine_bow.png",
-            "description": "Textured black dimpled ceramic pot beautifully tied with a simple tan twine bow.",
-            "price": 215,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471288",
-            "id": "ceramic_1782994471288",
-            "name": "Shallow Brown Pot with Webbed Pattern",
-            "title": "Shallow Brown Pot with Webbed Pattern",
-            "image": "/products/ceramic_pots/shallow_brown_pot_with_webbed_pattern.png",
-            "description": "Wide and shallow brown ceramic pot featuring an intricate crackle or webbed light tan pattern.",
-            "price": 850,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471289",
-            "id": "ceramic_1782994471289",
-            "name": "Bright Red Ceramic Pot with Gold Rim and Saucer",
-            "title": "Bright Red Ceramic Pot with Gold Rim and Saucer",
-            "image": "/products/ceramic_pots/bright_red_ceramic_pot_with_gold_rim_and_saucer.png",
-            "description": "A stunning bright red ceramic pot featuring a wide metallic gold rim and a matching red and gold saucer.",
-            "price": 2150,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471291",
-            "id": "ceramic_1782994471291",
-            "name": "Shallow Blue Floral Ceramic Bowl Planter",
-            "title": "Shallow Blue Floral Ceramic Bowl Planter",
-            "image": "/products/ceramic_pots/shallow_blue_floral_ceramic_bowl_planter.png",
-            "description": "A wide, shallow flat ceramic bowl planter with intricate blue floral and lotus patterns on the exterior.",
-            "price": 985,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471292",
-            "id": "ceramic_1782994471292",
-            "name": "Olive Green Dimpled Polka Dot Pot",
-            "title": "Olive Green Dimpled Polka Dot Pot",
-            "image": "/products/ceramic_pots/olive_green_dimpled_polka_dot_pot.png",
-            "description": "Earthy olive green ceramic pot featuring a dimpled, polka-dot-like texture.",
-            "price": 450,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471293",
-            "id": "ceramic_1782994471293",
-            "name": "White Ceramic Pot with Geometric Diamonds and Fluting",
-            "title": "White Ceramic Pot with Geometric Diamonds and Fluting",
-            "image": "/products/ceramic_pots/white_ceramic_pot_with_geometric_diamonds_and_fluting.png",
-            "description": "Sophisticated white ceramic pot with a geometric black diamond pattern on the top and vertical fluting on the bottom.",
-            "price": 750,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471294",
-            "id": "ceramic_1782994471294",
-            "name": "Dark Blue Fluted Ceramic Pot with Gold Interior",
-            "title": "Dark Blue Fluted Ceramic Pot with Gold Interior",
-            "image": "/products/ceramic_pots/dark_blue_fluted_ceramic_pot_with_gold_interior.png",
-            "description": "Elegant dark blue fluted and ribbed ceramic pot with a striking metallic gold interior.",
-            "price": 160,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471295",
-            "id": "ceramic_1782994471295",
-            "name": "Colorful Hindu Temple Shrine Ceramic Planter",
-            "title": "Colorful Hindu Temple Shrine Ceramic Planter",
-            "image": "/products/ceramic_pots/colorful_hindu_temple_shrine_ceramic_planter.png",
-            "description": "A small, colorful orange and blue square ceramic piece shaped like a traditional Hindu temple, featuring Swastika and Om symbols.",
-            "price": 150,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471296",
-            "id": "ceramic_1782994471296",
-            "name": "Light Brown Ceramic Pot with Dark Brown Dripping Glaze",
-            "title": "Light Brown Ceramic Pot with Dark Brown Dripping Glaze",
-            "image": "/products/ceramic_pots/light_brown_ceramic_pot_with_dark_brown_dripping_glaze.png",
-            "description": "Rounded ceramic pot with a light brown ribbed lower half and a glossy dark brown dripping glaze on top.",
-            "price": 865,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471298",
-            "id": "ceramic_1782994471298",
-            "name": "Tall Orange Fluted Pot with Brown Dripping Glaze",
-            "title": "Tall Orange Fluted Pot with Brown Dripping Glaze",
-            "image": "/products/ceramic_pots/tall_orange_fluted_pot_with_brown_dripping_glaze.png",
-            "description": "A tall cylindrical ceramic pot in bright orange with deep vertical flutes and a dark brown dripping glaze near the top edge.",
-            "price": 215,
-            "act-price": 0
-          },
-          {
-            "prod_id": "ceramic_1782994471299",
-            "id": "ceramic_1782994471299",
-            "name": "Tall Olive Green Ceramic Pot with Carved Texture",
-            "title": "Tall Olive Green Ceramic Pot with Carved Texture",
-            "image": "/products/ceramic_pots/tall_olive_green_ceramic_pot_with_carved_texture.png",
-            "description": "A tall cylindrical dark olive-green ceramic pot featuring an intricate overlapping wavy carved texture.",
-            "price": 215,
-            "act-price": 0
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "cat_id": "cat_16",
-    "name": "Artificial Plants",
-    "subcategories": [
-      {
-        "sub_id": "sub_16_0",
-        "name": "Succulent",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_0_0",
-            "id": "artificial_1783160420738_0_0",
-            "name": "Ruby Red Faux Succulent",
-            "title": "Ruby Red Faux Succulent",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Red_Succulent.png",
-            "description": "Add a pop of color with this vibrant red artificial succulent. Perfect for modern desks and small spaces.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_0_1",
-            "id": "artificial_1783160420738_0_1",
-            "name": "Classic Green Faux Succulent",
-            "title": "Classic Green Faux Succulent",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Green_Succulent.png",
-            "description": "A lifelike green succulent that brings a touch of nature indoors without any of the maintenance.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_0_2",
-            "id": "artificial_1783160420738_0_2",
-            "name": "Spiky Haworthia Faux Succulent",
-            "title": "Spiky Haworthia Faux Succulent",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Haworthia_Succulent.png",
-            "description": "Featuring distinct textured leaves, this faux Haworthia adds a unique geometric touch to your decor.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_0_3",
-            "id": "artificial_1783160420738_0_3",
-            "name": "Modern Snake Plant",
-            "title": "Modern Snake Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Snake_Plant.png",
-            "description": "Sleek and vertical, this artificial snake plant is the ultimate modern decor accessory.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      },
-      {
-        "sub_id": "sub_16_1",
-        "name": "Foliage",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_1_0",
-            "id": "artificial_1783160420738_1_0",
-            "name": "Lush English Ivy",
-            "title": "Lush English Ivy",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_English_Ivy.png",
-            "description": "Bring classic elegance to your home with this dense, vibrant artificial English Ivy plant.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_1",
-            "id": "artificial_1783160420738_1_1",
-            "name": "Vibrant Wandering Jew",
-            "title": "Vibrant Wandering Jew",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Wandering_Jew.png",
-            "description": "Striking purple and green striped leaves make this faux plant a stunning centerpiece for any room.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_2",
-            "id": "artificial_1783160420738_1_2",
-            "name": "Desert Yucca Faux Plant",
-            "title": "Desert Yucca Faux Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Yucca_Plant.png",
-            "description": "Add architectural interest to your space with the spiky, structured leaves of this artificial Yucca.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_3",
-            "id": "artificial_1783160420738_1_3",
-            "name": "Lucky Bamboo Faux Plant",
-            "title": "Lucky Bamboo Faux Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Bamboo_Plant.png",
-            "description": "Bring good fortune and a zen vibe to your space with this lush, realistic artificial bamboo.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_4",
-            "id": "artificial_1783160420738_1_4",
-            "name": "Red-Edged Dracaena",
-            "title": "Red-Edged Dracaena",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Red_Edged_Dracaena_1.png",
-            "description": "Sleek, spiky leaves with subtle red margins give this artificial Dracaena a striking modern look.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_5",
-            "id": "artificial_1783160420738_1_5",
-            "name": "Faux Rubber Plant",
-            "title": "Faux Rubber Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Rubber_Plant.png",
-            "description": "Broad, glossy leaves give this artificial rubber plant a bold and realistic appearance.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_6",
-            "id": "artificial_1783160420738_1_6",
-            "name": "Tall Red-Edged Dracaena",
-            "title": "Tall Red-Edged Dracaena",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Red_Edged_Dracaena_2.png",
-            "description": "An elegant, taller variety of the classic Dracaena, perfect for adding vertical interest to your decor.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_7",
-            "id": "artificial_1783160420738_1_7",
-            "name": "Climbing English Ivy",
-            "title": "Climbing English Ivy",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_English_Ivy_Trellis.png",
-            "description": "Beautifully arranged artificial ivy climbing a small trellis for added vertical greenery.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_8",
-            "id": "artificial_1783160420738_1_8",
-            "name": "Climbing Pothos Plant",
-            "title": "Climbing Pothos Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Pothos_Trellis.png",
-            "description": "Lush variegated pothos leaves perfectly arranged on a stake for a vibrant, growing appearance.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_9",
-            "id": "artificial_1783160420738_1_9",
-            "name": "Spiky Spider Plant",
-            "title": "Spiky Spider Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Spider_Plant.png",
-            "description": "Bring dynamic texture to your decor with the arching, variegated leaves of this artificial spider plant.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_10",
-            "id": "artificial_1783160420738_1_10",
-            "name": "Lush Green Grass Plant",
-            "title": "Lush Green Grass Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Grass_Plant.png",
-            "description": "A simple, clean tuft of vibrant green artificial grass to add a refreshing touch to any modern space.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_11",
-            "id": "artificial_1783160420738_1_11",
-            "name": "English Ivy in Black Pot",
-            "title": "English Ivy in Black Pot",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_English_Ivy_Square_Pot.png",
-            "description": "A dense cluster of rich green ivy leaves set elegantly in a modern black square pot.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_12",
-            "id": "artificial_1783160420738_1_12",
-            "name": "Vibrant Faux Coleus",
-            "title": "Vibrant Faux Coleus",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Coleus.png",
-            "description": "Stunning pink and green patterned leaves make this artificial Coleus a colorful standout piece.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_13",
-            "id": "artificial_1783160420738_1_13",
-            "name": "Variegated Aglaonema",
-            "title": "Variegated Aglaonema",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Aglaonema.png",
-            "description": "Lush green leaves with elegant light green variegation, perfect for brightening up shaded corners.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_1_14",
-            "id": "artificial_1783160420738_1_14",
-            "name": "Striped Dracaena",
-            "title": "Striped Dracaena",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Dracaena_Fragrans.png",
-            "description": "A realistic faux Dracaena featuring long, elegant green leaves with striking yellow center stripes.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      },
-      {
-        "sub_id": "sub_16_2",
-        "name": "Flowering",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_2_0",
-            "id": "artificial_1783160420738_2_0",
-            "name": "Red Anthurium Faux Plant",
-            "title": "Red Anthurium Faux Plant",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Anthurium.png",
-            "description": "Enjoy the tropical beauty of bright red heart-shaped blooms year-round with this realistic Anthurium.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_2_1",
-            "id": "artificial_1783160420738_2_1",
-            "name": "Crimson Red Tulips",
-            "title": "Crimson Red Tulips",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Red_Tulips.png",
-            "description": "A beautiful bundle of lifelike red tulips wrapped in rustic twine for a fresh, springtime feel.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_2_2",
-            "id": "artificial_1783160420738_2_2",
-            "name": "Deep Plum Tulips",
-            "title": "Deep Plum Tulips",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Purple_Tulips.png",
-            "description": "Elegant and moody, these deep purple artificial tulips bring sophisticated color to your decor.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_2_3",
-            "id": "artificial_1783160420738_2_3",
-            "name": "Gradient Pink Tulips",
-            "title": "Gradient Pink Tulips",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Pink_Tulips.png",
-            "description": "Soft pink and white gradient petals make this artificial tulip bundle incredibly realistic and romantic.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_2_4",
-            "id": "artificial_1783160420738_2_4",
-            "name": "Sunny Yellow Tulips",
-            "title": "Sunny Yellow Tulips",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Yellow_Tulips.png",
-            "description": "Brighten up your day with this cheerful bundle of vibrant yellow artificial tulips.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      },
-      {
-        "sub_id": "sub_16_3",
-        "name": "Topiary",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_3_0",
-            "id": "artificial_1783160420738_3_0",
-            "name": "Boxwood Ball Topiary",
-            "title": "Boxwood Ball Topiary",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Boxwood_Ball_Topiary.png",
-            "description": "Perfectly manicured spherical boxwood topiary that brings formal garden elegance to your interior.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_3_1",
-            "id": "artificial_1783160420738_3_1",
-            "name": "Boxwood Cone Topiary",
-            "title": "Boxwood Cone Topiary",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Boxwood_Cone_Topiary.png",
-            "description": "A classic cone-shaped boxwood topiary set in a charming rustic pot for timeless appeal.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_3_2",
-            "id": "artificial_1783160420738_3_2",
-            "name": "Double Ball Boxwood Topiary",
-            "title": "Double Ball Boxwood Topiary",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Double_Ball_Topiary.png",
-            "description": "A sophisticated two-tier topiary design that adds a formal, manicured look to your home.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_3_3",
-            "id": "artificial_1783160420738_3_3",
-            "name": "Boxwood Oval Topiary",
-            "title": "Boxwood Oval Topiary",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Boxwood_Oval_Topiary.png",
-            "description": "An elegantly shaped oval topiary that combines formal styling with a relaxed, rustic base.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      },
-      {
-        "sub_id": "sub_16_4",
-        "name": "Bonsai",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_4_0",
-            "id": "artificial_1783160420738_4_0",
-            "name": "Zen Ficus Bonsai",
-            "title": "Zen Ficus Bonsai",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Ficus_Bonsai.png",
-            "description": "Create a peaceful atmosphere with this beautifully shaped artificial Ficus bonsai tree.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_4_1",
-            "id": "artificial_1783160420738_4_1",
-            "name": "Autumn Maple Bonsai",
-            "title": "Autumn Maple Bonsai",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Autumn_Maple_Bonsai.png",
-            "description": "Celebrate fall all year long with the fiery red and orange leaves of this realistic maple bonsai.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_4_2",
-            "id": "artificial_1783160420738_4_2",
-            "name": "Classic Pine Bonsai",
-            "title": "Classic Pine Bonsai",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Pine_Bonsai.png",
-            "description": "A timeless miniature pine tree design that adds a touch of traditional Japanese aesthetics to your home.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      },
-      {
-        "sub_id": "sub_16_5",
-        "name": "Tropical",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_5_0",
-            "id": "artificial_1783160420738_5_0",
-            "name": "Tropical Monstera Deliciosa",
-            "title": "Tropical Monstera Deliciosa",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Monstera_Deliciosa.png",
-            "description": "Embrace the jungle trend with the iconic split leaves of this beautiful faux Monstera.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_1",
-            "id": "artificial_1783160420738_5_1",
-            "name": "Mini Areca Palm",
-            "title": "Mini Areca Palm",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Areca_Palm.png",
-            "description": "Add a breezy, tropical feel to your desk or shelf with this vibrant miniature artificial palm.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_2",
-            "id": "artificial_1783160420738_5_2",
-            "name": "Braided Stem Croton",
-            "title": "Braided Stem Croton",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Braided_Croton.png",
-            "description": "A unique braided trunk and colorful foliage make this artificial Croton a true statement piece.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_3",
-            "id": "artificial_1783160420738_5_3",
-            "name": "Vibrant Croton Petra",
-            "title": "Vibrant Croton Petra",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Croton_Petra_1.png",
-            "description": "Liven up any space with the spectacular red, yellow, and green foliage of this realistic Croton.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_4",
-            "id": "artificial_1783160420738_5_4",
-            "name": "Lush Croton Petra",
-            "title": "Lush Croton Petra",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Croton_Petra_2.png",
-            "description": "A dense and bushy artificial Croton that brings a burst of tropical autumn colors indoors.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_5",
-            "id": "artificial_1783160420738_5_5",
-            "name": "Tropical Elephant Ear",
-            "title": "Tropical Elephant Ear",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Elephant_Ear_Plant.png",
-            "description": "Large, dramatic leaves make this artificial Elephant Ear plant a stunning focal point in any room.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_6",
-            "id": "artificial_1783160420738_5_6",
-            "name": "Gold Dust Croton",
-            "title": "Gold Dust Croton",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Gold_Dust_Croton.png",
-            "description": "Speckled with bright yellow spots, this faux Gold Dust Croton brings a sunny, tropical vibe.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_7",
-            "id": "artificial_1783160420738_5_7",
-            "name": "Croton Petra in Square Pot",
-            "title": "Croton Petra in Square Pot",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Croton_Petra_Square_Pot.png",
-            "description": "The fiery colors of a Croton Petra perfectly contrasted in a sleek black square planter.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_5_8",
-            "id": "artificial_1783160420738_5_8",
-            "name": "Gold Dust Croton Bush",
-            "title": "Gold Dust Croton Bush",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Gold_Dust_Croton_Round_Pot.png",
-            "description": "A dense, bushy faux Gold Dust Croton with bright yellow speckles in a warm brown pot.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      },
-      {
-        "sub_id": "sub_16_6",
-        "name": "Hanging",
-        "products": [
-          {
-            "prod_id": "artificial_1783160420738_6_0",
-            "id": "artificial_1783160420738_6_0",
-            "name": "Hanging Autumn Maple",
-            "title": "Hanging Autumn Maple",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Hanging_Maple_Leaves.png",
-            "description": "A gorgeous hanging arrangement of fiery autumn maple leaves in a rustic burlap cone.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_6_1",
-            "id": "artificial_1783160420738_6_1",
-            "name": "Hanging Wandering Jew",
-            "title": "Hanging Wandering Jew",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Hanging_Tradescantia.png",
-            "description": "Beautiful trailing striped green foliage cascading perfectly from a decorative burlap cone.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_6_2",
-            "id": "artificial_1783160420738_6_2",
-            "name": "Yellow Hanging Morning Glory",
-            "title": "Yellow Hanging Morning Glory",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Hanging_Yellow_Morning_Glory.png",
-            "description": "Bright yellow blooms and trailing ivy leaves set in a classic hanging wire basket with moss.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_6_3",
-            "id": "artificial_1783160420738_6_3",
-            "name": "White Hanging Bougainvillea",
-            "title": "White Hanging Bougainvillea",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Hanging_White_Bougainvillea.png",
-            "description": "Delicate white flowers and lush greenery cascade elegantly from this moss-lined hanging basket.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_6_4",
-            "id": "artificial_1783160420738_6_4",
-            "name": "Hanging Variegated Pothos",
-            "title": "Hanging Variegated Pothos",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Hanging_Pothos.png",
-            "description": "A classic trailing faux pothos plant with realistic variegation in a charming hanging wire basket.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          },
-          {
-            "prod_id": "artificial_1783160420738_6_5",
-            "id": "artificial_1783160420738_6_5",
-            "name": "Red Hanging Morning Glory",
-            "title": "Red Hanging Morning Glory",
-            "image": "/products/ARTIFICIAL PLANTS/Artificial_Hanging_Red_Morning_Glory.png",
-            "description": "Vibrant red blooms pop against trailing green ivy in this beautiful hanging basket arrangement.",
-            "price": 599,
-            "act-price": 0,
-            "stock": 50
-          }
-        ]
-      }
-    ]
   }
 ]
