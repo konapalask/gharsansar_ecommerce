@@ -34,7 +34,10 @@ export const useProducts = () => {
 // Fix CloudFront / URL issues
 const fixImageUrl = (url: string) => {
   if (!url) return "";
-  let fixed = url.replace(/^https?:\/\/https?:\/\//, "https://").replace(/([^:]\/)\/+/g, "$1");
+  let fixed = url
+    .replace(/^https?:\/\/https?:\/\//, "https://")
+    .replace(/\s/g, "%20")
+    .replace(/([^:]\/)\/+/g, "$1");
   
   // Enforce HTTPS for known live backend domains to prevent Mixed Content errors
   if (fixed.startsWith("http://backend.gharsansar.store") || fixed.startsWith("http://lx70r6zsef")) {
