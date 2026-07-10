@@ -14,7 +14,8 @@ app.use(cors({
     "http://localhost:5173",
     "https://gharsansar-ecommerce.vercel.app",
     "https://www.gharsansar.store",
-    "https://gharsansar.store"
+    "https://gharsansar.store",
+    "https://gharsansar-3c8e3.web.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true
