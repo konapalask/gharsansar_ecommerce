@@ -14,6 +14,7 @@ interface Product {
   category: string;
   subCategory: string;
   features?: string[];
+  stock?: number;
 }
 
 // Category type
@@ -80,6 +81,7 @@ const ProductsAdmin: React.FC = () => {
     category: "Idols", // default
     subCategory: "Premium Line",
     features: [] as string[],
+    stock: "50",
   });
 
   // Fetch categories and products
@@ -120,6 +122,7 @@ const ProductsAdmin: React.FC = () => {
               image: fixImageUrl(p.image),
               category: category.name,
               subCategory: sub.name,
+              stock: p.stock !== undefined ? p.stock : 50,
             });
           });
         });
@@ -178,6 +181,7 @@ const ProductsAdmin: React.FC = () => {
         params.append("description", form.description);
         params.append("category_name", form.category);
         params.append("subcategory_name", form.subCategory);
+        params.append("stock", form.stock);
 
         res = await fetch(`${API_BASE}/storage/upload/products`, {
           method: "PUT",
@@ -196,6 +200,7 @@ const ProductsAdmin: React.FC = () => {
         formData.append("price", form.price);
         formData.append("actual_price", form.actual_price || "0");
         formData.append("description", form.description);
+        formData.append("stock", form.stock);
         if (form.image instanceof File) {
           formData.append("image", form.image);
         }
@@ -224,6 +229,7 @@ const ProductsAdmin: React.FC = () => {
         category: categoriesData[0]?.name || "Idols",
         subCategory: categoriesData[0]?.subcategories[0]?.name || "Premium Line",
         features: [],
+        stock: "50",
       });
       setPreview(null);
       setExistingImageUrl(null);
@@ -252,6 +258,7 @@ const ProductsAdmin: React.FC = () => {
       category: p.category,
       subCategory: p.subCategory,
       features: p.features || [],
+      stock: p.stock !== undefined ? p.stock.toString() : "50",
     });
     setPreview(null);
     setExistingImageUrl(fixImageUrl(p.image));
@@ -294,6 +301,7 @@ const ProductsAdmin: React.FC = () => {
       category: categoriesData[0]?.name || "Idols",
       subCategory: categoriesData[0]?.subcategories[0]?.name || "Premium Line",
       features: [],
+      stock: "50",
     });
     setPreview(null);
     setExistingImageUrl(null);
@@ -449,18 +457,27 @@ const ProductsAdmin: React.FC = () => {
                   />
                 </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Price (₹) *
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Enter price"
-                    value={form.price}
-                    onChange={(e) => setForm({ ...form, price: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition"
-                    required
-                  />
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-1">Selling Price (₹)</label>
+                    <input
+                      type="number"
+                      placeholder="e.g., 999"
+                      value={form.price}
+                      onChange={(e) => setForm({ ...form, price: e.target.value })}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-bold text-gray-700 mb-1">Stock Quantity</label>
+                    <input
+                      type="number"
+                      placeholder="e.g., 50"
+                      value={form.stock}
+                      onChange={(e) => setForm({ ...form, stock: e.target.value })}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
                 </div>
               </div>
 
@@ -680,11 +697,20 @@ const ProductsAdmin: React.FC = () => {
                                           <div className="p-4">
                                             <h5 className="font-bold text-sm text-gray-800 mb-1 line-clamp-1">{p.title}</h5>
                                             <p className="text-xs text-gray-500 line-clamp-2 mb-3">{p.description}</p>
-                                            <div className="flex items-center gap-2 mb-4">
+                                            <div className="flex items-center gap-2 mb-2">
                                               <span className="text-lg font-bold text-blue-600">₹{p.price}</span>
                                               {p.actual_price && (
                                                 <span className="text-xs text-gray-400 line-through">₹{p.actual_price}</span>
                                               )}
+                                            </div>
+                                            <div className="mb-4">
+                                              <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                                                (p.stock || 0) > 10 ? "bg-green-100 text-green-700" :
+                                                (p.stock || 0) > 0 ? "bg-orange-100 text-orange-700" :
+                                                "bg-red-100 text-red-700"
+                                              }`}>
+                                                {(p.stock || 0) > 0 ? `${p.stock} in stock` : "Out of Stock"}
+                                              </span>
                                             </div>
                                             <div className="flex gap-2">
                                               <button

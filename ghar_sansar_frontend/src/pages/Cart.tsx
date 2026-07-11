@@ -19,7 +19,12 @@ const Cart: React.FC = () => {
     }
   };
 
-  const handleDecreaseQuantity = (itemId: string, currentQty: number, itemName: string) => {
+  const handleDecreaseQuantity = (itemId: string, currentQty: number, itemName: string, isReturnGift?: boolean) => {
+    if (isReturnGift && currentQty <= 50) {
+      toast.error(`Return gifts require a minimum order of 50.`);
+      return;
+    }
+    
     if (currentQty === 1) {
       const confirmed = window.confirm(`Are you sure you want to remove "${itemName}" from your cart?`);
       if (confirmed) {
@@ -29,6 +34,14 @@ const Cart: React.FC = () => {
     } else {
       updateQuantity(itemId, currentQty - 1);
     }
+  };
+
+  const handleIncreaseQuantity = (item: any) => {
+    if (item.stock !== undefined && item.quantity >= item.stock) {
+      toast.error(`Only ${item.stock} items left in stock`);
+      return;
+    }
+    updateQuantity(item.id, item.quantity + 1);
   };
 
   const handleCheckoutClick = (e: React.MouseEvent) => {
@@ -105,14 +118,14 @@ const Cart: React.FC = () => {
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2">
                       <button
-                        onClick={() => handleDecreaseQuantity(item.id, item.quantity, item.name)}
+                        onClick={() => handleDecreaseQuantity(item.id, item.quantity, item.name, item.isReturnGift)}
                         className="p-1 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                       >
                         <Minus className="w-4 h-4" />
                       </button>
                       <span className="w-12 text-center font-semibold">{item.quantity}</span>
                       <button
-                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                        onClick={() => handleIncreaseQuantity(item)}
                         className="p-1 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors"
                       >
                         <Plus className="w-4 h-4" />

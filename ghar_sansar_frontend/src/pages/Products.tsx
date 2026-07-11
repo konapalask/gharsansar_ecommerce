@@ -678,10 +678,10 @@ const ProductsPage = () => {
           </div>
           <div className="bg-white p-6 rounded-[20px] border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
             <div className="w-12 h-12 bg-luxury-warmGray text-luxury-gold rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <RefreshCw size={24} />
+              <Star size={24} />
             </div>
-            <h4 className="font-bold text-gray-900 text-sm mb-1">Easy Returns</h4>
-            <p className="text-xs text-gray-500">10-day return window</p>
+            <h4 className="font-bold text-gray-900 text-sm mb-1">Premium Quality</h4>
+            <p className="text-xs text-gray-500">100% genuine products</p>
           </div>
           <div className="bg-white p-6 rounded-[20px] border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:-translate-y-1 transition-transform duration-300">
             <div className="w-12 h-12 bg-luxury-warmGray text-luxury-gold rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">

@@ -687,7 +687,7 @@ app.post("/api/storage/upload", productUpload.single("image"), (req, res) => {
     }
 
     // Default product saving
-    const { category_name, subcategory_name, title, price, actual_price, description } = req.body;
+    const { category_name, subcategory_name, title, price, actual_price, description, stock } = req.body;
     const imagePath = req.file ? `/products/${req.file.filename}` : "/products/placeholder.jpg";
 
     const productsPath = path.join(__dirname, "public", "products.json");
@@ -725,7 +725,8 @@ app.post("/api/storage/upload", productUpload.single("image"), (req, res) => {
       price: parseInt(price) || 0,
       "act-price": parseInt(actual_price) || 0,
       description: description || "",
-      image: imagePath
+      image: imagePath,
+      stock: stock !== undefined ? parseInt(stock) : 50
     };
 
     subcategory[itemKey].push(newProduct);

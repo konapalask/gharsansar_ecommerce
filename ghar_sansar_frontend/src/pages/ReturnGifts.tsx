@@ -451,7 +451,7 @@ function CatalogCard({ product, onAdd, navigate }: any) {
   const handleAction = (e: React.MouseEvent, action: string) => {
     e.stopPropagation();
     if (action === 'cart') {
-      onAdd({ ...product, quantity: 50, minQty: 50 });
+      onAdd({ ...product, quantity: 50, minQty: 50, isReturnGift: true, stock: product.stock });
       toast.success(`Added 50 x ${product.title} to cart`);
     } else {
       toast(`${action} clicked`);
@@ -460,11 +460,17 @@ function CatalogCard({ product, onAdd, navigate }: any) {
 
   return (
     <div
-      className="group flex flex-col h-full cursor-pointer"
+      className="bg-white rounded-xl sm:rounded-[20px] shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-500 p-2.5 sm:p-4 cursor-pointer group flex flex-col relative h-full"
       onClick={() => navigate(`/product/${product._id || product.id || product.name}`, { state: { ...product, isReturnGift: true } })}
     >
-      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[20px] bg-[#F0F2F5] mb-4">
-        <CMSImage src={product.image || product.images?.[0]} alt={product.title} className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" />
+      <div className="absolute top-3 right-3 sm:top-6 sm:right-6 z-20 flex flex-col gap-2 opacity-100 sm:opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-x-0 sm:translate-x-2 sm:group-hover:translate-x-0">
+        <button className="w-7 h-7 sm:w-8 sm:h-8 bg-white/90 backdrop-blur rounded-full flex items-center justify-center shadow-md text-gray-600 hover:text-red-500 hover:bg-white transition-colors">
+          <Heart size={14} className="sm:w-4 sm:h-4" />
+        </button>
+      </div>
+
+      <div className="relative w-full aspect-[4/5] bg-[#fdfdfc] rounded-lg sm:rounded-2xl overflow-hidden flex items-center justify-center p-2 sm:p-6 mb-3 sm:mb-5 border border-gray-50">
+        <CMSImage src={product.image || product.images?.[0]} alt={product.title} className="w-full h-full object-contain mix-blend-multiply transition-transform duration-700 ease-out group-hover:scale-110" />
 
         <div className="absolute inset-x-3 bottom-3 flex gap-2 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500 z-20">
           <button onClick={(e) => handleAction(e, 'quickview')} className="flex-1 bg-white/95 backdrop-blur-sm text-luxury-charcoal text-[10px] font-bold uppercase tracking-widest py-3 rounded-xl shadow-lg hover:bg-luxury-charcoal hover:text-white transition-colors text-center">
@@ -477,14 +483,16 @@ function CatalogCard({ product, onAdd, navigate }: any) {
       </div>
 
       <div className="flex flex-col flex-grow px-1">
-        <div className="text-[8px] sm:text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">
+        <span className="text-[8px] sm:text-[9px] uppercase font-bold tracking-widest text-luxury-gold mb-1">
           {product.category?.replace('_', ' ') || 'Return Gift'}
-        </div>
-        <h3 className="font-serif text-gray-900 text-xs sm:text-lg mb-1 leading-snug group-hover:text-[#6B21A8] transition-colors line-clamp-2 sm:line-clamp-1">
+        </span>
+        
+        <h3 className="text-xs sm:text-sm font-bold text-luxury-charcoal mb-1.5 sm:mb-2 line-clamp-2 leading-tight group-hover:text-luxury-gold transition-colors">
           {product.title || product.name}
         </h3>
-        <div className="flex items-center justify-between mt-auto pt-2">
-          <span className="text-gray-900 font-bold text-sm sm:text-base">₹{product.price}</span>
+        
+        <div className="mt-auto pt-2 sm:pt-3 border-t border-gray-50 flex items-center justify-between">
+          <span className="text-sm sm:text-md font-extrabold text-luxury-charcoal">₹{product.price}</span>
         </div>
       </div>
     </div>

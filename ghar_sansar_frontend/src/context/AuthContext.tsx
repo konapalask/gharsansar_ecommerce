@@ -15,7 +15,7 @@ interface AuthContextType {
   isAuthenticated: boolean;
   user: User | null;
   loading: boolean;
-  login: (email: string, password: string) => Promise<boolean>;
+  login: (emailOrPhone: string, password?: string) => Promise<boolean>;
   register: (name: string, email: string, password: string, phone?: string) => Promise<boolean>;
   loginWithGoogle: () => Promise<boolean>;
   logout: () => void;
@@ -90,9 +90,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const loginWithGoogle = async (): Promise<boolean> => {
     try {
+      const { signInWithPopup } = await import("firebase/auth");
+      const { auth, googleProvider } = await import("../firebase");
+      
+      const result = await signInWithPopup(auth, googleProvider);
+      const fbUser = result.user;
+
       const res = await axios.post(`${BACKEND_URL}/auth/google`, {
-        email: "googleuser@example.com",
-        name: "Google User"
+        email: fbUser.email,
+        name: fbUser.displayName || "Google User"
       });
 
       if (res.data.success && res.data.user) {
@@ -104,6 +110,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return false;
     } catch (err) {
       console.error("Google login error:", err);
+      alert("Failed to login with Google.");
       return false;
     }
   };

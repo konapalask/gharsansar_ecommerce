@@ -6,11 +6,14 @@ interface CartItem {
   price: number;
   quantity: number;
   image: string;
+  isReturnGift?: boolean;
+  minQty?: number;
+  stock?: number;
 }
 
 interface CartContextType {
   items: CartItem[];
-  addToCart: (item: Omit<CartItem, 'quantity'>) => void;
+  addToCart: (item: Omit<CartItem, 'quantity'> & { quantity?: number }) => void;
   removeFromCart: (id: string) => void;
   updateQuantity: (id: string, quantity: number) => void;
   clearCart: () => void;
@@ -42,15 +45,22 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.setItem('cart', JSON.stringify(items));
   }, [items]);
 
-  const addToCart = (item: Omit<CartItem, 'quantity'>) => {
+  const addToCart = (item: Omit<CartItem, 'quantity'> & { quantity?: number }) => {
     setItems(prev => {
       const existing = prev.find(i => i.id === item.id);
+      
+      const qtyToAdd = item.quantity || (item.isReturnGift ? 50 : 1);
+      
       if (existing) {
+        let newQty = existing.quantity + qtyToAdd;
+        if (existing.stock !== undefined && newQty > existing.stock) {
+          newQty = existing.stock;
+        }
         return prev.map(i => 
-          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+          i.id === item.id ? { ...i, quantity: newQty } : i
         );
       }
-      return [...prev, { ...item, quantity: 1 }];
+      return [...prev, { ...item, quantity: qtyToAdd }];
     });
   };
 
@@ -59,12 +69,20 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const updateQuantity = (id: string, quantity: number) => {
-    if (quantity <= 0) {
-      removeFromCart(id);
-      return;
-    }
     setItems(prev => 
-      prev.map(i => i.id === id ? { ...i, quantity } : i)
+      prev.map(i => {
+        if (i.id === id) {
+          let newQty = quantity;
+          if (i.isReturnGift && newQty < 50 && newQty > 0) {
+            newQty = 50; // enforce min 50 unless removing (quantity 0 handles removal separately in Cart)
+          }
+          if (i.stock !== undefined && newQty > i.stock) {
+            newQty = i.stock;
+          }
+          return { ...i, quantity: newQty };
+        }
+        return i;
+      })
     );
   };
 

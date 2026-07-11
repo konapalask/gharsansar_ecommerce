@@ -55,12 +55,82 @@ const ProductDetail: React.FC = () => {
 
   // States
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = useState(state?.isReturnGift ? 50 : 1);
   const [activeTab, setActiveTab] = useState("description");
   const [isWishlisted, setIsWishlisted] = useState(false);
   const [zoomPos, setZoomPos] = useState({ x: 0, y: 0 });
   const [isZooming, setIsZooming] = useState(false);
   const [activeLightboxImage, setActiveLightboxImage] = useState<string | null>(null);
+  const [pincode, setPincode] = useState(localStorage.getItem("user_pincode") || "");
+  const [savedArea, setSavedArea] = useState(localStorage.getItem("user_area") || "");
+  const [deliveryFee, setDeliveryFee] = useState<number | null>(
+    localStorage.getItem("user_pincode") 
+      ? /^5[0-3]/.test(localStorage.getItem("user_pincode") || "") ? 99 : 149
+      : null
+  );
+  const [isCheckingPincode, setIsCheckingPincode] = useState(false);
+
+  const checkPincode = async () => {
+    if (pincode.length !== 6 || !/^\d+$/.test(pincode)) {
+      toast.error("Please enter a valid 6-digit pincode");
+      return;
+    }
+    
+    setIsCheckingPincode(true);
+    try {
+      const res = await fetch(`https://api.postalpincode.in/pincode/${pincode}`);
+      const data = await res.json();
+      
+      let areaName = "India";
+      if (data && data[0] && data[0].Status === "Success") {
+        const postOffice = data[0].PostOffice[0];
+        areaName = `${postOffice.District}, ${postOffice.State}`;
+      }
+      
+      const fee = /^5[0-3]/.test(pincode) ? 99 : 149;
+      setDeliveryFee(fee);
+      setSavedArea(areaName);
+      
+      localStorage.setItem("user_pincode", pincode);
+      localStorage.setItem("user_area", areaName);
+      
+      toast.success(`Delivery to ${areaName} (₹${fee})`);
+    } catch (err) {
+      // Fallback
+      const fee = /^5[0-3]/.test(pincode) ? 99 : 149;
+      setDeliveryFee(fee);
+      setSavedArea("India");
+      localStorage.setItem("user_pincode", pincode);
+      localStorage.setItem("user_area", "India");
+      toast.success(`Delivery available! (₹${fee})`);
+    } finally {
+      setIsCheckingPincode(false);
+    }
+  };
+
+  const handleChangePincode = () => {
+    localStorage.removeItem("user_pincode");
+    localStorage.removeItem("user_area");
+    setDeliveryFee(null);
+    setSavedArea("");
+    setPincode("");
+  };
+
+  const handleDecreaseQuantity = () => {
+    if (state?.isReturnGift) {
+      setQuantity(Math.max(50, quantity - 1));
+    } else {
+      setQuantity(Math.max(1, quantity - 1));
+    }
+  };
+
+  const handleIncreaseQuantity = () => {
+    if (product?.stock !== undefined && quantity >= product.stock) {
+      toast.error(`Only ${product.stock} items left in stock`);
+      return;
+    }
+    setQuantity(quantity + 1);
+  };
 
   const deliveryDateString = useMemo(() => {
     const date = new Date();
@@ -258,14 +328,16 @@ const ProductDetail: React.FC = () => {
 
   const handleAddToCart = () => {
     if (!product) return;
-    for (let i = 0; i < quantity; i++) {
-      addToCart({
-        id: product.id,
-        name: product.title,
-        price: product.price,
-        image: product.image
-      });
-    }
+    addToCart({
+      id: product.id || product._id,
+      name: product.title || product.name,
+      price: product.price,
+      image: product.image || product.images?.[0],
+      quantity: quantity,
+      isReturnGift: state?.isReturnGift,
+      minQty: state?.isReturnGift ? 50 : 1,
+      stock: product.stock
+    });
     toast.success(`Added ${quantity} ${quantity > 1 ? 'items' : 'item'} to your cart!`);
   };
 
@@ -461,14 +533,72 @@ const ProductDetail: React.FC = () => {
                   <span className="text-xl font-bold text-gray-800">₹{product.price}</span>
                 </div>
 
-                <div className="flex items-center gap-3">
+                {product.stock !== undefined && (
+                  <div className="mt-2 flex items-center gap-2">
+                    <span className={`px-2.5 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider ${
+                      product.stock > 10 ? "bg-green-50 text-green-700 border border-green-200" :
+                      product.stock > 0 ? "bg-orange-50 text-orange-700 border border-orange-200" :
+                      "bg-red-50 text-red-700 border border-red-200"
+                    }`}>
+                      {product.stock > 0 ? `${product.stock} left in stock` : "Out of Stock"}
+                    </span>
+                  </div>
+                )}
+
+                {/* Pincode Checker */}
+                <div className="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-100">
+                  <span className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2 block">Delivery Location</span>
+                  
+                  {savedArea ? (
+                    <div className="flex items-center justify-between bg-white p-3 rounded-lg border border-gray-200">
+                      <div className="flex items-start gap-3">
+                        <Truck className="w-5 h-5 text-blue-600 mt-0.5" />
+                        <div>
+                          <p className="text-sm font-bold text-gray-800">{pincode}</p>
+                          <p className="text-xs text-gray-500">{savedArea}</p>
+                        </div>
+                      </div>
+                      <button 
+                        onClick={handleChangePincode}
+                        className="text-xs font-bold text-blue-600 hover:text-blue-800 transition"
+                      >
+                        Change
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="flex items-center gap-2">
+                      <input 
+                        type="text" 
+                        placeholder="Enter Pincode" 
+                        value={pincode}
+                        onChange={(e) => setPincode(e.target.value)}
+                        maxLength={6}
+                        className="flex-1 px-4 py-2 text-sm border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                        disabled={isCheckingPincode}
+                      />
+                      <button 
+                        onClick={checkPincode}
+                        disabled={isCheckingPincode}
+                        className="px-4 py-2 bg-luxury-charcoal text-white text-sm font-bold rounded-lg hover:bg-black transition-colors disabled:opacity-50"
+                      >
+                        {isCheckingPincode ? "Checking..." : "Check"}
+                      </button>
+                    </div>
+                  )}
+                </div>
+
+                <div className="flex items-center gap-3 mt-4">
                   <span className="text-xs font-bold text-gray-500 uppercase tracking-widest w-16">Delivery</span>
-                  <span className="text-sm font-bold text-green-600">+ ₹99 <span className="text-xs font-medium text-gray-400 ml-1">(Standard)</span></span>
+                  {deliveryFee !== null ? (
+                    <span className="text-sm font-bold text-green-600">+ ₹{deliveryFee} <span className="text-xs font-medium text-gray-400 ml-1">(Standard)</span></span>
+                  ) : (
+                    <span className="text-sm font-bold text-gray-400">Calculated after Pincode</span>
+                  )}
                 </div>
 
                 <div className="pt-3 border-t border-gray-100 flex items-center gap-3">
                   <span className="text-sm font-black text-gray-900 uppercase tracking-widest w-16">Total</span>
-                  <span className="text-4xl font-black text-luxury-charcoal">₹{product.price + 99}</span>
+                  <span className="text-4xl font-black text-luxury-charcoal">₹{(product.price * quantity) + (deliveryFee || 0)}</span>
                 </div>
 
                 {/* Delivery details card */}
@@ -489,19 +619,19 @@ const ProductDetail: React.FC = () => {
               </p>
 
               {/* Quantity Controls */}
-              <div className="mt-8 flex items-center space-x-4">
-                <span className="text-xs font-bold text-gray-500 uppercase tracking-wider">Quantity:</span>
-                <div className="flex items-center border border-gray-200 rounded-full bg-white px-2 py-1 shadow-sm">
+              <div className="flex items-center gap-4 bg-gray-50/80 p-1.5 rounded-2xl w-fit border border-gray-100 mt-8">
+                <span className="text-xs font-bold text-gray-500 uppercase tracking-wider px-3">Quantity:</span>
+                <div className="flex items-center bg-white rounded-xl shadow-sm border border-gray-100">
                   <button 
-                    onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-100 font-bold transition text-gray-600"
+                    onClick={handleDecreaseQuantity}
+                    className="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-luxury-charcoal hover:bg-gray-50 rounded-l-xl transition"
                   >
                     -
                   </button>
                   <span className="w-10 text-center font-bold text-sm text-gray-900">{quantity}</span>
                   <button 
-                    onClick={() => setQuantity(quantity + 1)}
-                    className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-100 font-bold transition text-gray-600"
+                    onClick={handleIncreaseQuantity}
+                    className="w-10 h-10 flex items-center justify-center text-gray-500 hover:text-luxury-charcoal hover:bg-gray-50 rounded-r-xl transition"
                   >
                     +
                   </button>
