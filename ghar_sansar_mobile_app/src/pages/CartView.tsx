@@ -24,7 +24,7 @@ const CartView: React.FC = () => {
       Alert.alert('Error', 'Please select at least one item to checkout.');
       return;
     }
-    Alert.alert('Checkout', `Checking out ${selectedCount} items for ₹${totalPrice}!`);
+    Alert.alert('Checkout', `Processing secure checkout for ${selectedCount} items. Total: ₹${totalPrice.toLocaleString()}`);
   };
 
   const handleShareCart = () => {
@@ -35,9 +35,9 @@ const CartView: React.FC = () => {
     <View style={styles.screen}>
       {/* Header Clear of Notch / Dynamic Island */}
       <View style={[styles.header, { paddingTop: Math.max(insets.top, 12) + 8 }]}>
-        <Text style={styles.title}>Cart</Text>
+        <Text style={styles.title}>S H O P P I N G  B A G</Text>
         <TouchableOpacity style={styles.iconBtn} activeOpacity={0.7}>
-          <Feather name="more-horizontal" size={22} color="#121212" />
+          <Feather name="more-vertical" size={20} color="#FFFFFF" />
         </TouchableOpacity>
       </View>
 
@@ -45,14 +45,15 @@ const CartView: React.FC = () => {
       <View style={styles.deliveryBar}>
         <View style={styles.deliveryLeft}>
           <View style={styles.pinDot} />
-          <Text style={styles.deliveryText}>92 High Street, London</Text>
+          <Text style={styles.deliveryText}>DELIVER TO: 92 HIGH STREET, LONDON</Text>
         </View>
         <Feather name="chevron-right" size={16} color="#8E8E93" />
       </View>
 
       {cart.length === 0 ? (
         <View style={styles.emptyCart}>
-          <Text style={styles.emptyText}>Your cart is empty</Text>
+          <Feather name="shopping-bag" size={48} color="#2A2A2A" style={{ marginBottom: 16 }} />
+          <Text style={styles.emptyText}>YOUR BAG IS EMPTY</Text>
         </View>
       ) : (
         <View style={styles.container}>
@@ -71,14 +72,14 @@ const CartView: React.FC = () => {
                 ]}>
                   {allSelected && <Feather name="check" size={12} color="#FFFFFF" />}
                 </View>
-                <Text style={styles.selectAllLabel}>Select all</Text>
+                <Text style={styles.selectAllLabel}>SELECT ALL</Text>
               </TouchableOpacity>
               <View style={styles.actionIcons}>
                 <TouchableOpacity style={styles.actionBtn} activeOpacity={0.7} onPress={handleShareCart}>
-                  <Feather name="share-2" size={18} color="#121212" />
+                  <Feather name="share-2" size={18} color="#FFFFFF" />
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.actionBtn} activeOpacity={0.7}>
-                  <Feather name="edit-3" size={18} color="#121212" />
+                  <Feather name="edit-3" size={18} color="#FFFFFF" />
                 </TouchableOpacity>
               </View>
             </View>
@@ -107,10 +108,10 @@ const CartView: React.FC = () => {
                   {/* Product details info & quantity adjustments */}
                   <View style={styles.itemInfo}>
                     <Text style={styles.itemTitle} numberOfLines={2}>
-                      {item.product.title}
+                      {item.product.title.toUpperCase()}
                     </Text>
                     <View style={styles.itemBottomRow}>
-                      <Text style={styles.itemPrice}>₹{item.product.price}</Text>
+                      <Text style={styles.itemPrice}>₹{item.product.price.toLocaleString()}</Text>
                       {/* Stepper controls */}
                       <View style={styles.stepper}>
                         <TouchableOpacity
@@ -136,8 +137,12 @@ const CartView: React.FC = () => {
 
           {/* Checkout Footer Bar */}
           <View style={styles.checkoutBar}>
+            <View style={styles.checkoutDetails}>
+              <Text style={styles.checkoutSubLabel}>TOTAL EXCL. TAXES</Text>
+              <Text style={styles.checkoutTotal}>₹{totalPrice.toLocaleString()}</Text>
+            </View>
             <TouchableOpacity style={styles.checkoutBtn} activeOpacity={0.8} onPress={handleCheckout}>
-              <Text style={styles.checkoutText}>Checkout</Text>
+              <Text style={styles.checkoutText}>SECURE CHECKOUT</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -149,26 +154,29 @@ const CartView: React.FC = () => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: '#F4F5F6',
+    backgroundColor: '#050505', // Deep Matte Black
   },
   container: {
     flex: 1,
   },
   listContent: {
-    paddingBottom: 110, // offsets checkout bar
+    paddingBottom: 130, // offsets checkout bar
   },
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingBottom: 12,
-    backgroundColor: '#FFFFFF',
+    paddingBottom: 16,
+    backgroundColor: '#050505',
+    borderBottomWidth: 1,
+    borderBottomColor: '#1A1A1A',
   },
   title: {
-    fontSize: 22,
-    fontWeight: '800',
-    color: '#121212',
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    letterSpacing: 2,
   },
   iconBtn: {
     justifyContent: 'center',
@@ -179,31 +187,27 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingVertical: 12,
-    backgroundColor: '#FFFFFF',
-    borderBottomLeftRadius: 24,
-    borderBottomRightRadius: 24,
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.02,
-    shadowRadius: 8,
-    elevation: 2,
+    paddingVertical: 14,
+    backgroundColor: '#0A0A0A',
+    borderBottomWidth: 1,
+    borderBottomColor: '#1A1A1A',
   },
   deliveryLeft: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 10,
   },
   pinDot: {
     width: 6,
     height: 6,
     borderRadius: 3,
-    backgroundColor: '#8E8E93',
+    backgroundColor: '#D5001C', // Porsche Red accent
   },
   deliveryText: {
-    fontSize: 12,
+    fontSize: 11,
     color: '#8E8E93',
     fontWeight: '600',
+    letterSpacing: 1,
   },
   emptyCart: {
     flex: 1,
@@ -211,47 +215,49 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   emptyText: {
-    fontWeight: 'bold',
+    fontWeight: '600',
     color: '#8E8E93',
-    fontSize: 14,
+    fontSize: 13,
+    letterSpacing: 2,
   },
   actionsBar: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingTop: 16,
-    paddingBottom: 10,
+    paddingTop: 20,
+    paddingBottom: 16,
   },
   selectAllWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 10,
   },
   checkbox: {
-    width: 20,
-    height: 20,
-    borderRadius: 6,
-    borderWidth: 2,
+    width: 22,
+    height: 22,
+    borderRadius: 4, // Sharper corners for a structured look
+    borderWidth: 1.5,
     alignItems: 'center',
     justifyContent: 'center',
   },
   checkboxChecked: {
-    backgroundColor: '#4CD964',
-    borderColor: '#4CD964',
+    backgroundColor: '#D5001C', // Porsche Red
+    borderColor: '#D5001C',
   },
   checkboxUnchecked: {
     backgroundColor: 'transparent',
-    borderColor: '#C4C4C6',
+    borderColor: '#333333',
   },
   selectAllLabel: {
-    fontSize: 13,
+    fontSize: 11,
     fontWeight: '700',
-    color: '#121212',
+    color: '#FFFFFF',
+    letterSpacing: 1,
   },
   actionIcons: {
     flexDirection: 'row',
-    gap: 12,
+    gap: 16,
   },
   actionBtn: {
     justifyContent: 'center',
@@ -259,78 +265,78 @@ const styles = StyleSheet.create({
   },
   itemsList: {
     paddingHorizontal: 20,
-    gap: 12,
+    gap: 16,
   },
   cartItemCard: {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 20,
-    padding: 12,
+    backgroundColor: '#111111', // Titanium Carbon
+    borderRadius: 12, // Subtle curves
+    padding: 16,
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.04,
-    shadowRadius: 4,
-    elevation: 1,
+    gap: 14,
+    borderWidth: 1,
+    borderColor: '#1A1A1A',
   },
   thumbnailContainer: {
-    width: 64,
-    height: 64,
-    backgroundColor: '#F4F5F6',
-    borderRadius: 14,
+    width: 70,
+    height: 70,
+    backgroundColor: '#050505',
+    borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'center',
     overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: '#222222',
   },
   thumbnail: {
-    width: '85%',
-    height: '85%',
+    width: '90%',
+    height: '90%',
   },
   itemInfo: {
     flex: 1,
     justifyContent: 'space-between',
-    height: 60,
+    height: 70,
   },
   itemTitle: {
     fontSize: 12,
     fontWeight: '600',
-    color: '#121212',
-    lineHeight: 16,
+    color: '#E0E0E0',
+    lineHeight: 18,
+    letterSpacing: 0.5,
   },
   itemBottomRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'flex-end',
   },
   itemPrice: {
-    fontSize: 14,
-    fontWeight: '800',
-    color: '#121212',
+    fontSize: 15,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    letterSpacing: 0.5,
   },
   stepper: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#F4F5F6',
-    borderRadius: 16,
-    paddingVertical: 2,
-    paddingHorizontal: 8,
-    gap: 8,
+    backgroundColor: '#1A1A1A',
+    borderRadius: 6,
+    borderWidth: 1,
+    borderColor: '#2A2A2A',
   },
   stepperBtn: {
-    paddingVertical: 2,
-    paddingHorizontal: 4,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
   },
   stepperBtnText: {
     fontSize: 14,
-    fontWeight: 'bold',
-    color: '#121212',
+    fontWeight: '600',
+    color: '#FFFFFF',
   },
   stepperVal: {
-    fontSize: 12,
-    fontWeight: '800',
-    color: '#121212',
-    minWidth: 12,
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    minWidth: 20,
     textAlign: 'center',
   },
   checkoutBar: {
@@ -338,28 +344,49 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
+    backgroundColor: 'rgba(10, 10, 10, 0.95)',
     borderTopWidth: 1,
-    borderTopColor: 'rgba(0, 0, 0, 0.05)',
-    paddingVertical: 16,
+    borderTopColor: '#222222',
+    paddingVertical: 20,
     paddingHorizontal: 24,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 20,
+  },
+  checkoutDetails: {
+    flex: 1,
+  },
+  checkoutSubLabel: {
+    fontSize: 10,
+    color: '#8E8E93',
+    fontWeight: '600',
+    letterSpacing: 1,
+    marginBottom: 4,
+  },
+  checkoutTotal: {
+    fontSize: 20,
+    fontWeight: '800',
+    color: '#FFFFFF',
   },
   checkoutBtn: {
-    backgroundColor: '#C0E800',
-    borderRadius: 24,
-    paddingVertical: 16,
-    width: '100%',
+    backgroundColor: '#D5001C', // Premium Red
+    borderRadius: 8, // Sharper structural shape
+    paddingVertical: 14,
+    paddingHorizontal: 24,
     alignItems: 'center',
-    shadowColor: '#C0E800',
+    justifyContent: 'center',
+    shadowColor: '#D5001C',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.2,
-    shadowRadius: 14,
-    elevation: 3,
+    shadowOpacity: 0.3,
+    shadowRadius: 12,
+    elevation: 4,
   },
   checkoutText: {
-    color: '#121212',
-    fontWeight: '800',
-    fontSize: 16,
+    color: '#FFFFFF',
+    fontWeight: '700',
+    fontSize: 12,
+    letterSpacing: 1.5,
   },
 });
 
