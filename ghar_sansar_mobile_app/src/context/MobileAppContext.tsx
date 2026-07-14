@@ -1,6 +1,19 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import { Platform } from 'react-native';
+import * as Notifications from 'expo-notifications';
+import * as Device from 'expo-device';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { PRODUCTS_DATA } from './productsData';
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldShowBanner: true,
+    shouldShowList: true,
+    shouldPlaySound: true,
+    shouldSetBadge: false,
+  }),
+});
 
 export interface Product {
   id: string;
@@ -525,6 +538,43 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
 
   // Run on mount
   useEffect(() => {
+    const registerForPushNotificationsAsync = async () => {
+      let token;
+      if (Device.isDevice) {
+        const { status: existingStatus } = await Notifications.getPermissionsAsync();
+        let finalStatus = existingStatus;
+        if (existingStatus !== 'granted') {
+          const { status } = await Notifications.requestPermissionsAsync();
+          finalStatus = status;
+        }
+        if (finalStatus !== 'granted') {
+          console.warn('Failed to get push token for push notification!');
+          return;
+        }
+        token = (await Notifications.getExpoPushTokenAsync()).data;
+      } else {
+        console.log('Must use physical device for Push Notifications');
+      }
+
+      if (token) {
+        // Send the token to the backend
+        try {
+          await fetch(`${BACKEND_URL}/api/mobile/push-token`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              token,
+              userId: 'ALL', // In a real app with auth, this would be the actual userId
+              deviceId: Device.osBuildId || 'unknown',
+            })
+          });
+          console.log('Push token registered successfully');
+        } catch (error) {
+          console.error('Error registering push token:', error);
+        }
+      }
+    };
+
     const initializeData = async () => {
       await Promise.all([
         fetchAllProducts(),
@@ -535,7 +585,19 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
         fetchNotifications()
       ]);
     };
+    
     initializeData();
+    registerForPushNotificationsAsync();
+    
+    // Add foreground notification listener
+    const notificationListener = Notifications.addNotificationReceivedListener(notification => {
+      // We could trigger a fetchNotifications here to update the local store
+      fetchNotifications();
+    });
+
+    return () => {
+      notificationListener.remove();
+    };
   }, []);
 
   // Sync general products load with initial paginated feed
