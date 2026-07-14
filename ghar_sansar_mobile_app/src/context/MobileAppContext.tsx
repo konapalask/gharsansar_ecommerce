@@ -104,6 +104,17 @@ export const useMobileApp = () => {
 
 const BACKEND_URL = 'https://backend.gharsansar.store';
 
+const forceHttps = (url: string) => {
+  if (url.startsWith('http://backend.gharsansar.store')) {
+    return url.replace('http://backend.gharsansar.store', 'https://backend.gharsansar.store');
+  }
+  // Also handle local IPs in case the backend hardcoded them in its output
+  if (url.startsWith('http://192.168.0.')) {
+    return url.replace(/http:\/\/192\.168\.0\.\d+:\d+/, 'https://backend.gharsansar.store');
+  }
+  return url;
+};
+
 // Category cleaner utility to map backend category folders to customer friendly titles
 export const mapCategoryLabel = (catName: string): string => {
   const mapping: { [key: string]: string } = {
@@ -194,7 +205,7 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
     description: p.description || '',
     price: Number(p.price) || 0,
     actPrice: Number(p["act-price"]) || Number(p.actual_price) || Number(p.price) || 0,
-    image: p.image ? (p.image.startsWith('http') ? encodeURI(p.image) : encodeURI(`${BACKEND_URL}${p.image}`)) : '',
+    image: p.image ? (p.image.startsWith('http') ? encodeURI(forceHttps(p.image)) : encodeURI(`${BACKEND_URL}${p.image}`)) : '',
     category: mapCategoryLabel(p.category || ''),
     subCategory: p.subCategory || '',
     rating: Number(p.rating) || 4.2,
@@ -226,6 +237,7 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
         const mapped = data.map((cat: any) => ({
           ...cat,
           name: mapCategoryLabel(cat.name),
+          image: cat.image ? (cat.image.startsWith('http') ? encodeURI(forceHttps(cat.image)) : encodeURI(`${BACKEND_URL}${cat.image}`)) : '',
           count: cat.count || 0
         }));
         setCategories(mapped);
@@ -296,7 +308,7 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
       // Hard fallback to local data if server down
       const fallbackList = PRODUCTS_DATA.map(p => ({
         ...p,
-        image: p.image ? (p.image.startsWith('http') ? encodeURI(p.image) : encodeURI(`${BACKEND_URL}${p.image}`)) : '',
+        image: p.image ? (p.image.startsWith('http') ? encodeURI(forceHttps(p.image)) : encodeURI(`${BACKEND_URL}${p.image}`)) : '',
         category: mapCategoryLabel(p.category || '')
       }));
       setProducts(fallbackList);
