@@ -1088,6 +1088,9 @@ app.patch("/api/orders/:id/shipped", (req, res) => {
     orders[idx].updatedAt = new Date().toISOString();
     fs.writeFileSync(ORDERS_FILE, JSON.stringify(orders, null, 2));
     console.log(`\n🚚 Order ${id} marked as ${shipped ? 'shipped' : 'processing'}`);
+    if (shipped && orders[idx].userId) {
+      createInternalNotification(orders[idx].userId, "Order Shipped! 📦", `Your order #${id} has been shipped and is on its way.`, "order");
+    }
     res.json({ success: true, order: orders[idx] });
   } catch (error) {
     console.error("Shipped toggle error:", error);
@@ -2283,9 +2286,66 @@ app.delete("/api/return_gifts/:id", (req, res) => {
 // MOBILE WISHLIST & CUSTOMER NOTIFICATIONS APIS
 const WISHLIST_FILE = path.join(__dirname, "wishlist.json");
 const CUSTOMER_NOTIFICATIONS_FILE = path.join(__dirname, "customer_notifications.json");
+const PUSH_TOKENS_FILE = path.join(__dirname, "push_tokens.json");
 
 const getWishlist = () => {
   return readJsonFile(WISHLIST_FILE, []);
+};
+
+
+const getPushTokens = () => readJsonFile(PUSH_TOKENS_FILE, []);
+const savePushTokens = (data) => writeJsonFile(PUSH_TOKENS_FILE, data);
+
+const sendPushNotification = async (tokens, title, body, data = {}) => {
+  if (!tokens || tokens.length === 0) return;
+  const messages = tokens.map(token => ({
+    to: token,
+    sound: 'default',
+    title,
+    body,
+    data
+  }));
+  try {
+    const fetch = require('node-fetch'); // Ensure node-fetch or axios is available, we will just use native https since this is Node 18+ or we can use axios
+    const axios = require('axios'); // We know axios is used in backend/server.js
+    await axios.post('https://exp.host/--/api/v2/push/send', messages, {
+      headers: {
+        'Accept': 'application/json',
+        'Accept-encoding': 'gzip, deflate',
+        'Content-Type': 'application/json',
+      }
+    });
+    console.log('Push notifications sent to', tokens.length, 'devices');
+  } catch (error) {
+    console.error('Error sending push notification:', error.message);
+  }
+};
+
+const createInternalNotification = async (userId, title, body, type = 'system') => {
+  const notifs = getCustomerNotifications();
+  const newNotif = {
+    id: "notif-" + Date.now() + "-" + Math.floor(Math.random() * 1000),
+    userId: userId,
+    title,
+    body,
+    time: new Date().toISOString(),
+    type,
+    read: false
+  };
+  notifs.unshift(newNotif);
+  writeJsonFile(CUSTOMER_NOTIFICATIONS_FILE, notifs);
+  
+  // Try to send push notification
+  const allTokens = getPushTokens();
+  // If userId is provided, find their token. If no userId (guest action?), we can't map it easily unless deviceId is passed.
+  // We'll send to tokens matching userId.
+  if (userId) {
+    const userTokens = allTokens.filter(t => t.userId === userId).map(t => t.token);
+    if (userTokens.length > 0) {
+      await sendPushNotification(userTokens, title, body, { type });
+    }
+  }
+  return newNotif;
 };
 
 const getCustomerNotifications = () => {
@@ -2357,7 +2417,15 @@ app.post("/api/mobile/wishlist/toggle", (req, res) => {
 // Notification routes
 app.get("/api/mobile/notifications", (req, res) => {
   try {
-    res.json({ success: true, notifications: getCustomerNotifications() });
+    const { userId } = req.query;
+    let notifs = getCustomerNotifications();
+    if (userId) {
+      notifs = notifs.filter(n => n.userId === userId || n.userId === "ALL" || !n.userId);
+    } else {
+      // For guests, only show generic ones
+      notifs = notifs.filter(n => n.userId === "ALL" || !n.userId);
+    }
+    res.json({ success: true, notifications: notifs });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -2383,6 +2451,64 @@ app.post("/api/mobile/notifications/clear", (req, res) => {
   try {
     writeJsonFile(CUSTOMER_NOTIFICATIONS_FILE, []);
     res.json({ success: true, notifications: [] });
+
+app.post("/api/mobile/push-token", (req, res) => {
+  try {
+    const { token, userId, deviceId } = req.body;
+    if (!token) return res.status(400).json({ error: "Token required" });
+    
+    const tokens = getPushTokens();
+    const existingIdx = tokens.findIndex(t => t.token === token);
+    if (existingIdx >= 0) {
+      tokens[existingIdx].userId = userId || tokens[existingIdx].userId;
+      tokens[existingIdx].deviceId = deviceId || tokens[existingIdx].deviceId;
+    } else {
+      tokens.push({ token, userId, deviceId, registeredAt: new Date().toISOString() });
+    }
+    savePushTokens(tokens);
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post("/api/admin/notifications/send", (req, res) => {
+  try {
+    const { title, body, userId } = req.body; // userId can be "ALL" or specific ID
+    
+    // 1. Save to in-app notifications
+    const notifs = getCustomerNotifications();
+    const newNotif = {
+      id: "admin-notif-" + Date.now(),
+      userId: userId || "ALL",
+      title,
+      body,
+      time: new Date().toISOString(),
+      type: "admin",
+      read: false
+    };
+    notifs.unshift(newNotif);
+    writeJsonFile(CUSTOMER_NOTIFICATIONS_FILE, notifs);
+    
+    // 2. Send via Expo Push
+    const allTokens = getPushTokens();
+    let targetTokens = [];
+    if (!userId || userId === "ALL") {
+      targetTokens = allTokens.map(t => t.token);
+    } else {
+      targetTokens = allTokens.filter(t => t.userId === userId).map(t => t.token);
+    }
+    
+    if (targetTokens.length > 0) {
+      sendPushNotification(targetTokens, title, body, { type: "admin" });
+    }
+    
+    res.json({ success: true, message: `Sent to ${targetTokens.length} devices` });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
