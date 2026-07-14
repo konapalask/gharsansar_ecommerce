@@ -44,7 +44,7 @@ const ProfileView: React.FC = () => {
     setLoadingTracking(true);
     setTrackingInfo(null);
     try {
-      const response = await fetch(`http://192.168.0.106:5001/api/shipping/track/${awb}`);
+      const response = await fetch(`https://backend.gharsansar.store/api/shipping/track/${awb}`);
       if (!response.ok) throw new Error('Tracking failed');
       const data = await response.json();
       setTrackingInfo(data);

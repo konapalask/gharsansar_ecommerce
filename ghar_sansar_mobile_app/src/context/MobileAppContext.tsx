@@ -102,7 +102,7 @@ export const useMobileApp = () => {
   return context;
 };
 
-const BACKEND_URL = 'http://192.168.0.106:5001';
+const BACKEND_URL = 'https://backend.gharsansar.store';
 
 // Category cleaner utility to map backend category folders to customer friendly titles
 export const mapCategoryLabel = (catName: string): string => {

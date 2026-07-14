@@ -143,7 +143,7 @@ const getProductCare = (category: string) => {
   return 'Wipe gently with a clean, dry microfiber cloth. Avoid direct exposure to sunlight or extreme moisture. Do not use harsh chemical sprays or water washing.';
 };
 
-const BACKEND_URL = 'http://192.168.0.106:5001';
+const BACKEND_URL = 'https://backend.gharsansar.store';
 
 // Dynamic image parser (handles comma-separated lists and simple urls)
 const getProductGalleryImages = (product: Product): string[] => {
