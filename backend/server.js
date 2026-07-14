@@ -2451,6 +2451,10 @@ app.post("/api/mobile/notifications/clear", (req, res) => {
   try {
     writeJsonFile(CUSTOMER_NOTIFICATIONS_FILE, []);
     res.json({ success: true, notifications: [] });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
 app.post("/api/mobile/push-token", (req, res) => {
   try {
@@ -2504,11 +2508,6 @@ app.post("/api/admin/notifications/send", (req, res) => {
     }
     
     res.json({ success: true, message: `Sent to ${targetTokens.length} devices` });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
