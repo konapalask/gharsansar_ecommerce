@@ -662,7 +662,7 @@ const ExploreView: React.FC = () => {
         ) : (
           <FlatList
             data={searchFilteredProducts}
-            keyExtractor={(item) => item.id}
+            keyExtractor={(item, index) => `${item.id || 'search'}-${index}`}
             numColumns={2}
             columnWrapperStyle={styles.columnWrapper}
             contentContainerStyle={styles.searchGridScroll}
@@ -847,10 +847,10 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   heroBackground: {
-    ...StyleSheet.absoluteFillObject,
+    ...(StyleSheet.absoluteFill as object),
   },
   heroOverlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...(StyleSheet.absoluteFill as object),
     backgroundColor: 'rgba(0, 0, 0, 0.45)',
     padding: 20,
     justifyContent: 'center',

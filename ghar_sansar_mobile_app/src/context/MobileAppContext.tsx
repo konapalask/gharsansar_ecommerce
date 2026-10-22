@@ -107,6 +107,8 @@ interface MobileAppContextType {
 
 const MobileAppContext = createContext<MobileAppContextType | undefined>(undefined);
 
+import { BACKEND_URL } from '../config';
+
 export const useMobileApp = () => {
   const context = useContext(MobileAppContext);
   if (!context) {
@@ -115,17 +117,23 @@ export const useMobileApp = () => {
   return context;
 };
 
-const BACKEND_URL = 'https://backend.gharsansar.store';
-
 const forceHttps = (url: string) => {
-  if (url.startsWith('http://backend.gharsansar.store')) {
-    return url.replace('http://backend.gharsansar.store', 'https://backend.gharsansar.store');
+  if (!url) return '';
+  let clean = url;
+  try {
+    clean = decodeURIComponent(url);
+  } catch (e) {}
+
+  clean = clean.replace(/aquarium\s+and\s+accesories/gi, 'aquarium_and_accesories');
+
+  // Replace any old local IP, localhost, or domain with active BACKEND_URL
+  if (/^https?:\/\/(localhost|127\.0\.0\.1|\d+\.\d+\.\d+\.\d+|backend\.gharsansar\.store)(:\d+)?/i.test(clean)) {
+    clean = clean.replace(/^https?:\/\/(localhost|127\.0\.0\.1|\d+\.\d+\.\d+\.\d+|backend\.gharsansar\.store)(:\d+)?/i, BACKEND_URL);
+  } else if (clean.startsWith('/')) {
+    clean = `${BACKEND_URL}${clean}`;
   }
-  // Also handle local IPs in case the backend hardcoded them in its output
-  if (url.startsWith('http://192.168.0.')) {
-    return url.replace(/http:\/\/192\.168\.0\.\d+:\d+/, 'https://backend.gharsansar.store');
-  }
-  return url;
+
+  return encodeURI(clean);
 };
 
 // Category cleaner utility to map backend category folders to customer friendly titles
@@ -172,6 +180,8 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
   const [paginatedLoading, setPaginatedLoading] = useState(false);
   const [page, setPage] = useState(1);
   const [hasMoreProducts, setHasMoreProducts] = useState(true);
+  const isFetchingPaginatedRef = React.useRef(false);
+  const pageRef = React.useRef(1);
 
   // Notifications states
   const [notifications, setNotifications] = useState<CustomerNotification[]>([]);
@@ -332,55 +342,81 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
 
   // Fetch paginated products feed
   const loadMoreProducts = async () => {
-    if (paginatedLoading || !hasMoreProducts) return;
+    if (isFetchingPaginatedRef.current || !hasMoreProducts) return;
+    isFetchingPaginatedRef.current = true;
     setPaginatedLoading(true);
+    const currentPage = pageRef.current;
     try {
-      const url = `${BACKEND_URL}/api/products/paginated?page=${page}&limit=10`;
+      const url = `${BACKEND_URL}/api/products/paginated?page=${currentPage}&limit=10`;
       const data = await fetchWithCache(url);
-      if (data) {
+      if (data && data.products) {
         const mapped = (data.products || []).map(mapBackendProduct);
-        setPaginatedProducts(prev => [...prev, ...mapped]);
-        setPage(prev => prev + 1);
-        setHasMoreProducts(data.hasMore);
+        setPaginatedProducts(prev => {
+          const existingIds = new Set(prev.map(p => p.id));
+          const unique = mapped.filter((p: Product) => !existingIds.has(p.id));
+          return [...prev, ...unique];
+        });
+        pageRef.current = currentPage + 1;
+        setPage(currentPage + 1);
+        setHasMoreProducts(Boolean(data.hasMore && mapped.length > 0));
       }
     } catch (err) {
       console.warn('Failed to load paginated products:', err);
       // Fallback
       if (products.length > 0) {
-        const start = (page - 1) * 10;
+        const start = (currentPage - 1) * 10;
         const nextBatch = products.slice(start, start + 10);
-        setPaginatedProducts(prev => [...prev, ...nextBatch]);
-        setPage(prev => prev + 1);
+        setPaginatedProducts(prev => {
+          const existingIds = new Set(prev.map(p => p.id));
+          const unique = nextBatch.filter((p: Product) => !existingIds.has(p.id));
+          return [...prev, ...unique];
+        });
+        pageRef.current = currentPage + 1;
+        setPage(currentPage + 1);
         setHasMoreProducts(start + 10 < products.length);
       }
     } finally {
+      isFetchingPaginatedRef.current = false;
       setPaginatedLoading(false);
     }
   };
 
   const refreshProductsFeed = async () => {
+    if (isFetchingPaginatedRef.current) return;
+    isFetchingPaginatedRef.current = true;
+    pageRef.current = 1;
     setPage(1);
     setHasMoreProducts(true);
-    setPaginatedProducts([]);
     setPaginatedLoading(true);
     try {
       const url = `${BACKEND_URL}/api/products/paginated?page=1&limit=10`;
       const data = await fetchWithCache(url, true); // Force bypass cache on refresh
-      if (data) {
+      if (data && data.products) {
         const mapped = (data.products || []).map(mapBackendProduct);
-        setPaginatedProducts(mapped);
+        const uniqueMapped: Product[] = [];
+        const seen = new Set<string>();
+        for (const item of mapped) {
+          if (!seen.has(item.id)) {
+            seen.add(item.id);
+            uniqueMapped.push(item);
+          }
+        }
+        setPaginatedProducts(uniqueMapped);
+        pageRef.current = 2;
         setPage(2);
-        setHasMoreProducts(data.hasMore);
+        setHasMoreProducts(Boolean(data.hasMore && uniqueMapped.length > 0));
       }
     } catch (err) {
       console.warn('Failed to refresh feed:', err);
       if (products.length > 0) {
         const initialBatch = products.slice(0, 10);
         setPaginatedProducts(initialBatch);
+        pageRef.current = 2;
         setPage(2);
         setHasMoreProducts(10 < products.length);
       }
     } finally {
+      isFetchingPaginatedRef.current = false;
       setPaginatedLoading(false);
     }
   };
@@ -487,9 +523,13 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
   // Recently Viewed product logic
   const addToRecentlyViewed = async (product: Product) => {
     if (!product) return;
+    const sanitizedProduct: Product = {
+      ...product,
+      image: product.image ? forceHttps(product.image) : '',
+    };
     setRecentlyViewed(prev => {
-      const filtered = prev.filter(p => p.id !== product.id);
-      const updated = [product, ...filtered].slice(0, 10);
+      const filtered = prev.filter(p => p.id !== sanitizedProduct.id);
+      const updated = [sanitizedProduct, ...filtered].slice(0, 10);
       AsyncStorage.setItem('recently_viewed', JSON.stringify(updated)).catch(err => {
         console.warn('Failed to save recently viewed products:', err);
       });
@@ -497,13 +537,21 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
     });
   };
 
-  // Load recently viewed on mount
+  // Load recently viewed on mount with URL sanitation
   useEffect(() => {
     const loadRecentlyViewed = async () => {
       try {
         const stored = await AsyncStorage.getItem('recently_viewed');
         if (stored) {
-          setRecentlyViewed(JSON.parse(stored));
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed)) {
+            const sanitized: Product[] = parsed.map((p: any) => ({
+              ...p,
+              image: p.image ? forceHttps(p.image) : '',
+            }));
+            setRecentlyViewed(sanitized);
+            AsyncStorage.setItem('recently_viewed', JSON.stringify(sanitized)).catch(() => {});
+          }
         }
       } catch (err) {
         console.warn('Failed to load recently viewed:', err);
@@ -511,6 +559,38 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
     };
     loadRecentlyViewed();
   }, []);
+
+  // Sync recently viewed with fresh catalog whenever products load
+  useEffect(() => {
+    if (products.length > 0) {
+      setRecentlyViewed(prev => {
+        if (!prev || prev.length === 0) return prev;
+        let changed = false;
+        const updated = prev.map(rv => {
+          const fresh = products.find(p => p.id === rv.id);
+          if (fresh) {
+            const freshImage = fresh.image ? forceHttps(fresh.image) : '';
+            if (freshImage !== rv.image || fresh.price !== rv.price || fresh.title !== rv.title) {
+              changed = true;
+              return { ...rv, ...fresh, image: freshImage || rv.image };
+            }
+          } else if (rv.image) {
+            const sanitized = forceHttps(rv.image);
+            if (sanitized !== rv.image) {
+              changed = true;
+              return { ...rv, image: sanitized };
+            }
+          }
+          return rv;
+        });
+        if (changed) {
+          AsyncStorage.setItem('recently_viewed', JSON.stringify(updated)).catch(() => {});
+          return updated;
+        }
+        return prev;
+      });
+    }
+  }, [products]);
 
   // Monitor selectedProductId to add to Recently Viewed history
   useEffect(() => {
@@ -551,7 +631,11 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
           console.warn('Failed to get push token for push notification!');
           return;
         }
-        token = (await Notifications.getExpoPushTokenAsync()).data;
+        try {
+          token = (await Notifications.getExpoPushTokenAsync()).data;
+        } catch (e) {
+          console.warn('Push notification token unavailable (requires EAS projectId):', e);
+        }
       } else {
         console.log('Must use physical device for Push Notifications');
       }
@@ -578,6 +662,7 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
     const initializeData = async () => {
       await Promise.all([
         fetchAllProducts(),
+        refreshProductsFeed(),
         fetchBanners(),
         fetchCategories(),
         fetchFlashSale(),
@@ -602,7 +687,7 @@ export const MobileAppProvider: React.FC<{ children: ReactNode }> = ({ children 
 
   // Sync general products load with initial paginated feed
   useEffect(() => {
-    if (products.length > 0 && paginatedProducts.length === 0) {
+    if (products.length > 0 && paginatedProducts.length === 0 && !isFetchingPaginatedRef.current) {
       refreshProductsFeed();
     }
   }, [products]);

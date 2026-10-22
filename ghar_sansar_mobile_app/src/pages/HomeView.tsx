@@ -489,7 +489,7 @@ interface HeroBannerCarouselProps {
 const HeroBannerCarousel: React.FC<HeroBannerCarouselProps> = React.memo(({ banners, onShopNow }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const bannerScrollRef = useRef<ScrollView>(null);
-  const bannerTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const bannerTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     if (banners.length === 0) return;
@@ -709,7 +709,7 @@ const HomeView: React.FC = () => {
   const [searchVal, setSearchVal] = useState('');
   const [suggestions, setSuggestions] = useState<{ products: Product[]; categories: string[] }>({ products: [], categories: [] });
   const [sugLoading, setSugLoading] = useState(false);
-  const searchDebounceRef = useRef<NodeJS.Timeout | null>(null);
+  const searchDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Animated cycling placeholders
   const [placeholderIndex, setPlaceholderIndex] = useState(0);
@@ -896,6 +896,11 @@ const HomeView: React.FC = () => {
     toggleFavorite(id);
   }, [toggleFavorite]);
 
+  const handleLoadMore = useCallback(() => {
+    if (paginatedLoading || !hasMoreProducts || paginatedProducts.length === 0) return;
+    loadMoreProducts();
+  }, [paginatedLoading, hasMoreProducts, paginatedProducts.length, loadMoreProducts]);
+
   const renderProductItem = useCallback(({ item, index }: { item: Product; index: number }) => {
     const isFav = favorites.includes(item.id);
     return (
@@ -1053,7 +1058,7 @@ const HomeView: React.FC = () => {
                     onPress={() => handleProductCardPress(p.id)}
                   >
                     <View style={styles.recentViewedImageWrapper}>
-                      <ProductImage uri={p.image} style={styles.recentViewedImage} />
+                      <ProductImage uri={p.image} style={styles.recentViewedImage} product={p} />
                     </View>
                     <Text style={styles.recentViewedTitle} numberOfLines={1}>
                       {p.title}
@@ -1213,11 +1218,11 @@ const HomeView: React.FC = () => {
       <FlatList
         data={paginatedProducts}
         renderItem={renderProductItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item, index) => `${item.id || 'prod'}-${index}`}
         numColumns={2}
         columnWrapperStyle={styles.productsGridRow}
         ListHeaderComponent={renderListHeader}
-        onEndReached={loadMoreProducts}
+        onEndReached={handleLoadMore}
         onEndReachedThreshold={0.4}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={styles.scrollContent}
@@ -1498,7 +1503,7 @@ const HomeView: React.FC = () => {
           ) : (
             <FlatList
               data={paginatedProducts.filter(p => favorites.includes(p.id))}
-              keyExtractor={(item) => item.id}
+              keyExtractor={(item, index) => `${item.id || 'fav'}-${index}`}
               contentContainerStyle={{ padding: 16, gap: 12 }}
               renderItem={({ item }) => (
                 <View style={styles.wishlistCard}>

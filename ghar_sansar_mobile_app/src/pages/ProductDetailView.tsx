@@ -19,6 +19,7 @@ import { Image } from 'expo-image';
 import { useMobileApp, Product } from '../context/MobileAppContext';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { PremiumImage } from '../components/PremiumImage';
+import { BACKEND_URL } from '../config';
 
 const { width: screenWidth } = Dimensions.get('window');
 
@@ -143,7 +144,6 @@ const getProductCare = (category: string) => {
   return 'Wipe gently with a clean, dry microfiber cloth. Avoid direct exposure to sunlight or extreme moisture. Do not use harsh chemical sprays or water washing.';
 };
 
-const BACKEND_URL = 'https://backend.gharsansar.store';
 
 // Dynamic image parser (handles comma-separated lists and simple urls)
 const getProductGalleryImages = (product: Product): string[] => {

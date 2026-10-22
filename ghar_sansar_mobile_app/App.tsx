@@ -256,7 +256,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   splashContainer: {
-    ...StyleSheet.absoluteFillObject,
+    ...(StyleSheet.absoluteFill as object),
     backgroundColor: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'center',

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, ActivityIndicator, TouchableOpacity } from 'react-native';
 import { Image } from 'expo-image';
 import { Ionicons } from '@expo/vector-icons';
+import { BACKEND_URL } from '../config';
 
 // Mapping of category fallback images using high-quality premium Unsplash assets
 const CATEGORY_FALLBACKS: { [key: string]: string } = {
@@ -19,6 +20,7 @@ const CATEGORY_FALLBACKS: { [key: string]: string } = {
   'Water Fountains': 'https://images.unsplash.com/photo-1595855759920-86582396756a?auto=format&fit=crop&q=80&w=400',
   'Aquarium & Accessories': 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=400',
   'Aquarium': 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&q=80&w=400',
+  'Garlands': 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=400',
   'Premium Mats': 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&q=80&w=400',
 };
 
@@ -55,8 +57,18 @@ export const PremiumImage: React.FC<PremiumImageProps> = React.memo(({
 
   // Reset state if URI changes
   useEffect(() => {
+    let isMounted = true;
     setCurrentLevel(simulateError ? 4 : 1);
     setLoading(true);
+
+    // Timeout: if image doesn't load within 5 seconds, fallback so it never spins indefinitely
+    const timer = setTimeout(() => {
+      if (isMounted) {
+        setLoading(false);
+        setCurrentLevel((prev) => (prev < 4 ? ((prev + 1) as any) : 4));
+      }
+    }, 5000);
+
     if (simulateError) {
       setErrorDetails({
         id: product?.id || 'ERR_SIM',
@@ -69,6 +81,11 @@ export const PremiumImage: React.FC<PremiumImageProps> = React.memo(({
       setErrorDetails(null);
       setShowDiagnostics(false);
     }
+
+    return () => {
+      isMounted = false;
+      clearTimeout(timer);
+    };
   }, [uri, simulateError, product]);
 
   // Determine current URI based on fallback levels
@@ -87,8 +104,15 @@ export const PremiumImage: React.FC<PremiumImageProps> = React.memo(({
       // fallback if decoding fails
     }
 
-    // Normalize folder name double-space discrepancies (e.g. from old AsyncStorage cache)
-    decoded = decoded.replace(/aquarium\s+and\s+accesories/gi, 'aquarium and accesories');
+    // Normalize folder name discrepancies (e.g. from old AsyncStorage cache)
+    decoded = decoded.replace(/aquarium\s+and\s+accesories/gi, 'aquarium_and_accesories');
+
+    // Dynamically replace any old backend hosts/IPs with current BACKEND_URL
+    if (/^https?:\/\/(localhost|127\.0\.0\.1|\d+\.\d+\.\d+\.\d+|backend\.gharsansar\.store)(:\d+)?/i.test(decoded)) {
+      decoded = decoded.replace(/^https?:\/\/(localhost|127\.0\.0\.1|\d+\.\d+\.\d+\.\d+|backend\.gharsansar\.store)(:\d+)?/i, BACKEND_URL);
+    } else if (decoded.startsWith('/')) {
+      decoded = `${BACKEND_URL}${decoded}`;
+    }
 
     // Re-encode cleanly
     const encodedPrimary = encodeURI(decoded);
@@ -97,10 +121,8 @@ export const PremiumImage: React.FC<PremiumImageProps> = React.memo(({
       case 1:
         return encodedPrimary;
       case 2:
-        // Level 2 - Product Thumbnail (if product object contains any secondary source, else skip to Category)
-        return encodedPrimary;
       case 3:
-        // Level 3 - Category Image fallback
+        // Level 2 & 3 - Category Image fallback
         const cat = product?.category || '';
         return CATEGORY_FALLBACKS[cat] || DEFAULT_PLACEHOLDER;
       case 4:
@@ -246,7 +268,7 @@ const styles = StyleSheet.create({
     zIndex: 20,
   },
   diagContent: {
-    ...StyleSheet.absoluteFillObject,
+    ...(StyleSheet.absoluteFill as object),
     padding: 10,
     zIndex: 21,
     justifyContent: 'center',

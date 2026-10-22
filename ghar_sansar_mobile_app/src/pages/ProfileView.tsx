@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView, TouchableOpacity, Alert, Modal, Act
 import { Feather } from '@expo/vector-icons';
 import { useMobileApp } from '../context/MobileAppContext';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { BACKEND_URL } from '../config';
 
 const MOCK_ORDERS = [
   {
@@ -44,7 +45,7 @@ const ProfileView: React.FC = () => {
     setLoadingTracking(true);
     setTrackingInfo(null);
     try {
-      const response = await fetch(`https://backend.gharsansar.store/api/shipping/track/${awb}`);
+      const response = await fetch(`${BACKEND_URL}/api/shipping/track/${awb}`);
       if (!response.ok) throw new Error('Tracking failed');
       const data = await response.json();
       setTrackingInfo(data);

@@ -4,6 +4,7 @@ const cors = require("cors");
 const path = require("path");
 const fs = require("fs");
 const multer = require("multer");
+const { setupSwagger } = require("./swagger");
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -22,6 +23,9 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Initialize Enterprise Swagger UI (Flipkart & Amazon Tier)
+setupSwagger(app);
 
 // --- CMS ENDPOINTS ---
 app.get("/api/cms/homepage_layout", (req, res) => {
@@ -86,6 +90,7 @@ const NOTIFICATIONS_FILE = path.join(__dirname, "notifications.json");
 const HOMEPAGE_LAYOUT_FILE = path.join(__dirname, "homepage_layout.json");
 const COLLECTIONS_FILE = path.join(__dirname, "collections.json");
 const CATEGORIES_FILE = path.join(__dirname, "categories.json");
+const COUPONS_FILE = path.join(__dirname, "coupons.json");
 
 // Helper to read/write JSON files safely
 const readJsonFile = (filePath, defaultData = []) => {
@@ -109,6 +114,291 @@ const writeJsonFile = (filePath, data) => {
     console.error(`Error writing to ${filePath}:`, error);
   }
 };
+
+// --- ENTERPRISE COUPONS & PROMOTIONS ENGINE (FLIPKART & AMAZON GRADE) ---
+const getCoupons = () => {
+  return readJsonFile(COUPONS_FILE, [
+    {
+      id: "coup_1",
+      code: "GHARLUXE",
+      title: "10% Luxury Home Discount",
+      description: "Get 10% instant discount on premium dinnerware, decor & kitchenware.",
+      discountType: "percentage",
+      discountValue: 10,
+      maxDiscount: 1000,
+      minOrderValue: 799,
+      badge: "BESTSELLER",
+      category: "all",
+      validTill: "2027-12-31T23:59:59.000Z",
+      isActive: true,
+      terms: [
+        "Applicable on all items across Web & Mobile App",
+        "Maximum discount capped at ₹1,000",
+        "Valid on minimum cart value of ₹799"
+      ]
+    },
+    {
+      id: "coup_2",
+      code: "FESTIVE500",
+      title: "Flat ₹500 Mega Festive Savings",
+      description: "Flat ₹500 off on grand festive collections, brass idols & luxury dinner sets.",
+      discountType: "flat",
+      discountValue: 500,
+      maxDiscount: 500,
+      minOrderValue: 2499,
+      badge: "FESTIVE SPECIAL",
+      category: "all",
+      validTill: "2027-12-31T23:59:59.000Z",
+      isActive: true,
+      terms: [
+        "Requires a minimum cart value of ₹2,499",
+        "Instant discount applied at final checkout",
+        "Usable multiple times per customer account"
+      ]
+    },
+    {
+      id: "coup_3",
+      code: "WELCOME15",
+      title: "15% First Order Welcome Gift",
+      description: "Special welcome privilege of 15% off for all new Ghar Sansar customers.",
+      discountType: "percentage",
+      discountValue: 15,
+      maxDiscount: 750,
+      minOrderValue: 499,
+      badge: "NEW USER",
+      category: "all",
+      validTill: "2027-12-31T23:59:59.000Z",
+      isActive: true,
+      terms: [
+        "Valid on first order on Web or Mobile App",
+        "Minimum cart value ₹499",
+        "Maximum savings ₹750"
+      ]
+    },
+    {
+      id: "coup_4",
+      code: "FREESHIP",
+      title: "100% Free Express Delivery",
+      description: "Zero delivery charges on any cart value with priority white-glove packaging.",
+      discountType: "free_shipping",
+      discountValue: 99,
+      maxDiscount: 99,
+      minOrderValue: 0,
+      badge: "FREE SHIPPING",
+      category: "all",
+      validTill: "2027-12-31T23:59:59.000Z",
+      isActive: true,
+      terms: [
+        "No minimum purchase required",
+        "Includes express insured dispatch",
+        "Available across all pin codes in India"
+      ]
+    },
+    {
+      id: "coup_5",
+      code: "AMAZON50",
+      title: "Flat ₹50 Instant Amazon Pay & UPI Offer",
+      description: "Flat ₹50 instant rebate when paying via Amazon Pay UPI, GPay or PhonePe.",
+      discountType: "flat",
+      discountValue: 50,
+      maxDiscount: 50,
+      minOrderValue: 499,
+      badge: "UPI SPECIAL",
+      category: "all",
+      validTill: "2027-12-31T23:59:59.000Z",
+      isActive: true,
+      terms: [
+        "Valid on prepaid UPI and card transactions",
+        "Minimum order value ₹499",
+        "Instant deduction before payment gateway"
+      ]
+    },
+    {
+      id: "coup_6",
+      code: "VIPCLUB20",
+      title: "20% Elite Connoisseur Privilege",
+      description: "Exclusive 20% savings for premium collectors and bulk luxury home shoppers.",
+      discountType: "percentage",
+      discountValue: 20,
+      maxDiscount: 2000,
+      minOrderValue: 3999,
+      badge: "VIP ELITE",
+      category: "all",
+      validTill: "2027-12-31T23:59:59.000Z",
+      isActive: true,
+      terms: [
+        "Valid on carts above ₹3,999",
+        "Maximum discount ₹2,000",
+        "Includes complimentary festive gift wrapping"
+      ]
+    }
+  ]);
+};
+
+// 1. GET all active coupons
+app.get("/api/coupons", (req, res) => {
+  try {
+    const coupons = getCoupons().filter(c => c.isActive !== false);
+    res.json({ success: true, count: coupons.length, coupons });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 2. POST validate coupon code
+app.post("/api/coupons/validate", (req, res) => {
+  try {
+    const { code, cartTotal } = req.body;
+    if (!code) {
+      return res.status(400).json({ valid: false, message: "Coupon code is required" });
+    }
+    const total = Number(cartTotal) || 0;
+    const coupons = getCoupons();
+    const coupon = coupons.find(c => c.code.toUpperCase() === String(code).trim().toUpperCase() && c.isActive !== false);
+
+    if (!coupon) {
+      return res.status(404).json({ valid: false, message: "Invalid or expired coupon code" });
+    }
+
+    if (total < (coupon.minOrderValue || 0)) {
+      return res.status(400).json({
+        valid: false,
+        message: `${coupon.code} requires a minimum order value of ₹${coupon.minOrderValue.toLocaleString()}`,
+        minOrderValue: coupon.minOrderValue
+      });
+    }
+
+    let discount = 0;
+    if (coupon.discountType === "percentage") {
+      discount = Math.round((total * coupon.discountValue) / 100);
+      if (coupon.maxDiscount && discount > coupon.maxDiscount) {
+        discount = coupon.maxDiscount;
+      }
+    } else if (coupon.discountType === "flat") {
+      discount = Math.min(total, coupon.discountValue);
+    } else if (coupon.discountType === "free_shipping") {
+      discount = coupon.discountValue || 99;
+    }
+
+    const finalTotal = Math.max(0, total - discount);
+
+    res.json({
+      valid: true,
+      code: coupon.code,
+      title: coupon.title,
+      discount,
+      cartTotal: total,
+      finalTotal,
+      savingsMessage: `You save ₹${discount.toLocaleString()} with ${coupon.code}!`,
+      coupon
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 3. POST apply coupon with itemized cart
+app.post("/api/coupons/apply", (req, res) => {
+  try {
+    const { code, items } = req.body;
+    if (!code || !Array.isArray(items)) {
+      return res.status(400).json({ success: false, message: "Code and items array required" });
+    }
+    const subtotal = items.reduce((acc, it) => acc + (Number(it.price) || 0) * (Number(it.quantity) || 1), 0);
+    const coupons = getCoupons();
+    const coupon = coupons.find(c => c.code.toUpperCase() === String(code).trim().toUpperCase() && c.isActive !== false);
+
+    if (!coupon) {
+      return res.status(404).json({ success: false, message: "Invalid coupon code" });
+    }
+
+    if (subtotal < (coupon.minOrderValue || 0)) {
+      return res.status(400).json({
+        success: false,
+        message: `Minimum order value of ₹${coupon.minOrderValue.toLocaleString()} required`
+      });
+    }
+
+    let discount = 0;
+    if (coupon.discountType === "percentage") {
+      discount = Math.round((subtotal * coupon.discountValue) / 100);
+      if (coupon.maxDiscount && discount > coupon.maxDiscount) {
+        discount = coupon.maxDiscount;
+      }
+    } else if (coupon.discountType === "flat") {
+      discount = Math.min(subtotal, coupon.discountValue);
+    } else if (coupon.discountType === "free_shipping") {
+      discount = 99;
+    }
+
+    const deliveryFee = (subtotal >= 999 || coupon.discountType === "free_shipping") ? 0 : 99;
+    const totalPayable = Math.max(0, subtotal - discount + deliveryFee);
+
+    res.json({
+      success: true,
+      subtotal,
+      discount,
+      deliveryFee,
+      totalPayable,
+      couponCode: coupon.code,
+      couponTitle: coupon.title
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 4. POST create coupon (Admin)
+app.post("/api/coupons", (req, res) => {
+  try {
+    const { code, title, discountType, discountValue, minOrderValue, maxDiscount, description, badge, terms } = req.body;
+    if (!code || !discountType || discountValue === undefined) {
+      return res.status(400).json({ error: "Missing required coupon fields (code, discountType, discountValue)" });
+    }
+    const coupons = getCoupons();
+    const normalizedCode = String(code).trim().toUpperCase();
+    if (coupons.some(c => c.code === normalizedCode)) {
+      return res.status(400).json({ error: `Coupon code '${normalizedCode}' already exists` });
+    }
+    const newCoupon = {
+      id: "coup_" + Date.now(),
+      code: normalizedCode,
+      title: title || `${discountValue}${discountType === 'percentage' ? '%' : '₹'} Discount`,
+      description: description || "",
+      discountType,
+      discountValue: Number(discountValue),
+      maxDiscount: maxDiscount ? Number(maxDiscount) : null,
+      minOrderValue: Number(minOrderValue) || 0,
+      badge: badge || "SPECIAL OFFER",
+      category: "all",
+      validTill: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString(),
+      isActive: true,
+      terms: Array.isArray(terms) ? terms : ["Applicable on Web & Mobile App"]
+    };
+    coupons.push(newCoupon);
+    writeJsonFile(COUPONS_FILE, coupons);
+    res.status(201).json({ success: true, message: "Coupon created successfully", coupon: newCoupon });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// 5. DELETE coupon (Admin)
+app.delete("/api/coupons/:code", (req, res) => {
+  try {
+    const code = String(req.params.code).trim().toUpperCase();
+    let coupons = getCoupons();
+    const initialLen = coupons.length;
+    coupons = coupons.filter(c => c.code !== code);
+    if (coupons.length === initialLen) {
+      return res.status(404).json({ error: "Coupon not found" });
+    }
+    writeJsonFile(COUPONS_FILE, coupons);
+    res.json({ success: true, message: `Coupon '${code}' removed successfully` });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 
 // Stable price generator based on product title
 const getPricesForProduct = (title) => {
